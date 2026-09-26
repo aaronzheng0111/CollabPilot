@@ -17,6 +17,60 @@ AI 达人合作工作台 Demo。用户用自然语言描述合作目标；Agent 
 
 `backend/data/` 只放本地会话 SQLite，和仓库根目录的 `data/mock/` 不是一类东西。
 
+## 一轮对话怎么跑
+
+入口是 CLI（`uv run agent chat`）或 FastAPI（`uv run agent serve` → `/v1/chat`、`/v1/chat/stream`）。二者都走同一个 `ApplicationService.chat()`，再进入 `AgentRuntime` 的工具循环。
+
+```mermaid
+sequenceDiagram
+  participant U as 用户
+  participant I as CLI / FastAPI
+  participant A as ApplicationService
+  participant S as SQLiteSessionStore
+  participant R as AgentRuntime
+  participant P as Provider Mock / DeepSeek
+  participant T as Tools
+
+  U->>I: message (+ session_id)
+  I->>A: chat()
+  A->>S: ensure_session + 存 user 消息
+  A->>S: list_messages
+  A->>A: ContextBuilder 拼 system + history
+  A->>R: run(provider, messages)
+
+  loop 直到无 tool_calls 或超预算
+    R->>P: complete(messages, tool_schemas)
+    alt 模型要调工具
+      P-->>R: tool_calls
+      R->>T: policy.check + execute
+      T-->>R: ToolResult
+      R->>R: 把 tool 结果塞回 messages
+    else 模型直接回答
+      P-->>R: content
+      R-->>A: response + generated
+    end
+  end
+
+  A->>S: 存 tool / assistant 消息
+  A-->>I: ChatResult
+  I-->>U: 回复 / SSE 流式 delta
+```
+
+结构关系（同一次请求里各模块怎么串）：
+
+```mermaid
+flowchart LR
+  I[CLI / FastAPI] --> A[ApplicationService]
+  A --> S[(SQLite 会话)]
+  A --> C[ContextBuilder]
+  A --> R[AgentRuntime]
+  R --> P[ProviderRegistry]
+  R --> T[ToolRegistry + Policy]
+  T -.-> M[data/mock JSON]
+```
+
+预算由 `config/config.yaml` 的 `runtime.max_model_calls` / `max_tool_calls` / `max_seconds` 约束；超限停止并报错。业务达人工具就绪后才会读 `data/mock/`。
+
 ## Agent 读什么
 
 运行时 **只读 JSON**，不读 TypeScript，也不依赖 Node：
