@@ -1,0 +1,2 @@
+# CollabPilot
+AI Creator Collaboration Workbench Demo: brand teams describe collaboration goals in natural language; the AI parses the goal, searches mock creators across two platforms, evaluates fit with content evidence, explains mismatches, and retries with an adjusted strategy when qualified creators are insufficient. Users review and save candidates, then the AI drafts 3 personalized outreach messages. Supports multi-project state, deduplication, and clear labeling of mock data vs. LLM output.
