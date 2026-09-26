@@ -16,5 +16,5 @@
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/hard_filter.py`
-- `backend/src/starter_agent/tools/builtin/apply_hard_filters.py`
+- `backend/src/collabpilot/campaign/hard_filter.py`
+- `backend/src/collabpilot/tools/builtin/apply_hard_filters.py`

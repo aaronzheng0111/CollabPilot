@@ -37,4 +37,4 @@ RetryStrategy
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/retry.py`
+- `backend/src/collabpilot/campaign/retry.py`

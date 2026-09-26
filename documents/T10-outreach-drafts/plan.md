@@ -25,4 +25,4 @@ Draft
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/drafts.py`
+- `backend/src/collabpilot/campaign/drafts.py`

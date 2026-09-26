@@ -13,7 +13,7 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/verdict.py`
+- `backend/src/collabpilot/campaign/verdict.py`
 - `backend/tests/unit/test_verdict.py`
 - 活动提示词文件（新建 `backend/config/prompts/campaign.md`）
 

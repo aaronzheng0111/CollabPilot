@@ -14,9 +14,9 @@
 ## 允许修改
 
 - `backend/config/config.example.yaml`
-- `backend/src/starter_agent/settings.py`
-- `backend/src/starter_agent/agent/runtime.py`
-- `backend/src/starter_agent/application.py`
+- `backend/src/collabpilot/settings.py`
+- `backend/src/collabpilot/agent/runtime.py`
+- `backend/src/collabpilot/application.py`
 - `backend/tests/unit/` 下新增或修改运行时测试
 
 

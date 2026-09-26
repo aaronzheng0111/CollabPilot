@@ -2,7 +2,7 @@
 
 ## 数据模型
 
-沿用 `backend/src/starter_agent/domain/models.py` 的 `Message`、`StoredMessage`。不新增业务表。
+沿用 `backend/src/collabpilot/domain/models.py` 的 `Message`、`StoredMessage`。不新增业务表。
 
 事件对象（内存，不落库）：
 
@@ -32,7 +32,7 @@ RuntimeEvent
 
 ## 模块
 
-- `backend/src/starter_agent/agent/runtime.py`：增加 `on_event`
-- `backend/src/starter_agent/settings.py` 与 `config.example.yaml`：默认 DeepSeek 与预算
-- `backend/src/starter_agent/infrastructure/session_store.py`：确认能按 session 读回 tool 消息
+- `backend/src/collabpilot/agent/runtime.py`：增加 `on_event`
+- `backend/src/collabpilot/settings.py` 与 `config.example.yaml`：默认 DeepSeek 与预算
+- `backend/src/collabpilot/infrastructure/session_store.py`：确认能按 session 读回 tool 消息
 - `backend/tests/`：续聊与事件顺序用 mock provider

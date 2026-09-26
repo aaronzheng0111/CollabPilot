@@ -12,8 +12,8 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/follow_up.py`
-- `backend/src/starter_agent/infrastructure/campaign_store.py`
+- `backend/src/collabpilot/campaign/follow_up.py`
+- `backend/src/collabpilot/infrastructure/campaign_store.py`
 - `backend/tests/unit/test_follow_up.py`
 
 ## 本 Task 补充约束

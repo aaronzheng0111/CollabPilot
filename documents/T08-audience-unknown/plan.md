@@ -14,4 +14,4 @@
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/audience.py`
+- `backend/src/collabpilot/campaign/audience.py`

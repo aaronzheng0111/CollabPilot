@@ -43,5 +43,5 @@ Grill
 
 ## 模块
 
-- `backend/src/starter_agent/` 下新增 `campaign/goal.py`（校验与关键字段表）
+- `backend/src/collabpilot/` 下新增 `campaign/goal.py`（校验与关键字段表）
 - 系统提示补充：解析时只输出约定 JSON，不调用尚未注册的搜索工具

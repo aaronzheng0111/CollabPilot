@@ -22,6 +22,6 @@ id, session_id, status, parsed_goal_json, saved_ids_json, excluded_ids_json, upd
 
 ## 模块
 
-- `backend/src/starter_agent/infrastructure/campaign_store.py`
-- `backend/src/starter_agent/tools/builtin/save_campaign_selection.py`
-- `backend/src/starter_agent/tools/builtin/exclude_creator.py`
+- `backend/src/collabpilot/infrastructure/campaign_store.py`
+- `backend/src/collabpilot/tools/builtin/save_campaign_selection.py`
+- `backend/src/collabpilot/tools/builtin/exclude_creator.py`

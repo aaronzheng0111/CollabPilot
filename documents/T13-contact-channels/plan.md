@@ -22,5 +22,5 @@ SQLite 表 `creator_channels`：`campaign_id`、`creator_id`、`channel`、`conf
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/channels.py`
-- `backend/src/starter_agent/tools/builtin/confirm_channel.py`
+- `backend/src/collabpilot/campaign/channels.py`
+- `backend/src/collabpilot/tools/builtin/confirm_channel.py`

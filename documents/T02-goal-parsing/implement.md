@@ -13,7 +13,7 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/goal.py`（新）
+- `backend/src/collabpilot/campaign/goal.py`（新）
 - `backend/config/prompts/system.md` 或活动专用提示片段
 - `backend/tests/unit/test_parsed_goal.py`（新）
 

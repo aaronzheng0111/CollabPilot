@@ -13,7 +13,7 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/audience.py`
+- `backend/src/collabpilot/campaign/audience.py`
 - `backend/tests/unit/test_audience.py`
 
 

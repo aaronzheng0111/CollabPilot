@@ -13,8 +13,8 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/drafts.py`
-- `backend/src/starter_agent/infrastructure/campaign_store.py`（drafts 表）
+- `backend/src/collabpilot/campaign/drafts.py`
+- `backend/src/collabpilot/infrastructure/campaign_store.py`（drafts 表）
 - `backend/tests/unit/test_drafts.py`
 
 

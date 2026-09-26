@@ -13,9 +13,9 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/infrastructure/campaign_store.py`
-- `backend/src/starter_agent/tools/builtin/save_campaign_selection.py`
-- `backend/src/starter_agent/tools/builtin/exclude_creator.py`
+- `backend/src/collabpilot/infrastructure/campaign_store.py`
+- `backend/src/collabpilot/tools/builtin/save_campaign_selection.py`
+- `backend/src/collabpilot/tools/builtin/exclude_creator.py`
 - `backend/tests/integration/test_campaign_store.py`
 
 

@@ -14,5 +14,5 @@
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/verdict.py`
+- `backend/src/collabpilot/campaign/verdict.py`
 - 提示片段：要求 decision 只能是 fit/unfit/pending，必须引用 evidence id；fit 必须给出从 1 开始的连续 rank

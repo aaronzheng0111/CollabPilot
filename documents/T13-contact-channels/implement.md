@@ -11,9 +11,9 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/channels.py`
-- `backend/src/starter_agent/tools/builtin/confirm_channel.py`
-- `backend/src/starter_agent/infrastructure/campaign_store.py`
+- `backend/src/collabpilot/campaign/channels.py`
+- `backend/src/collabpilot/tools/builtin/confirm_channel.py`
+- `backend/src/collabpilot/infrastructure/campaign_store.py`
 - `backend/tests/unit/test_channels.py`
 
 ## 本 Task 补充约束

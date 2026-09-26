@@ -13,7 +13,7 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/keyword_mismatch.py`
+- `backend/src/collabpilot/campaign/keyword_mismatch.py`
 - `backend/tests/unit/test_keyword_mismatch.py`
 
 

@@ -35,6 +35,6 @@ MergedCreator
 
 ## 模块
 
-- `backend/src/starter_agent/tools/builtin/search_creators.py`
-- `backend/src/starter_agent/tools/builtin/get_creator.py`
-- `backend/src/starter_agent/campaign/mock_store.py`
+- `backend/src/collabpilot/tools/builtin/search_creators.py`
+- `backend/src/collabpilot/tools/builtin/get_creator.py`
+- `backend/src/collabpilot/campaign/mock_store.py`

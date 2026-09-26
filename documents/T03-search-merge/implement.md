@@ -13,10 +13,10 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/mock_store.py`
-- `backend/src/starter_agent/tools/builtin/search_creators.py`
-- `backend/src/starter_agent/tools/builtin/get_creator.py`
-- `backend/src/starter_agent/bootstrap.py`（注册工具）
+- `backend/src/collabpilot/campaign/mock_store.py`
+- `backend/src/collabpilot/tools/builtin/search_creators.py`
+- `backend/src/collabpilot/tools/builtin/get_creator.py`
+- `backend/src/collabpilot/bootstrap.py`（注册工具）
 - `backend/tests/unit/test_mock_store.py`
 
 

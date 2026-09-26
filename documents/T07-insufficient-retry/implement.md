@@ -13,7 +13,7 @@
 
 ## 允许修改
 
-- `backend/src/starter_agent/campaign/retry.py`
+- `backend/src/collabpilot/campaign/retry.py`
 - `backend/tests/unit/test_retry.py`
 
 

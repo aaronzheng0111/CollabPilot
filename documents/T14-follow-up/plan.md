@@ -20,4 +20,4 @@ T11 次级表展示 `next_step`、`channel`、`follow_status`。
 
 ## 模块
 
-- `backend/src/starter_agent/campaign/follow_up.py`
+- `backend/src/collabpilot/campaign/follow_up.py`
