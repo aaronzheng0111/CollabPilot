@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# backend runtime
+backend/.venv/
+backend/data/*.db
+backend/logs/*.jsonl
+backend/.env
+
+# mock generator
+tools/mockgen/node_modules/

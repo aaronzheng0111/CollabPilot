@@ -1,0 +1,3025 @@
+{
+  "meta": {
+    "is_mock": true,
+    "data_origin": "mock_seed",
+    "platform": "instagram",
+    "schema_version": "1.0",
+    "seed": 20260926,
+    "generated_at": "2026-09-26T00:00:00Z",
+    "mock_disclaimer": "本文件所有达人、帖子、合作、GPM 均为模拟数据。真实模型输出由 Demo 运行时生成，标记为 real_model_output。"
+  },
+  "brand": {
+    "brand_id": "brand_linguago",
+    "name": "LinguaGo AI 翻译",
+    "product": "AI 翻译工具",
+    "category": "AI 效率工具",
+    "target_audience": [
+      "中文用户",
+      "留学生",
+      "跨境从业者",
+      "内容创作者",
+      "职场人"
+    ],
+    "platform_preference": [
+      "tiktok",
+      "instagram"
+    ],
+    "key_features": [
+      "中英日韩互译",
+      "文档翻译",
+      "实时对话翻译",
+      "术语库"
+    ],
+    "tone": "专业、直接、重视效率",
+    "exclusion_rules": [
+      "已合作本品牌",
+      "纯语言教学",
+      "影视字幕剪辑",
+      "翻译梗娱乐",
+      "关键词命中但主题不匹配"
+    ],
+    "target_gpm": 20,
+    "data_origin": "mock_seed"
+  },
+  "scenario": {
+    "original_query": "为一款面向中文用户的AI翻译工具，找10位使用这个翻译工具的创作者。优先选择最近持续发布相关内容的人，排除已经合作过的账号。整理候选名单，并为最合适的3位准备合作邀请草稿。发送前让我审核。",
+    "parsed_goal": {
+      "brand": "LinguaGo AI 翻译",
+      "target_audience": [
+        "中文用户"
+      ],
+      "platform_preference": [
+        "tiktok",
+        "instagram"
+      ],
+      "target_count": 10,
+      "inclusion_criteria": [
+        "使用过该翻译工具",
+        "最近持续发布相关内容"
+      ],
+      "exclusion_criteria": [
+        "已经合作过的账号"
+      ],
+      "outreach_count": 3,
+      "needs_user_approval": true,
+      "target_gpm": 20
+    }
+  },
+  "search_snapshots": [
+    {
+      "snapshot_id": "search_ig_001",
+      "platform": "instagram",
+      "keyword": "AI翻译",
+      "hashtags": [
+        "#aitranslation",
+        "#productivity"
+      ],
+      "region": "US",
+      "date_range": {
+        "start": "2026-08-01",
+        "end": "2026-09-26"
+      },
+      "total_results": 120,
+      "returned_creator_ids": [
+        "creator_001",
+        "creator_002",
+        "creator_003",
+        "creator_004",
+        "creator_005",
+        "creator_006",
+        "creator_007",
+        "creator_008"
+      ],
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_search_ig_001",
+        "latency_ms": 210,
+        "origin": "mock_api_response",
+        "limitations": [
+          "GPM 需商业授权",
+          "受众画像仅返回聚合数据"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "api_error_ig_001",
+      "platform": "instagram",
+      "keyword": "AI翻译",
+      "hashtags": [
+        "#aitranslation"
+      ],
+      "region": "US",
+      "date_range": {
+        "start": "2026-08-01",
+        "end": "2026-09-26"
+      },
+      "total_results": 0,
+      "returned_creator_ids": [],
+      "status": "error",
+      "status_code": 401,
+      "request_id": "mock_req_error_ig_001",
+      "api_response": {
+        "status": "error",
+        "status_code": 401,
+        "request_id": "mock_req_error_ig_001",
+        "latency_ms": 95,
+        "origin": "mock_api_response",
+        "limitations": [
+          "OAuth token expired",
+          "data unavailable"
+        ],
+        "error_message": "Unauthorized: OAuth token expired"
+      },
+      "data_origin": "mock_api_response",
+      "limitations": [
+        "OAuth token expired",
+        "data unavailable"
+      ]
+    }
+  ],
+  "account_connection_snapshots": [
+    {
+      "snapshot_id": "connect_ig_001",
+      "platform": "instagram",
+      "creator_id": "creator_001",
+      "username": "lingua.amy",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_ig_001",
+        "latency_ms": 200,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "connect_ig_002",
+      "platform": "instagram",
+      "creator_id": "creator_002",
+      "username": "crossborder.ben",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_ig_002",
+        "latency_ms": 220,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "connect_ig_003",
+      "platform": "instagram",
+      "creator_id": "creator_003",
+      "username": "work.cora",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_ig_003",
+        "latency_ms": 240,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    }
+  ],
+  "creators": [
+    {
+      "creator_id": "creator_001",
+      "display_name": "Amy学翻译",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@lingua.amy",
+      "profile": {
+        "ig_id": "ig_uid_001",
+        "username": "lingua.amy",
+        "name": "Amy学翻译",
+        "biography": "AI工具、翻译、跨境",
+        "followers_count": 143051,
+        "follows_count": 621,
+        "media_count": 309,
+        "website": "mock://instagram/lingua.amy",
+        "profile_picture_url": "mock://cdn/instagram/avatar_001.jpg"
+      },
+      "content_topics": [
+        "AI工具",
+        "翻译",
+        "跨境"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "AI工具",
+          "翻译",
+          "跨境"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 42751,
+        "engagement_rate_30d": 0.067,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 22812.3,
+        "impressions_30d": 760410,
+        "currency": "USD",
+        "units_sold_30d": 102,
+        "gmv_per_buyer": 223.7,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 30
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_001_1",
+          "media_url": "mock://instagram/p/001_1",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/001_1",
+          "media_type": "VIDEO",
+          "like_count": 1324,
+          "comments_count": 177,
+          "timestamp": "2026-09-24T11:00:00Z"
+        },
+        {
+          "id": "ig_media_001_2",
+          "media_url": "mock://instagram/p/001_2",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/001_2",
+          "media_type": "IMAGE",
+          "like_count": 9478,
+          "comments_count": 234,
+          "timestamp": "2026-09-23T12:00:00Z"
+        },
+        {
+          "id": "ig_media_001_3",
+          "media_url": "mock://instagram/p/001_3",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/001_3",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 3268,
+          "comments_count": 349,
+          "timestamp": "2026-09-22T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_001_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "ig_media_001_1",
+          "confidence": 0.86,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_001_other_1",
+          "brand_name": "Mock跨境助手",
+          "product": "跨境ERP插件",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 3,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 74729,
+            "engagement_rate": 0.058,
+            "gmv": 8559,
+            "impressions": 585698,
+            "gpm": 14.6
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator001_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "own_brand_user",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_001",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_002",
+      "display_name": "跨境效率Ben",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@crossborder.ben",
+      "profile": {
+        "ig_id": "ig_uid_002",
+        "username": "crossborder.ben",
+        "name": "跨境效率Ben",
+        "biography": "跨境电商、AI工具、效率",
+        "followers_count": 281420,
+        "follows_count": 289,
+        "media_count": 339,
+        "website": "mock://instagram/crossborder.ben",
+        "profile_picture_url": "mock://cdn/instagram/avatar_002.jpg"
+      },
+      "content_topics": [
+        "跨境电商",
+        "AI工具",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "跨境电商",
+          "AI工具",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 98380,
+        "engagement_rate_30d": 0.038,
+        "growth_rate_30d": 0.22,
+        "gmv_30d": 14580.2,
+        "impressions_30d": 648009,
+        "currency": "USD",
+        "units_sold_30d": 153,
+        "gmv_per_buyer": 95.3,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 22.5
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_002_1",
+          "media_url": "mock://instagram/p/002_1",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/002_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 7540,
+          "comments_count": 166,
+          "timestamp": "2026-09-23T11:00:00Z"
+        },
+        {
+          "id": "ig_media_002_2",
+          "media_url": "mock://instagram/p/002_2",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/002_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 10149,
+          "comments_count": 324,
+          "timestamp": "2026-09-22T12:00:00Z"
+        },
+        {
+          "id": "ig_media_002_3",
+          "media_url": "mock://instagram/p/002_3",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/002_3",
+          "media_type": "REELS",
+          "like_count": 2986,
+          "comments_count": 61,
+          "timestamp": "2026-09-21T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_002_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "ig_media_002_1",
+          "confidence": 0.8,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_002_other_1",
+          "brand_name": "Mock效率本",
+          "product": "跨境ERP插件",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 3,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.8,
+          "performance": {
+            "play_count": 101708,
+            "engagement_rate": 0.068,
+            "gmv": 8407,
+            "impressions": 315146,
+            "gpm": 26.7
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator002_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_002",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_003",
+      "display_name": "职场翻译Cora",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@work.cora",
+      "profile": {
+        "ig_id": "ig_uid_003",
+        "username": "work.cora",
+        "name": "职场翻译Cora",
+        "biography": "职场、文档翻译、AI工具",
+        "followers_count": 198737,
+        "follows_count": 1054,
+        "media_count": 375,
+        "website": "mock://instagram/work.cora",
+        "profile_picture_url": "mock://cdn/instagram/avatar_003.jpg"
+      },
+      "content_topics": [
+        "职场",
+        "文档翻译",
+        "AI工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "职场",
+          "文档翻译",
+          "AI工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 81980,
+        "engagement_rate_30d": 0.083,
+        "growth_rate_30d": 0.14,
+        "gmv_30d": 14014.2,
+        "impressions_30d": 718676,
+        "currency": "USD",
+        "units_sold_30d": 173,
+        "gmv_per_buyer": 81,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 19.5
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_003_1",
+          "media_url": "mock://instagram/p/003_1",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/003_1",
+          "media_type": "REELS",
+          "like_count": 643,
+          "comments_count": 483,
+          "timestamp": "2026-09-22T11:00:00Z"
+        },
+        {
+          "id": "ig_media_003_2",
+          "media_url": "mock://instagram/p/003_2",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/003_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 6044,
+          "comments_count": 103,
+          "timestamp": "2026-09-21T12:00:00Z"
+        },
+        {
+          "id": "ig_media_003_3",
+          "media_url": "mock://instagram/p/003_3",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/003_3",
+          "media_type": "IMAGE",
+          "like_count": 6926,
+          "comments_count": 127,
+          "timestamp": "2026-09-20T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_003_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "ig_media_003_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_003_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "会议纪要工具",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.8,
+          "performance": {
+            "play_count": 60789,
+            "engagement_rate": 0.07,
+            "gmv": 8914,
+            "impressions": 589153,
+            "gpm": 15.1
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator003_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_003",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_004",
+      "display_name": "留学沟通Derek",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@study.derek",
+      "profile": {
+        "ig_id": "ig_uid_004",
+        "username": "study.derek",
+        "name": "留学沟通Derek",
+        "biography": "留学、实时对话、翻译工具",
+        "followers_count": 207774,
+        "follows_count": 964,
+        "media_count": 199,
+        "website": "mock://instagram/study.derek",
+        "profile_picture_url": "mock://cdn/instagram/avatar_004.jpg"
+      },
+      "content_topics": [
+        "留学",
+        "实时对话",
+        "翻译工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "留学",
+          "实时对话",
+          "翻译工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 53220,
+        "engagement_rate_30d": 0.084,
+        "growth_rate_30d": 0.15,
+        "gmv_30d": 4141.2,
+        "impressions_30d": 240767,
+        "currency": "USD",
+        "units_sold_30d": 577,
+        "gmv_per_buyer": 7.2,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 17.2
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_004_1",
+          "media_url": "mock://instagram/p/004_1",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/004_1",
+          "media_type": "REELS",
+          "like_count": 393,
+          "comments_count": 426,
+          "timestamp": "2026-09-21T11:00:00Z"
+        },
+        {
+          "id": "ig_media_004_2",
+          "media_url": "mock://instagram/p/004_2",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/004_2",
+          "media_type": "REELS",
+          "like_count": 8813,
+          "comments_count": 291,
+          "timestamp": "2026-09-20T12:00:00Z"
+        },
+        {
+          "id": "ig_media_004_3",
+          "media_url": "mock://instagram/p/004_3",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/004_3",
+          "media_type": "REELS",
+          "like_count": 762,
+          "comments_count": 326,
+          "timestamp": "2026-09-19T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_004_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "source_post_id": "ig_media_004_1",
+          "confidence": 0.74,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_004_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "会议纪要工具",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 7,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 69424,
+            "engagement_rate": 0.06,
+            "gmv": 8857,
+            "impressions": 528977,
+            "gpm": 16.7
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator004_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_004",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_005",
+      "display_name": "术语库Eva",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@termbase.eva",
+      "profile": {
+        "ig_id": "ig_uid_005",
+        "username": "termbase.eva",
+        "name": "术语库Eva",
+        "biography": "术语库、合同翻译、效率",
+        "followers_count": 207143,
+        "follows_count": 699,
+        "media_count": 239,
+        "website": "mock://instagram/termbase.eva",
+        "profile_picture_url": "mock://cdn/instagram/avatar_005.jpg"
+      },
+      "content_topics": [
+        "术语库",
+        "合同翻译",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "术语库",
+          "合同翻译",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 37281,
+        "engagement_rate_30d": 0.073,
+        "growth_rate_30d": 0.19,
+        "gmv_30d": 22182.4,
+        "impressions_30d": 849901,
+        "currency": "USD",
+        "units_sold_30d": 400,
+        "gmv_per_buyer": 55.5,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 26.1
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_005_1",
+          "media_url": "mock://instagram/p/005_1",
+          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "permalink": "mock://instagram/p/005_1",
+          "media_type": "REELS",
+          "like_count": 1750,
+          "comments_count": 131,
+          "timestamp": "2026-09-25T11:00:00Z"
+        },
+        {
+          "id": "ig_media_005_2",
+          "media_url": "mock://instagram/p/005_2",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/005_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 5321,
+          "comments_count": 60,
+          "timestamp": "2026-09-24T12:00:00Z"
+        },
+        {
+          "id": "ig_media_005_3",
+          "media_url": "mock://instagram/p/005_3",
+          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "permalink": "mock://instagram/p/005_3",
+          "media_type": "REELS",
+          "like_count": 3970,
+          "comments_count": 52,
+          "timestamp": "2026-09-23T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_005_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_ended",
+          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "source_post_id": "ig_media_005_1",
+          "confidence": 0.71,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_005_other_1",
+          "brand_name": "Mock跨境助手",
+          "product": "笔记软件",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 7,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 35170,
+            "engagement_rate": 0.047,
+            "gmv": 12298,
+            "impressions": 461279,
+            "gpm": 26.7
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        },
+        {
+          "cooperation_id": "coop_ig_005_comp_ended",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_ended",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-03-01",
+          "sample_received_at": "2026-03-03",
+          "content_published_at": "2026-03-10",
+          "turnaround_days": 7,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.4,
+          "performance": {
+            "play_count": 61272,
+            "engagement_rate": 0.055,
+            "gmv": 10617,
+            "impressions": 355198,
+            "gpm": 29.9
+          },
+          "notes": "竞品合作已结束，可尝试触达",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator005_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_005",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_006",
+      "display_name": "多产品测评Frank",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@tools.frank",
+      "profile": {
+        "ig_id": "ig_uid_006",
+        "username": "tools.frank",
+        "name": "多产品测评Frank",
+        "biography": "AI工具测评、翻译、效率对比",
+        "followers_count": 57549,
+        "follows_count": 680,
+        "media_count": 378,
+        "website": "mock://instagram/tools.frank",
+        "profile_picture_url": "mock://cdn/instagram/avatar_006.jpg"
+      },
+      "content_topics": [
+        "AI工具测评",
+        "翻译",
+        "效率对比"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "AI工具测评",
+          "翻译",
+          "效率对比"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 20426,
+        "engagement_rate_30d": 0.088,
+        "growth_rate_30d": 0.14,
+        "gmv_30d": 4292.7,
+        "impressions_30d": 238483,
+        "currency": "USD",
+        "units_sold_30d": 391,
+        "gmv_per_buyer": 11,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 18
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_006_1",
+          "media_url": "mock://instagram/p/006_1",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/006_1",
+          "media_type": "IMAGE",
+          "like_count": 3985,
+          "comments_count": 382,
+          "timestamp": "2026-09-24T11:00:00Z"
+        },
+        {
+          "id": "ig_media_006_2",
+          "media_url": "mock://instagram/p/006_2",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/006_2",
+          "media_type": "VIDEO",
+          "like_count": 11637,
+          "comments_count": 175,
+          "timestamp": "2026-09-23T12:00:00Z"
+        },
+        {
+          "id": "ig_media_006_3",
+          "media_url": "mock://instagram/p/006_3",
+          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "permalink": "mock://instagram/p/006_3",
+          "media_type": "REELS",
+          "like_count": 6911,
+          "comments_count": 159,
+          "timestamp": "2026-09-22T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_006_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "ig_media_006_1",
+          "confidence": 0.71,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_006_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "会议纪要工具",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 7,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 110259,
+            "engagement_rate": 0.072,
+            "gmv": 7984,
+            "impressions": 447475,
+            "gpm": 17.8
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator006_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "multi_product_neutral",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_006",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_007",
+      "display_name": "新人Grace译",
+      "is_new_creator": true,
+      "platform": "instagram",
+      "handle": "@new.grace",
+      "profile": {
+        "ig_id": "ig_uid_007",
+        "username": "new.grace",
+        "name": "新人Grace译",
+        "biography": "AI翻译、留学生活、效率",
+        "followers_count": 202605,
+        "follows_count": 619,
+        "media_count": 126,
+        "website": "mock://instagram/new.grace",
+        "profile_picture_url": "mock://cdn/instagram/avatar_007.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "留学生活",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "male_45",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "AI翻译",
+          "留学生活",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 72522,
+        "engagement_rate_30d": 0.064,
+        "growth_rate_30d": 0.2,
+        "gmv_30d": 9640.3,
+        "impressions_30d": 714099,
+        "currency": "USD",
+        "units_sold_30d": 333,
+        "gmv_per_buyer": 28.9,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 13.5
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_007_1",
+          "media_url": "mock://instagram/p/007_1",
+          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "permalink": "mock://instagram/p/007_1",
+          "media_type": "IMAGE",
+          "like_count": 11058,
+          "comments_count": 235,
+          "timestamp": "2026-09-23T11:00:00Z"
+        },
+        {
+          "id": "ig_media_007_2",
+          "media_url": "mock://instagram/p/007_2",
+          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "permalink": "mock://instagram/p/007_2",
+          "media_type": "REELS",
+          "like_count": 3939,
+          "comments_count": 323,
+          "timestamp": "2026-09-22T12:00:00Z"
+        },
+        {
+          "id": "ig_media_007_3",
+          "media_url": "mock://instagram/p/007_3",
+          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "permalink": "mock://instagram/p/007_3",
+          "media_type": "REELS",
+          "like_count": 10532,
+          "comments_count": 304,
+          "timestamp": "2026-09-21T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_007_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "source_post_id": "ig_media_007_1",
+          "confidence": 0.76,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator007_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "new_creator",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_007",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_008",
+      "display_name": "跨境Hank",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@cb.hanks",
+      "profile": {
+        "ig_id": "ig_uid_008",
+        "username": "cb.hanks",
+        "name": "跨境Hank",
+        "biography": "跨境、中日韩互译、办公",
+        "followers_count": 30109,
+        "follows_count": 876,
+        "media_count": 101,
+        "website": "mock://instagram/cb.hanks",
+        "profile_picture_url": "mock://cdn/instagram/avatar_008.jpg"
+      },
+      "content_topics": [
+        "跨境",
+        "中日韩互译",
+        "办公"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "male_45",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "跨境",
+          "中日韩互译",
+          "办公"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 40961,
+        "engagement_rate_30d": 0.088,
+        "growth_rate_30d": 0.39,
+        "gmv_30d": 20065.9,
+        "impressions_30d": 716638,
+        "currency": "USD",
+        "units_sold_30d": 103,
+        "gmv_per_buyer": 194.8,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 28
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_008_1",
+          "media_url": "mock://instagram/p/008_1",
+          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "permalink": "mock://instagram/p/008_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 10803,
+          "comments_count": 349,
+          "timestamp": "2026-09-22T11:00:00Z"
+        },
+        {
+          "id": "ig_media_008_2",
+          "media_url": "mock://instagram/p/008_2",
+          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "permalink": "mock://instagram/p/008_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 2243,
+          "comments_count": 267,
+          "timestamp": "2026-09-21T12:00:00Z"
+        },
+        {
+          "id": "ig_media_008_3",
+          "media_url": "mock://instagram/p/008_3",
+          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "permalink": "mock://instagram/p/008_3",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 11693,
+          "comments_count": 306,
+          "timestamp": "2026-09-20T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_008_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "source_post_id": "ig_media_008_1",
+          "confidence": 0.89,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_008_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "笔记软件",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 3,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 41184,
+            "engagement_rate": 0.061,
+            "gmv": 4018,
+            "impressions": 397550,
+            "gpm": 10.1
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator008_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "gpm_known",
+        "similar_product_user",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_008",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_009",
+      "display_name": "效率Iris",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@eff.iris",
+      "profile": {
+        "ig_id": "ig_uid_009",
+        "username": "eff.iris",
+        "name": "效率Iris",
+        "biography": "职场效率、文档翻译、AI",
+        "followers_count": 295161,
+        "follows_count": 656,
+        "media_count": 292,
+        "website": "mock://instagram/eff.iris",
+        "profile_picture_url": "mock://cdn/instagram/avatar_009.jpg"
+      },
+      "content_topics": [
+        "职场效率",
+        "文档翻译",
+        "AI"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_60",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "职场效率",
+          "文档翻译",
+          "AI"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 31243,
+        "engagement_rate_30d": 0.076,
+        "growth_rate_30d": 0.24,
+        "gmv_30d": 4278.6,
+        "impressions_30d": 264111,
+        "currency": "USD",
+        "units_sold_30d": 497,
+        "gmv_per_buyer": 8.6,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 16.2
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_009_1",
+          "media_url": "mock://instagram/p/009_1",
+          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "permalink": "mock://instagram/p/009_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 9435,
+          "comments_count": 483,
+          "timestamp": "2026-09-21T11:00:00Z"
+        },
+        {
+          "id": "ig_media_009_2",
+          "media_url": "mock://instagram/p/009_2",
+          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "permalink": "mock://instagram/p/009_2",
+          "media_type": "IMAGE",
+          "like_count": 5837,
+          "comments_count": 455,
+          "timestamp": "2026-09-20T12:00:00Z"
+        },
+        {
+          "id": "ig_media_009_3",
+          "media_url": "mock://instagram/p/009_3",
+          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "permalink": "mock://instagram/p/009_3",
+          "media_type": "VIDEO",
+          "like_count": 5915,
+          "comments_count": 466,
+          "timestamp": "2026-09-19T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_009_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "source_post_id": "ig_media_009_1",
+          "confidence": 0.84,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_009_other_1",
+          "brand_name": "Mock效率本",
+          "product": "会议纪要工具",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 6,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.9,
+          "performance": {
+            "play_count": 116933,
+            "engagement_rate": 0.062,
+            "gmv": 6257,
+            "impressions": 339037,
+            "gpm": 18.5
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator009_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_ig_009",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_010",
+      "display_name": "竞品合作Jake",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@comp.jake",
+      "profile": {
+        "ig_id": "ig_uid_010",
+        "username": "comp.jake",
+        "name": "竞品合作Jake",
+        "biography": "AI翻译、工具推荐",
+        "followers_count": 137682,
+        "follows_count": 972,
+        "media_count": 58,
+        "website": "mock://instagram/comp.jake",
+        "profile_picture_url": "mock://cdn/instagram/avatar_010.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "工具推荐"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "AI翻译",
+          "工具推荐"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 89108,
+        "engagement_rate_30d": 0.069,
+        "growth_rate_30d": 0.14,
+        "gmv_30d": 18423.6,
+        "impressions_30d": 526389,
+        "currency": "USD",
+        "units_sold_30d": 588,
+        "gmv_per_buyer": 31.3,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 35
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_010_1",
+          "media_url": "mock://instagram/p/010_1",
+          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "permalink": "mock://instagram/p/010_1",
+          "media_type": "REELS",
+          "like_count": 4076,
+          "comments_count": 359,
+          "timestamp": "2026-09-25T11:00:00Z"
+        },
+        {
+          "id": "ig_media_010_2",
+          "media_url": "mock://instagram/p/010_2",
+          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "permalink": "mock://instagram/p/010_2",
+          "media_type": "VIDEO",
+          "like_count": 10037,
+          "comments_count": 291,
+          "timestamp": "2026-09-24T12:00:00Z"
+        },
+        {
+          "id": "ig_media_010_3",
+          "media_url": "mock://instagram/p/010_3",
+          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "permalink": "mock://instagram/p/010_3",
+          "media_type": "VIDEO",
+          "like_count": 2170,
+          "comments_count": 179,
+          "timestamp": "2026-09-23T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_010_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_active",
+          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "source_post_id": "ig_media_010_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_010_comp_active",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_active",
+          "exclusivity_risk": "possible",
+          "sample_sent_at": "2026-08-01",
+          "sample_received_at": "2026-08-02",
+          "content_published_at": "2026-08-06",
+          "turnaround_days": 4,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.2,
+          "performance": {
+            "play_count": 59371,
+            "engagement_rate": 0.048,
+            "gmv": 3926,
+            "impressions": 666862,
+            "gpm": 5.9
+          },
+          "notes": "竞品合作中，排他条款未知",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator010_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "competitor_active",
+        "competitor_exclusivity_unknown",
+        "gpm_known",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "竞品深度合作中，排他风险未知，需人工确认"
+      },
+      "raw_api_snapshot_ref": "search_ig_010",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_014",
+      "display_name": "留学申请Nina",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@apply.nina",
+      "profile": {
+        "ig_id": "ig_uid_014",
+        "username": "apply.nina",
+        "name": "留学申请Nina",
+        "biography": "留学申请、文书、选校",
+        "followers_count": 38283,
+        "follows_count": 188,
+        "media_count": 308,
+        "website": "mock://instagram/apply.nina",
+        "profile_picture_url": "mock://cdn/instagram/avatar_014.jpg"
+      },
+      "content_topics": [
+        "留学申请",
+        "文书",
+        "选校"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "留学申请",
+          "文书",
+          "选校"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 115427,
+        "engagement_rate_30d": 0.042,
+        "growth_rate_30d": 0.31,
+        "gmv_30d": 8329.7,
+        "impressions_30d": 337234,
+        "currency": "USD",
+        "units_sold_30d": 485,
+        "gmv_per_buyer": 17.2,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 24.7
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_014_1",
+          "media_url": "mock://instagram/p/014_1",
+          "caption": "昵称含留学，内容为留学申请",
+          "permalink": "mock://instagram/p/014_1",
+          "media_type": "IMAGE",
+          "like_count": 8771,
+          "comments_count": 166,
+          "timestamp": "2026-09-21T11:00:00Z"
+        },
+        {
+          "id": "ig_media_014_2",
+          "media_url": "mock://instagram/p/014_2",
+          "caption": "昵称含留学，内容为留学申请",
+          "permalink": "mock://instagram/p/014_2",
+          "media_type": "IMAGE",
+          "like_count": 1160,
+          "comments_count": 269,
+          "timestamp": "2026-09-20T12:00:00Z"
+        },
+        {
+          "id": "ig_media_014_3",
+          "media_url": "mock://instagram/p/014_3",
+          "caption": "昵称含留学，内容为留学申请",
+          "permalink": "mock://instagram/p/014_3",
+          "media_type": "IMAGE",
+          "like_count": 4381,
+          "comments_count": 354,
+          "timestamp": "2026-09-19T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_014_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "昵称含留学，内容为留学申请",
+          "source_post_id": "ig_media_014_1",
+          "confidence": 0.35,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator014_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "昵称含留学，内容为留学申请"
+      },
+      "raw_api_snapshot_ref": "search_ig_014",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_015",
+      "display_name": "小语种备考Owen",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@lang.exam.owen",
+      "profile": {
+        "ig_id": "ig_uid_015",
+        "username": "lang.exam.owen",
+        "name": "小语种备考Owen",
+        "biography": "日语N1、韩语TOPIK、语言考试",
+        "followers_count": 234056,
+        "follows_count": 574,
+        "media_count": 250,
+        "website": "mock://instagram/lang.exam.owen",
+        "profile_picture_url": "mock://cdn/instagram/avatar_015.jpg"
+      },
+      "content_topics": [
+        "日语N1",
+        "韩语TOPIK",
+        "语言考试"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "日语N1",
+          "韩语TOPIK",
+          "语言考试"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 41063,
+        "engagement_rate_30d": 0.041,
+        "growth_rate_30d": 0.17,
+        "gmv_30d": 4569.7,
+        "impressions_30d": 215552,
+        "currency": "USD",
+        "units_sold_30d": 316,
+        "gmv_per_buyer": 14.5,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 21.2
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_015_1",
+          "media_url": "mock://instagram/p/015_1",
+          "caption": "本期字幕剪辑花絮",
+          "permalink": "mock://instagram/p/015_1",
+          "media_type": "VIDEO",
+          "like_count": 6456,
+          "comments_count": 266,
+          "timestamp": "2026-09-25T11:00:00Z"
+        },
+        {
+          "id": "ig_media_015_2",
+          "media_url": "mock://instagram/p/015_2",
+          "caption": "雅思阅读技巧分享",
+          "permalink": "mock://instagram/p/015_2",
+          "media_type": "IMAGE",
+          "like_count": 10224,
+          "comments_count": 364,
+          "timestamp": "2026-09-24T12:00:00Z"
+        },
+        {
+          "id": "ig_media_015_3",
+          "media_url": "mock://instagram/p/015_3",
+          "caption": "本期字幕剪辑花絮",
+          "permalink": "mock://instagram/p/015_3",
+          "media_type": "IMAGE",
+          "like_count": 353,
+          "comments_count": 177,
+          "timestamp": "2026-09-23T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_015_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "昵称含小语种，内容为语言考试",
+          "source_post_id": "ig_media_015_1",
+          "confidence": 0.35,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator015_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "昵称含小语种，内容为语言考试"
+      },
+      "raw_api_snapshot_ref": "search_ig_015",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_018",
+      "display_name": "已合作Rita",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@done.rita",
+      "profile": {
+        "ig_id": "ig_uid_018",
+        "username": "done.rita",
+        "name": "已合作Rita",
+        "biography": "职场、文档翻译",
+        "followers_count": 271592,
+        "follows_count": 933,
+        "media_count": 144,
+        "website": "mock://instagram/done.rita",
+        "profile_picture_url": "mock://cdn/instagram/avatar_018.jpg"
+      },
+      "content_topics": [
+        "职场",
+        "文档翻译"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_55",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "职场",
+          "文档翻译"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 80916,
+        "engagement_rate_30d": 0.052,
+        "growth_rate_30d": 0.09,
+        "gmv_30d": 5118.5,
+        "impressions_30d": 284363,
+        "currency": "USD",
+        "units_sold_30d": 483,
+        "gmv_per_buyer": 10.6,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 18
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_018_1",
+          "media_url": "mock://instagram/p/018_1",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/018_1",
+          "media_type": "REELS",
+          "like_count": 2895,
+          "comments_count": 476,
+          "timestamp": "2026-09-22T11:00:00Z"
+        },
+        {
+          "id": "ig_media_018_2",
+          "media_url": "mock://instagram/p/018_2",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/018_2",
+          "media_type": "IMAGE",
+          "like_count": 9058,
+          "comments_count": 102,
+          "timestamp": "2026-09-21T12:00:00Z"
+        },
+        {
+          "id": "ig_media_018_3",
+          "media_url": "mock://instagram/p/018_3",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/018_3",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 9371,
+          "comments_count": 265,
+          "timestamp": "2026-09-20T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_018_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_cooperation",
+          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "source_post_id": "ig_media_018_1",
+          "confidence": 0.91,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_018_brand_1",
+          "brand_name": "LinguaGo AI 翻译",
+          "product": "AI 翻译工具",
+          "platform": "instagram",
+          "is_current_brand": true,
+          "product_relation": "own_brand_cooperation",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-06-01",
+          "sample_received_at": "2026-06-03",
+          "content_published_at": "2026-06-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 41151,
+            "engagement_rate": 0.071,
+            "gmv": 9733,
+            "impressions": 449049,
+            "gpm": 21.7
+          },
+          "notes": "已与本品牌完成合作，再次触达应排除",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator018_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "own_brand_cooperated",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "exclude",
+        "expected_reason": "已合作本品牌，硬排除"
+      },
+      "raw_api_snapshot_ref": "search_ig_018",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_019",
+      "display_name": "已合作Sam",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@done.sam",
+      "profile": {
+        "ig_id": "ig_uid_019",
+        "username": "done.sam",
+        "name": "已合作Sam",
+        "biography": "留学生、AI工具",
+        "followers_count": 36167,
+        "follows_count": 627,
+        "media_count": 421,
+        "website": "mock://instagram/done.sam",
+        "profile_picture_url": "mock://cdn/instagram/avatar_019.jpg"
+      },
+      "content_topics": [
+        "留学生",
+        "AI工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "留学生",
+          "AI工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 98244,
+        "engagement_rate_30d": 0.055,
+        "growth_rate_30d": 0.21,
+        "gmv_30d": 10011,
+        "impressions_30d": 366705,
+        "currency": "USD",
+        "units_sold_30d": 210,
+        "gmv_per_buyer": 47.7,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 27.3
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_019_1",
+          "media_url": "mock://instagram/p/019_1",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/019_1",
+          "media_type": "IMAGE",
+          "like_count": 4445,
+          "comments_count": 481,
+          "timestamp": "2026-09-21T11:00:00Z"
+        },
+        {
+          "id": "ig_media_019_2",
+          "media_url": "mock://instagram/p/019_2",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/019_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 5188,
+          "comments_count": 74,
+          "timestamp": "2026-09-20T12:00:00Z"
+        },
+        {
+          "id": "ig_media_019_3",
+          "media_url": "mock://instagram/p/019_3",
+          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "permalink": "mock://instagram/p/019_3",
+          "media_type": "VIDEO",
+          "like_count": 10237,
+          "comments_count": 127,
+          "timestamp": "2026-09-19T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_019_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_cooperation",
+          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "source_post_id": "ig_media_019_1",
+          "confidence": 0.78,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_019_brand_1",
+          "brand_name": "LinguaGo AI 翻译",
+          "product": "AI 翻译工具",
+          "platform": "instagram",
+          "is_current_brand": true,
+          "product_relation": "own_brand_cooperation",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-06-01",
+          "sample_received_at": "2026-06-03",
+          "content_published_at": "2026-06-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 96037,
+            "engagement_rate": 0.079,
+            "gmv": 12583,
+            "impressions": 339449,
+            "gpm": 37.1
+          },
+          "notes": "已与本品牌完成合作，再次触达应排除",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator019_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "own_brand_cooperated",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "exclude",
+        "expected_reason": "已合作本品牌，硬排除"
+      },
+      "raw_api_snapshot_ref": "search_ig_019",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_022",
+      "display_name": "画像缺失Vince",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@unk.vince",
+      "profile": {
+        "ig_id": "ig_uid_022",
+        "username": "unk.vince",
+        "name": "画像缺失Vince",
+        "biography": "职场、翻译工具",
+        "followers_count": 184699,
+        "follows_count": 664,
+        "media_count": 424,
+        "website": "mock://instagram/unk.vince",
+        "profile_picture_url": "mock://cdn/instagram/avatar_022.jpg"
+      },
+      "content_topics": [
+        "职场",
+        "翻译工具"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 37958,
+        "engagement_rate_30d": 0.029,
+        "growth_rate_30d": 0.18,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "gpm_30d": null
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_022_1",
+          "media_url": "mock://instagram/p/022_1",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/022_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 4474,
+          "comments_count": 419,
+          "timestamp": "2026-09-23T11:00:00Z"
+        },
+        {
+          "id": "ig_media_022_2",
+          "media_url": "mock://instagram/p/022_2",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/022_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 11124,
+          "comments_count": 208,
+          "timestamp": "2026-09-22T12:00:00Z"
+        },
+        {
+          "id": "ig_media_022_3",
+          "media_url": "mock://instagram/p/022_3",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/022_3",
+          "media_type": "REELS",
+          "like_count": 3194,
+          "comments_count": 441,
+          "timestamp": "2026-09-21T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_022_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "source_post_id": "ig_media_022_1",
+          "confidence": 0.91,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator022_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown",
+        "gpm_unknown",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "受众画像缺失，降权待确认，不编造受众"
+      },
+      "raw_api_snapshot_ref": "search_ig_022",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_023",
+      "display_name": "画像缺失Wendy",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@unk.wendy",
+      "profile": {
+        "ig_id": "ig_uid_023",
+        "username": "unk.wendy",
+        "name": "画像缺失Wendy",
+        "biography": "AI翻译、留学生",
+        "followers_count": 137436,
+        "follows_count": 732,
+        "media_count": 387,
+        "website": "mock://instagram/unk.wendy",
+        "profile_picture_url": "mock://cdn/instagram/avatar_023.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "留学生"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 37863,
+        "engagement_rate_30d": 0.03,
+        "growth_rate_30d": 0.1,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "gpm_30d": null
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_023_1",
+          "media_url": "mock://instagram/p/023_1",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/023_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 11115,
+          "comments_count": 129,
+          "timestamp": "2026-09-22T11:00:00Z"
+        },
+        {
+          "id": "ig_media_023_2",
+          "media_url": "mock://instagram/p/023_2",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/023_2",
+          "media_type": "IMAGE",
+          "like_count": 5405,
+          "comments_count": 452,
+          "timestamp": "2026-09-21T12:00:00Z"
+        },
+        {
+          "id": "ig_media_023_3",
+          "media_url": "mock://instagram/p/023_3",
+          "caption": "分享了一款AI翻译工具的使用体验",
+          "permalink": "mock://instagram/p/023_3",
+          "media_type": "IMAGE",
+          "like_count": 1606,
+          "comments_count": 69,
+          "timestamp": "2026-09-20T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_023_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_user",
+          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "source_post_id": "ig_media_023_1",
+          "confidence": 0.8,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator023_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown",
+        "gpm_unknown",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "受众画像缺失，降权待确认，不编造受众"
+      },
+      "raw_api_snapshot_ref": "search_ig_023",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_026",
+      "display_name": "新人Zack跨境",
+      "is_new_creator": true,
+      "platform": "instagram",
+      "handle": "@new.zack",
+      "profile": {
+        "ig_id": "ig_uid_026",
+        "username": "new.zack",
+        "name": "新人Zack跨境",
+        "biography": "跨境沟通、中英互译",
+        "followers_count": 197169,
+        "follows_count": 953,
+        "media_count": 451,
+        "website": "mock://instagram/new.zack",
+        "profile_picture_url": "mock://cdn/instagram/avatar_026.jpg"
+      },
+      "content_topics": [
+        "跨境沟通",
+        "中英互译"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "跨境沟通",
+          "中英互译"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 60573,
+        "engagement_rate_30d": 0.065,
+        "growth_rate_30d": 0.18,
+        "gmv_30d": 19127,
+        "impressions_30d": 831607,
+        "currency": "USD",
+        "units_sold_30d": 164,
+        "gmv_per_buyer": 116.6,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 23
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_026_1",
+          "media_url": "mock://instagram/p/026_1",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/026_1",
+          "media_type": "VIDEO",
+          "like_count": 7065,
+          "comments_count": 420,
+          "timestamp": "2026-09-24T11:00:00Z"
+        },
+        {
+          "id": "ig_media_026_2",
+          "media_url": "mock://instagram/p/026_2",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/026_2",
+          "media_type": "IMAGE",
+          "like_count": 1790,
+          "comments_count": 148,
+          "timestamp": "2026-09-23T12:00:00Z"
+        },
+        {
+          "id": "ig_media_026_3",
+          "media_url": "mock://instagram/p/026_3",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/026_3",
+          "media_type": "IMAGE",
+          "like_count": 426,
+          "comments_count": 432,
+          "timestamp": "2026-09-22T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_026_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "source_post_id": "ig_media_026_1",
+          "confidence": 0.82,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator026_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "new_creator",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+      },
+      "raw_api_snapshot_ref": "search_ig_026",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_027",
+      "display_name": "新人Ava术语",
+      "is_new_creator": true,
+      "platform": "instagram",
+      "handle": "@new.ava.term",
+      "profile": {
+        "ig_id": "ig_uid_027",
+        "username": "new.ava.term",
+        "name": "新人Ava术语",
+        "biography": "术语库、合同",
+        "followers_count": 269500,
+        "follows_count": 705,
+        "media_count": 234,
+        "website": "mock://instagram/new.ava.term",
+        "profile_picture_url": "mock://cdn/instagram/avatar_027.jpg"
+      },
+      "content_topics": [
+        "术语库",
+        "合同"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "male_45",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "术语库",
+          "合同"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 42479,
+        "engagement_rate_30d": 0.056,
+        "growth_rate_30d": 0.19,
+        "gmv_30d": 7343.9,
+        "impressions_30d": 548055,
+        "currency": "USD",
+        "units_sold_30d": 392,
+        "gmv_per_buyer": 18.7,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 13.4
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_027_1",
+          "media_url": "mock://instagram/p/027_1",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/027_1",
+          "media_type": "REELS",
+          "like_count": 8859,
+          "comments_count": 81,
+          "timestamp": "2026-09-23T11:00:00Z"
+        },
+        {
+          "id": "ig_media_027_2",
+          "media_url": "mock://instagram/p/027_2",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/027_2",
+          "media_type": "IMAGE",
+          "like_count": 6280,
+          "comments_count": 99,
+          "timestamp": "2026-09-22T12:00:00Z"
+        },
+        {
+          "id": "ig_media_027_3",
+          "media_url": "mock://instagram/p/027_3",
+          "caption": "第一次测评LinguaGo实时对话翻译",
+          "permalink": "mock://instagram/p/027_3",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 6113,
+          "comments_count": 306,
+          "timestamp": "2026-09-21T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_027_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "source_post_id": "ig_media_027_1",
+          "confidence": 0.89,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator027_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "new_creator",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+      },
+      "raw_api_snapshot_ref": "search_ig_027",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_029",
+      "display_name": "竞品已结束Chris",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@ended.chris",
+      "profile": {
+        "ig_id": "ig_uid_029",
+        "username": "ended.chris",
+        "name": "竞品已结束Chris",
+        "biography": "AI工具、翻译对比",
+        "followers_count": 238839,
+        "follows_count": 831,
+        "media_count": 59,
+        "website": "mock://instagram/ended.chris",
+        "profile_picture_url": "mock://cdn/instagram/avatar_029.jpg"
+      },
+      "content_topics": [
+        "AI工具",
+        "翻译对比"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "AI工具",
+          "翻译对比"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 61748,
+        "engagement_rate_30d": 0.053,
+        "growth_rate_30d": 0.42,
+        "gmv_30d": 7444.3,
+        "impressions_30d": 406790,
+        "currency": "USD",
+        "units_sold_30d": 493,
+        "gmv_per_buyer": 15.1,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 18.3
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_029_1",
+          "media_url": "mock://instagram/p/029_1",
+          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "permalink": "mock://instagram/p/029_1",
+          "media_type": "REELS",
+          "like_count": 710,
+          "comments_count": 48,
+          "timestamp": "2026-09-21T11:00:00Z"
+        },
+        {
+          "id": "ig_media_029_2",
+          "media_url": "mock://instagram/p/029_2",
+          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "permalink": "mock://instagram/p/029_2",
+          "media_type": "VIDEO",
+          "like_count": 11115,
+          "comments_count": 390,
+          "timestamp": "2026-09-20T12:00:00Z"
+        },
+        {
+          "id": "ig_media_029_3",
+          "media_url": "mock://instagram/p/029_3",
+          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "permalink": "mock://instagram/p/029_3",
+          "media_type": "IMAGE",
+          "like_count": 1013,
+          "comments_count": 351,
+          "timestamp": "2026-09-19T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_029_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_ended",
+          "evidence_text": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "source_post_id": "ig_media_029_1",
+          "confidence": 0.8,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_ig_029_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "笔记软件",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 6,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.9,
+          "performance": {
+            "play_count": 38758,
+            "engagement_rate": 0.064,
+            "gmv": 7811,
+            "impressions": 485846,
+            "gpm": 16.1
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        },
+        {
+          "cooperation_id": "coop_ig_029_comp_ended",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "instagram",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_ended",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-03-01",
+          "sample_received_at": "2026-03-03",
+          "content_published_at": "2026-03-10",
+          "turnaround_days": 7,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.4,
+          "performance": {
+            "play_count": 109376,
+            "engagement_rate": 0.055,
+            "gmv": 12130,
+            "impressions": 684638,
+            "gpm": 17.7
+          },
+          "notes": "竞品合作已结束，可尝试触达",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator029_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "competitor_ended",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "竞品合作已结束，可尝试触达"
+      },
+      "raw_api_snapshot_ref": "search_ig_029",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_031",
+      "display_name": "竞品好评Eli",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@pos.eli",
+      "profile": {
+        "ig_id": "ig_uid_031",
+        "username": "pos.eli",
+        "name": "竞品好评Eli",
+        "biography": "DeepL粉、翻译推荐",
+        "followers_count": 106496,
+        "follows_count": 889,
+        "media_count": 443,
+        "website": "mock://instagram/pos.eli",
+        "profile_picture_url": "mock://cdn/instagram/avatar_031.jpg"
+      },
+      "content_topics": [
+        "DeepL粉",
+        "翻译推荐"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_60",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "DeepL粉",
+          "翻译推荐"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 83444,
+        "engagement_rate_30d": 0.078,
+        "growth_rate_30d": 0.09,
+        "gmv_30d": 7838.7,
+        "impressions_30d": 302653,
+        "currency": "USD",
+        "units_sold_30d": 171,
+        "gmv_per_buyer": 45.8,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 25.9
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_031_1",
+          "media_url": "mock://instagram/p/031_1",
+          "caption": "一直爱用某竞品翻译，体验很好",
+          "permalink": "mock://instagram/p/031_1",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 2606,
+          "comments_count": 230,
+          "timestamp": "2026-09-24T11:00:00Z"
+        },
+        {
+          "id": "ig_media_031_2",
+          "media_url": "mock://instagram/p/031_2",
+          "caption": "一直爱用某竞品翻译，体验很好",
+          "permalink": "mock://instagram/p/031_2",
+          "media_type": "CAROUSEL_ALBUM",
+          "like_count": 6380,
+          "comments_count": 63,
+          "timestamp": "2026-09-23T12:00:00Z"
+        },
+        {
+          "id": "ig_media_031_3",
+          "media_url": "mock://instagram/p/031_3",
+          "caption": "一直爱用某竞品翻译，体验很好",
+          "permalink": "mock://instagram/p/031_3",
+          "media_type": "REELS",
+          "like_count": 6378,
+          "comments_count": 171,
+          "timestamp": "2026-09-22T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_031_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_user",
+          "evidence_text": "一直爱用某竞品翻译，体验很好",
+          "source_post_id": "ig_media_031_1",
+          "confidence": 0.82,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator031_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "competitor_positive_review",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "竞品好评者转化难度大，降权"
+      },
+      "raw_api_snapshot_ref": "search_ig_031",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_033",
+      "display_name": "类品用户Gus",
+      "is_new_creator": false,
+      "platform": "instagram",
+      "handle": "@sim.gus",
+      "profile": {
+        "ig_id": "ig_uid_033",
+        "username": "sim.gus",
+        "name": "类品用户Gus",
+        "biography": "笔记+翻译、跨境办公",
+        "followers_count": 174995,
+        "follows_count": 165,
+        "media_count": 287,
+        "website": "mock://instagram/sim.gus",
+        "profile_picture_url": "mock://cdn/instagram/avatar_033.jpg"
+      },
+      "content_topics": [
+        "笔记+翻译",
+        "跨境办公"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "笔记+翻译",
+          "跨境办公"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 25837,
+        "engagement_rate_30d": 0.039,
+        "growth_rate_30d": 0.3,
+        "gmv_30d": 6770.3,
+        "impressions_30d": 528933,
+        "currency": "USD",
+        "units_sold_30d": 544,
+        "gmv_per_buyer": 12.4,
+        "gpm_origin": "mock_seed",
+        "gpm_30d": 12.8
+      },
+      "recent_posts": [
+        {
+          "id": "ig_media_033_1",
+          "media_url": "mock://instagram/p/033_1",
+          "caption": "用类似效率工具做跨境邮件翻译",
+          "permalink": "mock://instagram/p/033_1",
+          "media_type": "IMAGE",
+          "like_count": 1638,
+          "comments_count": 152,
+          "timestamp": "2026-09-22T11:00:00Z"
+        },
+        {
+          "id": "ig_media_033_2",
+          "media_url": "mock://instagram/p/033_2",
+          "caption": "用类似效率工具做跨境邮件翻译",
+          "permalink": "mock://instagram/p/033_2",
+          "media_type": "VIDEO",
+          "like_count": 9295,
+          "comments_count": 345,
+          "timestamp": "2026-09-21T12:00:00Z"
+        },
+        {
+          "id": "ig_media_033_3",
+          "media_url": "mock://instagram/p/033_3",
+          "caption": "用类似效率工具做跨境邮件翻译",
+          "permalink": "mock://instagram/p/033_3",
+          "media_type": "IMAGE",
+          "like_count": 4048,
+          "comments_count": 254,
+          "timestamp": "2026-09-20T13:00:00Z"
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_ig_033_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "用类似效率工具做跨境邮件翻译",
+          "source_post_id": "ig_media_033_1",
+          "confidence": 0.91,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "instagram_dm",
+        "dm_available": true,
+        "email": "mock_creator033_ig@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "similar_product_user",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "类似产品使用者，可作参考候选但需评估转化风险"
+      },
+      "raw_api_snapshot_ref": "search_ig_033",
+      "data_origin": "mock_seed"
+    }
+  ]
+}

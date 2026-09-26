@@ -1,0 +1,4580 @@
+{
+  "meta": {
+    "is_mock": true,
+    "data_origin": "mock_seed",
+    "platform": "tiktok",
+    "schema_version": "1.0",
+    "seed": 20260926,
+    "generated_at": "2026-09-26T00:00:00Z",
+    "mock_disclaimer": "本文件所有达人、帖子、合作、GPM 均为模拟数据。真实模型输出由 Demo 运行时生成，标记为 real_model_output。"
+  },
+  "brand": {
+    "brand_id": "brand_linguago",
+    "name": "LinguaGo AI 翻译",
+    "product": "AI 翻译工具",
+    "category": "AI 效率工具",
+    "target_audience": [
+      "中文用户",
+      "留学生",
+      "跨境从业者",
+      "内容创作者",
+      "职场人"
+    ],
+    "platform_preference": [
+      "tiktok",
+      "instagram"
+    ],
+    "key_features": [
+      "中英日韩互译",
+      "文档翻译",
+      "实时对话翻译",
+      "术语库"
+    ],
+    "tone": "专业、直接、重视效率",
+    "exclusion_rules": [
+      "已合作本品牌",
+      "纯语言教学",
+      "影视字幕剪辑",
+      "翻译梗娱乐",
+      "关键词命中但主题不匹配"
+    ],
+    "target_gpm": 20,
+    "data_origin": "mock_seed"
+  },
+  "scenario": {
+    "original_query": "为一款面向中文用户的AI翻译工具，找10位使用这个翻译工具的创作者。优先选择最近持续发布相关内容的人，排除已经合作过的账号。整理候选名单，并为最合适的3位准备合作邀请草稿。发送前让我审核。",
+    "parsed_goal": {
+      "brand": "LinguaGo AI 翻译",
+      "target_audience": [
+        "中文用户"
+      ],
+      "platform_preference": [
+        "tiktok",
+        "instagram"
+      ],
+      "target_count": 10,
+      "inclusion_criteria": [
+        "使用过该翻译工具",
+        "最近持续发布相关内容"
+      ],
+      "exclusion_criteria": [
+        "已经合作过的账号"
+      ],
+      "outreach_count": 3,
+      "needs_user_approval": true,
+      "target_gpm": 20
+    }
+  },
+  "search_snapshots": [
+    {
+      "snapshot_id": "search_tt_001",
+      "platform": "tiktok",
+      "keyword": "AI翻译",
+      "hashtags": [
+        "#aitranslation",
+        "#翻译工具"
+      ],
+      "region": "US",
+      "date_range": {
+        "start": "2026-08-01",
+        "end": "2026-09-26"
+      },
+      "total_results": 120,
+      "returned_creator_ids": [
+        "creator_001",
+        "creator_002",
+        "creator_003",
+        "creator_004",
+        "creator_005",
+        "creator_006",
+        "creator_007",
+        "creator_008"
+      ],
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_search_tt_001",
+        "latency_ms": 180,
+        "origin": "mock_api_response",
+        "limitations": [
+          "GPM 需商业授权",
+          "受众画像仅返回聚合数据"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "api_error_tt_001",
+      "platform": "tiktok",
+      "keyword": "AI翻译",
+      "hashtags": [
+        "#aitranslation"
+      ],
+      "region": "US",
+      "date_range": {
+        "start": "2026-08-01",
+        "end": "2026-09-26"
+      },
+      "total_results": 0,
+      "returned_creator_ids": [],
+      "status": "error",
+      "status_code": 401,
+      "request_id": "mock_req_error_tt_001",
+      "api_response": {
+        "status": "error",
+        "status_code": 401,
+        "request_id": "mock_req_error_tt_001",
+        "latency_ms": 95,
+        "origin": "mock_api_response",
+        "limitations": [
+          "OAuth token expired",
+          "data unavailable"
+        ],
+        "error_message": "Unauthorized: OAuth token expired"
+      },
+      "data_origin": "mock_api_response",
+      "limitations": [
+        "OAuth token expired",
+        "data unavailable"
+      ]
+    }
+  ],
+  "account_connection_snapshots": [
+    {
+      "snapshot_id": "connect_tt_001",
+      "platform": "tiktok",
+      "creator_id": "creator_001",
+      "unique_id": "lingua.amy",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_tt_001",
+        "latency_ms": 200,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "connect_tt_002",
+      "platform": "tiktok",
+      "creator_id": "creator_002",
+      "unique_id": "crossborder.ben",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_tt_002",
+        "latency_ms": 220,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    },
+    {
+      "snapshot_id": "connect_tt_003",
+      "platform": "tiktok",
+      "creator_id": "creator_003",
+      "unique_id": "work.cora",
+      "connected": true,
+      "api_response": {
+        "status": "success",
+        "status_code": 200,
+        "request_id": "mock_req_connect_tt_003",
+        "latency_ms": 240,
+        "origin": "mock_api_response",
+        "limitations": [
+          "新视频收录延迟 3-5 分钟",
+          "竞品排他条款不可见"
+        ]
+      },
+      "data_origin": "mock_api_response"
+    }
+  ],
+  "creators": [
+    {
+      "creator_id": "creator_001",
+      "display_name": "Amy学翻译",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@lingua.amy",
+      "profile": {
+        "uid": "tt_uid_001",
+        "unique_id": "lingua.amy",
+        "nickname": "Amy学翻译",
+        "sec_uid": "MS4wLjABAAAA_mock_001",
+        "signature": "AI工具 · 翻译 · 跨境",
+        "follower_count": 197329,
+        "following_count": 403,
+        "heart_count": 2442594,
+        "video_count": 343,
+        "verified": true,
+        "region": "US",
+        "bio_url": "mock://tiktok/lingua.amy",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_001.jpg"
+      },
+      "content_topics": [
+        "AI工具",
+        "翻译",
+        "跨境"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "mixed_50",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "AI工具",
+          "翻译",
+          "跨境"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 82607,
+        "engagement_rate_30d": 0.09,
+        "growth_rate_30d": 0.12,
+        "gmv_30d": 10736.9,
+        "impressions_30d": 745621,
+        "currency": "USD",
+        "units_sold_30d": 450,
+        "gmv_per_buyer": 23.9,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 14.4
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_001_1",
+          "share_url": "mock://tiktok/video/001_1",
+          "create_time": 1791505700,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 48,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_001_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_001_1",
+            "music_name": "Original Sound",
+            "author_name": "Amy学翻译"
+          },
+          "stats": {
+            "play_count": 135837,
+            "digg_count": 5607,
+            "comment_count": 175,
+            "share_count": 98,
+            "collect_count": 1862
+          }
+        },
+        {
+          "video_id": "tt_video_001_2",
+          "share_url": "mock://tiktok/video/001_2",
+          "create_time": 1791419300,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 41,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_001_2.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_001_2",
+            "music_name": "Original Sound",
+            "author_name": "Amy学翻译"
+          },
+          "stats": {
+            "play_count": 149063,
+            "digg_count": 497,
+            "comment_count": 570,
+            "share_count": 82,
+            "collect_count": 525
+          }
+        },
+        {
+          "video_id": "tt_video_001_3",
+          "share_url": "mock://tiktok/video/001_3",
+          "create_time": 1791332900,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 75,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_001_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_001_3",
+            "music_name": "Original Sound",
+            "author_name": "Amy学翻译"
+          },
+          "stats": {
+            "play_count": 136314,
+            "digg_count": 3288,
+            "comment_count": 554,
+            "share_count": 294,
+            "collect_count": 580
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_001_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "source_post_id": "tt_video_001_1",
+          "confidence": 0.72,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_001_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "笔记软件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 4,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.8,
+          "performance": {
+            "play_count": 83765,
+            "engagement_rate": 0.073,
+            "gmv": 3503,
+            "impressions": 640558,
+            "video_gpm": 5.5
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator001_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "own_brand_user",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_001",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_002",
+      "display_name": "跨境效率Ben",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@crossborder.ben",
+      "profile": {
+        "uid": "tt_uid_002",
+        "unique_id": "crossborder.ben",
+        "nickname": "跨境效率Ben",
+        "sec_uid": "MS4wLjABAAAA_mock_002",
+        "signature": "跨境电商 · AI工具 · 效率",
+        "follower_count": 155588,
+        "following_count": 435,
+        "heart_count": 979117,
+        "video_count": 227,
+        "verified": true,
+        "region": "CA",
+        "bio_url": "mock://tiktok/crossborder.ben",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_002.jpg"
+      },
+      "content_topics": [
+        "跨境电商",
+        "AI工具",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "跨境电商",
+          "AI工具",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 83838,
+        "engagement_rate_30d": 0.086,
+        "growth_rate_30d": 0.26,
+        "gmv_30d": 14974.4,
+        "impressions_30d": 822768,
+        "currency": "USD",
+        "units_sold_30d": 201,
+        "gmv_per_buyer": 74.5,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 18.2
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_002_1",
+          "share_url": "mock://tiktok/video/002_1",
+          "create_time": 1791505800,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 90,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_002_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_002_1",
+            "music_name": "Original Sound",
+            "author_name": "跨境效率Ben"
+          },
+          "stats": {
+            "play_count": 104264,
+            "digg_count": 3403,
+            "comment_count": 381,
+            "share_count": 90,
+            "collect_count": 822
+          }
+        },
+        {
+          "video_id": "tt_video_002_2",
+          "share_url": "mock://tiktok/video/002_2",
+          "create_time": 1791419400,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 56,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_002_2.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_002_2",
+            "music_name": "Original Sound",
+            "author_name": "跨境效率Ben"
+          },
+          "stats": {
+            "play_count": 83331,
+            "digg_count": 2559,
+            "comment_count": 486,
+            "share_count": 345,
+            "collect_count": 1149
+          }
+        },
+        {
+          "video_id": "tt_video_002_3",
+          "share_url": "mock://tiktok/video/002_3",
+          "create_time": 1791333000,
+          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "duration": 63,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_002_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_002_3",
+            "music_name": "Original Sound",
+            "author_name": "跨境效率Ben"
+          },
+          "stats": {
+            "play_count": 13357,
+            "digg_count": 1261,
+            "comment_count": 272,
+            "share_count": 217,
+            "collect_count": 1417
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_002_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "source_post_id": "tt_video_002_1",
+          "confidence": 0.86,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_002_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "跨境ERP插件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 3,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 111328,
+            "engagement_rate": 0.078,
+            "gmv": 3741,
+            "impressions": 338105,
+            "video_gpm": 11.1
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator002_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_002",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_003",
+      "display_name": "职场翻译Cora",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@work.cora",
+      "profile": {
+        "uid": "tt_uid_003",
+        "unique_id": "work.cora",
+        "nickname": "职场翻译Cora",
+        "sec_uid": "MS4wLjABAAAA_mock_003",
+        "signature": "职场 · 文档翻译 · AI工具",
+        "follower_count": 12463,
+        "following_count": 115,
+        "heart_count": 1234665,
+        "video_count": 160,
+        "verified": true,
+        "region": "GB",
+        "bio_url": "mock://tiktok/work.cora",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_003.jpg"
+      },
+      "content_topics": [
+        "职场",
+        "文档翻译",
+        "AI工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "mixed_50",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "职场",
+          "文档翻译",
+          "AI工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 44639,
+        "engagement_rate_30d": 0.073,
+        "growth_rate_30d": 0.42,
+        "gmv_30d": 8357.2,
+        "impressions_30d": 397960,
+        "currency": "USD",
+        "units_sold_30d": 293,
+        "gmv_per_buyer": 28.5,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 21
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_003_1",
+          "share_url": "mock://tiktok/video/003_1",
+          "create_time": 1791505900,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 35,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_003_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_003_1",
+            "music_name": "Original Sound",
+            "author_name": "职场翻译Cora"
+          },
+          "stats": {
+            "play_count": 103992,
+            "digg_count": 3372,
+            "comment_count": 354,
+            "share_count": 244,
+            "collect_count": 1385
+          }
+        },
+        {
+          "video_id": "tt_video_003_2",
+          "share_url": "mock://tiktok/video/003_2",
+          "create_time": 1791419500,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 90,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_003_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_003_2",
+            "music_name": "Original Sound",
+            "author_name": "职场翻译Cora"
+          },
+          "stats": {
+            "play_count": 18005,
+            "digg_count": 6438,
+            "comment_count": 490,
+            "share_count": 134,
+            "collect_count": 460
+          }
+        },
+        {
+          "video_id": "tt_video_003_3",
+          "share_url": "mock://tiktok/video/003_3",
+          "create_time": 1791333100,
+          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_003_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_003_3",
+            "music_name": "Original Sound",
+            "author_name": "职场翻译Cora"
+          },
+          "stats": {
+            "play_count": 138709,
+            "digg_count": 854,
+            "comment_count": 465,
+            "share_count": 336,
+            "collect_count": 1987
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_003_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "tt_video_003_1",
+          "confidence": 0.79,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_003_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "笔记软件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.9,
+          "performance": {
+            "play_count": 86528,
+            "engagement_rate": 0.076,
+            "gmv": 11545,
+            "impressions": 659742,
+            "video_gpm": 17.5
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator003_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_003",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_004",
+      "display_name": "留学沟通Derek",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@study.derek",
+      "profile": {
+        "uid": "tt_uid_004",
+        "unique_id": "study.derek",
+        "nickname": "留学沟通Derek",
+        "sec_uid": "MS4wLjABAAAA_mock_004",
+        "signature": "留学 · 实时对话 · 翻译工具",
+        "follower_count": 247770,
+        "following_count": 733,
+        "heart_count": 1954594,
+        "video_count": 141,
+        "verified": false,
+        "region": "GB",
+        "bio_url": "mock://tiktok/study.derek",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_004.jpg"
+      },
+      "content_topics": [
+        "留学",
+        "实时对话",
+        "翻译工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "留学",
+          "实时对话",
+          "翻译工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 31477,
+        "engagement_rate_30d": 0.076,
+        "growth_rate_30d": 0.18,
+        "gmv_30d": 5218.3,
+        "impressions_30d": 310612,
+        "currency": "USD",
+        "units_sold_30d": 566,
+        "gmv_per_buyer": 9.2,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 16.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_004_1",
+          "share_url": "mock://tiktok/video/004_1",
+          "create_time": 1791506000,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 36,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_004_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_004_1",
+            "music_name": "Original Sound",
+            "author_name": "留学沟通Derek"
+          },
+          "stats": {
+            "play_count": 52369,
+            "digg_count": 4392,
+            "comment_count": 389,
+            "share_count": 206,
+            "collect_count": 830
+          }
+        },
+        {
+          "video_id": "tt_video_004_2",
+          "share_url": "mock://tiktok/video/004_2",
+          "create_time": 1791419600,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 42,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_004_2.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_004_2",
+            "music_name": "Original Sound",
+            "author_name": "留学沟通Derek"
+          },
+          "stats": {
+            "play_count": 133044,
+            "digg_count": 1877,
+            "comment_count": 224,
+            "share_count": 216,
+            "collect_count": 1866
+          }
+        },
+        {
+          "video_id": "tt_video_004_3",
+          "share_url": "mock://tiktok/video/004_3",
+          "create_time": 1791333200,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 87,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_004_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_004_3",
+            "music_name": "Original Sound",
+            "author_name": "留学沟通Derek"
+          },
+          "stats": {
+            "play_count": 46350,
+            "digg_count": 942,
+            "comment_count": 356,
+            "share_count": 325,
+            "collect_count": 279
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_004_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "source_post_id": "tt_video_004_1",
+          "confidence": 0.75,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_004_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "会议纪要工具",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 6,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.9,
+          "performance": {
+            "play_count": 85646,
+            "engagement_rate": 0.048,
+            "gmv": 8499,
+            "impressions": 399059,
+            "video_gpm": 21.3
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator004_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_004",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_005",
+      "display_name": "术语库Eva",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@termbase.eva",
+      "profile": {
+        "uid": "tt_uid_005",
+        "unique_id": "termbase.eva",
+        "nickname": "术语库Eva",
+        "sec_uid": "MS4wLjABAAAA_mock_005",
+        "signature": "术语库 · 合同翻译 · 效率",
+        "follower_count": 14000,
+        "following_count": 166,
+        "heart_count": 315718,
+        "video_count": 145,
+        "verified": false,
+        "region": "US",
+        "bio_url": "mock://tiktok/termbase.eva",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_005.jpg"
+      },
+      "content_topics": [
+        "术语库",
+        "合同翻译",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "male_45",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "术语库",
+          "合同翻译",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 83185,
+        "engagement_rate_30d": 0.068,
+        "growth_rate_30d": 0.37,
+        "gmv_30d": 9548.5,
+        "impressions_30d": 397854,
+        "currency": "USD",
+        "units_sold_30d": 384,
+        "gmv_per_buyer": 24.9,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 24
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_005_1",
+          "share_url": "mock://tiktok/video/005_1",
+          "create_time": 1791506100,
+          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "duration": 68,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_005_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_005_1",
+            "music_name": "Original Sound",
+            "author_name": "术语库Eva"
+          },
+          "stats": {
+            "play_count": 96271,
+            "digg_count": 6718,
+            "comment_count": 340,
+            "share_count": 199,
+            "collect_count": 1842
+          }
+        },
+        {
+          "video_id": "tt_video_005_2",
+          "share_url": "mock://tiktok/video/005_2",
+          "create_time": 1791419700,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 80,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_005_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_005_2",
+            "music_name": "Original Sound",
+            "author_name": "术语库Eva"
+          },
+          "stats": {
+            "play_count": 148545,
+            "digg_count": 3688,
+            "comment_count": 526,
+            "share_count": 71,
+            "collect_count": 1189
+          }
+        },
+        {
+          "video_id": "tt_video_005_3",
+          "share_url": "mock://tiktok/video/005_3",
+          "create_time": 1791333300,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 84,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_005_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_005_3",
+            "music_name": "Original Sound",
+            "author_name": "术语库Eva"
+          },
+          "stats": {
+            "play_count": 57685,
+            "digg_count": 4152,
+            "comment_count": 269,
+            "share_count": 313,
+            "collect_count": 774
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_005_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_ended",
+          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "source_post_id": "tt_video_005_1",
+          "confidence": 0.85,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_005_other_1",
+          "brand_name": "Mock办公AI",
+          "product": "笔记软件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 7,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.7,
+          "performance": {
+            "play_count": 53542,
+            "engagement_rate": 0.07,
+            "gmv": 13423,
+            "impressions": 651604,
+            "video_gpm": 20.6
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        },
+        {
+          "cooperation_id": "coop_tt_005_comp_ended",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_ended",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-03-01",
+          "sample_received_at": "2026-03-03",
+          "content_published_at": "2026-03-10",
+          "turnaround_days": 7,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.4,
+          "performance": {
+            "play_count": 95548,
+            "engagement_rate": 0.069,
+            "gmv": 14917,
+            "impressions": 630879,
+            "video_gpm": 23.6
+          },
+          "notes": "竞品合作已结束，可尝试触达",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator005_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_005",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_006",
+      "display_name": "多产品测评Frank",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@tools.frank",
+      "profile": {
+        "uid": "tt_uid_006",
+        "unique_id": "tools.frank",
+        "nickname": "多产品测评Frank",
+        "sec_uid": "MS4wLjABAAAA_mock_006",
+        "signature": "AI工具测评 · 翻译 · 效率对比",
+        "follower_count": 130476,
+        "following_count": 717,
+        "heart_count": 1497660,
+        "video_count": 400,
+        "verified": false,
+        "region": "SG",
+        "bio_url": "mock://tiktok/tools.frank",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_006.jpg"
+      },
+      "content_topics": [
+        "AI工具测评",
+        "翻译",
+        "效率对比"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "AI工具测评",
+          "翻译",
+          "效率对比"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 99920,
+        "engagement_rate_30d": 0.092,
+        "growth_rate_30d": 0.31,
+        "gmv_30d": 4073.5,
+        "impressions_30d": 262804,
+        "currency": "USD",
+        "units_sold_30d": 90,
+        "gmv_per_buyer": 45.3,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 15.5
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_006_1",
+          "share_url": "mock://tiktok/video/006_1",
+          "create_time": 1791506200,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 87,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_006_1.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_006_1",
+            "music_name": "Original Sound",
+            "author_name": "多产品测评Frank"
+          },
+          "stats": {
+            "play_count": 64935,
+            "digg_count": 4541,
+            "comment_count": 280,
+            "share_count": 265,
+            "collect_count": 379
+          }
+        },
+        {
+          "video_id": "tt_video_006_2",
+          "share_url": "mock://tiktok/video/006_2",
+          "create_time": 1791419800,
+          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "duration": 56,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_006_2.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_006_2",
+            "music_name": "Original Sound",
+            "author_name": "多产品测评Frank"
+          },
+          "stats": {
+            "play_count": 131150,
+            "digg_count": 4002,
+            "comment_count": 381,
+            "share_count": 343,
+            "collect_count": 1238
+          }
+        },
+        {
+          "video_id": "tt_video_006_3",
+          "share_url": "mock://tiktok/video/006_3",
+          "create_time": 1791333400,
+          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "duration": 27,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_006_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_006_3",
+            "music_name": "Original Sound",
+            "author_name": "多产品测评Frank"
+          },
+          "stats": {
+            "play_count": 147253,
+            "digg_count": 5647,
+            "comment_count": 481,
+            "share_count": 296,
+            "collect_count": 341
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_006_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "source_post_id": "tt_video_006_1",
+          "confidence": 0.87,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_006_other_1",
+          "brand_name": "Mock效率本",
+          "product": "跨境ERP插件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 7,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.8,
+          "performance": {
+            "play_count": 114218,
+            "engagement_rate": 0.042,
+            "gmv": 9636,
+            "impressions": 295853,
+            "video_gpm": 32.6
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator006_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate",
+        "first_round_pass",
+        "coop_efficiency_known",
+        "gpm_known",
+        "multi_product_neutral",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "产品相关、近期持续发布、合作效率高、可进入首轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_006",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_007",
+      "display_name": "新人Grace译",
+      "is_new_creator": true,
+      "platform": "tiktok",
+      "handle": "@new.grace",
+      "profile": {
+        "uid": "tt_uid_007",
+        "unique_id": "new.grace",
+        "nickname": "新人Grace译",
+        "sec_uid": "MS4wLjABAAAA_mock_007",
+        "signature": "AI翻译 · 留学生活 · 效率",
+        "follower_count": 178166,
+        "following_count": 697,
+        "heart_count": 1557072,
+        "video_count": 329,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/new.grace",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_007.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "留学生活",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_60",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "AI翻译",
+          "留学生活",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 102004,
+        "engagement_rate_30d": 0.086,
+        "growth_rate_30d": 0.11,
+        "gmv_30d": 8909.5,
+        "impressions_30d": 742461,
+        "currency": "USD",
+        "units_sold_30d": 207,
+        "gmv_per_buyer": 43,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 12
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_007_1",
+          "share_url": "mock://tiktok/video/007_1",
+          "create_time": 1791506300,
+          "title": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "duration": 89,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_007_1.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_007_1",
+            "music_name": "Original Sound",
+            "author_name": "新人Grace译"
+          },
+          "stats": {
+            "play_count": 108090,
+            "digg_count": 2021,
+            "comment_count": 85,
+            "share_count": 200,
+            "collect_count": 509
+          }
+        },
+        {
+          "video_id": "tt_video_007_2",
+          "share_url": "mock://tiktok/video/007_2",
+          "create_time": 1791419900,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 59,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_007_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_007_2",
+            "music_name": "Original Sound",
+            "author_name": "新人Grace译"
+          },
+          "stats": {
+            "play_count": 103364,
+            "digg_count": 7030,
+            "comment_count": 139,
+            "share_count": 365,
+            "collect_count": 183
+          }
+        },
+        {
+          "video_id": "tt_video_007_3",
+          "share_url": "mock://tiktok/video/007_3",
+          "create_time": 1791333500,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 46,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_007_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_007_3",
+            "music_name": "Original Sound",
+            "author_name": "新人Grace译"
+          },
+          "stats": {
+            "play_count": 127867,
+            "digg_count": 6379,
+            "comment_count": 420,
+            "share_count": 355,
+            "collect_count": 669
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_007_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "source_post_id": "tt_video_007_1",
+          "confidence": 0.93,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator007_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "new_creator",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_007",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_008",
+      "display_name": "跨境Hank",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@cb.hanks",
+      "profile": {
+        "uid": "tt_uid_008",
+        "unique_id": "cb.hanks",
+        "nickname": "跨境Hank",
+        "sec_uid": "MS4wLjABAAAA_mock_008",
+        "signature": "跨境 · 中日韩互译 · 办公",
+        "follower_count": 106000,
+        "following_count": 422,
+        "heart_count": 743792,
+        "video_count": 275,
+        "verified": false,
+        "region": "GB",
+        "bio_url": "mock://tiktok/cb.hanks",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_008.jpg"
+      },
+      "content_topics": [
+        "跨境",
+        "中日韩互译",
+        "办公"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_55",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "跨境",
+          "中日韩互译",
+          "办公"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 22151,
+        "engagement_rate_30d": 0.059,
+        "growth_rate_30d": 0.25,
+        "gmv_30d": 6064.3,
+        "impressions_30d": 638345,
+        "currency": "USD",
+        "units_sold_30d": 187,
+        "gmv_per_buyer": 32.4,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 9.5
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_008_1",
+          "share_url": "mock://tiktok/video/008_1",
+          "create_time": 1791506400,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 75,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_008_1.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_008_1",
+            "music_name": "Original Sound",
+            "author_name": "跨境Hank"
+          },
+          "stats": {
+            "play_count": 81120,
+            "digg_count": 1072,
+            "comment_count": 172,
+            "share_count": 300,
+            "collect_count": 1922
+          }
+        },
+        {
+          "video_id": "tt_video_008_2",
+          "share_url": "mock://tiktok/video/008_2",
+          "create_time": 1791420000,
+          "title": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "duration": 83,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_008_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_008_2",
+            "music_name": "Original Sound",
+            "author_name": "跨境Hank"
+          },
+          "stats": {
+            "play_count": 36094,
+            "digg_count": 4721,
+            "comment_count": 360,
+            "share_count": 82,
+            "collect_count": 221
+          }
+        },
+        {
+          "video_id": "tt_video_008_3",
+          "share_url": "mock://tiktok/video/008_3",
+          "create_time": 1791333600,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 88,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_008_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_008_3",
+            "music_name": "Original Sound",
+            "author_name": "跨境Hank"
+          },
+          "stats": {
+            "play_count": 101355,
+            "digg_count": 719,
+            "comment_count": 92,
+            "share_count": 90,
+            "collect_count": 890
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_008_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "source_post_id": "tt_video_008_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_008_other_1",
+          "brand_name": "Mock跨境助手",
+          "product": "笔记软件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 2,
+          "communication_score": 4.8,
+          "performance": {
+            "play_count": 93288,
+            "engagement_rate": 0.051,
+            "gmv": 4847,
+            "impressions": 343180,
+            "video_gpm": 14.1
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator008_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "gpm_known",
+        "similar_product_user",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_008",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_009",
+      "display_name": "效率Iris",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@eff.iris",
+      "profile": {
+        "uid": "tt_uid_009",
+        "unique_id": "eff.iris",
+        "nickname": "效率Iris",
+        "sec_uid": "MS4wLjABAAAA_mock_009",
+        "signature": "职场效率 · 文档翻译 · AI",
+        "follower_count": 161070,
+        "following_count": 432,
+        "heart_count": 1533669,
+        "video_count": 397,
+        "verified": false,
+        "region": "GB",
+        "bio_url": "mock://tiktok/eff.iris",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_009.jpg"
+      },
+      "content_topics": [
+        "职场效率",
+        "文档翻译",
+        "AI"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "职场效率",
+          "文档翻译",
+          "AI"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 51973,
+        "engagement_rate_30d": 0.079,
+        "growth_rate_30d": 0.26,
+        "gmv_30d": 4760.7,
+        "impressions_30d": 280041,
+        "currency": "USD",
+        "units_sold_30d": 197,
+        "gmv_per_buyer": 24.2,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 17
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_009_1",
+          "share_url": "mock://tiktok/video/009_1",
+          "create_time": 1791506500,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 90,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_009_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_009_1",
+            "music_name": "Original Sound",
+            "author_name": "效率Iris"
+          },
+          "stats": {
+            "play_count": 81095,
+            "digg_count": 4128,
+            "comment_count": 91,
+            "share_count": 326,
+            "collect_count": 1749
+          }
+        },
+        {
+          "video_id": "tt_video_009_2",
+          "share_url": "mock://tiktok/video/009_2",
+          "create_time": 1791420100,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 39,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_009_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_009_2",
+            "music_name": "Original Sound",
+            "author_name": "效率Iris"
+          },
+          "stats": {
+            "play_count": 135999,
+            "digg_count": 1347,
+            "comment_count": 88,
+            "share_count": 68,
+            "collect_count": 360
+          }
+        },
+        {
+          "video_id": "tt_video_009_3",
+          "share_url": "mock://tiktok/video/009_3",
+          "create_time": 1791333700,
+          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "duration": 84,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_009_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_009_3",
+            "music_name": "Original Sound",
+            "author_name": "效率Iris"
+          },
+          "stats": {
+            "play_count": 86565,
+            "digg_count": 1320,
+            "comment_count": 45,
+            "share_count": 171,
+            "collect_count": 924
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_009_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "source_post_id": "tt_video_009_1",
+          "confidence": 0.78,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_009_other_1",
+          "brand_name": "Mock效率本",
+          "product": "笔记软件",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "similar_product_user",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-07-01",
+          "sample_received_at": "2026-07-03",
+          "content_published_at": "2026-07-08",
+          "turnaround_days": 6,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 76873,
+            "engagement_rate": 0.045,
+            "gmv": 5566,
+            "impressions": 219499,
+            "video_gpm": 25.4
+          },
+          "notes": "样品签收后一周内发布，配合度高",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator009_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "strong_candidate_round2",
+        "second_round_pass",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend_after_relax",
+        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+      },
+      "raw_api_snapshot_ref": "search_tt_009",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_010",
+      "display_name": "竞品合作Jake",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@comp.jake",
+      "profile": {
+        "uid": "tt_uid_010",
+        "unique_id": "comp.jake",
+        "nickname": "竞品合作Jake",
+        "sec_uid": "MS4wLjABAAAA_mock_010",
+        "signature": "AI翻译 · 工具推荐",
+        "follower_count": 202552,
+        "following_count": 162,
+        "heart_count": 785319,
+        "video_count": 42,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/comp.jake",
+        "category": "Business",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_010.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "工具推荐"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "AI翻译",
+          "工具推荐"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 49539,
+        "engagement_rate_30d": 0.041,
+        "growth_rate_30d": 0.4,
+        "gmv_30d": 8766.7,
+        "impressions_30d": 796971,
+        "currency": "USD",
+        "units_sold_30d": 367,
+        "gmv_per_buyer": 23.9,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_010_1",
+          "share_url": "mock://tiktok/video/010_1",
+          "create_time": 1791506600,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 57,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_010_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_010_1",
+            "music_name": "Original Sound",
+            "author_name": "竞品合作Jake"
+          },
+          "stats": {
+            "play_count": 90078,
+            "digg_count": 1387,
+            "comment_count": 382,
+            "share_count": 21,
+            "collect_count": 104
+          }
+        },
+        {
+          "video_id": "tt_video_010_2",
+          "share_url": "mock://tiktok/video/010_2",
+          "create_time": 1791420200,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 31,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_010_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_010_2",
+            "music_name": "Original Sound",
+            "author_name": "竞品合作Jake"
+          },
+          "stats": {
+            "play_count": 93817,
+            "digg_count": 5838,
+            "comment_count": 61,
+            "share_count": 290,
+            "collect_count": 805
+          }
+        },
+        {
+          "video_id": "tt_video_010_3",
+          "share_url": "mock://tiktok/video/010_3",
+          "create_time": 1791333800,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 41,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_010_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_010_3",
+            "music_name": "Original Sound",
+            "author_name": "竞品合作Jake"
+          },
+          "stats": {
+            "play_count": 106940,
+            "digg_count": 5038,
+            "comment_count": 157,
+            "share_count": 308,
+            "collect_count": 1101
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_010_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_active",
+          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "source_post_id": "tt_video_010_1",
+          "confidence": 0.78,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_010_comp_active",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_active",
+          "exclusivity_risk": "possible",
+          "sample_sent_at": "2026-08-01",
+          "sample_received_at": "2026-08-02",
+          "content_published_at": "2026-08-06",
+          "turnaround_days": 4,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.2,
+          "performance": {
+            "play_count": 86529,
+            "engagement_rate": 0.052,
+            "gmv": 3884,
+            "impressions": 458062,
+            "video_gpm": 8.5
+          },
+          "notes": "竞品合作中，排他条款未知",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator010_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "cross_platform",
+        "competitor_active",
+        "competitor_exclusivity_unknown",
+        "gpm_known",
+        "gpm_diff_cross_platform"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "竞品深度合作中，排他风险未知，需人工确认"
+      },
+      "raw_api_snapshot_ref": "search_tt_010",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_011",
+      "display_name": "翻译剪辑君",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@subtitle.cut",
+      "profile": {
+        "uid": "tt_uid_011",
+        "unique_id": "subtitle.cut",
+        "nickname": "翻译剪辑君",
+        "sec_uid": "MS4wLjABAAAA_mock_011",
+        "signature": "影视字幕 · 剪辑 · 娱乐",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/subtitle.cut",
+        "category": "Business",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_011.jpg"
+      },
+      "content_topics": [
+        "影视字幕",
+        "剪辑",
+        "娱乐"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "影视字幕",
+          "剪辑",
+          "娱乐"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 3399.7,
+        "impressions_30d": 288108,
+        "currency": "USD",
+        "units_sold_30d": 598,
+        "gmv_per_buyer": 5.7,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_011_1",
+          "share_url": "mock://tiktok/video/011_1",
+          "create_time": 1791506700,
+          "title": "雅思阅读技巧分享",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#雅思",
+            "#托福"
+          ],
+          "music_info": {
+            "music_id": "music_011_1",
+            "music_name": "Original Sound",
+            "author_name": "翻译剪辑君"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_011_2",
+          "share_url": "mock://tiktok/video/011_2",
+          "create_time": 1791420300,
+          "title": "本期字幕剪辑花絮",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#雅思",
+            "#托福"
+          ],
+          "music_info": {
+            "music_id": "music_011_2",
+            "music_name": "Original Sound",
+            "author_name": "翻译剪辑君"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_011_3",
+          "share_url": "mock://tiktok/video/011_3",
+          "create_time": 1791333900,
+          "title": "雅思阅读技巧分享",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#AI绘画",
+            "#AIart"
+          ],
+          "music_info": {
+            "music_id": "music_011_3",
+            "music_name": "Original Sound",
+            "author_name": "翻译剪辑君"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_011_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "昵称含翻译，内容为影视字幕剪辑",
+          "source_post_id": "tt_video_011_1",
+          "confidence": 0.35,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator011_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "昵称含翻译，内容为影视字幕剪辑"
+      },
+      "raw_api_snapshot_ref": "search_tt_011",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_012",
+      "display_name": "英语考试通",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@exam.english",
+      "profile": {
+        "uid": "tt_uid_012",
+        "unique_id": "exam.english",
+        "nickname": "英语考试通",
+        "sec_uid": "MS4wLjABAAAA_mock_012",
+        "signature": "雅思 · 托福 · 考试英语",
+        "follower_count": 31880,
+        "following_count": 120,
+        "heart_count": 488003,
+        "video_count": 329,
+        "verified": false,
+        "region": "US",
+        "bio_url": "mock://tiktok/exam.english",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_012.jpg"
+      },
+      "content_topics": [
+        "雅思",
+        "托福",
+        "考试英语"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "雅思",
+          "托福",
+          "考试英语"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 108448,
+        "engagement_rate_30d": 0.073,
+        "growth_rate_30d": 0.13,
+        "gmv_30d": 18708.2,
+        "impressions_30d": 665772,
+        "currency": "USD",
+        "units_sold_30d": 564,
+        "gmv_per_buyer": 33.2,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 28.1
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_012_1",
+          "share_url": "mock://tiktok/video/012_1",
+          "create_time": 1791506800,
+          "title": "昵称含英语，内容为考试英语",
+          "duration": 70,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_012_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#雅思",
+            "#托福"
+          ],
+          "music_info": {
+            "music_id": "music_012_1",
+            "music_name": "Original Sound",
+            "author_name": "英语考试通"
+          },
+          "stats": {
+            "play_count": 51396,
+            "digg_count": 4078,
+            "comment_count": 297,
+            "share_count": 84,
+            "collect_count": 596
+          }
+        },
+        {
+          "video_id": "tt_video_012_2",
+          "share_url": "mock://tiktok/video/012_2",
+          "create_time": 1791420400,
+          "title": "昵称含英语，内容为考试英语",
+          "duration": 53,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_012_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#AI绘画",
+            "#AIart"
+          ],
+          "music_info": {
+            "music_id": "music_012_2",
+            "music_name": "Original Sound",
+            "author_name": "英语考试通"
+          },
+          "stats": {
+            "play_count": 149018,
+            "digg_count": 6277,
+            "comment_count": 265,
+            "share_count": 227,
+            "collect_count": 802
+          }
+        },
+        {
+          "video_id": "tt_video_012_3",
+          "share_url": "mock://tiktok/video/012_3",
+          "create_time": 1791334000,
+          "title": "雅思阅读技巧分享",
+          "duration": 41,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_012_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#AI绘画",
+            "#AIart"
+          ],
+          "music_info": {
+            "music_id": "music_012_3",
+            "music_name": "Original Sound",
+            "author_name": "英语考试通"
+          },
+          "stats": {
+            "play_count": 105085,
+            "digg_count": 1842,
+            "comment_count": 587,
+            "share_count": 201,
+            "collect_count": 1666
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_012_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "昵称含英语，内容为考试英语",
+          "source_post_id": "tt_video_012_1",
+          "confidence": 0.35,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator012_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "昵称含英语，内容为考试英语"
+      },
+      "raw_api_snapshot_ref": "search_tt_012",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_013",
+      "display_name": "AI绘画Mia",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@ai.paint.mia",
+      "profile": {
+        "uid": "tt_uid_013",
+        "unique_id": "ai.paint.mia",
+        "nickname": "AI绘画Mia",
+        "sec_uid": "MS4wLjABAAAA_mock_013",
+        "signature": "AI绘画 · Midjourney · 插画",
+        "follower_count": 161609,
+        "following_count": 307,
+        "heart_count": 952677,
+        "video_count": 351,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/ai.paint.mia",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_013.jpg"
+      },
+      "content_topics": [
+        "AI绘画",
+        "Midjourney",
+        "插画"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "AI绘画",
+          "Midjourney",
+          "插画"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 41414,
+        "engagement_rate_30d": 0.05,
+        "growth_rate_30d": 0.42,
+        "gmv_30d": 20009.8,
+        "impressions_30d": 866223,
+        "currency": "USD",
+        "units_sold_30d": 461,
+        "gmv_per_buyer": 43.4,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 23.1
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_013_1",
+          "share_url": "mock://tiktok/video/013_1",
+          "create_time": 1791506900,
+          "title": "本期字幕剪辑花絮",
+          "duration": 58,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_013_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#字幕剪辑",
+            "#影视"
+          ],
+          "music_info": {
+            "music_id": "music_013_1",
+            "music_name": "Original Sound",
+            "author_name": "AI绘画Mia"
+          },
+          "stats": {
+            "play_count": 59076,
+            "digg_count": 1270,
+            "comment_count": 223,
+            "share_count": 388,
+            "collect_count": 1732
+          }
+        },
+        {
+          "video_id": "tt_video_013_2",
+          "share_url": "mock://tiktok/video/013_2",
+          "create_time": 1791420500,
+          "title": "雅思阅读技巧分享",
+          "duration": 70,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_013_2.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#雅思",
+            "#托福"
+          ],
+          "music_info": {
+            "music_id": "music_013_2",
+            "music_name": "Original Sound",
+            "author_name": "AI绘画Mia"
+          },
+          "stats": {
+            "play_count": 31906,
+            "digg_count": 6619,
+            "comment_count": 479,
+            "share_count": 241,
+            "collect_count": 869
+          }
+        },
+        {
+          "video_id": "tt_video_013_3",
+          "share_url": "mock://tiktok/video/013_3",
+          "create_time": 1791334100,
+          "title": "雅思阅读技巧分享",
+          "duration": 58,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_013_3.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#字幕剪辑",
+            "#影视"
+          ],
+          "music_info": {
+            "music_id": "music_013_3",
+            "music_name": "Original Sound",
+            "author_name": "AI绘画Mia"
+          },
+          "stats": {
+            "play_count": 99203,
+            "digg_count": 3594,
+            "comment_count": 524,
+            "share_count": 366,
+            "collect_count": 1281
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_013_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "昵称含AI，内容为AI绘画",
+          "source_post_id": "tt_video_013_1",
+          "confidence": 0.35,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator013_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "昵称含AI，内容为AI绘画"
+      },
+      "raw_api_snapshot_ref": "search_tt_013",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_016",
+      "display_name": "已合作Paula",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@done.paula",
+      "profile": {
+        "uid": "tt_uid_016",
+        "unique_id": "done.paula",
+        "nickname": "已合作Paula",
+        "sec_uid": "MS4wLjABAAAA_mock_016",
+        "signature": "AI翻译 · 效率工具",
+        "follower_count": 167418,
+        "following_count": 803,
+        "heart_count": 1378657,
+        "video_count": 359,
+        "verified": false,
+        "region": "US",
+        "bio_url": "mock://tiktok/done.paula",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_016.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "效率工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "AI翻译",
+          "效率工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 57396,
+        "engagement_rate_30d": 0.085,
+        "growth_rate_30d": 0.25,
+        "gmv_30d": 10521.7,
+        "impressions_30d": 371792,
+        "currency": "USD",
+        "units_sold_30d": 335,
+        "gmv_per_buyer": 31.4,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 28.3
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_016_1",
+          "share_url": "mock://tiktok/video/016_1",
+          "create_time": 1791507200,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 35,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_016_1.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_016_1",
+            "music_name": "Original Sound",
+            "author_name": "已合作Paula"
+          },
+          "stats": {
+            "play_count": 36192,
+            "digg_count": 241,
+            "comment_count": 342,
+            "share_count": 228,
+            "collect_count": 1876
+          }
+        },
+        {
+          "video_id": "tt_video_016_2",
+          "share_url": "mock://tiktok/video/016_2",
+          "create_time": 1791420800,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 45,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_016_2.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_016_2",
+            "music_name": "Original Sound",
+            "author_name": "已合作Paula"
+          },
+          "stats": {
+            "play_count": 65979,
+            "digg_count": 568,
+            "comment_count": 160,
+            "share_count": 376,
+            "collect_count": 634
+          }
+        },
+        {
+          "video_id": "tt_video_016_3",
+          "share_url": "mock://tiktok/video/016_3",
+          "create_time": 1791334400,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 85,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_016_3.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_016_3",
+            "music_name": "Original Sound",
+            "author_name": "已合作Paula"
+          },
+          "stats": {
+            "play_count": 31357,
+            "digg_count": 7228,
+            "comment_count": 592,
+            "share_count": 35,
+            "collect_count": 868
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_016_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_cooperation",
+          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "source_post_id": "tt_video_016_1",
+          "confidence": 0.89,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_016_brand_1",
+          "brand_name": "LinguaGo AI 翻译",
+          "product": "AI 翻译工具",
+          "platform": "tiktok",
+          "is_current_brand": true,
+          "product_relation": "own_brand_cooperation",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-06-01",
+          "sample_received_at": "2026-06-03",
+          "content_published_at": "2026-06-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 75400,
+            "engagement_rate": 0.063,
+            "gmv": 5539,
+            "impressions": 394605,
+            "video_gpm": 14
+          },
+          "notes": "已与本品牌完成合作，再次触达应排除",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator016_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "own_brand_cooperated",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "exclude",
+        "expected_reason": "已合作本品牌，硬排除"
+      },
+      "raw_api_snapshot_ref": "search_tt_016",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_017",
+      "display_name": "已合作Quinn",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@done.quinn",
+      "profile": {
+        "uid": "tt_uid_017",
+        "unique_id": "done.quinn",
+        "nickname": "已合作Quinn",
+        "sec_uid": "MS4wLjABAAAA_mock_017",
+        "signature": "跨境 · 翻译工具",
+        "follower_count": 98696,
+        "following_count": 116,
+        "heart_count": 1821413,
+        "video_count": 277,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/done.quinn",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_017.jpg"
+      },
+      "content_topics": [
+        "跨境",
+        "翻译工具"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "东南亚"
+        ],
+        "interests": [
+          "跨境",
+          "翻译工具"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 55223,
+        "engagement_rate_30d": 0.049,
+        "growth_rate_30d": 0.26,
+        "gmv_30d": 6540.2,
+        "impressions_30d": 288115,
+        "currency": "USD",
+        "units_sold_30d": 534,
+        "gmv_per_buyer": 12.2,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 22.7
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_017_1",
+          "share_url": "mock://tiktok/video/017_1",
+          "create_time": 1791507300,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 83,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_017_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_017_1",
+            "music_name": "Original Sound",
+            "author_name": "已合作Quinn"
+          },
+          "stats": {
+            "play_count": 29944,
+            "digg_count": 4528,
+            "comment_count": 175,
+            "share_count": 358,
+            "collect_count": 155
+          }
+        },
+        {
+          "video_id": "tt_video_017_2",
+          "share_url": "mock://tiktok/video/017_2",
+          "create_time": 1791420900,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 64,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_017_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_017_2",
+            "music_name": "Original Sound",
+            "author_name": "已合作Quinn"
+          },
+          "stats": {
+            "play_count": 49394,
+            "digg_count": 1810,
+            "comment_count": 294,
+            "share_count": 137,
+            "collect_count": 1577
+          }
+        },
+        {
+          "video_id": "tt_video_017_3",
+          "share_url": "mock://tiktok/video/017_3",
+          "create_time": 1791334500,
+          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_017_3.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_017_3",
+            "music_name": "Original Sound",
+            "author_name": "已合作Quinn"
+          },
+          "stats": {
+            "play_count": 69636,
+            "digg_count": 3292,
+            "comment_count": 181,
+            "share_count": 310,
+            "collect_count": 452
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_017_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_cooperation",
+          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "source_post_id": "tt_video_017_1",
+          "confidence": 0.77,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_017_brand_1",
+          "brand_name": "LinguaGo AI 翻译",
+          "product": "AI 翻译工具",
+          "platform": "tiktok",
+          "is_current_brand": true,
+          "product_relation": "own_brand_cooperation",
+          "exclusivity_risk": "none",
+          "sample_sent_at": "2026-06-01",
+          "sample_received_at": "2026-06-03",
+          "content_published_at": "2026-06-08",
+          "turnaround_days": 5,
+          "deliverable": "视频+图文",
+          "on_time": true,
+          "revision_count": 1,
+          "communication_score": 4.6,
+          "performance": {
+            "play_count": 21680,
+            "engagement_rate": 0.078,
+            "gmv": 13198,
+            "impressions": 684434,
+            "video_gpm": 19.3
+          },
+          "notes": "已与本品牌完成合作，再次触达应排除",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator017_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "own_brand_cooperated",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "exclude",
+        "expected_reason": "已合作本品牌，硬排除"
+      },
+      "raw_api_snapshot_ref": "search_tt_017",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_020",
+      "display_name": "画像缺失Tina",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@unk.tina",
+      "profile": {
+        "uid": "tt_uid_020",
+        "unique_id": "unk.tina",
+        "nickname": "画像缺失Tina",
+        "sec_uid": "MS4wLjABAAAA_mock_020",
+        "signature": "AI工具 · 翻译",
+        "follower_count": 201254,
+        "following_count": 323,
+        "heart_count": 2117385,
+        "video_count": 142,
+        "verified": false,
+        "region": "SG",
+        "bio_url": "mock://tiktok/unk.tina",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_020.jpg"
+      },
+      "content_topics": [
+        "AI工具",
+        "翻译"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 30174,
+        "engagement_rate_30d": 0.036,
+        "growth_rate_30d": 0.19,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "video_gpm": null
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_020_1",
+          "share_url": "mock://tiktok/video/020_1",
+          "create_time": 1791507600,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 55,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_020_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_020_1",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Tina"
+          },
+          "stats": {
+            "play_count": 106427,
+            "digg_count": 4281,
+            "comment_count": 103,
+            "share_count": 393,
+            "collect_count": 1697
+          }
+        },
+        {
+          "video_id": "tt_video_020_2",
+          "share_url": "mock://tiktok/video/020_2",
+          "create_time": 1791421200,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 37,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_020_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_020_2",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Tina"
+          },
+          "stats": {
+            "play_count": 82499,
+            "digg_count": 291,
+            "comment_count": 225,
+            "share_count": 344,
+            "collect_count": 578
+          }
+        },
+        {
+          "video_id": "tt_video_020_3",
+          "share_url": "mock://tiktok/video/020_3",
+          "create_time": 1791334800,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 51,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_020_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_020_3",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Tina"
+          },
+          "stats": {
+            "play_count": 33788,
+            "digg_count": 4994,
+            "comment_count": 46,
+            "share_count": 156,
+            "collect_count": 1011
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_020_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "source_post_id": "tt_video_020_1",
+          "confidence": 0.87,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator020_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown",
+        "gpm_unknown",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "受众画像缺失，降权待确认，不编造受众"
+      },
+      "raw_api_snapshot_ref": "search_tt_020",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_021",
+      "display_name": "画像缺失Uma",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@unk.uma",
+      "profile": {
+        "uid": "tt_uid_021",
+        "unique_id": "unk.uma",
+        "nickname": "画像缺失Uma",
+        "sec_uid": "MS4wLjABAAAA_mock_021",
+        "signature": "跨境 · 效率",
+        "follower_count": 41501,
+        "following_count": 886,
+        "heart_count": 1985674,
+        "video_count": 177,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/unk.uma",
+        "category": "Lifestyle",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_021.jpg"
+      },
+      "content_topics": [
+        "跨境",
+        "效率"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 24629,
+        "engagement_rate_30d": 0.059,
+        "growth_rate_30d": 0.14,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "video_gpm": null
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_021_1",
+          "share_url": "mock://tiktok/video/021_1",
+          "create_time": 1791507700,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 41,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_021_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_021_1",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Uma"
+          },
+          "stats": {
+            "play_count": 34328,
+            "digg_count": 2292,
+            "comment_count": 447,
+            "share_count": 388,
+            "collect_count": 995
+          }
+        },
+        {
+          "video_id": "tt_video_021_2",
+          "share_url": "mock://tiktok/video/021_2",
+          "create_time": 1791421300,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 47,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_021_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_021_2",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Uma"
+          },
+          "stats": {
+            "play_count": 20928,
+            "digg_count": 5220,
+            "comment_count": 311,
+            "share_count": 327,
+            "collect_count": 1140
+          }
+        },
+        {
+          "video_id": "tt_video_021_3",
+          "share_url": "mock://tiktok/video/021_3",
+          "create_time": 1791334900,
+          "title": "分享了一款AI翻译工具的使用体验",
+          "duration": 70,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_021_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_021_3",
+            "music_name": "Original Sound",
+            "author_name": "画像缺失Uma"
+          },
+          "stats": {
+            "play_count": 6427,
+            "digg_count": 4485,
+            "comment_count": 130,
+            "share_count": 326,
+            "collect_count": 189
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_021_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "source_post_id": "tt_video_021_1",
+          "confidence": 0.77,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator021_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown",
+        "gpm_unknown",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "受众画像缺失，降权待确认，不编造受众"
+      },
+      "raw_api_snapshot_ref": "search_tt_021",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_024",
+      "display_name": "新人Xander译",
+      "is_new_creator": true,
+      "platform": "tiktok",
+      "handle": "@new.xander",
+      "profile": {
+        "uid": "tt_uid_024",
+        "unique_id": "new.xander",
+        "nickname": "新人Xander译",
+        "sec_uid": "MS4wLjABAAAA_mock_024",
+        "signature": "AI翻译 · 实时对话",
+        "follower_count": 221445,
+        "following_count": 178,
+        "heart_count": 1556923,
+        "video_count": 216,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/new.xander",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_024.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "实时对话"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "male_45",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "AI翻译",
+          "实时对话"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 41490,
+        "engagement_rate_30d": 0.087,
+        "growth_rate_30d": 0.35,
+        "gmv_30d": 2629,
+        "impressions_30d": 252786,
+        "currency": "USD",
+        "units_sold_30d": 220,
+        "gmv_per_buyer": 12,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 10.4
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_024_1",
+          "share_url": "mock://tiktok/video/024_1",
+          "create_time": 1791508000,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 50,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_024_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_024_1",
+            "music_name": "Original Sound",
+            "author_name": "新人Xander译"
+          },
+          "stats": {
+            "play_count": 47853,
+            "digg_count": 6222,
+            "comment_count": 322,
+            "share_count": 23,
+            "collect_count": 1758
+          }
+        },
+        {
+          "video_id": "tt_video_024_2",
+          "share_url": "mock://tiktok/video/024_2",
+          "create_time": 1791421600,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 62,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_024_2.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_024_2",
+            "music_name": "Original Sound",
+            "author_name": "新人Xander译"
+          },
+          "stats": {
+            "play_count": 45494,
+            "digg_count": 5491,
+            "comment_count": 424,
+            "share_count": 305,
+            "collect_count": 1924
+          }
+        },
+        {
+          "video_id": "tt_video_024_3",
+          "share_url": "mock://tiktok/video/024_3",
+          "create_time": 1791335200,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 63,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_024_3.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_024_3",
+            "music_name": "Original Sound",
+            "author_name": "新人Xander译"
+          },
+          "stats": {
+            "play_count": 67023,
+            "digg_count": 7854,
+            "comment_count": 355,
+            "share_count": 207,
+            "collect_count": 1683
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_024_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "source_post_id": "tt_video_024_1",
+          "confidence": 0.71,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator024_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "new_creator",
+        "gpm_known",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+      },
+      "raw_api_snapshot_ref": "search_tt_024",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_025",
+      "display_name": "新人Yuna工具",
+      "is_new_creator": true,
+      "platform": "tiktok",
+      "handle": "@new.yuna",
+      "profile": {
+        "uid": "tt_uid_025",
+        "unique_id": "new.yuna",
+        "nickname": "新人Yuna工具",
+        "sec_uid": "MS4wLjABAAAA_mock_025",
+        "signature": "效率工具 · 文档翻译",
+        "follower_count": 236043,
+        "following_count": 819,
+        "heart_count": 1857687,
+        "video_count": 349,
+        "verified": false,
+        "region": "JP",
+        "bio_url": "mock://tiktok/new.yuna",
+        "category": "Business",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_025.jpg"
+      },
+      "content_topics": [
+        "效率工具",
+        "文档翻译"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "female_60",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "效率工具",
+          "文档翻译"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 79611,
+        "engagement_rate_30d": 0.045,
+        "growth_rate_30d": 0.35,
+        "gmv_30d": 5857.9,
+        "impressions_30d": 216160,
+        "currency": "USD",
+        "units_sold_30d": 329,
+        "gmv_per_buyer": 17.8,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 27.1
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_025_1",
+          "share_url": "mock://tiktok/video/025_1",
+          "create_time": 1791508100,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 72,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_025_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_025_1",
+            "music_name": "Original Sound",
+            "author_name": "新人Yuna工具"
+          },
+          "stats": {
+            "play_count": 140130,
+            "digg_count": 575,
+            "comment_count": 218,
+            "share_count": 272,
+            "collect_count": 600
+          }
+        },
+        {
+          "video_id": "tt_video_025_2",
+          "share_url": "mock://tiktok/video/025_2",
+          "create_time": 1791421700,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 80,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_025_2.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_025_2",
+            "music_name": "Original Sound",
+            "author_name": "新人Yuna工具"
+          },
+          "stats": {
+            "play_count": 11733,
+            "digg_count": 6159,
+            "comment_count": 121,
+            "share_count": 279,
+            "collect_count": 843
+          }
+        },
+        {
+          "video_id": "tt_video_025_3",
+          "share_url": "mock://tiktok/video/025_3",
+          "create_time": 1791335300,
+          "title": "第一次测评LinguaGo实时对话翻译",
+          "duration": 31,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_025_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_025_3",
+            "music_name": "Original Sound",
+            "author_name": "新人Yuna工具"
+          },
+          "stats": {
+            "play_count": 88820,
+            "digg_count": 6936,
+            "comment_count": 129,
+            "share_count": 69,
+            "collect_count": 1539
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_025_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "source_post_id": "tt_video_025_1",
+          "confidence": 0.88,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator025_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "new_creator",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+      },
+      "raw_api_snapshot_ref": "search_tt_025",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_028",
+      "display_name": "深度竞品Blair",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@deep.blair",
+      "profile": {
+        "uid": "tt_uid_028",
+        "unique_id": "deep.blair",
+        "nickname": "深度竞品Blair",
+        "sec_uid": "MS4wLjABAAAA_mock_028",
+        "signature": "翻译App · 竞品评测",
+        "follower_count": 122732,
+        "following_count": 729,
+        "heart_count": 1227951,
+        "video_count": 216,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/deep.blair",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_028.jpg"
+      },
+      "content_topics": [
+        "翻译App",
+        "竞品评测"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "mixed_50",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "翻译App",
+          "竞品评测"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 109819,
+        "engagement_rate_30d": 0.094,
+        "growth_rate_30d": 0.09,
+        "gmv_30d": 6034.3,
+        "impressions_30d": 553603,
+        "currency": "USD",
+        "units_sold_30d": 271,
+        "gmv_per_buyer": 22.3,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 10.9
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_028_1",
+          "share_url": "mock://tiktok/video/028_1",
+          "create_time": 1791508400,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 30,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_028_1.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_028_1",
+            "music_name": "Original Sound",
+            "author_name": "深度竞品Blair"
+          },
+          "stats": {
+            "play_count": 80117,
+            "digg_count": 2229,
+            "comment_count": 167,
+            "share_count": 131,
+            "collect_count": 1820
+          }
+        },
+        {
+          "video_id": "tt_video_028_2",
+          "share_url": "mock://tiktok/video/028_2",
+          "create_time": 1791422000,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 67,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_028_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_028_2",
+            "music_name": "Original Sound",
+            "author_name": "深度竞品Blair"
+          },
+          "stats": {
+            "play_count": 140387,
+            "digg_count": 3150,
+            "comment_count": 596,
+            "share_count": 260,
+            "collect_count": 208
+          }
+        },
+        {
+          "video_id": "tt_video_028_3",
+          "share_url": "mock://tiktok/video/028_3",
+          "create_time": 1791335600,
+          "title": "本月继续和 Mock竞品翻译 合作中",
+          "duration": 52,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_028_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_028_3",
+            "music_name": "Original Sound",
+            "author_name": "深度竞品Blair"
+          },
+          "stats": {
+            "play_count": 31577,
+            "digg_count": 5579,
+            "comment_count": 537,
+            "share_count": 62,
+            "collect_count": 741
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_028_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_cooperation_active",
+          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "source_post_id": "tt_video_028_1",
+          "confidence": 0.93,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_028_comp_active",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_active",
+          "exclusivity_risk": "possible",
+          "sample_sent_at": "2026-08-01",
+          "sample_received_at": "2026-08-02",
+          "content_published_at": "2026-08-06",
+          "turnaround_days": 4,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.2,
+          "performance": {
+            "play_count": 22812,
+            "engagement_rate": 0.056,
+            "gmv": 10989,
+            "impressions": 391759,
+            "video_gpm": 28.1
+          },
+          "notes": "竞品合作中，排他条款未知",
+          "data_origin": "mock_seed"
+        }
+      ],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator028_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "competitor_active",
+        "competitor_exclusivity_unknown",
+        "gpm_known"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "竞品深度合作中，排他风险未知，需人工确认"
+      },
+      "raw_api_snapshot_ref": "search_tt_028",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_030",
+      "display_name": "竞品差评Dana",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@neg.dana",
+      "profile": {
+        "uid": "tt_uid_030",
+        "unique_id": "neg.dana",
+        "nickname": "竞品差评Dana",
+        "sec_uid": "MS4wLjABAAAA_mock_030",
+        "signature": "翻译工具吐槽 · AI效率",
+        "follower_count": 251369,
+        "following_count": 381,
+        "heart_count": 1573711,
+        "video_count": 400,
+        "verified": false,
+        "region": "SG",
+        "bio_url": "mock://tiktok/neg.dana",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_030.jpg"
+      },
+      "content_topics": [
+        "翻译工具吐槽",
+        "AI效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "22-28",
+        "gender": "female_60",
+        "regions": [
+          "北美",
+          "欧洲"
+        ],
+        "interests": [
+          "翻译工具吐槽",
+          "AI效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 48941,
+        "engagement_rate_30d": 0.094,
+        "growth_rate_30d": 0.23,
+        "gmv_30d": 11910.5,
+        "impressions_30d": 548870,
+        "currency": "USD",
+        "units_sold_30d": 593,
+        "gmv_per_buyer": 20.1,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 21.7
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_030_1",
+          "share_url": "mock://tiktok/video/030_1",
+          "create_time": 1791508600,
+          "title": "某竞品翻译翻车了，术语错误太多",
+          "duration": 34,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_030_1.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_030_1",
+            "music_name": "Original Sound",
+            "author_name": "竞品差评Dana"
+          },
+          "stats": {
+            "play_count": 108041,
+            "digg_count": 7945,
+            "comment_count": 355,
+            "share_count": 22,
+            "collect_count": 800
+          }
+        },
+        {
+          "video_id": "tt_video_030_2",
+          "share_url": "mock://tiktok/video/030_2",
+          "create_time": 1791422200,
+          "title": "某竞品翻译翻车了，术语错误太多",
+          "duration": 77,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_030_2.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_030_2",
+            "music_name": "Original Sound",
+            "author_name": "竞品差评Dana"
+          },
+          "stats": {
+            "play_count": 27966,
+            "digg_count": 6192,
+            "comment_count": 342,
+            "share_count": 53,
+            "collect_count": 624
+          }
+        },
+        {
+          "video_id": "tt_video_030_3",
+          "share_url": "mock://tiktok/video/030_3",
+          "create_time": 1791335800,
+          "title": "某竞品翻译翻车了，术语错误太多",
+          "duration": 61,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_030_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_030_3",
+            "music_name": "Original Sound",
+            "author_name": "竞品差评Dana"
+          },
+          "stats": {
+            "play_count": 135967,
+            "digg_count": 445,
+            "comment_count": 200,
+            "share_count": 45,
+            "collect_count": 1592
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_030_1",
+          "evidence_type": "organic_post",
+          "product_name": "Mock竞品翻译",
+          "product_relation": "competitor_user",
+          "evidence_text": "某竞品翻译翻车了，术语错误太多",
+          "source_post_id": "tt_video_030_1",
+          "confidence": 0.86,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator030_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "competitor_negative_review",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "竞品差评者转化潜力高，但需验证真实性"
+      },
+      "raw_api_snapshot_ref": "search_tt_030",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_032",
+      "display_name": "中立测评Faye",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@neutral.faye",
+      "profile": {
+        "uid": "tt_uid_032",
+        "unique_id": "neutral.faye",
+        "nickname": "中立测评Faye",
+        "sec_uid": "MS4wLjABAAAA_mock_032",
+        "signature": "多产品对比 · 翻译工具 · 效率",
+        "follower_count": 189159,
+        "following_count": 306,
+        "heart_count": 104303,
+        "video_count": 51,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/neutral.faye",
+        "category": "Education",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_032.jpg"
+      },
+      "content_topics": [
+        "多产品对比",
+        "翻译工具",
+        "效率"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "25-34",
+        "gender": "mixed_50",
+        "regions": [
+          "东南亚",
+          "中国大陆"
+        ],
+        "interests": [
+          "多产品对比",
+          "翻译工具",
+          "效率"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 92474,
+        "engagement_rate_30d": 0.053,
+        "growth_rate_30d": 0.33,
+        "gmv_30d": 16535.4,
+        "impressions_30d": 810559,
+        "currency": "USD",
+        "units_sold_30d": 405,
+        "gmv_per_buyer": 40.8,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 20.4
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_032_1",
+          "share_url": "mock://tiktok/video/032_1",
+          "create_time": 1791508800,
+          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "duration": 87,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_032_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_032_1",
+            "music_name": "Original Sound",
+            "author_name": "中立测评Faye"
+          },
+          "stats": {
+            "play_count": 76264,
+            "digg_count": 2737,
+            "comment_count": 546,
+            "share_count": 87,
+            "collect_count": 1141
+          }
+        },
+        {
+          "video_id": "tt_video_032_2",
+          "share_url": "mock://tiktok/video/032_2",
+          "create_time": 1791422400,
+          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "duration": 82,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_032_2.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_032_2",
+            "music_name": "Original Sound",
+            "author_name": "中立测评Faye"
+          },
+          "stats": {
+            "play_count": 55339,
+            "digg_count": 806,
+            "comment_count": 192,
+            "share_count": 276,
+            "collect_count": 1718
+          }
+        },
+        {
+          "video_id": "tt_video_032_3",
+          "share_url": "mock://tiktok/video/032_3",
+          "create_time": 1791336000,
+          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "duration": 62,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_032_3.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_032_3",
+            "music_name": "Original Sound",
+            "author_name": "中立测评Faye"
+          },
+          "stats": {
+            "play_count": 65296,
+            "digg_count": 4559,
+            "comment_count": 42,
+            "share_count": 330,
+            "collect_count": 554
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_032_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "similar_product_user",
+          "evidence_text": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "source_post_id": "tt_video_032_1",
+          "confidence": 0.91,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator032_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "multi_product_neutral",
+        "gpm_known",
+        "similar_product_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "多产品中立测评型，适合对比测评合作"
+      },
+      "raw_api_snapshot_ref": "search_tt_032",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_034",
+      "display_name": "GPM缺失Holly",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@nogpm.holly",
+      "profile": {
+        "uid": "tt_uid_034",
+        "unique_id": "nogpm.holly",
+        "nickname": "GPM缺失Holly",
+        "sec_uid": "MS4wLjABAAAA_mock_034",
+        "signature": "AI翻译 · 职场",
+        "follower_count": 148459,
+        "following_count": 889,
+        "heart_count": 208331,
+        "video_count": 334,
+        "verified": false,
+        "region": "US",
+        "bio_url": "mock://tiktok/nogpm.holly",
+        "category": "Business",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_034.jpg"
+      },
+      "content_topics": [
+        "AI翻译",
+        "职场"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "20-30",
+        "gender": "female_55",
+        "regions": [
+          "北美",
+          "澳洲"
+        ],
+        "interests": [
+          "AI翻译",
+          "职场"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 16102,
+        "engagement_rate_30d": 0.035,
+        "growth_rate_30d": 0.2,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "video_gpm": null
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_034_1",
+          "share_url": "mock://tiktok/video/034_1",
+          "create_time": 1791509000,
+          "title": "LinguaGo 文档翻译适合职场人",
+          "duration": 35,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_034_1.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_034_1",
+            "music_name": "Original Sound",
+            "author_name": "GPM缺失Holly"
+          },
+          "stats": {
+            "play_count": 91028,
+            "digg_count": 688,
+            "comment_count": 314,
+            "share_count": 172,
+            "collect_count": 620
+          }
+        },
+        {
+          "video_id": "tt_video_034_2",
+          "share_url": "mock://tiktok/video/034_2",
+          "create_time": 1791422600,
+          "title": "LinguaGo 文档翻译适合职场人",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_034_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_034_2",
+            "music_name": "Original Sound",
+            "author_name": "GPM缺失Holly"
+          },
+          "stats": {
+            "play_count": 132074,
+            "digg_count": 517,
+            "comment_count": 292,
+            "share_count": 64,
+            "collect_count": 129
+          }
+        },
+        {
+          "video_id": "tt_video_034_3",
+          "share_url": "mock://tiktok/video/034_3",
+          "create_time": 1791336200,
+          "title": "LinguaGo 文档翻译适合职场人",
+          "duration": 86,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_034_3.jpg"
+          ],
+          "region": "GB",
+          "hashtag_names": [
+            "#aitranslation",
+            "#翻译工具",
+            "#跨境"
+          ],
+          "music_info": {
+            "music_id": "music_034_3",
+            "music_name": "Original Sound",
+            "author_name": "GPM缺失Holly"
+          },
+          "stats": {
+            "play_count": 62542,
+            "digg_count": 1861,
+            "comment_count": 110,
+            "share_count": 105,
+            "collect_count": 537
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_034_1",
+          "evidence_type": "organic_post",
+          "product_name": "LinguaGo AI 翻译",
+          "product_relation": "own_brand_user",
+          "evidence_text": "LinguaGo 文档翻译适合职场人",
+          "source_post_id": "tt_video_034_1",
+          "confidence": 0.71,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_creator034_tt@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "gpm_unknown",
+        "own_brand_user"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "产品相关但 GPM 缺失，降权不排除"
+      },
+      "raw_api_snapshot_ref": "search_tt_034",
+      "data_origin": "mock_seed"
+    }
+  ]
+}
