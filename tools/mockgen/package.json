@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "AI Creator Collaboration Workbench Demo",
+  "description": "Optional mock JSON generator only — not used by the Python Agent at runtime",
   "scripts": {
     "generate:mock": "tsx scripts/generate-mock-data.ts"
   },
