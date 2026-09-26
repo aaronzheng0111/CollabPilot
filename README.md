@@ -8,6 +8,7 @@ AI 达人合作工作台 Demo。品牌用自然语言描述合作目标；Agent 
 |------|------|
 | [`data/`](data/) | 模拟达人 JSON（TikTok / Instagram）与读取说明 |
 | [`tools/mockgen/`](tools/mockgen/) | 确定性 Mock 生成脚本与 TypeScript 类型 |
+| [`documents/`](documents/) | T01–T12 规格包。一次只实现一个 Task，Verify 通过后再做下一个 |
 
 详细字段与异常场景见 [`data/README.md`](data/README.md)。
 
