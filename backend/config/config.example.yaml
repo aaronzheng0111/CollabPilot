@@ -1,0 +1,57 @@
+app:
+  name: CollabPilot
+  environment: development
+  database_url: sqlite:///data/agent.db
+  log_path: logs/agent.jsonl
+  identity_path: docs/agent.md
+
+model:
+  default_provider: mock
+  default_model: collabpilot-mock
+  temperature: 0.2
+  timeout_seconds: 60
+  max_retries: 2
+
+providers:
+  mock:
+    type: mock
+  tokenrouter:
+    type: openai_compatible
+    base_url: https://api.tokenrouter.com/v1
+    api_key_env: TOKENROUTER_API_KEY
+    stream: true
+  zhipu:
+    type: openai_compatible
+    base_url: https://open.bigmodel.cn/api/paas/v4
+    api_key_env: ZHIPU_API_KEY
+    stream: true
+    thinking: disabled
+  openai:
+    type: openai_compatible
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+  deepseek:
+    type: openai_compatible
+    base_url: https://api.deepseek.com/v1
+    api_key_env: DEEPSEEK_API_KEY
+  qwen:
+    type: openai_compatible
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+  local:
+    type: openai_compatible
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+
+runtime:
+  max_model_calls: 4
+  max_tool_calls: 4
+  max_seconds: 90
+  tool_timeout_seconds: 10
+  max_tool_result_chars: 8000
+
+tools:
+  enabled:
+    - get_current_time
+  allow_risk_levels:
+    - read

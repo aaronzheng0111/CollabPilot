@@ -1,0 +1,138 @@
+from __future__ import annotations
+
+import asyncio
+import json
+from collections.abc import Awaitable, Callable
+from time import monotonic
+from uuid import UUID
+
+from collabpilot.domain.errors import RuntimeBudgetExceeded, ToolPolicyError
+from collabpilot.domain.models import Message, ModelResponse
+from collabpilot.observability.logging import get_logger
+from collabpilot.providers.base import Provider
+from collabpilot.settings import RuntimeConfig
+from collabpilot.tools.base import ToolContext
+from collabpilot.tools.policy import ToolPolicy
+from collabpilot.tools.registry import ToolRegistry
+
+
+class AgentRuntime:
+    def __init__(
+        self,
+        tools: ToolRegistry,
+        policy: ToolPolicy,
+        budget: RuntimeConfig,
+    ):
+        self.tools = tools
+        self.policy = policy
+        self.budget = budget
+
+    async def run(
+        self,
+        provider: Provider,
+        model: str,
+        messages: list[Message],
+        session_id: UUID,
+        turn_id: UUID,
+        on_delta: Callable[[str], Awaitable[None]] | None = None,
+    ) -> tuple[ModelResponse, list[Message], int]:
+        started = monotonic()
+        model_calls = 0
+        tool_calls = 0
+        repeated_calls: dict[str, int] = {}
+        generated: list[Message] = []
+        logger = get_logger(session_id=str(session_id), turn_id=str(turn_id))
+
+        while model_calls < self.budget.max_model_calls:
+            if monotonic() - started > self.budget.max_seconds:
+                raise RuntimeBudgetExceeded("Maximum run time exceeded")
+            model_calls += 1
+            logger.info(
+                "model.requested",
+                provider=provider.name,
+                model=model,
+                model_call=model_calls,
+            )
+            response = await provider.complete(
+                messages,
+                model,
+                self.tools.schemas(),
+                on_delta=on_delta,
+            )
+            logger.info(
+                "model.completed",
+                provider=response.provider,
+                model=response.model,
+                tool_call_count=len(response.tool_calls),
+                usage=response.usage,
+            )
+            if not response.tool_calls:
+                if not response.content:
+                    response.content = "The model returned an empty response."
+                return response, generated, tool_calls
+
+            messages.append(
+                Message(
+                    role="assistant",
+                    content=response.content or "",
+                    tool_calls=response.tool_calls,
+                )
+            )
+            for call in response.tool_calls:
+                if tool_calls >= self.budget.max_tool_calls:
+                    raise RuntimeBudgetExceeded("Maximum tool calls exceeded")
+                signature = f"{call.name}:{json.dumps(call.arguments, sort_keys=True)}"
+                repeated_calls[signature] = repeated_calls.get(signature, 0) + 1
+                if repeated_calls[signature] > 2:
+                    raise RuntimeBudgetExceeded(
+                        f"Repeated identical tool call detected: {call.name}"
+                    )
+                tool = self.tools.get(call.name)
+                if tool is None:
+                    result_text = json.dumps(
+                        {"ok": False, "error_code": "unknown_tool"},
+                        ensure_ascii=False,
+                    )
+                else:
+                    try:
+                        self.policy.check(tool)
+                        logger.info(
+                            "tool.requested",
+                            tool=tool.name,
+                            risk_level=tool.risk_level,
+                        )
+                        result = await asyncio.wait_for(
+                            tool.execute(
+                                call.arguments,
+                                ToolContext(session_id=session_id, turn_id=turn_id),
+                            ),
+                            timeout=self.budget.tool_timeout_seconds,
+                        )
+                        result_text = result.model_dump_json()
+                        logger.info(
+                            "tool.completed",
+                            tool=tool.name,
+                            ok=result.ok,
+                            error_code=result.error_code,
+                        )
+                    except ToolPolicyError as exc:
+                        result_text = json.dumps(
+                            {"ok": False, "error_code": exc.code, "display": str(exc)},
+                            ensure_ascii=False,
+                        )
+                    except TimeoutError:
+                        result_text = json.dumps(
+                            {"ok": False, "error_code": "tool_timeout"},
+                            ensure_ascii=False,
+                        )
+                result_text = result_text[: self.budget.max_tool_result_chars]
+                tool_message = Message(
+                    role="tool",
+                    content=result_text,
+                    name=call.name,
+                    tool_call_id=call.id,
+                )
+                messages.append(tool_message)
+                tool_calls += 1
+
+        raise RuntimeBudgetExceeded("Maximum model calls exceeded")
