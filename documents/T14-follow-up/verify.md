@@ -2,17 +2,19 @@
 
 全部用例通过才算本 Task `verified`。
 
+自动化：`cd backend && uv run pytest`（`tests/unit/test_follow_up.py`，默认 `-m 'not eval'`）；`cd frontend && uv run --project ../backend --extra ui --extra dev pytest tests`（`tests/test_follow_up_table.py`）。
+
 | # | 用例 | 结果 |
 |---|------|------|
-| 1 | 草稿未批准时 draft_not_approved | 未测 |
-| 2 | 渠道与 confirmed_channel 不一致时 channel_mismatch | 未测 |
-| 3 | 确认后写入 waiting_user，并标 deepseek-chat | 未测 |
-| 4 | 未确认保存时 approval_required | 未测 |
-| 5 | 记下后状态为 noted 且无发送记录 | 未测 |
-| 6 | 跟进模块无 TikTok、Instagram、SMTP 发送调用 | 未测 |
-| 7 | 跟进表展示创作者、渠道、next_step、中文状态，带 LLM | 未测 |
-| 8 | 「待你决定」出现记录跟进，批准后跟进表有该行 | 未测 |
-| 9 | 批准记下后显示「已记下」，无发送类按钮 | 未测 |
+| 1 | 草稿未批准时 draft_not_approved | 自动通过：`test_unapproved_draft_is_draft_not_approved`、`test_unapproved_draft_does_not_call_model` |
+| 2 | 渠道与 confirmed_channel 不一致时 channel_mismatch | 自动通过：`test_channel_mismatch_is_not_saved` |
+| 3 | 确认后写入 waiting_user，并标 deepseek-chat | 自动通过：`test_approved_save_writes_waiting_user_and_origin` |
+| 4 | 未确认保存时 approval_required | 自动通过：`test_unapproved_save_is_approval_required` |
+| 5 | 记下后状态为 noted 且无发送记录 | 自动通过：`test_note_changes_status_and_has_no_send` |
+| 6 | 跟进模块无 TikTok、Instagram、SMTP 发送调用 | 自动通过：同上（无 smtp/send_mail/tiktok.com/SENDING） |
+| 7 | 跟进表展示创作者、渠道、next_step、中文状态，带 LLM | 自动通过：`test_follow_up_table_shows_creator_channel_step_status_and_llm`；人工：待走查 |
+| 8 | 「待你决定」出现记录跟进，批准后跟进表有该行 | 自动通过：`test_pending_record_follow_up_then_table_waiting_user`；人工：待走查 |
+| 9 | 批准记下后显示「已记下」，无发送类按钮 | 自动通过：`test_note_follow_up_shows_noted_and_has_no_send_buttons`；人工：待走查 |
 
 ## 通过标准
 
