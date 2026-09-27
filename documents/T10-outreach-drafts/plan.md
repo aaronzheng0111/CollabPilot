@@ -21,6 +21,7 @@ Draft
 
 - 模型输出 3 个对象的 JSON。应用层 `validate_drafts` 校验：cited_post_id 属于该创作者且三者互异、正文互异、正文含所引帖子不少于 8 字的原文片段、渠道名称来自 `channels.CHANNEL_LABELS`。
 - 提示词给模型的每位创作者材料：`display_name`、已确认渠道、全部 `recent_posts` 原文与 `age_days`、T05 的 `reasons`。要求每封点出该创作者一条具体内容，不写通用模板句。
+- 写草稿的模型调用传 `temperature=settings.model.creative_temperature`（默认 `0.85`）；工具编排与适合度判断仍用 `settings.model.temperature`（默认 `0.2`）。
 - 校验通过后先写 `pending_decision=save_drafts`；`save_draft` 不是模型直接写库，`user_approved=true` 后才写入。
 - `approve_draft(draft_id)` 与 `reject_draft(draft_id)`：需要 `user_approved=true`，只改状态。
 - 在 `decisions.py` 注册 `save_drafts` 与 `approve_draft` 分支。

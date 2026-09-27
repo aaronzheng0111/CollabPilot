@@ -7,6 +7,7 @@ SQLite 表 `follow_ups`，字段与 `FollowUp` 相同。一个 `draft_id` 最多
 ## 契约
 
 - 模型输出 `FollowUp` 草案 JSON。应用层 `validate_follow_up` 核对 `draft.status=approved` 且 `channel` 等于 `confirmed_channel`。
+- 写跟进文案时传 `temperature=settings.model.creative_temperature`（默认 `0.85`）。
 - `save_follow_up`：`risk_level=write`，需要 `user_approved=true`。初始状态 `waiting_user`。
 - `note_follow_up(id)`：仅把状态改为 `noted`。需要 `user_approved=true`。
 

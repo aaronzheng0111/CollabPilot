@@ -26,6 +26,8 @@ class ModelConfig(BaseModel):
     default_provider: str = "deepseek"
     default_model: str = "deepseek-chat"
     temperature: float = 0.2
+    # Used for outreach drafts / follow-up copy, not for tool orchestration.
+    creative_temperature: float = 0.85
     timeout_seconds: float = 60
     max_retries: int = 2
 

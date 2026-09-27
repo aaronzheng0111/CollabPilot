@@ -38,6 +38,7 @@ class ApplicationService:
         model: str | None = None,
         on_delta: Callable[[str], Awaitable[None]] | None = None,
         on_event: EventHandler | None = None,
+        creative: bool = False,
     ) -> ChatResult:
         provider_name = provider_name or self.settings.model.default_provider
         model = model or self.settings.model.default_model
@@ -57,6 +58,9 @@ class ApplicationService:
             if message.role != "tool"
         ]
         messages = self.context.build(history)
+        temperature = (
+            self.settings.model.creative_temperature if creative else None
+        )
 
         try:
             response, generated, tool_call_count = await self.runtime.run(
@@ -67,6 +71,7 @@ class ApplicationService:
                 turn_id=turn_id,
                 on_delta=on_delta,
                 on_event=on_event,
+                temperature=temperature,
             )
             for message in generated:
                 self.store.add_message(session_id, turn_id, message)

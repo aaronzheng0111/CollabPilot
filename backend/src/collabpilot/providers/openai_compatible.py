@@ -51,6 +51,7 @@ class OpenAICompatibleProvider(Provider):
         model: str,
         tools: list[dict[str, Any]],
         on_delta: Callable[[str], Awaitable[None]] | None = None,
+        temperature: float | None = None,
     ) -> ModelResponse:
         request_messages: list[dict[str, Any]] = []
         for message in messages:
@@ -75,6 +76,9 @@ class OpenAICompatibleProvider(Provider):
                     for call in message.tool_calls
                 ]
             request_messages.append(item)
+        selected_temperature = (
+            self.temperature if temperature is None else temperature
+        )
         try:
             extra_body = (
                 {"thinking": {"type": self.thinking}}
@@ -86,7 +90,7 @@ class OpenAICompatibleProvider(Provider):
                     model=model,
                     messages=request_messages,  # type: ignore[arg-type]
                     tools=tools or None,  # type: ignore[arg-type]
-                    temperature=self.temperature,
+                    temperature=selected_temperature,
                     stream=True,
                     extra_body=extra_body,
                 )
@@ -133,7 +137,7 @@ class OpenAICompatibleProvider(Provider):
                 model=model,
                 messages=request_messages,  # type: ignore[arg-type]
                 tools=tools or None,  # type: ignore[arg-type]
-                temperature=self.temperature,
+                temperature=selected_temperature,
                 extra_body=extra_body,
             )
         except AuthenticationError as exc:

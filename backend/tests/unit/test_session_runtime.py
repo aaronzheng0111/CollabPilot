@@ -26,9 +26,13 @@ class ScriptedProvider(Provider):
     def __init__(self, responses: list[ModelResponse]):
         self.responses = list(responses)
         self.requests: list[list[Message]] = []
+        self.temperatures: list[float | None] = []
 
-    async def complete(self, messages, model, tools, on_delta=None) -> ModelResponse:
+    async def complete(
+        self, messages, model, tools, on_delta=None, temperature=None
+    ) -> ModelResponse:
         self.requests.append([message.model_copy() for message in messages])
+        self.temperatures.append(temperature)
         return self.responses.pop(0)
 
     async def health(self, model: str) -> tuple[bool, str]:
@@ -38,10 +42,16 @@ class ScriptedProvider(Provider):
 class RecordingMockProvider(MockProvider):
     def __init__(self):
         self.requests: list[list[Message]] = []
+        self.temperatures: list[float | None] = []
 
-    async def complete(self, messages, model, tools, on_delta=None) -> ModelResponse:
+    async def complete(
+        self, messages, model, tools, on_delta=None, temperature=None
+    ) -> ModelResponse:
         self.requests.append([message.model_copy() for message in messages])
-        return await super().complete(messages, model, tools, on_delta)
+        self.temperatures.append(temperature)
+        return await super().complete(
+            messages, model, tools, on_delta, temperature=temperature
+        )
 
 
 def distinct_offsets(count: int) -> list[str]:
@@ -100,6 +110,8 @@ def test_example_config_defaults_to_deepseek_and_budget() -> None:
 
     assert settings.model.default_provider == "deepseek"
     assert settings.model.default_model == "deepseek-chat"
+    assert settings.model.temperature == 0.2
+    assert settings.model.creative_temperature == 0.85
     assert settings.providers["deepseek"].api_key_env == "DEEPSEEK_API_KEY"
     assert (
         settings.runtime.max_model_calls,
@@ -121,7 +133,7 @@ async def test_chat_without_provider_uses_deepseek(
         f"DEEPSEEK_API_KEY={FAKE_KEY}\n", encoding="utf-8"
     )
 
-    async def fake_complete(self, messages, model, tools, on_delta=None):
+    async def fake_complete(self, messages, model, tools, on_delta=None, temperature=None):
         return ModelResponse(content="好的", provider=self.name, model=model)
 
     monkeypatch.setattr(OpenAICompatibleProvider, "complete", fake_complete)
@@ -129,6 +141,16 @@ async def test_chat_without_provider_uses_deepseek(
     result = await application.chat("你好")
 
     assert (result.provider, result.model) == ("deepseek", "deepseek-chat")
+
+
+async def test_creative_chat_uses_creative_temperature(application, monkeypatch) -> None:
+    provider = RecordingMockProvider()
+    monkeypatch.setattr(application.providers, "get", lambda name: provider)
+
+    await application.chat("你好")
+    await application.chat("写一封邀请草稿", creative=True)
+
+    assert provider.temperatures == [None, 0.85]
 
 
 def test_deepseek_host_is_blocked_in_tests() -> None:

@@ -60,6 +60,46 @@ async def test_tool_call_is_returned_to_provider(monkeypatch) -> None:
     tool_call = captured["messages"][0]["tool_calls"][0]
     assert tool_call["id"] == "call-1"
     assert json.loads(tool_call["function"]["arguments"]) == {"timezone": "UTC"}
+    assert captured["temperature"] == 0
+
+
+async def test_complete_temperature_override(monkeypatch) -> None:
+    captured = {}
+
+    class FakeCompletions:
+        async def create(self, **kwargs):
+            captured.update(kwargs)
+
+            class MessageResult:
+                content = "draft"
+                tool_calls = []
+
+            class Choice:
+                message = MessageResult()
+
+            class Response:
+                choices = [Choice()]
+                usage = None
+
+            return Response()
+
+    provider = OpenAICompatibleProvider(
+        name="test",
+        base_url="https://example.test/v1",
+        api_key="not-a-real-key",
+        timeout=1,
+        max_retries=0,
+        temperature=0.2,
+    )
+    monkeypatch.setattr(provider.client.chat, "completions", FakeCompletions())
+    await provider.complete(
+        [Message(role="user", content="写草稿")],
+        model="test-model",
+        tools=[],
+        temperature=0.85,
+    )
+
+    assert captured["temperature"] == 0.85
 
 
 def test_model_response_accepts_nested_provider_usage() -> None:

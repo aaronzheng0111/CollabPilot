@@ -54,6 +54,7 @@ class AgentRuntime:
         turn_id: UUID,
         on_delta: Callable[[str], Awaitable[None]] | None = None,
         on_event: EventHandler | None = None,
+        temperature: float | None = None,
     ) -> tuple[ModelResponse, list[Message], int]:
         started = monotonic()
         model_calls = 0
@@ -96,6 +97,7 @@ class AgentRuntime:
                 model,
                 self.tools.schemas(),
                 on_delta=on_delta,
+                temperature=temperature,
             )
             logger.info(
                 "model.completed",

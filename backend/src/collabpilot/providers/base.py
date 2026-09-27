@@ -17,6 +17,7 @@ class Provider(ABC):
         model: str,
         tools: list[dict[str, Any]],
         on_delta: Callable[[str], Awaitable[None]] | None = None,
+        temperature: float | None = None,
     ) -> ModelResponse:
         raise NotImplementedError
 

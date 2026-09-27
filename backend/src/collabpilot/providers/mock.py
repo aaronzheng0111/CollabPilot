@@ -18,7 +18,9 @@ class MockProvider(Provider):
         model: str,
         tools: list[dict[str, Any]],
         on_delta: Callable[[str], Awaitable[None]] | None = None,
+        temperature: float | None = None,
     ) -> ModelResponse:
+        del temperature
         last = messages[-1]
         if last.role == "tool":
             content = f"工具返回：{last.content}"
