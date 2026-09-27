@@ -4,7 +4,25 @@
 
 产品范围见 [`docs/AI笔试题目.md`](docs/AI笔试题目.md)。实现顺序与验收规格见 [`documents/PLAN.md`](documents/PLAN.md)。
 
-> **当前进度**：Agent 运行时骨架已可运行（CLI、FastAPI、Mock / OpenAI 兼容 Provider、工具循环、SQLite 会话）。业务流程按 T01–T14 的规格逐个实现，当前从 **T01** 开始。下文的架构描述的是目标形态，每个模块标明由哪个 Task 交付。
+> **当前进度**：T01–T12 代码与自动化用例已完成（T01 `verified`；其余待人工走查后改 `verified`）。
+
+## 快速开始
+
+从克隆到打开页面不超过 6 条命令（在仓库根目录执行）。缺 `config/config.yaml` 时会回退到 `config/config.example.yaml`。
+
+```bash
+cd backend && cp .env.example .env
+# 编辑 backend/.env，写入 DEEPSEEK_API_KEY=...
+uv sync --python 3.11 --extra dev --extra ui
+uv run pytest
+uv run pytest -m eval -s
+cd ../frontend && uv run --project ../backend --extra ui streamlit run app.py
+cd ../backend && uv run agent demo reset
+```
+
+`agent demo reset` 清空 SQLite 会话、活动、渠道、草稿与跟进，不改 `data/mock/`。页面打开后可稍后执行。
+
+材料：[设计说明](documents/T12-source-labels/design-note.md) · [演示脚本](documents/T12-source-labels/demo-script.md) · [两周计划](documents/T12-source-labels/two-week-plan.md)
 
 ## 它做什么
 
@@ -63,7 +81,7 @@ flowchart TB
 
   subgraph DOM["backend/ · campaign 领域（T02–T14）"]
     direction LR
-    TOOLS["工具 [MOCK]<br/>search_creators · get_creator<br/>apply_hard_filters · confirm_channel<br/>save_campaign_selection · exclude_creator"]
+    TOOLS["工具 [MOCK]<br/>search_creators · get_creator<br/>apply_hard_filters · confirm_channel<br/>save_campaign_selection · exclude_creator<br/>save_drafts · approve_draft · reject_draft"]
     RULES["校验与规则 [RULE]<br/>goal · verdict · topic_match · retry<br/>audience · channels · drafts · follow_up"]
   end
 

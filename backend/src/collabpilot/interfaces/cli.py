@@ -10,6 +10,7 @@ from rich.table import Table
 
 from collabpilot.bootstrap import create_application, get_settings
 from collabpilot.domain.errors import AgentError
+from collabpilot.infrastructure.campaign_store import reset_demo_tables
 from collabpilot.providers.registry import ProviderRegistry
 from collabpilot.tools.registry import ToolRegistry
 
@@ -17,8 +18,10 @@ from collabpilot.tools.registry import ToolRegistry
 app = typer.Typer(help="CollabPilot CLI", no_args_is_help=True)
 model_app = typer.Typer(help="Inspect and test model providers.")
 tools_app = typer.Typer(help="Inspect tools.")
+demo_app = typer.Typer(help="Demo data helpers.")
 app.add_typer(model_app, name="model")
 app.add_typer(tools_app, name="tools")
+app.add_typer(demo_app, name="demo")
 console = Console()
 
 
@@ -144,6 +147,14 @@ def tools_list() -> None:
     for tool in ToolRegistry(settings.tools.enabled).list():
         table.add_row(tool.name, tool.risk_level, tool.description)
     console.print(table)
+
+
+@demo_app.command("reset")
+def demo_reset() -> None:
+    """Clear sessions, campaigns, channels, drafts and follow-ups. Does not change data/mock/."""
+    application = create_application()
+    reset_demo_tables(application.store.engine)
+    console.print("已清空会话、活动、渠道、草稿与跟进。data/mock/ 未改动。")
 
 
 @app.command()

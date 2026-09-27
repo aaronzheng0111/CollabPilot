@@ -1,6 +1,6 @@
 # Implement — 来源标注与提交材料
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–12 已通过；用例 9 计时走查与完整 DeepSeek 演示待人工）
 
 ## 约束
 
@@ -27,6 +27,11 @@
 
 文档中出现的命令、文件路径、错误码都要在当时代码中真实存在，写完后逐条执行或检索核对。
 
+## 实现记录
+
+- CLI：`agent demo reset` 调用 `reset_demo_tables`，DELETE 会话/活动/渠道/草稿/跟进表行，不删库、不碰 `data/mock/`。
+- 前端：`source_badge.py` 映射 origin → `[MOCK]`/`[LLM]`/`[RULE]`；标题下图例四类；草稿/跟进 caption 固定 `[MOCK-SEND]`。
+- 文档：`design-note.md`（<900 字）、`demo-script.md`（10 步 240s + 无 Key 附录）、`two-week-plan.md`（4 项可重复验证）、根 README「快速开始」6 条命令。
 
 ## 门禁
 
