@@ -2,17 +2,19 @@
 
 全部用例通过才算本 Task `verified`。
 
+自动化：`cd backend && uv run pytest`（`tests/unit/test_topic_match.py`，默认 `-m 'not eval'`）；`cd frontend && uv run --project ../backend --extra ui --extra dev pytest tests`（`tests/test_evidence_panel.py`）。评测：`cd backend && uv run pytest -m eval -s tests/eval/test_topic_eval.py`（需要 `backend/.env` 的 `DEEPSEEK_API_KEY`）。
+
 | # | 用例 | 结果 |
 |---|------|------|
-| 1 | mismatch 且 fit 返回 topic_conflict，不保存 | 未测 |
-| 2 | mismatch 缺主题、证据或 quote 不是帖子原文子串时返回 quote_not_found | 未测 |
-| 3 | mismatch 进入 topic_rejected_ids，后续轮次不重判也不推荐 | 未测 |
-| 4 | GPM 高于 target_gpm 仍不在最终候选 | 未测 |
-| 5 | backend/src 不读 keyword_mismatch 与 scenario_tags | 未测 |
-| 6 | eval：011–015 全部 mismatch+unfit，001–006 无 mismatch（附模型原文） | 未测 |
-| 7 | 判断与理由标 LLM，锁定动作标 RULE | 未测 |
-| 8 | 主表该行为「不合适」并有「主题不符」胶囊 | 未测 |
-| 9 | 依据面板显示 quote 与帖子 id，锁定行标 RULE，无加回按钮 | 未测 |
+| 1 | mismatch 且 fit 返回 topic_conflict，不保存 | 自动通过：`test_mismatch_plus_fit_is_topic_conflict_and_not_saved`；`test_unclear_fit_is_topic_conflict` |
+| 2 | mismatch 缺主题、证据或 quote 不是帖子原文子串时返回 quote_not_found | 自动通过：`test_mismatch_missing_topic_evidence_or_quote_is_quote_not_found`（空主题、假 quote、>80 字、只有 evidence_id 没有帖子）；合法 quote 见 `test_valid_mismatch_quote_must_be_post_substring` |
+| 3 | mismatch 进入 topic_rejected_ids，后续轮次不重判也不推荐 | 自动通过：`test_lock_puts_mismatch_in_topic_rejected_ids`、`test_locked_ids_are_dropped_from_later_search_and_judgment`、`test_evaluate_skips_locked_and_does_not_rejudge` |
+| 4 | GPM 高于 target_gpm 仍不在最终候选 | 自动通过：`test_high_gpm_mismatch_stays_out_of_fit`（creator_012 GPM 28.1 > 20；`fit_creator_ids` 源码无 GPM 升级） |
+| 5 | backend/src 不读 keyword_mismatch 与 scenario_tags | 自动通过：`test_runtime_source_does_not_read_keyword_mismatch_or_scenario_tags` |
+| 6 | eval：011–015 全部 mismatch+unfit，001–006 无 mismatch（附模型原文） | eval 通过（2026-09-27，`deepseek-chat`，1 次）：001–006 全 match+fit rank 1–6；011 影视字幕剪辑 / 012 语言考试 / 013 AI绘画 / 014 留学申请 / 015 语言考试，全部 mismatch+unfit，rejected=[]，锁定 011–015 |
+| 7 | 判断与理由标 LLM，锁定动作标 RULE | 自动通过：`test_mismatch_judgment_is_llm_lock_is_rule` |
+| 8 | 主表该行为「不合适」并有「主题不符」胶囊 | 自动通过：`test_mismatch_row_and_panel_show_quote_lock_and_no_restore`（`topic` 列为纯文本「主题不符：影视字幕剪辑」，dataframe 无法套胶囊，与 T05 相同）；人工：待走查 |
+| 9 | 依据面板显示 quote 与帖子 id，锁定行标 RULE，无加回按钮 | 自动通过：同上（quote「高能剪辑」、`tt_video_011_1`、`[LLM]`、`已锁定，不再推荐` `[RULE]`、无「加回名单」）；人工：待走查 |
 
 ## 通过标准
 

@@ -9,7 +9,7 @@
 - 描述：validate_topic_verdicts：topic_conflict、quote_not_found、unclear 的取值约束
 - 依赖：T05 verified
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：手写 Verdict fixture 单测，不调用 DeepSeek
 - Verify：用例 1、2
 
@@ -18,7 +18,7 @@
 - 描述：lock_topic_rejections 与再次搜索时减去 topic_rejected_ids；GPM 不参与升级
 - 依赖：T06-01
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：活动字段 topic_rejected_ids；搜索后过滤并在回复中说明人数
 - Verify：用例 3、4、7
 
@@ -27,7 +27,7 @@
 - 描述：提示词补充主题判断要求；断言运行时代码不读 keyword_mismatch 与 scenario_tags
 - 依赖：T06-01
 - 可并行：是
-- 状态：`planned`
+- 状态：`done`
 - Implement：源码检索测试
 - Verify：用例 5
 
@@ -36,7 +36,7 @@
 - 描述：DeepSeek 评测 011–015 与对照组 001–006
 - 依赖：T06-03
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`tests/eval/test_topic_eval.py`，对照 load_oracle
 - Verify：用例 6
 
@@ -47,7 +47,7 @@
 - 描述：主表「主题不符」胶囊；判断依据面板显示 quote 与锁定行，无加回按钮
 - 依赖：T06-02
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/main_table.py`、`components/evidence_panel.py`，fixture 做 AppTest
 - Verify：用例 8、9
 
