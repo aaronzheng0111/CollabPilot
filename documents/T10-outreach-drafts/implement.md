@@ -1,6 +1,6 @@
 # Implement — 触达草稿
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–13 与 eval 用例 10 已通过；等人工走查后改 `verified`）
 
 ## 约束
 
@@ -25,6 +25,15 @@
 ## 本 Task 补充约束
 
 正文引用必须来自工具返回的 title 或 caption 子串，校验时检查 cited_post_id，不检查营销措辞好坏。
+
+
+## 实现记录
+
+- `campaign/drafts.py`：`validate_drafts` 要求恰好 3 封、body/cited_post_id 互异、帖子属于该创作者、正文含 ≥8 字原文、`channel` 等于已确认渠道且正文含 `CHANNEL_LABELS`。失败整批不保存。少于 3 人或缺渠道时不调模型（`need_three_creators` / `channel_unconfirmed`）。
+- 写草稿是 application 层独立调用，`temperature=creative_temperature`（0.85），提示词 `config/prompts/drafts.md`。校验通过后排队 `save_drafts`；`user_approved` 后写入 SQLite `drafts` 表，状态 `pending_review`，阶段 `DRAFT_REVIEW`。无 `SENDING`。`approve_draft` / `reject_draft` 只改状态。
+- 前端：`draft_cards.py` feature-card；「生成 3 封草稿」secondary 触发生成并排队保存；保存后「待你决定」每封「审核草稿：{name}」含批准/退回；固定 caption「草稿不会发送 [MOCK-SEND]」。无发送按钮。
+
+允许清单之外改动的文件：`application.py`、`campaign/goal.py`（`DRAFTING`/`DRAFT_REVIEW`、`draft_error`）、`campaign/retry.py`（阶段文案）、`campaign/workbench.py`、`tools/policy.py`、`tools/registry.py`、`tools/builtin/save_drafts.py`、`tools/builtin/approve_draft.py`、`settings.py`、`config/config.example.yaml`、`config/prompts/drafts.md`、`providers/mock.py`、`frontend/app.py`、`frontend/theme.py`。
 
 
 ## 门禁

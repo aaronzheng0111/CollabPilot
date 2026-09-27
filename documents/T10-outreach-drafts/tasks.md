@@ -9,7 +9,7 @@
 - 描述：Draft schema 与 validate_drafts：三条互异、cited_post_id 校验、原文片段、渠道名称
 - 依赖：T13 verified
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：纯函数单测
 - Verify：用例 1、3、4、7、8、9
 
@@ -18,7 +18,7 @@
 - 描述：批准后写入 pending_review；approve_draft / reject_draft；无发送模块
 - 依赖：T10-01
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：仓库搜索发送实现并断言草稿状态；注册 decisions 分支
 - Verify：用例 2、5、6
 
@@ -27,7 +27,7 @@
 - 描述：DeepSeek 评测为 001–003 生成草稿
 - 依赖：T10-02
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`tests/eval/test_drafts_eval.py`，标记 eval
 - Verify：用例 10
 
@@ -38,7 +38,7 @@
 - 描述：草稿卡片：创作者、渠道、被引用原文、正文、状态；固定「草稿不会发送」
 - 依赖：T10-02
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/draft_cards.py`，fixture 做 AppTest
 - Verify：用例 11、13
 
@@ -47,7 +47,7 @@
 - 描述：「待你决定」中的保存草稿与逐封审核
 - 依赖：T10-F1
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/pending_decisions.py` 注册文案
 - Verify：用例 12
 
