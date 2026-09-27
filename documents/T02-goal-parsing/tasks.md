@@ -9,7 +9,7 @@
 - 描述：实现 ParsedGoal schema 与 validate_parsed_goal
 - 依赖：T01 verified
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：新增 campaign/goal.py 与单元测试
 - Verify：用例 6
 
@@ -18,7 +18,7 @@
 - 描述：把关键字段表写成常量：target_count、outreach_count、needs_user_approval、已合作排除
 - 依赖：T02-01
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：缺任一则 missing_critical 非空
 - Verify：用例 3、4
 
@@ -27,7 +27,7 @@
 - 描述：提示词要求 DeepSeek 输出 JSON；应用层写入 goal_model_name
 - 依赖：T02-01
 - 可并行：是
-- 状态：`planned`
+- 状态：`done`
 - Implement：从回复提取 JSON 并校验，失败不落 parsed_goal
 - Verify：用例 1、2、5、7、8、9、10
 
@@ -36,7 +36,7 @@
 - 描述：`approve_pending` 统一入口与 `confirm_assumptions` 分支
 - 依赖：T02-03
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：新增 campaign/decisions.py；未批准时返回 approval_required
 - Verify：用例 9、13
 
@@ -47,7 +47,7 @@
 - 描述：「合作目标」卡片，假设字段带「假设」与 reason，卡片带 LLM 标签
 - 依赖：T02-03
 - 可并行：是
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/goal_card.py`，用 fixture ParsedGoal 做 AppTest
 - Verify：用例 11
 
@@ -56,7 +56,7 @@
 - 描述：CLARIFYING 时主表只显示固定空态文案
 - 依赖：T02-03
 - 可并行：是
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/main_table.py` 读 goal_status
 - Verify：用例 12
 
@@ -65,7 +65,7 @@
 - 描述：「待你决定」卡片骨架与 confirm_assumptions 一行
 - 依赖：T02-04
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/pending_decisions.py`，批准按钮调用 approve_pending
 - Verify：用例 13
 

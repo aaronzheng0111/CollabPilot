@@ -1,6 +1,6 @@
 # Implement — 理解合作目标
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–13 已通过，等人工走查后改 `verified`）
 
 ## 约束
 
@@ -26,6 +26,16 @@
 ## 本 Task 补充约束
 
 示例原文的断言用固定 fixture，不调用 DeepSeek。DeepSeek 路径只在手工验收或单独标记的集成测试中运行。
+
+## 实现记录
+
+- 模型在回复里输出一个 fenced JSON（ParsedGoal + 可选 `grill`），提示片段在 `backend/config/prompts/goal.md`，由 `ApplicationService.goal_prompt` 拼进 system 消息并带上当前活动状态。
+- `campaign/goal.py`：`ParsedGoal`、`Grill`、`Campaign`、`CRITICAL_FIELDS`（第四项键名 `exclude_cooperated`）、`validate_parsed_goal`（`missing_critical` 由应用层重算，不信模型）、`build_grill` / `render_clarifying_reply` / `parse_grill_reply`。模型给的 `grill` 只有每个问题都点名缺失字段时才采用，否则用模板问题。
+- `campaign/decisions.py`：`approve_pending` + `@register_decision`；`confirm_assumptions` 用 `CRITICAL_FALLBACKS`（10 / 3 / 需审核 / 排除已合作）补齐后进入 `PARSED`。对话里回复「确认」等价于批准。
+- JSON 校验失败重试一次；仍失败不写 `parsed_goal`，状态 `CLARIFYING`，回复列出字段名（若活动已 `PARSED` 则保持不变）。回复没有 JSON 块时视为普通对话，直接透传。
+- 活动记录存在 `session_metadata` 表（`session_store.py`，T09 再迁活动表）。`AgentRuntime.run` 新增 `disabled_tools`，未 `PARSED` 时对模型隐藏并拒绝 `search_creators`（`error_code=tool_disabled`）。
+- Mock provider 对含「达人/创作者/合作…」的用户消息用正则拼出 ParsedGoal JSON，仅供无 Key 测试；`PARSING` 只是回合内的过渡态，未落库。
+- 允许清单之外改动的文件：`agent/runtime.py`、`application.py`、`domain/models.py`（`ChatResult.goal_status`）、`infrastructure/session_store.py`、`providers/mock.py`、`frontend/theme.py`、`frontend/tests/conftest.py`（拦截 `api.deepseek.com` 并忽略 `backend/.env`，原 `test_shell.py` 在本机有 Key 时会真调 DeepSeek）。
 
 
 ## 门禁
