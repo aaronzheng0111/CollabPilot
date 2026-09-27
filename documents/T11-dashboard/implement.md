@@ -1,6 +1,6 @@
 # Implement — 工作台集成与视觉验收
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–19 已通过；视口截图 20 已存；用例 21 完整 DeepSeek 走查待人工）
 
 ## 约束
 
@@ -22,13 +22,18 @@
 - `backend/pyproject.toml` 的 optional extra `ui`（固定 streamlit 下限版本）
 - `documents/T11-dashboard/screenshots/`（新）
 
-
 ## 本 Task 补充约束
 
 `frontend/DESIGN.md` 只读。视觉取值只能来自 T11 `plan.md` 的「视觉映射」，映射表之外的新样式先改 `plan.md` 再写代码。
 
 渲染测试可以用 Streamlit AppTest。若环境没有浏览器，AppTest 通过即算用例 2–19 自动化通过；用例 20、21 必须有截图。
 
+## 实现记录
+
+- `get_workbench_state` 一次返回活动状态、目标、待决定、主表、轮次、判断、排除、待确认、渠道、草稿、跟进；不写库。
+- `app.py` 每次 rerun 只调一次该函数；左栏次级区顺序：待你决定 → 合作目标 → 进度 → 判断依据 → 待确认 → 已排除 → 沟通渠道 → 草稿 → 跟进。空区块不渲染。
+- `theme.py` 色值白名单对齐 DESIGN.md；珊瑚色只用于聚焦环（批准按钮走 `primaryColor`）；四类来源胶囊可区分。
+- 视口截图：`screenshots/20-viewport-1440x900.png`、`20-viewport-1024x768.png`。
 
 ## 门禁
 
