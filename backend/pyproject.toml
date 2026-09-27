@@ -41,6 +41,10 @@ packages = ["src/collabpilot"]
 collabpilot = ["hatchling>=1.27.0"]
 
 [tool.pytest.ini_options]
-addopts = "-q"
+# `eval` cases call DeepSeek and are skipped by default: `uv run pytest -m eval`.
+addopts = "-q -m 'not eval'"
 asyncio_mode = "auto"
 testpaths = ["tests"]
+markers = [
+    "eval: calls DeepSeek and compares with load_oracle(); not part of the unit run",
+]

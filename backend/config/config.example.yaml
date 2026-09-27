@@ -12,6 +12,7 @@ model:
   creative_temperature: 0.85
   timeout_seconds: 60
   max_retries: 2
+  max_output_tokens: 8192
 
 providers:
   mock:
@@ -35,6 +36,7 @@ providers:
     type: openai_compatible
     base_url: https://api.deepseek.com/v1
     api_key_env: DEEPSEEK_API_KEY
+    stream: true
   qwen:
     type: openai_compatible
     base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
@@ -49,10 +51,21 @@ runtime:
   max_tool_calls: 24
   max_seconds: 180
   tool_timeout_seconds: 10
-  max_tool_result_chars: 8000
+  max_tool_result_chars: 12000
 
 tools:
   enabled:
     - get_current_time
+    - search_creators
+    - get_creator
+    - apply_hard_filters
+    - save_campaign_selection
+    - exclude_creator
+    - confirm_channel
+    - save_drafts
+    - approve_draft
+    - reject_draft
+    - save_follow_up
+    - note_follow_up
   allow_risk_levels:
     - read

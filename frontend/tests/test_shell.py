@@ -1,61 +1,24 @@
 from __future__ import annotations
 
 import asyncio
-import sys
 import tomllib
-from pathlib import Path
 from uuid import uuid4
 
 import httpx
 import pytest
 import yaml
+from conftest import FRONTEND, main_layout_columns, use_config, write_config
 from openai import AuthenticationError
 from openai.resources.chat.completions import AsyncCompletions
 from streamlit.testing.v1 import AppTest
 
-FRONTEND = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(FRONTEND))
-
-from collabpilot.agent.runtime import RuntimeEvent  # noqa: E402
-from collabpilot.bootstrap import create_application, get_settings  # noqa: E402
-from collabpilot.settings import PROJECT_ROOT  # noqa: E402
-from components.tool_status import apply_event, initial_status  # noqa: E402
+from collabpilot.agent.runtime import RuntimeEvent
+from collabpilot.bootstrap import create_application
+from components.tool_status import apply_event, initial_status, status_html
 
 
 APP = str(FRONTEND / "app.py")
 FAKE_KEY = "sk-test-not-a-real-key-7f3a"
-
-
-def write_config(tmp_path: Path, **model: object) -> Path:
-    raw = yaml.safe_load(
-        (PROJECT_ROOT / "config/config.example.yaml").read_text(encoding="utf-8")
-    )
-    raw["app"]["database_url"] = f"sqlite:///{tmp_path / 'agent.db'}"
-    raw["app"]["log_path"] = str(tmp_path / "agent.jsonl")
-    raw["model"].update(model)
-    path = tmp_path / "config.yaml"
-    path.write_text(yaml.safe_dump(raw, allow_unicode=True), encoding="utf-8")
-    return path
-
-
-def use_config(monkeypatch: pytest.MonkeyPatch, path: Path) -> None:
-    monkeypatch.setenv("COLLABPILOT_CONFIG", str(path))
-    get_settings.cache_clear()
-    create_application.cache_clear()
-
-
-@pytest.fixture(autouse=True)
-def isolated_application(monkeypatch, tmp_path):
-    monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
-    use_config(
-        monkeypatch,
-        write_config(
-            tmp_path, default_provider="mock", default_model="collabpilot-mock"
-        ),
-    )
-    yield
-    get_settings.cache_clear()
-    create_application.cache_clear()
 
 
 def event(event_type: str, name: str, ok: bool | None = None) -> RuntimeEvent:
@@ -64,28 +27,47 @@ def event(event_type: str, name: str, ok: bool | None = None) -> RuntimeEvent:
     )
 
 
-def status_markup(at: AppTest) -> str:
-    return next(
-        item.value for item in at.markdown if item.value.startswith('<div class="cp-status')
-    )
-
-
-def test_layout_is_three_to_two_with_status_history_input() -> None:
+def test_layout_is_three_to_two_with_projects_history_input() -> None:
     at = AppTest.from_file(APP).run()
 
     assert not at.exception
-    left, right = at.columns
+    left, right = main_layout_columns(at)
     assert (left.proto.weight, right.proto.weight) == pytest.approx((0.6, 0.4))
     left_children = list(left.children.values())
-    assert [child.type for child in left_children] == ["dataframe", "flex_container"]
-    assert left.dataframe[0].value.empty
+    assert [child.type for child in left_children] == ["flex_container", "flex_container"]
+    idle = left_children[0].dataframe[0].value
+    assert len(idle) == 12
+    assert {"display_name", "platforms", "followers"} <= set(idle.columns)
+    assert {"category", "topics", "audience_summary", "region", "engagement", "contact", "last_post"} <= set(
+        idle.columns
+    )
+    assert "示例达人" in "\n".join(item.value for item in at.caption)
     right_children = list(right.children.values())
-    assert [child.type for child in right_children] == [
-        "markdown",
+    assert [child.type for child in right_children] == ["flex_container"]
+    frame = right_children[0]
+    body = list(frame.children.values())
+    assert [child.type for child in body] == ["flex_container"]
+    thread = list(body[0].children.values())
+    assert [child.type for child in thread] == [
         "flex_container",
-        "chat_input",
+        "flex_container",
+        "flex_container",
     ]
-    assert "cp-status" in right_children[0].value
+    assert "新建项目" in [button.label for button in at.button]
+    assert any(button.key == "cp-chat-send" and button.label == "发送" for button in at.button)
+    assert len(at.chat_input) == 0
+    assert any(item.key == "cp-chat-prompt" for item in at.text_input)
+    assert not any(
+        isinstance(item.value, str) and item.value.startswith('<div class="cp-status')
+        for item in at.markdown
+    )
+
+
+def _send_chat(at: AppTest, text: str) -> AppTest:
+    prompt = next(item for item in at.text_input if item.key == "cp-chat-prompt")
+    prompt.set_value(text)
+    send = next(button for button in at.button if button.key == "cp-chat-send")
+    return send.click().run()
 
 
 def test_theme_matches_design_tokens() -> None:
@@ -101,36 +83,39 @@ def test_theme_matches_design_tokens() -> None:
     assert theme["textColor"] == colors["ink"] == "#141413"
 
 
-def test_status_goes_idle_running_done() -> None:
-    at = AppTest.from_file(APP).run()
-    assert "空闲" in status_markup(at)
+def test_status_helper_goes_idle_running_done() -> None:
+    assert "空闲" in status_html(initial_status())
 
     running = apply_event(initial_status(), event("tool.started", "get_current_time"))
-    at.session_state["tool_status"] = running
-    at.run()
-    markup = status_markup(at)
+    markup = status_html(running)
     assert "get_current_time" in markup
     assert "cp-spinner" in markup
 
-    at.session_state["tool_status"] = apply_event(
-        running, event("tool.completed", "get_current_time", ok=True)
-    )
-    at.run()
-    markup = status_markup(at)
+    done = apply_event(running, event("tool.completed", "get_current_time", ok=True))
+    markup = status_html(done)
     assert "get_current_time" in markup
     assert "完成" in markup
     assert "cp-spinner" not in markup
 
 
-def test_chat_turn_drives_status_and_session_query() -> None:
+def test_chat_turn_sets_session_and_shows_messages() -> None:
     at = AppTest.from_file(APP).run()
 
-    at.chat_input[0].set_value("现在几点？").run()
+    at = _send_chat(at, "现在几点？")
 
     assert not at.exception
-    assert "完成" in status_markup(at)
     assert at.query_params["session"]
     assert [message.name for message in at.chat_message] == ["user", "assistant"]
+    tool_lines = [
+        item.value
+        for item in at.markdown
+        if isinstance(item.value, str) and 'class="cp-tool-line' in item.value
+    ]
+    assert tool_lines
+    assert "get_current_time" in tool_lines[0]
+    assert "调用完成" in tool_lines[0]
+    assert "cp-tool-line-succeeded" in tool_lines[0]
+    assert "cp-spinner" not in tool_lines[0]
 
 
 def test_reopened_session_shows_previous_turn() -> None:
@@ -162,7 +147,7 @@ def test_provider_error_is_rendered_without_key(monkeypatch, tmp_path) -> None:
     monkeypatch.setattr(AsyncCompletions, "create", rejecting_create)
 
     at = AppTest.from_file(APP).run()
-    at.chat_input[0].set_value("你好").run()
+    at = _send_chat(at, "你好")
 
     assert not at.exception
     rendered = "\n".join(item.value for item in at.error)
@@ -175,6 +160,6 @@ def test_missing_key_is_reported(monkeypatch, tmp_path) -> None:
     use_config(monkeypatch, write_config(tmp_path))
 
     at = AppTest.from_file(APP).run()
-    at.chat_input[0].set_value("你好").run()
+    at = _send_chat(at, "你好")
 
     assert "missing_api_key" in at.error[0].value

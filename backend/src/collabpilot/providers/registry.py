@@ -36,6 +36,7 @@ class ProviderRegistry:
             timeout=self.settings.model.timeout_seconds,
             max_retries=self.settings.model.max_retries,
             temperature=self.settings.model.temperature,
+            max_output_tokens=self.settings.model.max_output_tokens,
             stream=config.stream,
             thinking=config.thinking,
         )

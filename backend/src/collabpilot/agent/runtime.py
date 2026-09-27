@@ -55,8 +55,16 @@ class AgentRuntime:
         on_delta: Callable[[str], Awaitable[None]] | None = None,
         on_event: EventHandler | None = None,
         temperature: float | None = None,
+        disabled_tools: frozenset[str] = frozenset(),
     ) -> tuple[ModelResponse, list[Message], int]:
+        """`disabled_tools` are hidden from the model and rejected if called
+        anyway (e.g. search tools while the goal is still CLARIFYING)."""
         started = monotonic()
+        schemas = [
+            schema
+            for schema in self.tools.schemas()
+            if schema["function"]["name"] not in disabled_tools
+        ]
         model_calls = 0
         tool_calls = 0
         repeated_calls: dict[str, int] = {}
@@ -95,7 +103,9 @@ class AgentRuntime:
             response = await provider.complete(
                 messages,
                 model,
-                self.tools.schemas(),
+                schemas,
+                # Content deltas only (providers must not stream tool JSON).
+                # Tool-call rounds typically emit no content; final text streams live.
                 on_delta=on_delta,
                 temperature=temperature,
             )
@@ -109,6 +119,8 @@ class AgentRuntime:
             if not response.tool_calls:
                 if not response.content:
                     response.content = "The model returned an empty response."
+                    if on_delta:
+                        await on_delta(response.content)
                 return response, generated, tool_calls
 
             messages.append(
@@ -131,7 +143,13 @@ class AgentRuntime:
                 ok = False
                 error_code: str | None
                 tool = self.tools.get(call.name)
-                if tool is None:
+                if call.name in disabled_tools:
+                    error_code = "tool_disabled"
+                    result_text = json.dumps(
+                        {"ok": False, "error_code": error_code},
+                        ensure_ascii=False,
+                    )
+                elif tool is None:
                     error_code = "unknown_tool"
                     result_text = json.dumps(
                         {"ok": False, "error_code": error_code},

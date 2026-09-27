@@ -33,9 +33,11 @@ class OpenAICompatibleProvider(Provider):
         temperature: float,
         stream: bool = False,
         thinking: str | None = None,
+        max_output_tokens: int | None = None,
     ):
         self.name = name
         self.temperature = temperature
+        self.max_output_tokens = max_output_tokens
         self.stream = stream
         self.thinking = thinking
         self.client = AsyncOpenAI(
@@ -79,13 +81,18 @@ class OpenAICompatibleProvider(Provider):
         selected_temperature = (
             self.temperature if temperature is None else temperature
         )
+        limits: dict[str, Any] = (
+            {"max_tokens": self.max_output_tokens} if self.max_output_tokens else {}
+        )
         try:
             extra_body = (
                 {"thinking": {"type": self.thinking}}
                 if self.thinking
                 else None
             )
-            if self.stream:
+            # Stream when configured, or whenever the caller wants live deltas.
+            use_stream = self.stream or on_delta is not None
+            if use_stream:
                 stream = await self.client.chat.completions.create(
                     model=model,
                     messages=request_messages,  # type: ignore[arg-type]
@@ -93,6 +100,7 @@ class OpenAICompatibleProvider(Provider):
                     temperature=selected_temperature,
                     stream=True,
                     extra_body=extra_body,
+                    **limits,
                 )
                 content_parts: list[str] = []
                 call_parts: dict[int, dict[str, str]] = {}
@@ -139,6 +147,7 @@ class OpenAICompatibleProvider(Provider):
                 tools=tools or None,  # type: ignore[arg-type]
                 temperature=selected_temperature,
                 extra_body=extra_body,
+                **limits,
             )
         except AuthenticationError as exc:
             raise ProviderAuthenticationError("Provider authentication failed") from exc

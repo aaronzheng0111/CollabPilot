@@ -12,6 +12,7 @@ from collabpilot.domain.models import RiskLevel, ToolResult
 class ToolContext:
     session_id: UUID
     turn_id: UUID
+    user_approved: bool = False
 
 
 class Tool(ABC):

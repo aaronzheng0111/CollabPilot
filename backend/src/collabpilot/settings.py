@@ -30,6 +30,9 @@ class ModelConfig(BaseModel):
     creative_temperature: float = 0.85
     timeout_seconds: float = 60
     max_retries: int = 2
+    # Upper bound for one reply. The judgment step returns ~20 verdicts in one
+    # JSON block, which overflows DeepSeek's 4096-token default.
+    max_output_tokens: int | None = 8192
 
 
 class ProviderConfig(BaseModel):
@@ -45,11 +48,26 @@ class RuntimeConfig(BaseModel):
     max_tool_calls: int = Field(default=24, ge=0, le=100)
     max_seconds: float = Field(default=180, gt=0)
     tool_timeout_seconds: float = Field(default=10, gt=0)
-    max_tool_result_chars: int = Field(default=8000, ge=100)
+    max_tool_result_chars: int = Field(default=12000, ge=100)
 
 
 class ToolsConfig(BaseModel):
-    enabled: list[str] = Field(default_factory=lambda: ["get_current_time"])
+    enabled: list[str] = Field(
+        default_factory=lambda: [
+            "get_current_time",
+            "search_creators",
+            "get_creator",
+            "apply_hard_filters",
+            "save_campaign_selection",
+            "exclude_creator",
+            "confirm_channel",
+            "save_drafts",
+            "approve_draft",
+            "reject_draft",
+            "save_follow_up",
+            "note_follow_up",
+        ]
+    )
     allow_risk_levels: list[str] = Field(default_factory=lambda: ["read"])
 
 

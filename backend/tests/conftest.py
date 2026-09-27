@@ -6,6 +6,7 @@ import pytest
 from collabpilot.agent.context import ContextBuilder
 from collabpilot.agent.runtime import AgentRuntime
 from collabpilot.application import ApplicationService
+from collabpilot.campaign.store import CampaignStore
 from collabpilot.infrastructure.session_store import SQLiteSessionStore
 from collabpilot.providers.registry import ProviderRegistry
 from collabpilot.settings import AgentSettings, load_settings
@@ -47,7 +48,11 @@ def settings(tmp_path: Path) -> AgentSettings:
 def application(settings: AgentSettings, tmp_path: Path) -> ApplicationService:
     store = SQLiteSessionStore(settings.app.database_url, settings.project_root)
     providers = ProviderRegistry(settings)
-    tools = ToolRegistry(settings.tools.enabled)
+    tools = ToolRegistry(
+        settings.tools.enabled,
+        CampaignStore(store),
+        settings.runtime.max_tool_result_chars,
+    )
     runtime = AgentRuntime(
         tools,
         ToolPolicy(settings.tools.allow_risk_levels),

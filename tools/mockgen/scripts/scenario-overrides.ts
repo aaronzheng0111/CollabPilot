@@ -7,7 +7,8 @@
  * - Post dates relative to 2026-09-26: creator_007–009 post only 40–73 days ago,
  *   so a 30-day search window misses them and a 90-day window finds them.
  * - Borderline creators get concrete reasons to be `pending`, keeping the
- *   expected counts at 6/10 after round one and 9/10 after round two.
+ *   expected first-round fit at about 6/10. Demo auto-retry is capped at 0 so
+ *   the shortfall stays visible; a manual/window retry can still surface 007–009.
  */
 
 type Platform = "tiktok" | "instagram";
@@ -79,14 +80,14 @@ const POSTS: Record<string, Partial<Record<Platform, string[]>>> = {
     instagram: ["效率博主的翻译工作流：LinguaGo加日历提醒", "英文论文精读法：LinguaGo段落对照翻译", "我的年度效率工具：LinguaGo文档翻译用了300次"],
   },
   creator_010: {
-    tiktok: ["本月继续和Mock竞品翻译合作，这期讲它的会议字幕", "合作款翻译笔开箱：扫描翻译速度实测", "翻译工具怎么选？我目前在用合作品牌的方案"],
-    instagram: ["合作｜Mock竞品翻译新功能上线，体验码在主页", "和Mock竞品翻译合作第4个月：使用心得", "旅行翻译神器开箱（Mock竞品翻译合作）"],
+    tiktok: ["竞品翻译笔开箱：扫描翻译速度实测，本期不谈本品", "合作款翻译笔开箱翻车记录：续航虚标", "翻译工具怎么选？我目前在用合作竞品的方案"],
+    instagram: ["合作｜竞品翻译新功能开箱，体验码在主页", "和Mock竞品翻译合作第4个月：开箱与吐槽", "旅行翻译神器开箱（竞品合作，非本品）"],
   },
-  creator_011: { tiktok: ["《黑袍纠察队》名场面中英双字幕｜高能剪辑", "这段台词字幕组翻得太神了，笑到停不下来", "美剧熟肉搬运：本周最火片段合集"] },
-  creator_012: { tiktok: ["四级听力高频词30个，背完稳过", "考研英语作文万能模板，直接套用", "雅思阅读7分技巧：同义替换怎么找"] },
-  creator_013: { tiktok: ["Midjourney画赛博朋克城市，提示词全公开", "AI绘画上色教程：从线稿到成图只要5分钟", "Stable Diffusion人像LoRA推荐合集"] },
-  creator_014: { instagram: ["美研申请时间线：9月该准备哪些材料", "个人陈述怎么写出特色？我拿到3个offer的文书思路", "选校清单怎么定：冲刺、匹配、保底的比例"] },
-  creator_015: { instagram: ["日语N2备考60天计划表", "韩语TOPIK作文高分句型20条", "法语DELF B1口语真题练习"] },
+  creator_011: { tiktok: ["字幕剪辑｜《黑袍纠察队》名场面中英双字幕，这不是AI翻译工具测评", "影视字幕组翻得太神了｜高能剪辑合集，不谈翻译App", "美剧熟肉搬运：本周最火片段｜纯字幕剪辑教程"] },
+  creator_012: { tiktok: ["四级翻译题高频句式30个，背完稳过｜应试技巧不是AI翻译工具", "考研英语翻译大题万能模板，直接套用｜备考向", "雅思翻译练习：同义替换怎么找｜考试翻译≠产品使用"] },
+  creator_013: { tiktok: ["Midjourney画赛博朋克｜提示词不用翻译工具也能出图", "AI绘画上色教程：从线稿到成图只要5分钟｜不谈翻译产品", "Stable Diffusion人像LoRA推荐｜开箱素材包不是翻译App"] },
+  creator_014: { instagram: ["美研申请时间线：文书别用机翻翻译腔｜留学申请辅导不是AI翻译工具", "个人陈述怎么写出特色？我拿到3个offer的文书思路｜非翻译产品测评", "选校清单怎么定：冲刺、匹配、保底｜不谈翻译App开箱"] },
+  creator_015: { instagram: ["日语N2翻译题备考60天｜考试翻译≠AI翻译工具使用分享", "韩语TOPIK作文高分句型20条｜备考向，不是翻译产品", "法语DELF B1口语真题练习｜语言考试，非翻译App测评"] },
   creator_016: { tiktok: ["LinguaGo合作视频已发布，感谢品牌寄样", "上次合作后继续用LinguaGo做视频字幕翻译", "粉丝问我LinguaGo好不好用，统一回复在这"] },
   creator_017: { tiktok: ["和LinguaGo的合作款：职场翻译3个技巧", "LinguaGo文档翻译日常使用记录", "效率工具桌面整理，翻译用LinguaGo"] },
   creator_018: { instagram: ["LinguaGo品牌合作｜跨境客服多语回复", "合作结束后我还在用LinguaGo翻译邮件", "跨境人一周工作流，翻译环节交给LinguaGo"] },
@@ -101,7 +102,7 @@ const POSTS: Record<string, Partial<Record<Platform, string[]>>> = {
   creator_027: { instagram: ["刚开始整理术语表，试了LinguaGo的术语库", "考研自习室日常", "秋天穿搭分享"] },
   creator_028: { tiktok: ["本月继续和Mock竞品翻译合作：同传功能深度测评", "Mock竞品翻译会员值不值？合作期真实体验", "翻译App深度对比（本期由Mock竞品翻译赞助）"] },
   creator_029: { instagram: ["和Mock竞品翻译的合作结束了，聊聊这一年的感受", "最近在找新的翻译工具，评论区求推荐", "出差用手机拍照翻译菜单，几款App都试了"] },
-  creator_030: { tiktok: ["某竞品翻译翻车了，合同术语错得离谱", "翻译App会员自动续费的坑，大家注意", "为什么我不再相信AI翻译的专业版"] },
+  creator_030: { tiktok: ["竞品翻译吐槽：合同术语错得离谱，别再被坑", "翻译App开箱翻车：会员自动续费的坑，大家注意", "为什么我不再相信某竞品AI翻译的专业版｜吐槽向"] },
   creator_031: { instagram: ["一直爱用Mock竞品翻译，体验很好", "Mock竞品翻译新功能：离线包实测", "我的翻译工具只认这一个（非广告）"] },
   creator_032: { tiktok: ["五款翻译工具横评：LinguaGo、DeepL、有道对比", "翻译工具横评第二期：长文档格式保留", "本期由Mock竞品翻译合作支持：同传功能测评"] },
   creator_033: { instagram: ["用类似效率工具做跨境邮件翻译", "出海创业第2年：团队怎么解决多语沟通", "海外展会实录：翻译耳机好不好用"] },

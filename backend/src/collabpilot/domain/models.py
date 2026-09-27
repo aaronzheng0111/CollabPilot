@@ -50,6 +50,8 @@ class ChatResult(BaseModel):
     provider: str
     model: str
     tool_calls: int = 0
+    goal_status: str | None = None
+    pending_decision: str | None = None
 
 
 class StoredMessage(BaseModel):
@@ -58,3 +60,12 @@ class StoredMessage(BaseModel):
     turn_id: UUID
     message: Message
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+
+class ProjectSummary(BaseModel):
+    """One product / campaign chat. Backed by a session row."""
+
+    session_id: UUID
+    title: str
+    created_at: datetime
+    updated_at: datetime
