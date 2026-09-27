@@ -18,11 +18,16 @@
 - `backend/src/collabpilot/tools/builtin/get_creator.py`
 - `backend/src/collabpilot/bootstrap.py`（注册工具）
 - `backend/tests/unit/test_mock_store.py`
+- `backend/tests/unit/test_search_creators.py`
+- `frontend/components/main_table.py`
+- `frontend/tests/test_main_table.py`
 
 
 ## 本 Task 补充约束
 
 工具返回给模型的单条达人详情必须截断到 runtime `max_tool_result_chars`。截断时保留 `creator_id` 与 `truncated=true`。
+
+`window_days` 与 `min_followers` 的默认值只在工具签名里出现一次，不在其他模块另写常量。测试答案字段只能经 `load_oracle()` 读取，且只在 `backend/tests/` 中调用。
 
 
 ## 门禁

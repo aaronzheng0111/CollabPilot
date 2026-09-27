@@ -14,7 +14,11 @@
 ## 允许修改
 
 - `backend/src/collabpilot/campaign/retry.py`
+- `backend/src/collabpilot/campaign/decisions.py`
 - `backend/tests/unit/test_retry.py`
+- `backend/tests/eval/test_retry_eval.py`（新）
+- `frontend/components/progress_panel.py`（新）、`frontend/components/pending_decisions.py`
+- `frontend/tests/test_progress_panel.py`（新）
 
 
 ## 本 Task 补充约束

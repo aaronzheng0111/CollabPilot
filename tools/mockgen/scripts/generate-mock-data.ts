@@ -8,6 +8,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
+import { applyScenarioOverrides } from "./scenario-overrides";
 
 const SEED = 20260926;
 const GENERATED_AT = "2026-09-26T00:00:00Z";
@@ -1376,8 +1377,8 @@ function main() {
   const ttPath = path.join(OUT_DIR, "tiktok_creators.json");
   const igPath = path.join(OUT_DIR, "instagram_creators.json");
 
-  fs.writeFileSync(ttPath, JSON.stringify(ttFile, null, 2) + "\n", "utf8");
-  fs.writeFileSync(igPath, JSON.stringify(igFile, null, 2) + "\n", "utf8");
+  fs.writeFileSync(ttPath, applyScenarioOverrides(ttFile, "tiktok"), "utf8");
+  fs.writeFileSync(igPath, applyScenarioOverrides(igFile, "instagram"), "utf8");
 
   const stats = validate(ttCreators, igCreators, ttFile, igFile);
 

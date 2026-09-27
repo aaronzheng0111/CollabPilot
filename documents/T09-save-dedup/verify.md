@@ -8,8 +8,13 @@
 | 2 | 确认后 saved_creator_ids 与入参一致且状态 SELECTED | 未测 |
 | 3 | 重复保存不产生第二条 | 未测 |
 | 4 | 已排除创作者不再出现在推荐 | 未测 |
-| 5 | 重启进程后名单仍在 | 未测 |
+| 5 | 重启进程后 saved、excluded、topic_rejected 仍在 | 未测 |
 | 6 | 未确认的排除被拒绝；确认后从 saved 移到 excluded | 未测 |
+| 7 | 同一需求再次运行沿用 campaign_id，并跳过三类创作者 | 未测 |
+| 8 | 接受的 pending 进入 saved 但 decision 仍为 pending | 未测 |
+| 9 | 主表勾选列：fit 默认勾选，pending 可勾选，unfit 与锁定行禁用 | 未测 |
+| 10 | 「待你决定」出现保存一行，批准后主表有 saved 列 | 未测 |
+| 11 | 再次运行时主表上方显示跳过人数 | 未测 |
 
 ## 通过标准
 

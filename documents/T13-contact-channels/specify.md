@@ -23,7 +23,7 @@ ConfirmedChannel
   user_approved: true
 ```
 
-## 验收标准
+## 后端验收
 
 1. Given `saved_creator_ids` 含一位创作者且 `contact.preferred_channel=tiktok_dm`，When 打开渠道列表，Then 该行渠道为 `tiktok_dm`，来源标记为 `[MOCK]`。
 2. Given `consent_status=unknown`，When 展示，Then 文案为「未知」，不是「已同意」或「已拒绝」。
@@ -31,6 +31,13 @@ ConfirmedChannel
 4. Given 用户确认的渠道不在该创作者的 `preferred_channel` 且不是其非空 `email` 所对应的 `email`，When 调用 `confirm_channel`，Then 返回 `channel_not_on_profile`。
 5. Given `preferred_channel=unknown` 且 `email` 为 null，When 请求确认，Then 返回 `channel_unknown`，不写入 `confirmed_channel`。
 6. Given 确认成功，When 查代码路径，Then 不存在对 TikTok、Instagram 或 SMTP 的发送调用。
+
+## 前端验收
+
+7. Given 活动状态为 `SELECTED`，When 渲染次级区「沟通渠道」，Then 每位已保存创作者按平台各一行：`preferred_channel`（显示「TikTok 私信」「Instagram 私信」「邮件」或「未知」）、是否可私信、邮箱（null 显示「未知」）、授权状态（`unknown` 显示「未知」），每行标 `[MOCK]`。
+8. Given 用户在某行选定一个渠道并点击「确认渠道」，When 渲染「待你决定」，Then 出现一行「用 {渠道} 联系 {display_name}」；批准后主表加 `channel` 列，该行消失。
+9. Given 某创作者 `preferred_channel=unknown` 且 `email` 为 null，When 渲染，Then 该行没有「确认渠道」按钮，只显示「资料中没有可用渠道」。
+10. Given 渠道区，When 查找按钮，Then 没有「发送」「私信」「发邮件」类按钮。
 
 ## 边界
 

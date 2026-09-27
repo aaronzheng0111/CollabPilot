@@ -37,11 +37,18 @@ Grill
 
 `filter_suggestion` 与 `rephrase` 至少一个非空。自动追问轮次计在活动字段 `grill_rounds`，上限 3。
 
+第 3 轮仍缺关键字段时，活动写入 `pending_decision=confirm_assumptions`。`approve_pending(campaign_id, decision, user_approved)` 是所有「待你决定」事项的统一入口，本 Task 只实现 `confirm_assumptions` 分支，后续 Task 各自注册自己的分支。
+
 ## 界面
 
-本 Task 不实现页面布局。追问文本出现在对话回复中。T11 把对话放在右栏，并把 `CLARIFYING` 时的左表置为固定空态文案。
+- `frontend/components/goal_card.py`：读 `Campaign.parsed_goal`，逐项渲染；`assumptions` 中出现的字段加「假设」胶囊和 `reason`。
+- `frontend/components/pending_decisions.py`：读 `Campaign.pending_decision`，每项一行，批准按钮用 `button-primary`（珊瑚色），拒绝按钮用 `button-secondary`。点击调用 `approve_pending`。
+- `CLARIFYING` 时主表组件忽略旧行，只渲染固定空态文案。
+- 追问文本留在右栏对话中，不复制到左栏。
 
 ## 模块
 
 - `backend/src/collabpilot/` 下新增 `campaign/goal.py`（校验与关键字段表）
+- `backend/src/collabpilot/campaign/decisions.py`（新）：`approve_pending` 与分支注册
 - 系统提示补充：解析时只输出约定 JSON，不调用尚未注册的搜索工具
+- `frontend/components/goal_card.py`、`frontend/components/pending_decisions.py`

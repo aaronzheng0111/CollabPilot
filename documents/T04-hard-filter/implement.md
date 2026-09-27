@@ -16,6 +16,8 @@
 - `backend/src/collabpilot/campaign/hard_filter.py`
 - `backend/src/collabpilot/tools/builtin/apply_hard_filters.py`
 - `backend/tests/unit/test_hard_filter.py`
+- `frontend/components/main_table.py`、`frontend/components/excluded_table.py`（新）
+- `frontend/tests/test_excluded_table.py`（新）
 
 
 ## 本 Task 补充约束

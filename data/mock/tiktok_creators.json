@@ -257,8 +257,8 @@
         {
           "video_id": "tt_video_001_1",
           "share_url": "mock://tiktok/video/001_1",
-          "create_time": 1791505700,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1790251200,
+          "title": "用LinguaGo实时对话翻译和日本供应商开视频会，全程没卡壳",
           "duration": 48,
           "cover_urls": [
             "mock://cdn/tiktok/cover_001_1.jpg"
@@ -285,8 +285,8 @@
         {
           "video_id": "tt_video_001_2",
           "share_url": "mock://tiktok/video/001_2",
-          "create_time": 1791419300,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1789992000,
+          "title": "中英日韩四语菜单，LinguaGo拍照翻译一秒出结果",
           "duration": 41,
           "cover_urls": [
             "mock://cdn/tiktok/cover_001_2.jpg"
@@ -313,8 +313,8 @@
         {
           "video_id": "tt_video_001_3",
           "share_url": "mock://tiktok/video/001_3",
-          "create_time": 1791332900,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1789646400,
+          "title": "跨境客服话术怎么翻得地道？我的LinguaGo术语表分享",
           "duration": 75,
           "cover_urls": [
             "mock://cdn/tiktok/cover_001_3.jpg"
@@ -345,7 +345,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "evidence_text": "用LinguaGo实时对话翻译和日本供应商开视频会，全程没卡壳",
           "source_post_id": "tt_video_001_1",
           "confidence": 0.72,
           "data_origin": "mock_seed"
@@ -464,8 +464,8 @@
         {
           "video_id": "tt_video_002_1",
           "share_url": "mock://tiktok/video/002_1",
-          "create_time": 1791505800,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1790164800,
+          "title": "亚马逊Listing多语种上架，LinguaGo批量翻译省了半天",
           "duration": 90,
           "cover_urls": [
             "mock://cdn/tiktok/cover_002_1.jpg"
@@ -492,8 +492,8 @@
         {
           "video_id": "tt_video_002_2",
           "share_url": "mock://tiktok/video/002_2",
-          "create_time": 1791419400,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1789905600,
+          "title": "对比3款翻译工具写商品描述，LinguaGo术语最稳",
           "duration": 56,
           "cover_urls": [
             "mock://cdn/tiktok/cover_002_2.jpg"
@@ -520,8 +520,8 @@
         {
           "video_id": "tt_video_002_3",
           "share_url": "mock://tiktok/video/002_3",
-          "create_time": 1791333000,
-          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "create_time": 1789560000,
+          "title": "跨境卖家必看：用LinguaGo翻译买家差评再回复",
           "duration": 63,
           "cover_urls": [
             "mock://cdn/tiktok/cover_002_3.jpg"
@@ -552,7 +552,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "evidence_text": "亚马逊Listing多语种上架，LinguaGo批量翻译省了半天",
           "source_post_id": "tt_video_002_1",
           "confidence": 0.86,
           "data_origin": "mock_seed"
@@ -670,8 +670,8 @@
         {
           "video_id": "tt_video_003_1",
           "share_url": "mock://tiktok/video/003_1",
-          "create_time": 1791505900,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1790337600,
+          "title": "外企周报中译英，LinguaGo保留了原来的表格格式",
           "duration": 35,
           "cover_urls": [
             "mock://cdn/tiktok/cover_003_1.jpg"
@@ -698,8 +698,8 @@
         {
           "video_id": "tt_video_003_2",
           "share_url": "mock://tiktok/video/003_2",
-          "create_time": 1791419500,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1790078400,
+          "title": "整份PPT拖进LinguaGo，20页英文版10分钟出",
           "duration": 90,
           "cover_urls": [
             "mock://cdn/tiktok/cover_003_2.jpg"
@@ -726,8 +726,8 @@
         {
           "video_id": "tt_video_003_3",
           "share_url": "mock://tiktok/video/003_3",
-          "create_time": 1791333100,
-          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "create_time": 1789732800,
+          "title": "职场邮件别再机翻腔：LinguaGo语气调节实测",
           "duration": 66,
           "cover_urls": [
             "mock://cdn/tiktok/cover_003_3.jpg"
@@ -758,7 +758,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "外企周报中译英，LinguaGo保留了原来的表格格式",
           "source_post_id": "tt_video_003_1",
           "confidence": 0.79,
           "data_origin": "mock_seed"
@@ -876,8 +876,8 @@
         {
           "video_id": "tt_video_004_1",
           "share_url": "mock://tiktok/video/004_1",
-          "create_time": 1791506000,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1790251200,
+          "title": "留学生看病实录：LinguaGo实时对话翻译帮我和医生沟通",
           "duration": 36,
           "cover_urls": [
             "mock://cdn/tiktok/cover_004_1.jpg"
@@ -904,8 +904,8 @@
         {
           "video_id": "tt_video_004_2",
           "share_url": "mock://tiktok/video/004_2",
-          "create_time": 1791419600,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1789992000,
+          "title": "租房签约别踩坑，用LinguaGo逐条翻译英文租约",
           "duration": 42,
           "cover_urls": [
             "mock://cdn/tiktok/cover_004_2.jpg"
@@ -932,8 +932,8 @@
         {
           "video_id": "tt_video_004_3",
           "share_url": "mock://tiktok/video/004_3",
-          "create_time": 1791333200,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1789646400,
+          "title": "教授office hour前，我用LinguaGo练了一遍对话",
           "duration": 87,
           "cover_urls": [
             "mock://cdn/tiktok/cover_004_3.jpg"
@@ -964,7 +964,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "留学生看病实录：LinguaGo实时对话翻译帮我和医生沟通",
           "source_post_id": "tt_video_004_1",
           "confidence": 0.75,
           "data_origin": "mock_seed"
@@ -1082,8 +1082,8 @@
         {
           "video_id": "tt_video_005_1",
           "share_url": "mock://tiktok/video/005_1",
-          "create_time": 1791506100,
-          "title": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "create_time": 1790164800,
+          "title": "法律合同翻译最怕术语不统一，LinguaGo术语库实测",
           "duration": 68,
           "cover_urls": [
             "mock://cdn/tiktok/cover_005_1.jpg"
@@ -1110,8 +1110,8 @@
         {
           "video_id": "tt_video_005_2",
           "share_url": "mock://tiktok/video/005_2",
-          "create_time": 1791419700,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1789905600,
+          "title": "建了200条外贸术语库，导入LinguaGo后译文终于一致",
           "duration": 80,
           "cover_urls": [
             "mock://cdn/tiktok/cover_005_2.jpg"
@@ -1138,8 +1138,8 @@
         {
           "video_id": "tt_video_005_3",
           "share_url": "mock://tiktok/video/005_3",
-          "create_time": 1791333300,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1789560000,
+          "title": "合同条款中译英：LinguaGo初译和人工校对耗时对比",
           "duration": 84,
           "cover_urls": [
             "mock://cdn/tiktok/cover_005_3.jpg"
@@ -1170,7 +1170,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_ended",
-          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "evidence_text": "法律合同翻译最怕术语不统一，LinguaGo术语库实测",
           "source_post_id": "tt_video_005_1",
           "confidence": 0.85,
           "data_origin": "mock_seed"
@@ -1313,8 +1313,8 @@
         {
           "video_id": "tt_video_006_1",
           "share_url": "mock://tiktok/video/006_1",
-          "create_time": 1791506200,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1790337600,
+          "title": "5款AI翻译横评：长文档场景LinguaGo格式保留最好",
           "duration": 87,
           "cover_urls": [
             "mock://cdn/tiktok/cover_006_1.jpg"
@@ -1341,8 +1341,8 @@
         {
           "video_id": "tt_video_006_2",
           "share_url": "mock://tiktok/video/006_2",
-          "create_time": 1791419800,
-          "title": "实测中英日韩互译，跨境沟通效率提升明显",
+          "create_time": 1790078400,
+          "title": "实时对话翻译延迟实测：LinguaGo、DeepL、谷歌翻译",
           "duration": 56,
           "cover_urls": [
             "mock://cdn/tiktok/cover_006_2.jpg"
@@ -1369,8 +1369,8 @@
         {
           "video_id": "tt_video_006_3",
           "share_url": "mock://tiktok/video/006_3",
-          "create_time": 1791333400,
-          "title": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "create_time": 1789732800,
+          "title": "我给AI翻译工具打分：LinguaGo术语库是加分项",
           "duration": 27,
           "cover_urls": [
             "mock://cdn/tiktok/cover_006_3.jpg"
@@ -1401,7 +1401,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "evidence_text": "5款AI翻译横评：长文档场景LinguaGo格式保留最好",
           "source_post_id": "tt_video_006_1",
           "confidence": 0.87,
           "data_origin": "mock_seed"
@@ -1464,14 +1464,14 @@
     },
     {
       "creator_id": "creator_007",
-      "display_name": "新人Grace译",
+      "display_name": "Grace译",
       "is_new_creator": true,
       "platform": "tiktok",
-      "handle": "@new.grace",
+      "handle": "@grace.yi",
       "profile": {
         "uid": "tt_uid_007",
-        "unique_id": "new.grace",
-        "nickname": "新人Grace译",
+        "unique_id": "grace.yi",
+        "nickname": "Grace译",
         "sec_uid": "MS4wLjABAAAA_mock_007",
         "signature": "AI翻译 · 留学生活 · 效率",
         "follower_count": 178166,
@@ -1480,7 +1480,7 @@
         "video_count": 329,
         "verified": false,
         "region": "JP",
-        "bio_url": "mock://tiktok/new.grace",
+        "bio_url": "mock://tiktok/grace.yi",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_007.jpg"
       },
@@ -1520,8 +1520,8 @@
         {
           "video_id": "tt_video_007_1",
           "share_url": "mock://tiktok/video/007_1",
-          "create_time": 1791506300,
-          "title": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "create_time": 1786881600,
+          "title": "日本交换生活记录：LinguaGo帮我看懂区役所通知",
           "duration": 89,
           "cover_urls": [
             "mock://cdn/tiktok/cover_007_1.jpg"
@@ -1535,7 +1535,7 @@
           "music_info": {
             "music_id": "music_007_1",
             "music_name": "Original Sound",
-            "author_name": "新人Grace译"
+            "author_name": "Grace译"
           },
           "stats": {
             "play_count": 108090,
@@ -1548,8 +1548,8 @@
         {
           "video_id": "tt_video_007_2",
           "share_url": "mock://tiktok/video/007_2",
-          "create_time": 1791419900,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1785585600,
+          "title": "和房东日语沟通不再尴尬，LinguaGo对话模式",
           "duration": 59,
           "cover_urls": [
             "mock://cdn/tiktok/cover_007_2.jpg"
@@ -1563,7 +1563,7 @@
           "music_info": {
             "music_id": "music_007_2",
             "music_name": "Original Sound",
-            "author_name": "新人Grace译"
+            "author_name": "Grace译"
           },
           "stats": {
             "play_count": 103364,
@@ -1576,8 +1576,8 @@
         {
           "video_id": "tt_video_007_3",
           "share_url": "mock://tiktok/video/007_3",
-          "create_time": 1791333500,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1784289600,
+          "title": "留学生开学准备：我装的第一个App是LinguaGo",
           "duration": 46,
           "cover_urls": [
             "mock://cdn/tiktok/cover_007_3.jpg"
@@ -1591,7 +1591,7 @@
           "music_info": {
             "music_id": "music_007_3",
             "music_name": "Original Sound",
-            "author_name": "新人Grace译"
+            "author_name": "Grace译"
           },
           "stats": {
             "play_count": 127867,
@@ -1608,7 +1608,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "evidence_text": "日本交换生活记录：LinguaGo帮我看懂区役所通知",
           "source_post_id": "tt_video_007_1",
           "confidence": 0.93,
           "data_origin": "mock_seed"
@@ -1632,11 +1632,12 @@
         "second_round_pass",
         "new_creator",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_tt_007",
       "data_origin": "mock_seed"
@@ -1699,8 +1700,8 @@
         {
           "video_id": "tt_video_008_1",
           "share_url": "mock://tiktok/video/008_1",
-          "create_time": 1791506400,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1786795200,
+          "title": "韩国工厂验货，LinguaGo中韩实时翻译现场沟通",
           "duration": 75,
           "cover_urls": [
             "mock://cdn/tiktok/cover_008_1.jpg"
@@ -1727,8 +1728,8 @@
         {
           "video_id": "tt_video_008_2",
           "share_url": "mock://tiktok/video/008_2",
-          "create_time": 1791420000,
-          "title": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "create_time": 1785499200,
+          "title": "中日韩三语报价单，LinguaGo一次翻完",
           "duration": 83,
           "cover_urls": [
             "mock://cdn/tiktok/cover_008_2.jpg"
@@ -1755,8 +1756,8 @@
         {
           "video_id": "tt_video_008_3",
           "share_url": "mock://tiktok/video/008_3",
-          "create_time": 1791333600,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1784203200,
+          "title": "跨境办公小技巧：LinguaGo翻译韩文聊天截图",
           "duration": 88,
           "cover_urls": [
             "mock://cdn/tiktok/cover_008_3.jpg"
@@ -1787,7 +1788,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "evidence_text": "韩国工厂验货，LinguaGo中韩实时翻译现场沟通",
           "source_post_id": "tt_video_008_1",
           "confidence": 0.9,
           "data_origin": "mock_seed"
@@ -1838,11 +1839,12 @@
         "second_round_pass",
         "gpm_known",
         "similar_product_user",
-        "gpm_diff_cross_platform"
+        "gpm_diff_cross_platform",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_tt_008",
       "data_origin": "mock_seed"
@@ -1905,8 +1907,8 @@
         {
           "video_id": "tt_video_009_1",
           "share_url": "mock://tiktok/video/009_1",
-          "create_time": 1791506500,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1786968000,
+          "title": "每周读10篇英文行业报告，我用LinguaGo双语对照",
           "duration": 90,
           "cover_urls": [
             "mock://cdn/tiktok/cover_009_1.jpg"
@@ -1933,8 +1935,8 @@
         {
           "video_id": "tt_video_009_2",
           "share_url": "mock://tiktok/video/009_2",
-          "create_time": 1791420100,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1785672000,
+          "title": "LinguaGo文档翻译加笔记软件，搭建我的外文知识库",
           "duration": 39,
           "cover_urls": [
             "mock://cdn/tiktok/cover_009_2.jpg"
@@ -1961,8 +1963,8 @@
         {
           "video_id": "tt_video_009_3",
           "share_url": "mock://tiktok/video/009_3",
-          "create_time": 1791333700,
-          "title": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "create_time": 1784376000,
+          "title": "英文会议录音转文字再翻译，LinguaGo一站完成",
           "duration": 84,
           "cover_urls": [
             "mock://cdn/tiktok/cover_009_3.jpg"
@@ -1993,7 +1995,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "evidence_text": "每周读10篇英文行业报告，我用LinguaGo双语对照",
           "source_post_id": "tt_video_009_1",
           "confidence": 0.78,
           "data_origin": "mock_seed"
@@ -2043,25 +2045,26 @@
         "strong_candidate_round2",
         "second_round_pass",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_tt_009",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_010",
-      "display_name": "竞品合作Jake",
+      "display_name": "Jake聊翻译",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@comp.jake",
+      "handle": "@jake.talks",
       "profile": {
         "uid": "tt_uid_010",
-        "unique_id": "comp.jake",
-        "nickname": "竞品合作Jake",
+        "unique_id": "jake.talks",
+        "nickname": "Jake聊翻译",
         "sec_uid": "MS4wLjABAAAA_mock_010",
         "signature": "AI翻译 · 工具推荐",
         "follower_count": 202552,
@@ -2070,7 +2073,7 @@
         "video_count": 42,
         "verified": false,
         "region": "JP",
-        "bio_url": "mock://tiktok/comp.jake",
+        "bio_url": "mock://tiktok/jake.talks",
         "category": "Business",
         "avatar_thumb": "mock://cdn/tiktok/avatar_010.jpg"
       },
@@ -2108,8 +2111,8 @@
         {
           "video_id": "tt_video_010_1",
           "share_url": "mock://tiktok/video/010_1",
-          "create_time": 1791506600,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1790251200,
+          "title": "本月继续和Mock竞品翻译合作，这期讲它的会议字幕",
           "duration": 57,
           "cover_urls": [
             "mock://cdn/tiktok/cover_010_1.jpg"
@@ -2123,7 +2126,7 @@
           "music_info": {
             "music_id": "music_010_1",
             "music_name": "Original Sound",
-            "author_name": "竞品合作Jake"
+            "author_name": "Jake聊翻译"
           },
           "stats": {
             "play_count": 90078,
@@ -2136,8 +2139,8 @@
         {
           "video_id": "tt_video_010_2",
           "share_url": "mock://tiktok/video/010_2",
-          "create_time": 1791420200,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1789992000,
+          "title": "合作款翻译笔开箱：扫描翻译速度实测",
           "duration": 31,
           "cover_urls": [
             "mock://cdn/tiktok/cover_010_2.jpg"
@@ -2151,7 +2154,7 @@
           "music_info": {
             "music_id": "music_010_2",
             "music_name": "Original Sound",
-            "author_name": "竞品合作Jake"
+            "author_name": "Jake聊翻译"
           },
           "stats": {
             "play_count": 93817,
@@ -2164,8 +2167,8 @@
         {
           "video_id": "tt_video_010_3",
           "share_url": "mock://tiktok/video/010_3",
-          "create_time": 1791333800,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1789646400,
+          "title": "翻译工具怎么选？我目前在用合作品牌的方案",
           "duration": 41,
           "cover_urls": [
             "mock://cdn/tiktok/cover_010_3.jpg"
@@ -2179,7 +2182,7 @@
           "music_info": {
             "music_id": "music_010_3",
             "music_name": "Original Sound",
-            "author_name": "竞品合作Jake"
+            "author_name": "Jake聊翻译"
           },
           "stats": {
             "play_count": 106940,
@@ -2196,7 +2199,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_active",
-          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "evidence_text": "本月继续和Mock竞品翻译合作，这期讲它的会议字幕",
           "source_post_id": "tt_video_010_1",
           "confidence": 0.78,
           "data_origin": "mock_seed"
@@ -2313,16 +2316,16 @@
         {
           "video_id": "tt_video_011_1",
           "share_url": "mock://tiktok/video/011_1",
-          "create_time": 1791506700,
-          "title": "雅思阅读技巧分享",
+          "create_time": 1790164800,
+          "title": "《黑袍纠察队》名场面中英双字幕｜高能剪辑",
           "duration": 38,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_1.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#雅思",
-            "#托福"
+            "#影视剪辑",
+            "#双语字幕"
           ],
           "music_info": {
             "music_id": "music_011_1",
@@ -2340,16 +2343,16 @@
         {
           "video_id": "tt_video_011_2",
           "share_url": "mock://tiktok/video/011_2",
-          "create_time": 1791420300,
-          "title": "本期字幕剪辑花絮",
+          "create_time": 1789905600,
+          "title": "这段台词字幕组翻得太神了，笑到停不下来",
           "duration": 74,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_2.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#雅思",
-            "#托福"
+            "#影视剪辑",
+            "#双语字幕"
           ],
           "music_info": {
             "music_id": "music_011_2",
@@ -2367,16 +2370,16 @@
         {
           "video_id": "tt_video_011_3",
           "share_url": "mock://tiktok/video/011_3",
-          "create_time": 1791333900,
-          "title": "雅思阅读技巧分享",
+          "create_time": 1789560000,
+          "title": "美剧熟肉搬运：本周最火片段合集",
           "duration": 66,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_3.jpg"
           ],
           "region": "US",
           "hashtag_names": [
-            "#AI绘画",
-            "#AIart"
+            "#影视剪辑",
+            "#双语字幕"
           ],
           "music_info": {
             "music_id": "music_011_3",
@@ -2398,7 +2401,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "category_mentions_only",
-          "evidence_text": "昵称含翻译，内容为影视字幕剪辑",
+          "evidence_text": "《黑袍纠察队》名场面中英双字幕｜高能剪辑",
           "source_post_id": "tt_video_011_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2484,16 +2487,16 @@
         {
           "video_id": "tt_video_012_1",
           "share_url": "mock://tiktok/video/012_1",
-          "create_time": 1791506800,
-          "title": "昵称含英语，内容为考试英语",
+          "create_time": 1790337600,
+          "title": "四级听力高频词30个，背完稳过",
           "duration": 70,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_1.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#雅思",
-            "#托福"
+            "#英语四级",
+            "#考研英语"
           ],
           "music_info": {
             "music_id": "music_012_1",
@@ -2511,16 +2514,16 @@
         {
           "video_id": "tt_video_012_2",
           "share_url": "mock://tiktok/video/012_2",
-          "create_time": 1791420400,
-          "title": "昵称含英语，内容为考试英语",
+          "create_time": 1790078400,
+          "title": "考研英语作文万能模板，直接套用",
           "duration": 53,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_2.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#AI绘画",
-            "#AIart"
+            "#英语四级",
+            "#考研英语"
           ],
           "music_info": {
             "music_id": "music_012_2",
@@ -2538,16 +2541,16 @@
         {
           "video_id": "tt_video_012_3",
           "share_url": "mock://tiktok/video/012_3",
-          "create_time": 1791334000,
-          "title": "雅思阅读技巧分享",
+          "create_time": 1789732800,
+          "title": "雅思阅读7分技巧：同义替换怎么找",
           "duration": 41,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_3.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#AI绘画",
-            "#AIart"
+            "#英语四级",
+            "#考研英语"
           ],
           "music_info": {
             "music_id": "music_012_3",
@@ -2569,7 +2572,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "category_mentions_only",
-          "evidence_text": "昵称含英语，内容为考试英语",
+          "evidence_text": "四级听力高频词30个，背完稳过",
           "source_post_id": "tt_video_012_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2655,16 +2658,16 @@
         {
           "video_id": "tt_video_013_1",
           "share_url": "mock://tiktok/video/013_1",
-          "create_time": 1791506900,
-          "title": "本期字幕剪辑花絮",
+          "create_time": 1790251200,
+          "title": "Midjourney画赛博朋克城市，提示词全公开",
           "duration": 58,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_1.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#字幕剪辑",
-            "#影视"
+            "#AI绘画",
+            "#midjourney"
           ],
           "music_info": {
             "music_id": "music_013_1",
@@ -2682,16 +2685,16 @@
         {
           "video_id": "tt_video_013_2",
           "share_url": "mock://tiktok/video/013_2",
-          "create_time": 1791420500,
-          "title": "雅思阅读技巧分享",
+          "create_time": 1789992000,
+          "title": "AI绘画上色教程：从线稿到成图只要5分钟",
           "duration": 70,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_2.jpg"
           ],
           "region": "US",
           "hashtag_names": [
-            "#雅思",
-            "#托福"
+            "#AI绘画",
+            "#midjourney"
           ],
           "music_info": {
             "music_id": "music_013_2",
@@ -2709,16 +2712,16 @@
         {
           "video_id": "tt_video_013_3",
           "share_url": "mock://tiktok/video/013_3",
-          "create_time": 1791334100,
-          "title": "雅思阅读技巧分享",
+          "create_time": 1789646400,
+          "title": "Stable Diffusion人像LoRA推荐合集",
           "duration": 58,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_3.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#字幕剪辑",
-            "#影视"
+            "#AI绘画",
+            "#midjourney"
           ],
           "music_info": {
             "music_id": "music_013_3",
@@ -2740,7 +2743,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "category_mentions_only",
-          "evidence_text": "昵称含AI，内容为AI绘画",
+          "evidence_text": "Midjourney画赛博朋克城市，提示词全公开",
           "source_post_id": "tt_video_013_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2770,14 +2773,14 @@
     },
     {
       "creator_id": "creator_016",
-      "display_name": "已合作Paula",
+      "display_name": "Paula译日常",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@done.paula",
+      "handle": "@paula.daily",
       "profile": {
         "uid": "tt_uid_016",
-        "unique_id": "done.paula",
-        "nickname": "已合作Paula",
+        "unique_id": "paula.daily",
+        "nickname": "Paula译日常",
         "sec_uid": "MS4wLjABAAAA_mock_016",
         "signature": "AI翻译 · 效率工具",
         "follower_count": 167418,
@@ -2786,7 +2789,7 @@
         "video_count": 359,
         "verified": false,
         "region": "US",
-        "bio_url": "mock://tiktok/done.paula",
+        "bio_url": "mock://tiktok/paula.daily",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_016.jpg"
       },
@@ -2824,8 +2827,8 @@
         {
           "video_id": "tt_video_016_1",
           "share_url": "mock://tiktok/video/016_1",
-          "create_time": 1791507200,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1790251200,
+          "title": "LinguaGo合作视频已发布，感谢品牌寄样",
           "duration": 35,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_1.jpg"
@@ -2839,7 +2842,7 @@
           "music_info": {
             "music_id": "music_016_1",
             "music_name": "Original Sound",
-            "author_name": "已合作Paula"
+            "author_name": "Paula译日常"
           },
           "stats": {
             "play_count": 36192,
@@ -2852,8 +2855,8 @@
         {
           "video_id": "tt_video_016_2",
           "share_url": "mock://tiktok/video/016_2",
-          "create_time": 1791420800,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1789992000,
+          "title": "上次合作后继续用LinguaGo做视频字幕翻译",
           "duration": 45,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_2.jpg"
@@ -2867,7 +2870,7 @@
           "music_info": {
             "music_id": "music_016_2",
             "music_name": "Original Sound",
-            "author_name": "已合作Paula"
+            "author_name": "Paula译日常"
           },
           "stats": {
             "play_count": 65979,
@@ -2880,8 +2883,8 @@
         {
           "video_id": "tt_video_016_3",
           "share_url": "mock://tiktok/video/016_3",
-          "create_time": 1791334400,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1789646400,
+          "title": "粉丝问我LinguaGo好不好用，统一回复在这",
           "duration": 85,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_3.jpg"
@@ -2895,7 +2898,7 @@
           "music_info": {
             "music_id": "music_016_3",
             "music_name": "Original Sound",
-            "author_name": "已合作Paula"
+            "author_name": "Paula译日常"
           },
           "stats": {
             "play_count": 31357,
@@ -2912,7 +2915,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_cooperation",
-          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "evidence_text": "LinguaGo合作视频已发布，感谢品牌寄样",
           "source_post_id": "tt_video_016_1",
           "confidence": 0.89,
           "data_origin": "mock_seed"
@@ -2970,14 +2973,14 @@
     },
     {
       "creator_id": "creator_017",
-      "display_name": "已合作Quinn",
+      "display_name": "Quinn效率",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@done.quinn",
+      "handle": "@quinn.works",
       "profile": {
         "uid": "tt_uid_017",
-        "unique_id": "done.quinn",
-        "nickname": "已合作Quinn",
+        "unique_id": "quinn.works",
+        "nickname": "Quinn效率",
         "sec_uid": "MS4wLjABAAAA_mock_017",
         "signature": "跨境 · 翻译工具",
         "follower_count": 98696,
@@ -2986,7 +2989,7 @@
         "video_count": 277,
         "verified": false,
         "region": "CA",
-        "bio_url": "mock://tiktok/done.quinn",
+        "bio_url": "mock://tiktok/quinn.works",
         "category": "Tech",
         "avatar_thumb": "mock://cdn/tiktok/avatar_017.jpg"
       },
@@ -3024,8 +3027,8 @@
         {
           "video_id": "tt_video_017_1",
           "share_url": "mock://tiktok/video/017_1",
-          "create_time": 1791507300,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1790164800,
+          "title": "和LinguaGo的合作款：职场翻译3个技巧",
           "duration": 83,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_1.jpg"
@@ -3039,7 +3042,7 @@
           "music_info": {
             "music_id": "music_017_1",
             "music_name": "Original Sound",
-            "author_name": "已合作Quinn"
+            "author_name": "Quinn效率"
           },
           "stats": {
             "play_count": 29944,
@@ -3052,8 +3055,8 @@
         {
           "video_id": "tt_video_017_2",
           "share_url": "mock://tiktok/video/017_2",
-          "create_time": 1791420900,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1789905600,
+          "title": "LinguaGo文档翻译日常使用记录",
           "duration": 64,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_2.jpg"
@@ -3067,7 +3070,7 @@
           "music_info": {
             "music_id": "music_017_2",
             "music_name": "Original Sound",
-            "author_name": "已合作Quinn"
+            "author_name": "Quinn效率"
           },
           "stats": {
             "play_count": 49394,
@@ -3080,8 +3083,8 @@
         {
           "video_id": "tt_video_017_3",
           "share_url": "mock://tiktok/video/017_3",
-          "create_time": 1791334500,
-          "title": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "create_time": 1789560000,
+          "title": "效率工具桌面整理，翻译用LinguaGo",
           "duration": 74,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_3.jpg"
@@ -3095,7 +3098,7 @@
           "music_info": {
             "music_id": "music_017_3",
             "music_name": "Original Sound",
-            "author_name": "已合作Quinn"
+            "author_name": "Quinn效率"
           },
           "stats": {
             "play_count": 69636,
@@ -3112,7 +3115,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_cooperation",
-          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "evidence_text": "和LinguaGo的合作款：职场翻译3个技巧",
           "source_post_id": "tt_video_017_1",
           "confidence": 0.77,
           "data_origin": "mock_seed"
@@ -3170,14 +3173,14 @@
     },
     {
       "creator_id": "creator_020",
-      "display_name": "画像缺失Tina",
+      "display_name": "Tina工具箱",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@unk.tina",
+      "handle": "@tina.toolbox",
       "profile": {
         "uid": "tt_uid_020",
-        "unique_id": "unk.tina",
-        "nickname": "画像缺失Tina",
+        "unique_id": "tina.toolbox",
+        "nickname": "Tina工具箱",
         "sec_uid": "MS4wLjABAAAA_mock_020",
         "signature": "AI工具 · 翻译",
         "follower_count": 201254,
@@ -3186,7 +3189,7 @@
         "video_count": 142,
         "verified": false,
         "region": "SG",
-        "bio_url": "mock://tiktok/unk.tina",
+        "bio_url": "mock://tiktok/tina.toolbox",
         "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_020.jpg"
       },
@@ -3218,8 +3221,8 @@
         {
           "video_id": "tt_video_020_1",
           "share_url": "mock://tiktok/video/020_1",
-          "create_time": 1791507600,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1790164800,
+          "title": "试了一款AI翻译App，拍照翻译很快",
           "duration": 55,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_1.jpg"
@@ -3233,7 +3236,7 @@
           "music_info": {
             "music_id": "music_020_1",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Tina"
+            "author_name": "Tina工具箱"
           },
           "stats": {
             "play_count": 106427,
@@ -3246,8 +3249,8 @@
         {
           "video_id": "tt_video_020_2",
           "share_url": "mock://tiktok/video/020_2",
-          "create_time": 1791421200,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1789905600,
+          "title": "工具箱更新：本周收藏的3个翻译工具",
           "duration": 37,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_2.jpg"
@@ -3261,7 +3264,7 @@
           "music_info": {
             "music_id": "music_020_2",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Tina"
+            "author_name": "Tina工具箱"
           },
           "stats": {
             "play_count": 82499,
@@ -3274,8 +3277,8 @@
         {
           "video_id": "tt_video_020_3",
           "share_url": "mock://tiktok/video/020_3",
-          "create_time": 1791334800,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1789560000,
+          "title": "用AI翻译做旅行攻略，外文景点介绍秒懂",
           "duration": 51,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_3.jpg"
@@ -3289,7 +3292,7 @@
           "music_info": {
             "music_id": "music_020_3",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Tina"
+            "author_name": "Tina工具箱"
           },
           "stats": {
             "play_count": 33788,
@@ -3306,7 +3309,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "evidence_text": "试了一款AI翻译App，拍照翻译很快",
           "source_post_id": "tt_video_020_1",
           "confidence": 0.87,
           "data_origin": "mock_seed"
@@ -3338,14 +3341,14 @@
     },
     {
       "creator_id": "creator_021",
-      "display_name": "画像缺失Uma",
+      "display_name": "Uma译记",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@unk.uma",
+      "handle": "@uma.notes",
       "profile": {
         "uid": "tt_uid_021",
-        "unique_id": "unk.uma",
-        "nickname": "画像缺失Uma",
+        "unique_id": "uma.notes",
+        "nickname": "Uma译记",
         "sec_uid": "MS4wLjABAAAA_mock_021",
         "signature": "跨境 · 效率",
         "follower_count": 41501,
@@ -3354,7 +3357,7 @@
         "video_count": 177,
         "verified": false,
         "region": "JP",
-        "bio_url": "mock://tiktok/unk.uma",
+        "bio_url": "mock://tiktok/uma.notes",
         "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_021.jpg"
       },
@@ -3386,8 +3389,8 @@
         {
           "video_id": "tt_video_021_1",
           "share_url": "mock://tiktok/video/021_1",
-          "create_time": 1791507700,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1790337600,
+          "title": "LinguaGo翻译跨境邮件，语气比之前自然",
           "duration": 41,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_1.jpg"
@@ -3401,7 +3404,7 @@
           "music_info": {
             "music_id": "music_021_1",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Uma"
+            "author_name": "Uma译记"
           },
           "stats": {
             "play_count": 34328,
@@ -3414,8 +3417,8 @@
         {
           "video_id": "tt_video_021_2",
           "share_url": "mock://tiktok/video/021_2",
-          "create_time": 1791421300,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1790078400,
+          "title": "用LinguaGo写英文产品说明书初稿",
           "duration": 47,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_2.jpg"
@@ -3429,7 +3432,7 @@
           "music_info": {
             "music_id": "music_021_2",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Uma"
+            "author_name": "Uma译记"
           },
           "stats": {
             "play_count": 20928,
@@ -3442,8 +3445,8 @@
         {
           "video_id": "tt_video_021_3",
           "share_url": "mock://tiktok/video/021_3",
-          "create_time": 1791334900,
-          "title": "分享了一款AI翻译工具的使用体验",
+          "create_time": 1789732800,
+          "title": "我的翻译记录本：LinguaGo常用短语收藏",
           "duration": 70,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_3.jpg"
@@ -3457,7 +3460,7 @@
           "music_info": {
             "music_id": "music_021_3",
             "music_name": "Original Sound",
-            "author_name": "画像缺失Uma"
+            "author_name": "Uma译记"
           },
           "stats": {
             "play_count": 6427,
@@ -3474,7 +3477,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "evidence_text": "LinguaGo翻译跨境邮件，语气比之前自然",
           "source_post_id": "tt_video_021_1",
           "confidence": 0.77,
           "data_origin": "mock_seed"
@@ -3506,23 +3509,23 @@
     },
     {
       "creator_id": "creator_024",
-      "display_name": "新人Xander译",
+      "display_name": "Xander译",
       "is_new_creator": true,
       "platform": "tiktok",
-      "handle": "@new.xander",
+      "handle": "@xander.yi",
       "profile": {
         "uid": "tt_uid_024",
-        "unique_id": "new.xander",
-        "nickname": "新人Xander译",
+        "unique_id": "xander.yi",
+        "nickname": "Xander译",
         "sec_uid": "MS4wLjABAAAA_mock_024",
         "signature": "AI翻译 · 实时对话",
         "follower_count": 221445,
         "following_count": 178,
         "heart_count": 1556923,
-        "video_count": 216,
+        "video_count": 12,
         "verified": false,
         "region": "JP",
-        "bio_url": "mock://tiktok/new.xander",
+        "bio_url": "mock://tiktok/xander.yi",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_024.jpg"
       },
@@ -3560,7 +3563,7 @@
         {
           "video_id": "tt_video_024_1",
           "share_url": "mock://tiktok/video/024_1",
-          "create_time": 1791508000,
+          "create_time": 1789992000,
           "title": "第一次测评LinguaGo实时对话翻译",
           "duration": 50,
           "cover_urls": [
@@ -3575,7 +3578,7 @@
           "music_info": {
             "music_id": "music_024_1",
             "music_name": "Original Sound",
-            "author_name": "新人Xander译"
+            "author_name": "Xander译"
           },
           "stats": {
             "play_count": 47853,
@@ -3588,22 +3591,20 @@
         {
           "video_id": "tt_video_024_2",
           "share_url": "mock://tiktok/video/024_2",
-          "create_time": 1791421600,
-          "title": "第一次测评LinguaGo实时对话翻译",
+          "create_time": 1789646400,
+          "title": "周末探店：城南新开的咖啡馆",
           "duration": 62,
           "cover_urls": [
             "mock://cdn/tiktok/cover_024_2.jpg"
           ],
           "region": "US",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_024_2",
             "music_name": "Original Sound",
-            "author_name": "新人Xander译"
+            "author_name": "Xander译"
           },
           "stats": {
             "play_count": 45494,
@@ -3616,22 +3617,20 @@
         {
           "video_id": "tt_video_024_3",
           "share_url": "mock://tiktok/video/024_3",
-          "create_time": 1791335200,
-          "title": "第一次测评LinguaGo实时对话翻译",
+          "create_time": 1789214400,
+          "title": "开箱新入的机械键盘",
           "duration": 63,
           "cover_urls": [
             "mock://cdn/tiktok/cover_024_3.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_024_3",
             "music_name": "Original Sound",
-            "author_name": "新人Xander译"
+            "author_name": "Xander译"
           },
           "stats": {
             "play_count": 67023,
@@ -3669,34 +3668,35 @@
       "scenario_tags": [
         "new_creator",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "single_related_post"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "review",
-        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+        "expected_reason": "近 30 天只有 1 条本品相关内容，持续性不足；无历史合作"
       },
       "raw_api_snapshot_ref": "search_tt_024",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_025",
-      "display_name": "新人Yuna工具",
+      "display_name": "Yuna工具",
       "is_new_creator": true,
       "platform": "tiktok",
-      "handle": "@new.yuna",
+      "handle": "@yuna.tools",
       "profile": {
         "uid": "tt_uid_025",
-        "unique_id": "new.yuna",
-        "nickname": "新人Yuna工具",
+        "unique_id": "yuna.tools",
+        "nickname": "Yuna工具",
         "sec_uid": "MS4wLjABAAAA_mock_025",
         "signature": "效率工具 · 文档翻译",
         "follower_count": 236043,
         "following_count": 819,
         "heart_count": 1857687,
-        "video_count": 349,
+        "video_count": 13,
         "verified": false,
         "region": "JP",
-        "bio_url": "mock://tiktok/new.yuna",
+        "bio_url": "mock://tiktok/yuna.tools",
         "category": "Business",
         "avatar_thumb": "mock://cdn/tiktok/avatar_025.jpg"
       },
@@ -3734,8 +3734,8 @@
         {
           "video_id": "tt_video_025_1",
           "share_url": "mock://tiktok/video/025_1",
-          "create_time": 1791508100,
-          "title": "第一次测评LinguaGo实时对话翻译",
+          "create_time": 1789992000,
+          "title": "第一次用LinguaGo翻译英文说明书，比预想好用",
           "duration": 72,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_1.jpg"
@@ -3749,7 +3749,7 @@
           "music_info": {
             "music_id": "music_025_1",
             "music_name": "Original Sound",
-            "author_name": "新人Yuna工具"
+            "author_name": "Yuna工具"
           },
           "stats": {
             "play_count": 140130,
@@ -3762,22 +3762,20 @@
         {
           "video_id": "tt_video_025_2",
           "share_url": "mock://tiktok/video/025_2",
-          "create_time": 1791421700,
-          "title": "第一次测评LinguaGo实时对话翻译",
+          "create_time": 1789646400,
+          "title": "我的桌面好物分享",
           "duration": 80,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_2.jpg"
           ],
           "region": "GB",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_025_2",
             "music_name": "Original Sound",
-            "author_name": "新人Yuna工具"
+            "author_name": "Yuna工具"
           },
           "stats": {
             "play_count": 11733,
@@ -3790,22 +3788,20 @@
         {
           "video_id": "tt_video_025_3",
           "share_url": "mock://tiktok/video/025_3",
-          "create_time": 1791335300,
-          "title": "第一次测评LinguaGo实时对话翻译",
+          "create_time": 1789214400,
+          "title": "健身第30天打卡",
           "duration": 31,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_3.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_025_3",
             "music_name": "Original Sound",
-            "author_name": "新人Yuna工具"
+            "author_name": "Yuna工具"
           },
           "stats": {
             "play_count": 88820,
@@ -3822,7 +3818,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "evidence_text": "第一次用LinguaGo翻译英文说明书，比预想好用",
           "source_post_id": "tt_video_025_1",
           "confidence": 0.88,
           "data_origin": "mock_seed"
@@ -3843,25 +3839,26 @@
       "scenario_tags": [
         "new_creator",
         "gpm_known",
-        "similar_product_user"
+        "similar_product_user",
+        "single_related_post"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "review",
-        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+        "expected_reason": "近 30 天只有 1 条本品相关内容，持续性不足；无历史合作"
       },
       "raw_api_snapshot_ref": "search_tt_025",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_028",
-      "display_name": "深度竞品Blair",
+      "display_name": "Blair译评",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@deep.blair",
+      "handle": "@blair.reviews",
       "profile": {
         "uid": "tt_uid_028",
-        "unique_id": "deep.blair",
-        "nickname": "深度竞品Blair",
+        "unique_id": "blair.reviews",
+        "nickname": "Blair译评",
         "sec_uid": "MS4wLjABAAAA_mock_028",
         "signature": "翻译App · 竞品评测",
         "follower_count": 122732,
@@ -3870,7 +3867,7 @@
         "video_count": 216,
         "verified": false,
         "region": "CA",
-        "bio_url": "mock://tiktok/deep.blair",
+        "bio_url": "mock://tiktok/blair.reviews",
         "category": "Tech",
         "avatar_thumb": "mock://cdn/tiktok/avatar_028.jpg"
       },
@@ -3908,8 +3905,8 @@
         {
           "video_id": "tt_video_028_1",
           "share_url": "mock://tiktok/video/028_1",
-          "create_time": 1791508400,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1790251200,
+          "title": "本月继续和Mock竞品翻译合作：同传功能深度测评",
           "duration": 30,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_1.jpg"
@@ -3923,7 +3920,7 @@
           "music_info": {
             "music_id": "music_028_1",
             "music_name": "Original Sound",
-            "author_name": "深度竞品Blair"
+            "author_name": "Blair译评"
           },
           "stats": {
             "play_count": 80117,
@@ -3936,8 +3933,8 @@
         {
           "video_id": "tt_video_028_2",
           "share_url": "mock://tiktok/video/028_2",
-          "create_time": 1791422000,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1789992000,
+          "title": "Mock竞品翻译会员值不值？合作期真实体验",
           "duration": 67,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_2.jpg"
@@ -3951,7 +3948,7 @@
           "music_info": {
             "music_id": "music_028_2",
             "music_name": "Original Sound",
-            "author_name": "深度竞品Blair"
+            "author_name": "Blair译评"
           },
           "stats": {
             "play_count": 140387,
@@ -3964,8 +3961,8 @@
         {
           "video_id": "tt_video_028_3",
           "share_url": "mock://tiktok/video/028_3",
-          "create_time": 1791335600,
-          "title": "本月继续和 Mock竞品翻译 合作中",
+          "create_time": 1789646400,
+          "title": "翻译App深度对比（本期由Mock竞品翻译赞助）",
           "duration": 52,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_3.jpg"
@@ -3979,7 +3976,7 @@
           "music_info": {
             "music_id": "music_028_3",
             "music_name": "Original Sound",
-            "author_name": "深度竞品Blair"
+            "author_name": "Blair译评"
           },
           "stats": {
             "play_count": 31577,
@@ -3996,7 +3993,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_active",
-          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "evidence_text": "本月继续和Mock竞品翻译合作：同传功能深度测评",
           "source_post_id": "tt_video_028_1",
           "confidence": 0.93,
           "data_origin": "mock_seed"
@@ -4055,14 +4052,14 @@
     },
     {
       "creator_id": "creator_030",
-      "display_name": "竞品差评Dana",
+      "display_name": "Dana吐槽工具",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@neg.dana",
+      "handle": "@dana.rants",
       "profile": {
         "uid": "tt_uid_030",
-        "unique_id": "neg.dana",
-        "nickname": "竞品差评Dana",
+        "unique_id": "dana.rants",
+        "nickname": "Dana吐槽工具",
         "sec_uid": "MS4wLjABAAAA_mock_030",
         "signature": "翻译工具吐槽 · AI效率",
         "follower_count": 251369,
@@ -4071,7 +4068,7 @@
         "video_count": 400,
         "verified": false,
         "region": "SG",
-        "bio_url": "mock://tiktok/neg.dana",
+        "bio_url": "mock://tiktok/dana.rants",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_030.jpg"
       },
@@ -4109,8 +4106,8 @@
         {
           "video_id": "tt_video_030_1",
           "share_url": "mock://tiktok/video/030_1",
-          "create_time": 1791508600,
-          "title": "某竞品翻译翻车了，术语错误太多",
+          "create_time": 1790337600,
+          "title": "某竞品翻译翻车了，合同术语错得离谱",
           "duration": 34,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_1.jpg"
@@ -4124,7 +4121,7 @@
           "music_info": {
             "music_id": "music_030_1",
             "music_name": "Original Sound",
-            "author_name": "竞品差评Dana"
+            "author_name": "Dana吐槽工具"
           },
           "stats": {
             "play_count": 108041,
@@ -4137,8 +4134,8 @@
         {
           "video_id": "tt_video_030_2",
           "share_url": "mock://tiktok/video/030_2",
-          "create_time": 1791422200,
-          "title": "某竞品翻译翻车了，术语错误太多",
+          "create_time": 1790078400,
+          "title": "翻译App会员自动续费的坑，大家注意",
           "duration": 77,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_2.jpg"
@@ -4152,7 +4149,7 @@
           "music_info": {
             "music_id": "music_030_2",
             "music_name": "Original Sound",
-            "author_name": "竞品差评Dana"
+            "author_name": "Dana吐槽工具"
           },
           "stats": {
             "play_count": 27966,
@@ -4165,8 +4162,8 @@
         {
           "video_id": "tt_video_030_3",
           "share_url": "mock://tiktok/video/030_3",
-          "create_time": 1791335800,
-          "title": "某竞品翻译翻车了，术语错误太多",
+          "create_time": 1789732800,
+          "title": "为什么我不再相信AI翻译的专业版",
           "duration": 61,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_3.jpg"
@@ -4180,7 +4177,7 @@
           "music_info": {
             "music_id": "music_030_3",
             "music_name": "Original Sound",
-            "author_name": "竞品差评Dana"
+            "author_name": "Dana吐槽工具"
           },
           "stats": {
             "play_count": 135967,
@@ -4197,7 +4194,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_user",
-          "evidence_text": "某竞品翻译翻车了，术语错误太多",
+          "evidence_text": "某竞品翻译翻车了，合同术语错得离谱",
           "source_post_id": "tt_video_030_1",
           "confidence": 0.86,
           "data_origin": "mock_seed"
@@ -4218,25 +4215,26 @@
       "scenario_tags": [
         "competitor_negative_review",
         "gpm_known",
-        "similar_product_user"
+        "similar_product_user",
+        "no_own_brand_evidence"
       ],
       "expected_ai_signals": {
-        "expected_decision_hint": "recommend",
-        "expected_reason": "竞品差评者转化潜力高，但需验证真实性"
+        "expected_decision_hint": "review",
+        "expected_reason": "内容以吐槽竞品为主，未见使用本品的证据"
       },
       "raw_api_snapshot_ref": "search_tt_030",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_032",
-      "display_name": "中立测评Faye",
+      "display_name": "Faye横评",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@neutral.faye",
+      "handle": "@faye.bench",
       "profile": {
         "uid": "tt_uid_032",
-        "unique_id": "neutral.faye",
-        "nickname": "中立测评Faye",
+        "unique_id": "faye.bench",
+        "nickname": "Faye横评",
         "sec_uid": "MS4wLjABAAAA_mock_032",
         "signature": "多产品对比 · 翻译工具 · 效率",
         "follower_count": 189159,
@@ -4245,7 +4243,7 @@
         "video_count": 51,
         "verified": false,
         "region": "CA",
-        "bio_url": "mock://tiktok/neutral.faye",
+        "bio_url": "mock://tiktok/faye.bench",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_032.jpg"
       },
@@ -4285,8 +4283,8 @@
         {
           "video_id": "tt_video_032_1",
           "share_url": "mock://tiktok/video/032_1",
-          "create_time": 1791508800,
-          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "create_time": 1790164800,
+          "title": "五款翻译工具横评：LinguaGo、DeepL、有道对比",
           "duration": 87,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_1.jpg"
@@ -4300,7 +4298,7 @@
           "music_info": {
             "music_id": "music_032_1",
             "music_name": "Original Sound",
-            "author_name": "中立测评Faye"
+            "author_name": "Faye横评"
           },
           "stats": {
             "play_count": 76264,
@@ -4313,8 +4311,8 @@
         {
           "video_id": "tt_video_032_2",
           "share_url": "mock://tiktok/video/032_2",
-          "create_time": 1791422400,
-          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "create_time": 1789905600,
+          "title": "翻译工具横评第二期：长文档格式保留",
           "duration": 82,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_2.jpg"
@@ -4328,7 +4326,7 @@
           "music_info": {
             "music_id": "music_032_2",
             "music_name": "Original Sound",
-            "author_name": "中立测评Faye"
+            "author_name": "Faye横评"
           },
           "stats": {
             "play_count": 55339,
@@ -4341,8 +4339,8 @@
         {
           "video_id": "tt_video_032_3",
           "share_url": "mock://tiktok/video/032_3",
-          "create_time": 1791336000,
-          "title": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "create_time": 1789560000,
+          "title": "本期由Mock竞品翻译合作支持：同传功能测评",
           "duration": 62,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_3.jpg"
@@ -4356,7 +4354,7 @@
           "music_info": {
             "music_id": "music_032_3",
             "music_name": "Original Sound",
-            "author_name": "中立测评Faye"
+            "author_name": "Faye横评"
           },
           "stats": {
             "play_count": 65296,
@@ -4373,13 +4371,40 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "五款翻译工具横评：LinguaGo / DeepL / 有道 对比",
+          "evidence_text": "五款翻译工具横评：LinguaGo、DeepL、有道对比",
           "source_post_id": "tt_video_032_1",
           "confidence": 0.91,
           "data_origin": "mock_seed"
         }
       ],
-      "cooperation_history": [],
+      "cooperation_history": [
+        {
+          "cooperation_id": "coop_tt_032_comp_1",
+          "brand_name": "Mock竞品翻译",
+          "product": "竞品翻译App",
+          "platform": "tiktok",
+          "is_current_brand": false,
+          "product_relation": "competitor_cooperation_active",
+          "exclusivity_risk": "possible",
+          "sample_sent_at": "2026-09-02",
+          "sample_received_at": "2026-09-04",
+          "content_published_at": "2026-09-12",
+          "turnaround_days": 4,
+          "deliverable": "短视频",
+          "on_time": true,
+          "revision_count": 0,
+          "communication_score": 4.2,
+          "performance": {
+            "play_count": 22812,
+            "engagement_rate": 0.056,
+            "gmv": 10989,
+            "impressions": 391759,
+            "video_gpm": 28.1
+          },
+          "notes": "竞品合作中，排他条款未知",
+          "data_origin": "mock_seed"
+        }
+      ],
       "contact": {
         "preferred_channel": "tiktok_dm",
         "dm_available": true,
@@ -4394,34 +4419,36 @@
       "scenario_tags": [
         "multi_product_neutral",
         "gpm_known",
-        "similar_product_user"
+        "similar_product_user",
+        "competitor_active",
+        "competitor_exclusivity_unknown"
       ],
       "expected_ai_signals": {
-        "expected_decision_hint": "recommend",
-        "expected_reason": "多产品中立测评型，适合对比测评合作"
+        "expected_decision_hint": "review",
+        "expected_reason": "横评包含本品，但与竞品的合作进行中，排他条款未知"
       },
       "raw_api_snapshot_ref": "search_tt_032",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_034",
-      "display_name": "GPM缺失Holly",
+      "display_name": "Holly译站",
       "is_new_creator": false,
       "platform": "tiktok",
-      "handle": "@nogpm.holly",
+      "handle": "@holly.station",
       "profile": {
         "uid": "tt_uid_034",
-        "unique_id": "nogpm.holly",
-        "nickname": "GPM缺失Holly",
+        "unique_id": "holly.station",
+        "nickname": "Holly译站",
         "sec_uid": "MS4wLjABAAAA_mock_034",
         "signature": "AI翻译 · 职场",
         "follower_count": 148459,
         "following_count": 889,
         "heart_count": 208331,
-        "video_count": 334,
+        "video_count": 15,
         "verified": false,
         "region": "US",
-        "bio_url": "mock://tiktok/nogpm.holly",
+        "bio_url": "mock://tiktok/holly.station",
         "category": "Business",
         "avatar_thumb": "mock://cdn/tiktok/avatar_034.jpg"
       },
@@ -4459,8 +4486,8 @@
         {
           "video_id": "tt_video_034_1",
           "share_url": "mock://tiktok/video/034_1",
-          "create_time": 1791509000,
-          "title": "LinguaGo 文档翻译适合职场人",
+          "create_time": 1789992000,
+          "title": "LinguaGo文档翻译适合职场人",
           "duration": 35,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_1.jpg"
@@ -4474,7 +4501,7 @@
           "music_info": {
             "music_id": "music_034_1",
             "music_name": "Original Sound",
-            "author_name": "GPM缺失Holly"
+            "author_name": "Holly译站"
           },
           "stats": {
             "play_count": 91028,
@@ -4487,22 +4514,20 @@
         {
           "video_id": "tt_video_034_2",
           "share_url": "mock://tiktok/video/034_2",
-          "create_time": 1791422600,
-          "title": "LinguaGo 文档翻译适合职场人",
+          "create_time": 1789646400,
+          "title": "五一去大理的旅行vlog",
           "duration": 74,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_2.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_034_2",
             "music_name": "Original Sound",
-            "author_name": "GPM缺失Holly"
+            "author_name": "Holly译站"
           },
           "stats": {
             "play_count": 132074,
@@ -4515,22 +4540,20 @@
         {
           "video_id": "tt_video_034_3",
           "share_url": "mock://tiktok/video/034_3",
-          "create_time": 1791336200,
-          "title": "LinguaGo 文档翻译适合职场人",
+          "create_time": 1789214400,
+          "title": "我的读书笔记：本月看完的4本书",
           "duration": 86,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_3.jpg"
           ],
           "region": "GB",
           "hashtag_names": [
-            "#aitranslation",
-            "#翻译工具",
-            "#跨境"
+            "#日常"
           ],
           "music_info": {
             "music_id": "music_034_3",
             "music_name": "Original Sound",
-            "author_name": "GPM缺失Holly"
+            "author_name": "Holly译站"
           },
           "stats": {
             "play_count": 62542,
@@ -4547,7 +4570,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "LinguaGo 文档翻译适合职场人",
+          "evidence_text": "LinguaGo文档翻译适合职场人",
           "source_post_id": "tt_video_034_1",
           "confidence": 0.71,
           "data_origin": "mock_seed"
@@ -4567,11 +4590,12 @@
       },
       "scenario_tags": [
         "gpm_unknown",
-        "own_brand_user"
+        "own_brand_user",
+        "single_related_post"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "review",
-        "expected_reason": "产品相关但 GPM 缺失，降权不排除"
+        "expected_reason": "只有 1 条本品相关内容，持续性不足；GPM 未知"
       },
       "raw_api_snapshot_ref": "search_tt_034",
       "data_origin": "mock_seed"

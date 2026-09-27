@@ -16,11 +16,16 @@
 - `backend/src/collabpilot/campaign/verdict.py`
 - `backend/tests/unit/test_verdict.py`
 - 活动提示词文件（新建 `backend/config/prompts/campaign.md`）
+- `backend/tests/eval/test_fit_eval.py`（新）与 `pyproject.toml` 中 pytest 的 `eval` 标记
+- `frontend/components/main_table.py`、`frontend/components/evidence_panel.py`（新）
+- `frontend/tests/test_evidence_panel.py`（新）
 
 
 ## 本 Task 补充约束
 
-单测使用手写 Verdict fixture 与 mock_store 样本，不调用 DeepSeek。
+单测使用手写 Verdict fixture 与 mock_store 样本，不调用 DeepSeek。eval 用例调用 DeepSeek，默认不跑。
+
+评测不通过时改提示词，不加规则兜底，不读测试答案字段补救。
 
 
 ## 门禁

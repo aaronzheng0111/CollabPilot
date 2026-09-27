@@ -16,8 +16,11 @@ SQLite 表 `follow_ups`，字段与 `FollowUp` 相同。一个 `draft_id` 最多
 
 ## 界面
 
-T11 次级表展示 `next_step`、`channel`、`follow_status`。
+- `frontend/components/follow_up_table.py`：次级区「跟进」表，展示 `next_step`、`channel`、`follow_status` 的中文。
+- 在 `decisions.py` 注册 `save_follow_up` 与 `note_follow_up` 分支；`pending_decisions.py` 注册文案。
 
 ## 模块
 
 - `backend/src/collabpilot/campaign/follow_up.py`
+- `backend/src/collabpilot/campaign/decisions.py`
+- `frontend/components/follow_up_table.py`、`frontend/components/pending_decisions.py`

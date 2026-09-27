@@ -9,13 +9,17 @@
 - 不新增真实发送、真实平台 OAuth、小红书/B站/抖音。
 - 工具输出标 `[MOCK]` 或 `[RULE]`。模型生成的判断和草稿标 `[LLM]`，并写入 `data_origin=real_model_output` 与 `model_name`。
 - 禁止把 `expected_ai_signals` 当作模型结论展示。
-- 前序 Task：T09。前序未 `verified` 时不得开始本 Task 的代码。
+- 前序 Task：T13。前序未 `verified` 时不得开始本 Task 的代码。
 
 ## 允许修改
 
 - `backend/src/collabpilot/campaign/drafts.py`
 - `backend/src/collabpilot/infrastructure/campaign_store.py`（drafts 表）
 - `backend/tests/unit/test_drafts.py`
+- `backend/tests/eval/test_drafts_eval.py`（新）
+- `backend/src/collabpilot/campaign/decisions.py`
+- `frontend/components/draft_cards.py`（新）、`frontend/components/pending_decisions.py`
+- `frontend/tests/test_draft_cards.py`（新）
 
 
 ## 本 Task 补充约束

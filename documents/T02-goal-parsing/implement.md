@@ -16,6 +16,11 @@
 - `backend/src/collabpilot/campaign/goal.py`（新）
 - `backend/config/prompts/system.md` 或活动专用提示片段
 - `backend/tests/unit/test_parsed_goal.py`（新）
+- `backend/src/collabpilot/campaign/decisions.py`（新）
+- `backend/tests/unit/test_decisions.py`（新）
+- `frontend/components/goal_card.py`、`frontend/components/pending_decisions.py`（新）
+- `frontend/components/main_table.py`、`frontend/app.py`
+- `frontend/tests/test_goal_card.py`（新）
 
 
 ## 本 Task 补充约束

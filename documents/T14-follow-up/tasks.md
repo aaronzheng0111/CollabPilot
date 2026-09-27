@@ -2,6 +2,8 @@
 
 原子步骤。状态只允许 `planned` / `in_progress` / `done`。包级别评估见 `verify.md`。
 
+## 后端任务
+
 ### T14-01
 
 - 描述：validate_follow_up 要求已批准草稿且渠道一致
@@ -17,8 +19,28 @@
 - 依赖：T14-01
 - 可并行：否
 - 状态：`planned`
-- Implement：follow_ups 表与两个写操作
+- Implement：follow_ups 表与两个写操作；注册 decisions 分支
 - Verify：用例 3、4、5、6
+
+## 前端任务
+
+### T14-F1
+
+- 描述：「跟进」表，状态中文，带 LLM
+- 依赖：T14-02
+- 可并行：否
+- 状态：`planned`
+- Implement：`components/follow_up_table.py`，fixture 做 AppTest
+- Verify：用例 7
+
+### T14-F2
+
+- 描述：「待你决定」中的记录跟进与记下
+- 依赖：T14-F1
+- 可并行：否
+- 状态：`planned`
+- Implement：`components/pending_decisions.py` 注册文案
+- Verify：用例 8、9
 
 ## 门禁
 

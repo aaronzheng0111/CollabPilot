@@ -15,6 +15,9 @@
 
 - `backend/src/collabpilot/campaign/audience.py`
 - `backend/tests/unit/test_audience.py`
+- `frontend/components/evidence_panel.py`、`frontend/components/main_table.py`
+- `frontend/components/pending_list.py`（新）
+- `frontend/tests/test_pending_list.py`（新）
 
 
 ## 本 Task 补充约束

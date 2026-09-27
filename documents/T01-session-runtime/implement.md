@@ -18,11 +18,18 @@
 - `backend/src/collabpilot/agent/runtime.py`
 - `backend/src/collabpilot/application.py`
 - `backend/tests/unit/` 下新增或修改运行时测试
+- `backend/pyproject.toml` 的 optional extra `ui`（加入 streamlit）
+- `frontend/app.py`、`frontend/theme.py`、`frontend/.streamlit/config.toml`（新）
+- `frontend/components/tool_status.py`、`frontend/components/main_table.py`（新）
+- `frontend/tests/test_shell.py`（新）
+- `frontend/README.md`（启动命令）
 
 
 ## 本 Task 补充约束
 
 单元测试必须使用 mock provider。不得在测试里读取真实 `DEEPSEEK_API_KEY`。
+
+前端颜色、字体、圆角只引用 `frontend/DESIGN.md` 的 token，不自造色值。`frontend/DESIGN.md` 本身只读。
 
 
 ## 门禁

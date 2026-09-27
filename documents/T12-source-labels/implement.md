@@ -1,4 +1,4 @@
-# Implement — 来源标注与设计说明
+# Implement — 来源标注与提交材料
 
 状态：`not_started`
 
@@ -13,13 +13,19 @@
 
 ## 允许修改
 
-- `frontend/app.py`
-- `documents/T12-source-labels/design-note.md`（实现本 Task 时才写）
+- `frontend/app.py`、`frontend/components/source_badge.py`（新）
+- `frontend/tests/test_source_labels.py`（新）
+- `backend/src/collabpilot/interfaces/cli.py`
+- `backend/tests/integration/test_demo_reset.py`（新）
+- `documents/T12-source-labels/design-note.md`、`demo-script.md`、`two-week-plan.md`（实现本 Task 时才写）
+- 根目录 `README.md`（「快速开始」一节）
 
 
 ## 本 Task 补充约束
 
-design-note.md 在规格阶段不要创建。Verify 通过条件包含该文件存在且不超过 700 字，那是实现完成时的检查。
+三份文档在规格阶段不要创建。设计说明不超过 900 字；两周计划不超过一页；演示脚本总时长 180–300 秒。
+
+文档中出现的命令、文件路径、错误码都要在当时代码中真实存在，写完后逐条执行或检索核对。
 
 
 ## 门禁

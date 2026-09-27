@@ -13,13 +13,19 @@
 
 ## 允许修改
 
-- `backend/src/collabpilot/campaign/keyword_mismatch.py`
-- `backend/tests/unit/test_keyword_mismatch.py`
+- `backend/src/collabpilot/campaign/topic_match.py`（新）
+- `backend/config/prompts/campaign.md`
+- `backend/tests/unit/test_topic_match.py`（新）
+- `backend/tests/eval/test_topic_eval.py`（新）
+- `frontend/components/main_table.py`、`frontend/components/evidence_panel.py`
+- `frontend/tests/test_evidence_panel.py`
 
 
 ## 本 Task 补充约束
 
-最终候选的写入函数必须调用本规则。若 T05 的 Verdict 为 fit 但标签含 keyword_mismatch，以本规则为准，decision 改为 unfit。
+主题是否相符只由模型判定。应用层禁止用关键词表、正则或 `scenario_tags` 判定主题不符。
+
+最终候选的写入函数必须先调用 `validate_topic_verdicts`，再调用 `lock_topic_rejections`。校验失败的整条判断不进入名单，并在回复中告知哪位创作者需要重新判断。
 
 
 ## 门禁

@@ -4,11 +4,15 @@
 
 | # | 用例 | 结果 |
 |---|------|------|
-| 1 | keyword_mismatch 不在最终候选 | 未测 |
-| 2 | 解释含帖子 id 和不超过 80 字的原文 | 未测 |
-| 3 | 高 GPM 仍排除 | 未测 |
-| 4 | 最终候选中该标签人数为 0 | 未测 |
-| 5 | 排除标 RULE，模型解释标 LLM 且不能加回 | 未测 |
+| 1 | mismatch 且 fit 返回 topic_conflict，不保存 | 未测 |
+| 2 | mismatch 缺主题、证据或 quote 不是帖子原文子串时返回 quote_not_found | 未测 |
+| 3 | mismatch 进入 topic_rejected_ids，后续轮次不重判也不推荐 | 未测 |
+| 4 | GPM 高于 target_gpm 仍不在最终候选 | 未测 |
+| 5 | backend/src 不读 keyword_mismatch 与 scenario_tags | 未测 |
+| 6 | eval：011–015 全部 mismatch+unfit，001–006 无 mismatch（附模型原文） | 未测 |
+| 7 | 判断与理由标 LLM，锁定动作标 RULE | 未测 |
+| 8 | 主表该行为「不合适」并有「主题不符」胶囊 | 未测 |
+| 9 | 依据面板显示 quote 与帖子 id，锁定行标 RULE，无加回按钮 | 未测 |
 
 ## 通过标准
 

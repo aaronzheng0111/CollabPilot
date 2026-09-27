@@ -8,8 +8,13 @@
 | 2 | creator_001 只聚合为一条且含两个平台 | 未测 |
 | 3 | get_creator 返回两边资料且 display_name 一致 | 未测 |
 | 4 | 单平台创作者的另一侧为 null | 未测 |
-| 5 | 结果标明 MOCK 且不把 expected_ai_signals 当结论 | 未测 |
+| 5 | 结果标明 MOCK，且不含四个测试答案字段 | 未测 |
 | 6 | 目标未解析时 search_creators 返回 goal_not_ready | 未测 |
+| 7 | 30 天窗口不含 007–009 且 outside_window_hits≥3；90 天窗口包含 | 未测 |
+| 8 | min_followers 只去掉低于门槛的账号 | 未测 |
+| 9 | backend/src 只在剔除列表中出现测试答案字段名 | 未测 |
+| 10 | 搜索运行中主表保留旧行并显示加载层 | 未测 |
+| 11 | 搜索成功后主表 M 行、带 MOCK，上方显示搜索参数 | 未测 |
 
 ## 通过标准
 

@@ -252,32 +252,32 @@
         {
           "id": "ig_media_001_1",
           "media_url": "mock://instagram/p/001_1",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "出差东京第3天，靠LinguaGo实时翻译搞定地铁问路和点餐",
           "permalink": "mock://instagram/p/001_1",
           "media_type": "VIDEO",
           "like_count": 1324,
           "comments_count": 177,
-          "timestamp": "2026-09-24T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_001_2",
           "media_url": "mock://instagram/p/001_2",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "LinguaGo对话模式实测：日语转中文延迟不到1秒",
           "permalink": "mock://instagram/p/001_2",
           "media_type": "IMAGE",
           "like_count": 9478,
           "comments_count": 234,
-          "timestamp": "2026-09-23T12:00:00Z"
+          "timestamp": "2026-09-20T12:00:00Z"
         },
         {
           "id": "ig_media_001_3",
           "media_url": "mock://instagram/p/001_3",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "跨境人的翻译工具箱：我每天用的3个LinguaGo功能",
           "permalink": "mock://instagram/p/001_3",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 3268,
           "comments_count": 349,
-          "timestamp": "2026-09-22T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -286,7 +286,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "出差东京第3天，靠LinguaGo实时翻译搞定地铁问路和点餐",
           "source_post_id": "ig_media_001_1",
           "confidence": 0.86,
           "data_origin": "mock_seed"
@@ -400,32 +400,32 @@
         {
           "id": "ig_media_002_1",
           "media_url": "mock://instagram/p/002_1",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "独立站德语法语页面，我用LinguaGo文档翻译一次导出",
           "permalink": "mock://instagram/p/002_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 7540,
           "comments_count": 166,
-          "timestamp": "2026-09-23T11:00:00Z"
+          "timestamp": "2026-09-22T12:00:00Z"
         },
         {
           "id": "ig_media_002_2",
           "media_url": "mock://instagram/p/002_2",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "跨境选品周报｜本周用LinguaGo翻了40份供应商报价",
           "permalink": "mock://instagram/p/002_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 10149,
           "comments_count": 324,
-          "timestamp": "2026-09-22T12:00:00Z"
+          "timestamp": "2026-09-19T12:00:00Z"
         },
         {
           "id": "ig_media_002_3",
           "media_url": "mock://instagram/p/002_3",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "从英文邮件到西语客服，LinguaGo帮我统一了话术",
           "permalink": "mock://instagram/p/002_3",
           "media_type": "REELS",
           "like_count": 2986,
           "comments_count": 61,
-          "timestamp": "2026-09-21T13:00:00Z"
+          "timestamp": "2026-09-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -434,7 +434,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "独立站德语法语页面，我用LinguaGo文档翻译一次导出",
           "source_post_id": "ig_media_002_1",
           "confidence": 0.8,
           "data_origin": "mock_seed"
@@ -547,17 +547,17 @@
         {
           "id": "ig_media_003_1",
           "media_url": "mock://instagram/p/003_1",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "打工人效率｜合同附件PDF用LinguaGo翻译后直接批注",
           "permalink": "mock://instagram/p/003_1",
           "media_type": "REELS",
           "like_count": 643,
           "comments_count": 483,
-          "timestamp": "2026-09-22T11:00:00Z"
+          "timestamp": "2026-09-24T12:00:00Z"
         },
         {
           "id": "ig_media_003_2",
           "media_url": "mock://instagram/p/003_2",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "跨部门会议纪要双语版，我的LinguaGo模板",
           "permalink": "mock://instagram/p/003_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 6044,
@@ -567,12 +567,12 @@
         {
           "id": "ig_media_003_3",
           "media_url": "mock://instagram/p/003_3",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "入职外企第一年，文档翻译我只用LinguaGo",
           "permalink": "mock://instagram/p/003_3",
           "media_type": "IMAGE",
           "like_count": 6926,
           "comments_count": 127,
-          "timestamp": "2026-09-20T13:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -581,7 +581,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "打工人效率｜合同附件PDF用LinguaGo翻译后直接批注",
           "source_post_id": "ig_media_003_1",
           "confidence": 0.9,
           "data_origin": "mock_seed"
@@ -694,17 +694,17 @@
         {
           "id": "ig_media_004_1",
           "media_url": "mock://instagram/p/004_1",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "英国留学第一周，银行开户全靠LinguaGo对话翻译",
           "permalink": "mock://instagram/p/004_1",
           "media_type": "REELS",
           "like_count": 393,
           "comments_count": 426,
-          "timestamp": "2026-09-21T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_004_2",
           "media_url": "mock://instagram/p/004_2",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "小组作业跨国队友沟通，LinguaGo中英实时字幕",
           "permalink": "mock://instagram/p/004_2",
           "media_type": "REELS",
           "like_count": 8813,
@@ -714,12 +714,12 @@
         {
           "id": "ig_media_004_3",
           "media_url": "mock://instagram/p/004_3",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "留学生必备App清单：LinguaGo排第一的原因",
           "permalink": "mock://instagram/p/004_3",
           "media_type": "REELS",
           "like_count": 762,
           "comments_count": 326,
-          "timestamp": "2026-09-19T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -728,7 +728,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "evidence_text": "英国留学第一周，银行开户全靠LinguaGo对话翻译",
           "source_post_id": "ig_media_004_1",
           "confidence": 0.74,
           "data_origin": "mock_seed"
@@ -841,32 +841,32 @@
         {
           "id": "ig_media_005_1",
           "media_url": "mock://instagram/p/005_1",
-          "caption": "职场文档翻译用LinguaGo，比手动查词快很多",
+          "caption": "术语库搭建教程｜LinguaGo导入Excel词表三步完成",
           "permalink": "mock://instagram/p/005_1",
           "media_type": "REELS",
           "like_count": 1750,
           "comments_count": 131,
-          "timestamp": "2026-09-25T11:00:00Z"
+          "timestamp": "2026-09-22T12:00:00Z"
         },
         {
           "id": "ig_media_005_2",
           "media_url": "mock://instagram/p/005_2",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "律所实习生的合同翻译流程：LinguaGo初译加人工复核",
           "permalink": "mock://instagram/p/005_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 5321,
           "comments_count": 60,
-          "timestamp": "2026-09-24T12:00:00Z"
+          "timestamp": "2026-09-19T12:00:00Z"
         },
         {
           "id": "ig_media_005_3",
           "media_url": "mock://instagram/p/005_3",
-          "caption": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "caption": "医疗器械说明书翻译，LinguaGo术语锁定功能救了我",
           "permalink": "mock://instagram/p/005_3",
           "media_type": "REELS",
           "like_count": 3970,
           "comments_count": 52,
-          "timestamp": "2026-09-23T13:00:00Z"
+          "timestamp": "2026-09-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -875,7 +875,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_ended",
-          "evidence_text": "实测中英日韩互译，跨境沟通效率提升明显",
+          "evidence_text": "术语库搭建教程｜LinguaGo导入Excel词表三步完成",
           "source_post_id": "ig_media_005_1",
           "confidence": 0.71,
           "data_origin": "mock_seed"
@@ -1013,32 +1013,32 @@
         {
           "id": "ig_media_006_1",
           "media_url": "mock://instagram/p/006_1",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "效率工具月度测评｜翻译类：LinguaGo本月主力使用",
           "permalink": "mock://instagram/p/006_1",
           "media_type": "IMAGE",
           "like_count": 3985,
           "comments_count": 382,
-          "timestamp": "2026-09-24T11:00:00Z"
+          "timestamp": "2026-09-24T12:00:00Z"
         },
         {
           "id": "ig_media_006_2",
           "media_url": "mock://instagram/p/006_2",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "测评不收钱：LinguaGo哪些地方还不够好",
           "permalink": "mock://instagram/p/006_2",
           "media_type": "VIDEO",
           "like_count": 11637,
           "comments_count": 175,
-          "timestamp": "2026-09-23T12:00:00Z"
+          "timestamp": "2026-09-21T12:00:00Z"
         },
         {
           "id": "ig_media_006_3",
           "media_url": "mock://instagram/p/006_3",
-          "caption": "实测中英日韩互译，跨境沟通效率提升明显",
+          "caption": "AI翻译工具选购指南：学生党和职场人怎么选",
           "permalink": "mock://instagram/p/006_3",
           "media_type": "REELS",
           "like_count": 6911,
           "comments_count": 159,
-          "timestamp": "2026-09-22T13:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1047,7 +1047,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "最近用LinguaGo翻译海外合同，术语库很省时间",
+          "evidence_text": "效率工具月度测评｜翻译类：LinguaGo本月主力使用",
           "source_post_id": "ig_media_006_1",
           "confidence": 0.71,
           "data_origin": "mock_seed"
@@ -1110,19 +1110,19 @@
     },
     {
       "creator_id": "creator_007",
-      "display_name": "新人Grace译",
+      "display_name": "Grace译",
       "is_new_creator": true,
       "platform": "instagram",
-      "handle": "@new.grace",
+      "handle": "@grace.yi",
       "profile": {
         "ig_id": "ig_uid_007",
-        "username": "new.grace",
-        "name": "新人Grace译",
+        "username": "grace.yi",
+        "name": "Grace译",
         "biography": "AI翻译、留学生活、效率",
         "followers_count": 202605,
         "follows_count": 619,
         "media_count": 126,
-        "website": "mock://instagram/new.grace",
+        "website": "mock://instagram/grace.yi",
         "profile_picture_url": "mock://cdn/instagram/avatar_007.jpg"
       },
       "content_topics": [
@@ -1161,32 +1161,32 @@
         {
           "id": "ig_media_007_1",
           "media_url": "mock://instagram/p/007_1",
-          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "caption": "交换生vlog｜用LinguaGo翻译课程大纲",
           "permalink": "mock://instagram/p/007_1",
           "media_type": "IMAGE",
           "like_count": 11058,
           "comments_count": 235,
-          "timestamp": "2026-09-23T11:00:00Z"
+          "timestamp": "2026-08-15T12:00:00Z"
         },
         {
           "id": "ig_media_007_2",
           "media_url": "mock://instagram/p/007_2",
-          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "caption": "日语课听不懂？LinguaGo实时字幕陪我上课",
           "permalink": "mock://instagram/p/007_2",
           "media_type": "REELS",
           "like_count": 3939,
           "comments_count": 323,
-          "timestamp": "2026-09-22T12:00:00Z"
+          "timestamp": "2026-07-31T12:00:00Z"
         },
         {
           "id": "ig_media_007_3",
           "media_url": "mock://instagram/p/007_3",
-          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "caption": "留学行李清单之外，手机里必装LinguaGo",
           "permalink": "mock://instagram/p/007_3",
           "media_type": "REELS",
           "like_count": 10532,
           "comments_count": 304,
-          "timestamp": "2026-09-21T13:00:00Z"
+          "timestamp": "2026-07-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1195,7 +1195,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "evidence_text": "交换生vlog｜用LinguaGo翻译课程大纲",
           "source_post_id": "ig_media_007_1",
           "confidence": 0.76,
           "data_origin": "mock_seed"
@@ -1219,11 +1219,12 @@
         "second_round_pass",
         "new_creator",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_ig_007",
       "data_origin": "mock_seed"
@@ -1281,32 +1282,32 @@
         {
           "id": "ig_media_008_1",
           "media_url": "mock://instagram/p/008_1",
-          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "caption": "首尔出差日记｜LinguaGo陪我谈下第一个供应商",
           "permalink": "mock://instagram/p/008_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 10803,
           "comments_count": 349,
-          "timestamp": "2026-09-22T11:00:00Z"
+          "timestamp": "2026-08-14T12:00:00Z"
         },
         {
           "id": "ig_media_008_2",
           "media_url": "mock://instagram/p/008_2",
-          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "caption": "日韩客户邮件模板，用LinguaGo批量生成双语版",
           "permalink": "mock://instagram/p/008_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 2243,
           "comments_count": 267,
-          "timestamp": "2026-09-21T12:00:00Z"
+          "timestamp": "2026-07-30T12:00:00Z"
         },
         {
           "id": "ig_media_008_3",
           "media_url": "mock://instagram/p/008_3",
-          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "caption": "外贸新人如何快速处理日文询盘：我的LinguaGo流程",
           "permalink": "mock://instagram/p/008_3",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 11693,
           "comments_count": 306,
-          "timestamp": "2026-09-20T13:00:00Z"
+          "timestamp": "2026-07-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1315,7 +1316,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "evidence_text": "首尔出差日记｜LinguaGo陪我谈下第一个供应商",
           "source_post_id": "ig_media_008_1",
           "confidence": 0.89,
           "data_origin": "mock_seed"
@@ -1366,11 +1367,12 @@
         "second_round_pass",
         "gpm_known",
         "similar_product_user",
-        "gpm_diff_cross_platform"
+        "gpm_diff_cross_platform",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_ig_008",
       "data_origin": "mock_seed"
@@ -1428,32 +1430,32 @@
         {
           "id": "ig_media_009_1",
           "media_url": "mock://instagram/p/009_1",
-          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "caption": "效率博主的翻译工作流：LinguaGo加日历提醒",
           "permalink": "mock://instagram/p/009_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 9435,
           "comments_count": 483,
-          "timestamp": "2026-09-21T11:00:00Z"
+          "timestamp": "2026-08-16T12:00:00Z"
         },
         {
           "id": "ig_media_009_2",
           "media_url": "mock://instagram/p/009_2",
-          "caption": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "caption": "英文论文精读法：LinguaGo段落对照翻译",
           "permalink": "mock://instagram/p/009_2",
           "media_type": "IMAGE",
           "like_count": 5837,
           "comments_count": 455,
-          "timestamp": "2026-09-20T12:00:00Z"
+          "timestamp": "2026-08-01T12:00:00Z"
         },
         {
           "id": "ig_media_009_3",
           "media_url": "mock://instagram/p/009_3",
-          "caption": "对比几款翻译工具后，文档翻译我选了LinguaGo",
+          "caption": "我的年度效率工具：LinguaGo文档翻译用了300次",
           "permalink": "mock://instagram/p/009_3",
           "media_type": "VIDEO",
           "like_count": 5915,
           "comments_count": 466,
-          "timestamp": "2026-09-19T13:00:00Z"
+          "timestamp": "2026-07-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1462,7 +1464,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "刚开始用LinguaGo做实时对话翻译，留学生活更顺",
+          "evidence_text": "效率博主的翻译工作流：LinguaGo加日历提醒",
           "source_post_id": "ig_media_009_1",
           "confidence": 0.84,
           "data_origin": "mock_seed"
@@ -1512,30 +1514,31 @@
         "strong_candidate_round2",
         "second_round_pass",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "window_outside_30d"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "recommend_after_relax",
-        "expected_reason": "首轮偏严未入选；放宽时间/粉丝门槛后可进入二轮名单"
+        "expected_reason": "相关内容都发布于 30 天前；放宽时间窗口后可进入二轮名单"
       },
       "raw_api_snapshot_ref": "search_ig_009",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_010",
-      "display_name": "竞品合作Jake",
+      "display_name": "Jake聊翻译",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@comp.jake",
+      "handle": "@jake.talks",
       "profile": {
         "ig_id": "ig_uid_010",
-        "username": "comp.jake",
-        "name": "竞品合作Jake",
+        "username": "jake.talks",
+        "name": "Jake聊翻译",
         "biography": "AI翻译、工具推荐",
         "followers_count": 137682,
         "follows_count": 972,
         "media_count": 58,
-        "website": "mock://instagram/comp.jake",
+        "website": "mock://instagram/jake.talks",
         "profile_picture_url": "mock://cdn/instagram/avatar_010.jpg"
       },
       "content_topics": [
@@ -1572,32 +1575,32 @@
         {
           "id": "ig_media_010_1",
           "media_url": "mock://instagram/p/010_1",
-          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "caption": "合作｜Mock竞品翻译新功能上线，体验码在主页",
           "permalink": "mock://instagram/p/010_1",
           "media_type": "REELS",
           "like_count": 4076,
           "comments_count": 359,
-          "timestamp": "2026-09-25T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_010_2",
           "media_url": "mock://instagram/p/010_2",
-          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "caption": "和Mock竞品翻译合作第4个月：使用心得",
           "permalink": "mock://instagram/p/010_2",
           "media_type": "VIDEO",
           "like_count": 10037,
           "comments_count": 291,
-          "timestamp": "2026-09-24T12:00:00Z"
+          "timestamp": "2026-09-20T12:00:00Z"
         },
         {
           "id": "ig_media_010_3",
           "media_url": "mock://instagram/p/010_3",
-          "caption": "本月继续和 Mock竞品翻译 合作中",
+          "caption": "旅行翻译神器开箱（Mock竞品翻译合作）",
           "permalink": "mock://instagram/p/010_3",
           "media_type": "VIDEO",
           "like_count": 2170,
           "comments_count": 179,
-          "timestamp": "2026-09-23T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1606,7 +1609,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_active",
-          "evidence_text": "本月继续和 Mock竞品翻译 合作中",
+          "evidence_text": "合作｜Mock竞品翻译新功能上线，体验码在主页",
           "source_post_id": "ig_media_010_1",
           "confidence": 0.9,
           "data_origin": "mock_seed"
@@ -1718,32 +1721,32 @@
         {
           "id": "ig_media_014_1",
           "media_url": "mock://instagram/p/014_1",
-          "caption": "昵称含留学，内容为留学申请",
+          "caption": "美研申请时间线：9月该准备哪些材料",
           "permalink": "mock://instagram/p/014_1",
           "media_type": "IMAGE",
           "like_count": 8771,
           "comments_count": 166,
-          "timestamp": "2026-09-21T11:00:00Z"
+          "timestamp": "2026-09-22T12:00:00Z"
         },
         {
           "id": "ig_media_014_2",
           "media_url": "mock://instagram/p/014_2",
-          "caption": "昵称含留学，内容为留学申请",
+          "caption": "个人陈述怎么写出特色？我拿到3个offer的文书思路",
           "permalink": "mock://instagram/p/014_2",
           "media_type": "IMAGE",
           "like_count": 1160,
           "comments_count": 269,
-          "timestamp": "2026-09-20T12:00:00Z"
+          "timestamp": "2026-09-19T12:00:00Z"
         },
         {
           "id": "ig_media_014_3",
           "media_url": "mock://instagram/p/014_3",
-          "caption": "昵称含留学，内容为留学申请",
+          "caption": "选校清单怎么定：冲刺、匹配、保底的比例",
           "permalink": "mock://instagram/p/014_3",
           "media_type": "IMAGE",
           "like_count": 4381,
           "comments_count": 354,
-          "timestamp": "2026-09-19T13:00:00Z"
+          "timestamp": "2026-09-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1752,7 +1755,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "category_mentions_only",
-          "evidence_text": "昵称含留学，内容为留学申请",
+          "evidence_text": "美研申请时间线：9月该准备哪些材料",
           "source_post_id": "ig_media_014_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -1833,32 +1836,32 @@
         {
           "id": "ig_media_015_1",
           "media_url": "mock://instagram/p/015_1",
-          "caption": "本期字幕剪辑花絮",
+          "caption": "日语N2备考60天计划表",
           "permalink": "mock://instagram/p/015_1",
           "media_type": "VIDEO",
           "like_count": 6456,
           "comments_count": 266,
-          "timestamp": "2026-09-25T11:00:00Z"
+          "timestamp": "2026-09-24T12:00:00Z"
         },
         {
           "id": "ig_media_015_2",
           "media_url": "mock://instagram/p/015_2",
-          "caption": "雅思阅读技巧分享",
+          "caption": "韩语TOPIK作文高分句型20条",
           "permalink": "mock://instagram/p/015_2",
           "media_type": "IMAGE",
           "like_count": 10224,
           "comments_count": 364,
-          "timestamp": "2026-09-24T12:00:00Z"
+          "timestamp": "2026-09-21T12:00:00Z"
         },
         {
           "id": "ig_media_015_3",
           "media_url": "mock://instagram/p/015_3",
-          "caption": "本期字幕剪辑花絮",
+          "caption": "法语DELF B1口语真题练习",
           "permalink": "mock://instagram/p/015_3",
           "media_type": "IMAGE",
           "like_count": 353,
           "comments_count": 177,
-          "timestamp": "2026-09-23T13:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1867,7 +1870,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "category_mentions_only",
-          "evidence_text": "昵称含小语种，内容为语言考试",
+          "evidence_text": "日语N2备考60天计划表",
           "source_post_id": "ig_media_015_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -1897,19 +1900,19 @@
     },
     {
       "creator_id": "creator_018",
-      "display_name": "已合作Rita",
+      "display_name": "Rita跨境译",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@done.rita",
+      "handle": "@rita.xborder",
       "profile": {
         "ig_id": "ig_uid_018",
-        "username": "done.rita",
-        "name": "已合作Rita",
+        "username": "rita.xborder",
+        "name": "Rita跨境译",
         "biography": "职场、文档翻译",
         "followers_count": 271592,
         "follows_count": 933,
         "media_count": 144,
-        "website": "mock://instagram/done.rita",
+        "website": "mock://instagram/rita.xborder",
         "profile_picture_url": "mock://cdn/instagram/avatar_018.jpg"
       },
       "content_topics": [
@@ -1946,17 +1949,17 @@
         {
           "id": "ig_media_018_1",
           "media_url": "mock://instagram/p/018_1",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "LinguaGo品牌合作｜跨境客服多语回复",
           "permalink": "mock://instagram/p/018_1",
           "media_type": "REELS",
           "like_count": 2895,
           "comments_count": 476,
-          "timestamp": "2026-09-22T11:00:00Z"
+          "timestamp": "2026-09-24T12:00:00Z"
         },
         {
           "id": "ig_media_018_2",
           "media_url": "mock://instagram/p/018_2",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "合作结束后我还在用LinguaGo翻译邮件",
           "permalink": "mock://instagram/p/018_2",
           "media_type": "IMAGE",
           "like_count": 9058,
@@ -1966,12 +1969,12 @@
         {
           "id": "ig_media_018_3",
           "media_url": "mock://instagram/p/018_3",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "跨境人一周工作流，翻译环节交给LinguaGo",
           "permalink": "mock://instagram/p/018_3",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 9371,
           "comments_count": 265,
-          "timestamp": "2026-09-20T13:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -1980,7 +1983,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_cooperation",
-          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "evidence_text": "LinguaGo品牌合作｜跨境客服多语回复",
           "source_post_id": "ig_media_018_1",
           "confidence": 0.91,
           "data_origin": "mock_seed"
@@ -2038,19 +2041,19 @@
     },
     {
       "creator_id": "creator_019",
-      "display_name": "已合作Sam",
+      "display_name": "Sam出海笔记",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@done.sam",
+      "handle": "@sam.goglobal",
       "profile": {
         "ig_id": "ig_uid_019",
-        "username": "done.sam",
-        "name": "已合作Sam",
+        "username": "sam.goglobal",
+        "name": "Sam出海笔记",
         "biography": "留学生、AI工具",
         "followers_count": 36167,
         "follows_count": 627,
         "media_count": 421,
-        "website": "mock://instagram/done.sam",
+        "website": "mock://instagram/sam.goglobal",
         "profile_picture_url": "mock://cdn/instagram/avatar_019.jpg"
       },
       "content_topics": [
@@ -2087,17 +2090,17 @@
         {
           "id": "ig_media_019_1",
           "media_url": "mock://instagram/p/019_1",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "感谢LinguaGo邀请合作，出海翻译实测",
           "permalink": "mock://instagram/p/019_1",
           "media_type": "IMAGE",
           "like_count": 4445,
           "comments_count": 481,
-          "timestamp": "2026-09-21T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_019_2",
           "media_url": "mock://instagram/p/019_2",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "出海团队多语文档，用LinguaGo统一翻译",
           "permalink": "mock://instagram/p/019_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 5188,
@@ -2107,12 +2110,12 @@
         {
           "id": "ig_media_019_3",
           "media_url": "mock://instagram/p/019_3",
-          "caption": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "caption": "海外社媒运营：用LinguaGo翻译评论区",
           "permalink": "mock://instagram/p/019_3",
           "media_type": "VIDEO",
           "like_count": 10237,
           "comments_count": 127,
-          "timestamp": "2026-09-19T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2121,7 +2124,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_cooperation",
-          "evidence_text": "LinguaGo 合作视频已发布，感谢品牌寄样",
+          "evidence_text": "感谢LinguaGo邀请合作，出海翻译实测",
           "source_post_id": "ig_media_019_1",
           "confidence": 0.78,
           "data_origin": "mock_seed"
@@ -2179,19 +2182,19 @@
     },
     {
       "creator_id": "creator_022",
-      "display_name": "画像缺失Vince",
+      "display_name": "Vince跨境",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@unk.vince",
+      "handle": "@vince.xb",
       "profile": {
         "ig_id": "ig_uid_022",
-        "username": "unk.vince",
-        "name": "画像缺失Vince",
+        "username": "vince.xb",
+        "name": "Vince跨境",
         "biography": "职场、翻译工具",
         "followers_count": 184699,
         "follows_count": 664,
         "media_count": 424,
-        "website": "mock://instagram/unk.vince",
+        "website": "mock://instagram/vince.xb",
         "profile_picture_url": "mock://cdn/instagram/avatar_022.jpg"
       },
       "content_topics": [
@@ -2222,32 +2225,32 @@
         {
           "id": "ig_media_022_1",
           "media_url": "mock://instagram/p/022_1",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "跨境职场人用AI翻译处理英文周报",
           "permalink": "mock://instagram/p/022_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 4474,
           "comments_count": 419,
-          "timestamp": "2026-09-23T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_022_2",
           "media_url": "mock://instagram/p/022_2",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "对比两款翻译工具写商务邮件",
           "permalink": "mock://instagram/p/022_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 11124,
           "comments_count": 208,
-          "timestamp": "2026-09-22T12:00:00Z"
+          "timestamp": "2026-09-20T12:00:00Z"
         },
         {
           "id": "ig_media_022_3",
           "media_url": "mock://instagram/p/022_3",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "AI翻译会取代外贸翻译吗？我的看法",
           "permalink": "mock://instagram/p/022_3",
           "media_type": "REELS",
           "like_count": 3194,
           "comments_count": 441,
-          "timestamp": "2026-09-21T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2256,7 +2259,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "evidence_text": "跨境职场人用AI翻译处理英文周报",
           "source_post_id": "ig_media_022_1",
           "confidence": 0.91,
           "data_origin": "mock_seed"
@@ -2288,19 +2291,19 @@
     },
     {
       "creator_id": "creator_023",
-      "display_name": "画像缺失Wendy",
+      "display_name": "Wendy留学译",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@unk.wendy",
+      "handle": "@wendy.abroad",
       "profile": {
         "ig_id": "ig_uid_023",
-        "username": "unk.wendy",
-        "name": "画像缺失Wendy",
+        "username": "wendy.abroad",
+        "name": "Wendy留学译",
         "biography": "AI翻译、留学生",
         "followers_count": 137436,
         "follows_count": 732,
         "media_count": 387,
-        "website": "mock://instagram/unk.wendy",
+        "website": "mock://instagram/wendy.abroad",
         "profile_picture_url": "mock://cdn/instagram/avatar_023.jpg"
       },
       "content_topics": [
@@ -2331,32 +2334,32 @@
         {
           "id": "ig_media_023_1",
           "media_url": "mock://instagram/p/023_1",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "留学生活｜AI翻译帮我读懂保险条款",
           "permalink": "mock://instagram/p/023_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 11115,
           "comments_count": 129,
-          "timestamp": "2026-09-22T11:00:00Z"
+          "timestamp": "2026-09-22T12:00:00Z"
         },
         {
           "id": "ig_media_023_2",
           "media_url": "mock://instagram/p/023_2",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "图书馆打卡：用翻译工具精读英文文献",
           "permalink": "mock://instagram/p/023_2",
           "media_type": "IMAGE",
           "like_count": 5405,
           "comments_count": 452,
-          "timestamp": "2026-09-21T12:00:00Z"
+          "timestamp": "2026-09-19T12:00:00Z"
         },
         {
           "id": "ig_media_023_3",
           "media_url": "mock://instagram/p/023_3",
-          "caption": "分享了一款AI翻译工具的使用体验",
+          "caption": "留学生常用翻译App分享",
           "permalink": "mock://instagram/p/023_3",
           "media_type": "IMAGE",
           "like_count": 1606,
           "comments_count": 69,
-          "timestamp": "2026-09-20T13:00:00Z"
+          "timestamp": "2026-09-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2365,7 +2368,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_user",
-          "evidence_text": "分享了一款AI翻译工具的使用体验",
+          "evidence_text": "留学生活｜AI翻译帮我读懂保险条款",
           "source_post_id": "ig_media_023_1",
           "confidence": 0.8,
           "data_origin": "mock_seed"
@@ -2397,19 +2400,19 @@
     },
     {
       "creator_id": "creator_026",
-      "display_name": "新人Zack跨境",
+      "display_name": "Zack跨境",
       "is_new_creator": true,
       "platform": "instagram",
-      "handle": "@new.zack",
+      "handle": "@zack.xb",
       "profile": {
         "ig_id": "ig_uid_026",
-        "username": "new.zack",
-        "name": "新人Zack跨境",
+        "username": "zack.xb",
+        "name": "Zack跨境",
         "biography": "跨境沟通、中英互译",
         "followers_count": 197169,
         "follows_count": 953,
-        "media_count": 451,
-        "website": "mock://instagram/new.zack",
+        "media_count": 14,
+        "website": "mock://instagram/zack.xb",
         "profile_picture_url": "mock://cdn/instagram/avatar_026.jpg"
       },
       "content_topics": [
@@ -2446,32 +2449,32 @@
         {
           "id": "ig_media_026_1",
           "media_url": "mock://instagram/p/026_1",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "新号第一条：用LinguaGo翻译供应商报价",
           "permalink": "mock://instagram/p/026_1",
           "media_type": "VIDEO",
           "like_count": 7065,
           "comments_count": 420,
-          "timestamp": "2026-09-24T11:00:00Z"
+          "timestamp": "2026-09-21T12:00:00Z"
         },
         {
           "id": "ig_media_026_2",
           "media_url": "mock://instagram/p/026_2",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "义乌市场逛吃记录",
           "permalink": "mock://instagram/p/026_2",
           "media_type": "IMAGE",
           "like_count": 1790,
           "comments_count": 148,
-          "timestamp": "2026-09-23T12:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         },
         {
           "id": "ig_media_026_3",
           "media_url": "mock://instagram/p/026_3",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "新入手的相机试拍",
           "permalink": "mock://instagram/p/026_3",
           "media_type": "IMAGE",
           "like_count": 426,
           "comments_count": 432,
-          "timestamp": "2026-09-22T13:00:00Z"
+          "timestamp": "2026-09-12T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2480,7 +2483,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "own_brand_user",
-          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "evidence_text": "新号第一条：用LinguaGo翻译供应商报价",
           "source_post_id": "ig_media_026_1",
           "confidence": 0.82,
           "data_origin": "mock_seed"
@@ -2501,30 +2504,31 @@
       "scenario_tags": [
         "new_creator",
         "gpm_known",
-        "own_brand_user"
+        "own_brand_user",
+        "single_related_post"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "review",
-        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+        "expected_reason": "近 30 天只有 1 条本品相关内容，持续性不足；无历史合作"
       },
       "raw_api_snapshot_ref": "search_ig_026",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_027",
-      "display_name": "新人Ava术语",
+      "display_name": "Ava术语",
       "is_new_creator": true,
       "platform": "instagram",
-      "handle": "@new.ava.term",
+      "handle": "@ava.terms",
       "profile": {
         "ig_id": "ig_uid_027",
-        "username": "new.ava.term",
-        "name": "新人Ava术语",
+        "username": "ava.terms",
+        "name": "Ava术语",
         "biography": "术语库、合同",
         "followers_count": 269500,
         "follows_count": 705,
-        "media_count": 234,
-        "website": "mock://instagram/new.ava.term",
+        "media_count": 15,
+        "website": "mock://instagram/ava.terms",
         "profile_picture_url": "mock://cdn/instagram/avatar_027.jpg"
       },
       "content_topics": [
@@ -2561,32 +2565,32 @@
         {
           "id": "ig_media_027_1",
           "media_url": "mock://instagram/p/027_1",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "刚开始整理术语表，试了LinguaGo的术语库",
           "permalink": "mock://instagram/p/027_1",
           "media_type": "REELS",
           "like_count": 8859,
           "comments_count": 81,
-          "timestamp": "2026-09-23T11:00:00Z"
+          "timestamp": "2026-09-21T12:00:00Z"
         },
         {
           "id": "ig_media_027_2",
           "media_url": "mock://instagram/p/027_2",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "考研自习室日常",
           "permalink": "mock://instagram/p/027_2",
           "media_type": "IMAGE",
           "like_count": 6280,
           "comments_count": 99,
-          "timestamp": "2026-09-22T12:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         },
         {
           "id": "ig_media_027_3",
           "media_url": "mock://instagram/p/027_3",
-          "caption": "第一次测评LinguaGo实时对话翻译",
+          "caption": "秋天穿搭分享",
           "permalink": "mock://instagram/p/027_3",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 6113,
           "comments_count": 306,
-          "timestamp": "2026-09-21T13:00:00Z"
+          "timestamp": "2026-09-12T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2595,7 +2599,7 @@
           "evidence_type": "organic_post",
           "product_name": "LinguaGo AI 翻译",
           "product_relation": "similar_product_user",
-          "evidence_text": "第一次测评LinguaGo实时对话翻译",
+          "evidence_text": "刚开始整理术语表，试了LinguaGo的术语库",
           "source_post_id": "ig_media_027_1",
           "confidence": 0.89,
           "data_origin": "mock_seed"
@@ -2616,30 +2620,31 @@
       "scenario_tags": [
         "new_creator",
         "gpm_known",
-        "similar_product_user"
+        "similar_product_user",
+        "single_related_post"
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "review",
-        "expected_reason": "新人无历史合作，按产品相关度与近30天流量排序"
+        "expected_reason": "近 30 天只有 1 条本品相关内容，持续性不足；无历史合作"
       },
       "raw_api_snapshot_ref": "search_ig_027",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_029",
-      "display_name": "竞品已结束Chris",
+      "display_name": "Chris翻译对比",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@ended.chris",
+      "handle": "@chris.compare",
       "profile": {
         "ig_id": "ig_uid_029",
-        "username": "ended.chris",
-        "name": "竞品已结束Chris",
+        "username": "chris.compare",
+        "name": "Chris翻译对比",
         "biography": "AI工具、翻译对比",
         "followers_count": 238839,
         "follows_count": 831,
         "media_count": 59,
-        "website": "mock://instagram/ended.chris",
+        "website": "mock://instagram/chris.compare",
         "profile_picture_url": "mock://cdn/instagram/avatar_029.jpg"
       },
       "content_topics": [
@@ -2676,32 +2681,32 @@
         {
           "id": "ig_media_029_1",
           "media_url": "mock://instagram/p/029_1",
-          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "caption": "和Mock竞品翻译的合作结束了，聊聊这一年的感受",
           "permalink": "mock://instagram/p/029_1",
           "media_type": "REELS",
           "like_count": 710,
           "comments_count": 48,
-          "timestamp": "2026-09-21T11:00:00Z"
+          "timestamp": "2026-09-22T12:00:00Z"
         },
         {
           "id": "ig_media_029_2",
           "media_url": "mock://instagram/p/029_2",
-          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "caption": "最近在找新的翻译工具，评论区求推荐",
           "permalink": "mock://instagram/p/029_2",
           "media_type": "VIDEO",
           "like_count": 11115,
           "comments_count": 390,
-          "timestamp": "2026-09-20T12:00:00Z"
+          "timestamp": "2026-09-19T12:00:00Z"
         },
         {
           "id": "ig_media_029_3",
           "media_url": "mock://instagram/p/029_3",
-          "caption": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "caption": "出差用手机拍照翻译菜单，几款App都试了",
           "permalink": "mock://instagram/p/029_3",
           "media_type": "IMAGE",
           "like_count": 1013,
           "comments_count": 351,
-          "timestamp": "2026-09-19T13:00:00Z"
+          "timestamp": "2026-09-15T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2710,7 +2715,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_ended",
-          "evidence_text": "之前和竞品合作已结束，最近在试用其他翻译工具",
+          "evidence_text": "和Mock竞品翻译的合作结束了，聊聊这一年的感受",
           "source_post_id": "ig_media_029_1",
           "confidence": 0.8,
           "data_origin": "mock_seed"
@@ -2783,30 +2788,31 @@
       },
       "scenario_tags": [
         "competitor_ended",
-        "gpm_known"
+        "gpm_known",
+        "no_own_brand_evidence"
       ],
       "expected_ai_signals": {
-        "expected_decision_hint": "recommend",
-        "expected_reason": "竞品合作已结束，可尝试触达"
+        "expected_decision_hint": "review",
+        "expected_reason": "未见使用本品的证据；与竞品合作的结束时间与排他期未知"
       },
       "raw_api_snapshot_ref": "search_ig_029",
       "data_origin": "mock_seed"
     },
     {
       "creator_id": "creator_031",
-      "display_name": "竞品好评Eli",
+      "display_name": "Eli工具控",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@pos.eli",
+      "handle": "@eli.gear",
       "profile": {
         "ig_id": "ig_uid_031",
-        "username": "pos.eli",
-        "name": "竞品好评Eli",
+        "username": "eli.gear",
+        "name": "Eli工具控",
         "biography": "DeepL粉、翻译推荐",
         "followers_count": 106496,
         "follows_count": 889,
         "media_count": 443,
-        "website": "mock://instagram/pos.eli",
+        "website": "mock://instagram/eli.gear",
         "profile_picture_url": "mock://cdn/instagram/avatar_031.jpg"
       },
       "content_topics": [
@@ -2843,32 +2849,32 @@
         {
           "id": "ig_media_031_1",
           "media_url": "mock://instagram/p/031_1",
-          "caption": "一直爱用某竞品翻译，体验很好",
+          "caption": "一直爱用Mock竞品翻译，体验很好",
           "permalink": "mock://instagram/p/031_1",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 2606,
           "comments_count": 230,
-          "timestamp": "2026-09-24T11:00:00Z"
+          "timestamp": "2026-09-23T12:00:00Z"
         },
         {
           "id": "ig_media_031_2",
           "media_url": "mock://instagram/p/031_2",
-          "caption": "一直爱用某竞品翻译，体验很好",
+          "caption": "Mock竞品翻译新功能：离线包实测",
           "permalink": "mock://instagram/p/031_2",
           "media_type": "CAROUSEL_ALBUM",
           "like_count": 6380,
           "comments_count": 63,
-          "timestamp": "2026-09-23T12:00:00Z"
+          "timestamp": "2026-09-20T12:00:00Z"
         },
         {
           "id": "ig_media_031_3",
           "media_url": "mock://instagram/p/031_3",
-          "caption": "一直爱用某竞品翻译，体验很好",
+          "caption": "我的翻译工具只认这一个（非广告）",
           "permalink": "mock://instagram/p/031_3",
           "media_type": "REELS",
           "like_count": 6378,
           "comments_count": 171,
-          "timestamp": "2026-09-22T13:00:00Z"
+          "timestamp": "2026-09-16T12:00:00Z"
         }
       ],
       "product_usage_evidence": [
@@ -2877,7 +2883,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_user",
-          "evidence_text": "一直爱用某竞品翻译，体验很好",
+          "evidence_text": "一直爱用Mock竞品翻译，体验很好",
           "source_post_id": "ig_media_031_1",
           "confidence": 0.82,
           "data_origin": "mock_seed"
@@ -2909,19 +2915,19 @@
     },
     {
       "creator_id": "creator_033",
-      "display_name": "类品用户Gus",
+      "display_name": "Gus出海",
       "is_new_creator": false,
       "platform": "instagram",
-      "handle": "@sim.gus",
+      "handle": "@gus.global",
       "profile": {
         "ig_id": "ig_uid_033",
-        "username": "sim.gus",
-        "name": "类品用户Gus",
+        "username": "gus.global",
+        "name": "Gus出海",
         "biography": "笔记+翻译、跨境办公",
         "followers_count": 174995,
         "follows_count": 165,
         "media_count": 287,
-        "website": "mock://instagram/sim.gus",
+        "website": "mock://instagram/gus.global",
         "profile_picture_url": "mock://cdn/instagram/avatar_033.jpg"
       },
       "content_topics": [
@@ -2963,12 +2969,12 @@
           "media_type": "IMAGE",
           "like_count": 1638,
           "comments_count": 152,
-          "timestamp": "2026-09-22T11:00:00Z"
+          "timestamp": "2026-09-24T12:00:00Z"
         },
         {
           "id": "ig_media_033_2",
           "media_url": "mock://instagram/p/033_2",
-          "caption": "用类似效率工具做跨境邮件翻译",
+          "caption": "出海创业第2年：团队怎么解决多语沟通",
           "permalink": "mock://instagram/p/033_2",
           "media_type": "VIDEO",
           "like_count": 9295,
@@ -2978,12 +2984,12 @@
         {
           "id": "ig_media_033_3",
           "media_url": "mock://instagram/p/033_3",
-          "caption": "用类似效率工具做跨境邮件翻译",
+          "caption": "海外展会实录：翻译耳机好不好用",
           "permalink": "mock://instagram/p/033_3",
           "media_type": "IMAGE",
           "like_count": 4048,
           "comments_count": 254,
-          "timestamp": "2026-09-20T13:00:00Z"
+          "timestamp": "2026-09-17T12:00:00Z"
         }
       ],
       "product_usage_evidence": [

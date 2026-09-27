@@ -15,6 +15,9 @@
 - `backend/src/collabpilot/campaign/follow_up.py`
 - `backend/src/collabpilot/infrastructure/campaign_store.py`
 - `backend/tests/unit/test_follow_up.py`
+- `backend/src/collabpilot/campaign/decisions.py`
+- `frontend/components/follow_up_table.py`（新）、`frontend/components/pending_decisions.py`
+- `frontend/tests/test_follow_up_table.py`（新）
 
 ## 本 Task 补充约束
 

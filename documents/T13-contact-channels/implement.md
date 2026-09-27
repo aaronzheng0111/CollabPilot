@@ -15,6 +15,9 @@
 - `backend/src/collabpilot/tools/builtin/confirm_channel.py`
 - `backend/src/collabpilot/infrastructure/campaign_store.py`
 - `backend/tests/unit/test_channels.py`
+- `backend/src/collabpilot/campaign/decisions.py`
+- `frontend/components/channel_table.py`（新）、`frontend/components/pending_decisions.py`、`frontend/components/main_table.py`
+- `frontend/tests/test_channel_table.py`（新）
 
 ## 本 Task 补充约束
 

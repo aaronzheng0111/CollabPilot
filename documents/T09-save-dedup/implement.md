@@ -17,6 +17,9 @@
 - `backend/src/collabpilot/tools/builtin/save_campaign_selection.py`
 - `backend/src/collabpilot/tools/builtin/exclude_creator.py`
 - `backend/tests/integration/test_campaign_store.py`
+- `backend/src/collabpilot/campaign/decisions.py`
+- `frontend/components/main_table.py`、`frontend/components/pending_decisions.py`
+- `frontend/tests/test_selection.py`（新）
 
 
 ## 本 Task 补充约束
