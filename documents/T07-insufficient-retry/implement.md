@@ -1,6 +1,6 @@
 # Implement — 合格不足与再搜
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–10、12–14 已通过，eval 用例 11 用真 Key 跑过 1 次通过；等人工走查后改 `verified`）
 
 ## 约束
 
@@ -24,6 +24,18 @@
 ## 本 Task 补充约束
 
 合格人数统计单位是 creator_id，不是平台账号。
+
+
+## 实现记录
+
+- `campaign/retry.py`：`ALLOWED_FIELDS={window_days,min_followers,keywords}`，`LOCKED_FIELDS` 含 `include_own_brand`/`include_keyword_mismatch`。无策略 → `model_strategy_required`；越权字段 → `rule_locked`。`MAX_AUTO_RETRIES=1`。源码不写死 `window_days=90`。`_coerce_change` 把 `window_days` 转 int、把 JSON 字符串关键词收成 list。`append_search_round` / `qualified_lines`（「合格 n/10」「缺口 m」）/ `accept_short_list_label`。
+- 再搜与判断一样走应用层，不进工具循环：`evaluate_candidates` 之后 `_maybe_search_retry`。不足且 `auto_retries<1` 时读 `config/prompts/retry.md` + `RoundSummary` JSON 要策略；合法则改搜索参数、再跑 `search_creators`+`apply_hard_filters`（发工具事件）、再判断。第二次仍不足 → `CANDIDATES_READY` + `pending_decision=accept_short_list`，草稿为空。拒绝该决定不把 unfit 改成 fit。
+- 状态：`EVALUATING → INSUFFICIENT → RETRYING → CANDIDATES_READY`。`Campaign` 增 `search_rounds`、`retry_strategy`、`auto_retries`、`retry_error`、`drafts`。
+- `retry.md`：只允许三字段；`keywords` 必须是数组；`outside_window_hits` 提示覆盖 40–90 天帖子。JSON 示例里 `new_value` 写 90 仅作提示，代码不读该数字。`campaign.md` 补：用本轮 `window_days` 算窗口内，不要用 30 天卡住放宽后的轮次。`goal.md` 第 11 条：再搜策略由应用层请求。
+- 前端：`progress_panel.py` 进度表 +「调整了什么」；`pending_decisions.py` 用 `decision_label`（「当前合格 n 位，少于目标 10 位，是否接受」）。Mock provider 对【再搜策略】不给策略，UI fixture 保持首轮 22 行。
+- eval（2026-09-27，`deepseek-chat`，1 次）：首轮 fit=6（001–006）；策略 `window_days` 30→90，`keywords` `['翻译']`→`['翻译','本地化','字幕翻译']`；第二轮 fit=8（001–004、006–009），缺口 2，`accept_short_list`。005 未进第二轮 fit。PLAN 期望 6→9，本轮满足「第二轮合格人数大于首轮」。
+
+允许清单之外改动的文件：`campaign/goal.py`（阶段与 SearchRound/RetryStrategy）、`application.py`、`campaign/workbench.py`、`providers/mock.py`、`config/prompts/retry.md`、`config/prompts/goal.md`、`config/prompts/campaign.md`、`tools/builtin/search_creators.py`（keywords 字符串守卫）、`frontend/app.py`、T05/T03/T04 测试（mock 链式判断后 stage 可为 `INSUFFICIENT`；判断请求次数 +1）。
 
 
 ## 门禁
