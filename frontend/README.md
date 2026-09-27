@@ -20,3 +20,23 @@ Streamlit 工作台放在本目录。布局以 `documents/PLAN.md` 为准，视�
 cd frontend
 uv run --project ../backend --extra ui streamlit run app.py
 ```
+
+打开 <http://localhost:8501>。默认 provider 是 `deepseek`，需要 `backend/.env` 里的 `DEEPSEEK_API_KEY`；没有 Key 时发消息会显示 `missing_api_key`。不用 Key 试页面，可以换成 mock 配置启动：
+
+```bash
+cd backend
+sed -e 's/default_provider: deepseek/default_provider: mock/' \
+    -e 's/default_model: deepseek-chat/default_model: collabpilot-mock/' \
+    config/config.example.yaml > /tmp/collabpilot-mock.yaml
+cd ../frontend
+COLLABPILOT_CONFIG=/tmp/collabpilot-mock.yaml uv run --project ../backend --extra ui streamlit run app.py
+```
+
+会话 id 写在地址栏 `?session=`，带着它刷新或重新打开即可续聊。
+
+## 测试
+
+```bash
+cd frontend
+uv run --project ../backend --extra ui --extra dev pytest tests
+```

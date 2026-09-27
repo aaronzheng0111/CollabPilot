@@ -6,7 +6,7 @@
 
 | 顺序 | 目录 | 状态 | 一句话 |
 |------|------|------|--------|
-| 1 | [T01-session-runtime](T01-session-runtime/) | not_started | 会话、DeepSeek、工具事件、运行预算；页面骨架与主题 |
+| 1 | [T01-session-runtime](T01-session-runtime/) | verified | 会话、DeepSeek、工具事件、运行预算；页面骨架与主题 |
 | 2 | [T02-goal-parsing](T02-goal-parsing/) | blocked | 解析目标；含糊时追问并推荐过滤或改写；「待你决定」卡片 |
 | 3 | [T03-search-merge](T03-search-merge/) | blocked | 按时间窗口搜索并按创作者合并 |
 | 4 | [T04-hard-filter](T04-hard-filter/) | blocked | 已合作与平台硬过滤 |

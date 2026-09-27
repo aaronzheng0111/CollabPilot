@@ -23,8 +23,8 @@ class AppConfig(BaseModel):
 
 
 class ModelConfig(BaseModel):
-    default_provider: str = "mock"
-    default_model: str = "collabpilot-mock"
+    default_provider: str = "deepseek"
+    default_model: str = "deepseek-chat"
     temperature: float = 0.2
     timeout_seconds: float = 60
     max_retries: int = 2
@@ -39,9 +39,9 @@ class ProviderConfig(BaseModel):
 
 
 class RuntimeConfig(BaseModel):
-    max_model_calls: int = Field(default=4, ge=1, le=20)
-    max_tool_calls: int = Field(default=4, ge=0, le=20)
-    max_seconds: float = Field(default=90, gt=0)
+    max_model_calls: int = Field(default=12, ge=1, le=50)
+    max_tool_calls: int = Field(default=24, ge=0, le=100)
+    max_seconds: float = Field(default=180, gt=0)
     tool_timeout_seconds: float = Field(default=10, gt=0)
     max_tool_result_chars: int = Field(default=8000, ge=100)
 

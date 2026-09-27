@@ -1,6 +1,6 @@
 # Implement — 会话与 DeepSeek 运行时
 
-状态：`not_started`
+状态：`verified`
 
 ## 约束
 
@@ -17,12 +17,14 @@
 - `backend/src/collabpilot/settings.py`
 - `backend/src/collabpilot/agent/runtime.py`
 - `backend/src/collabpilot/application.py`
-- `backend/tests/unit/` 下新增或修改运行时测试
-- `backend/pyproject.toml` 的 optional extra `ui`（加入 streamlit）
+- `backend/src/collabpilot/domain/errors.py`、`backend/src/collabpilot/providers/registry.py`（`missing_api_key` 错误码）
+- `backend/tests/unit/` 下新增或修改运行时测试；`backend/tests/conftest.py`（拦截 `api.deepseek.com`）；`backend/tests/integration/test_application.py`（落库角色加入 `tool`）
+- `backend/pyproject.toml` 的 optional extra `ui`（加入 streamlit）与随之更新的 `backend/uv.lock`
 - `frontend/app.py`、`frontend/theme.py`、`frontend/.streamlit/config.toml`（新）
 - `frontend/components/tool_status.py`、`frontend/components/main_table.py`（新）
 - `frontend/tests/test_shell.py`（新）
 - `frontend/README.md`（启动命令）
+- `documents/T01-session-runtime/manual-eval.md`（人工测评）
 
 
 ## 本 Task 补充约束

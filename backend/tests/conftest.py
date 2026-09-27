@@ -1,3 +1,4 @@
+import socket
 from pathlib import Path
 
 import pytest
@@ -10,6 +11,23 @@ from collabpilot.providers.registry import ProviderRegistry
 from collabpilot.settings import AgentSettings, load_settings
 from collabpilot.tools.policy import ToolPolicy
 from collabpilot.tools.registry import ToolRegistry
+
+
+BLOCKED_HOST = "api.deepseek.com"
+
+
+@pytest.fixture(autouse=True)
+def offline_deepseek(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
+    real_getaddrinfo = socket.getaddrinfo
+
+    def guarded_getaddrinfo(host, *args, **kwargs):
+        name = host.decode() if isinstance(host, bytes) else str(host)
+        if name == BLOCKED_HOST:
+            raise AssertionError(f"Tests must not reach {BLOCKED_HOST}")
+        return real_getaddrinfo(host, *args, **kwargs)
+
+    monkeypatch.setattr(socket, "getaddrinfo", guarded_getaddrinfo)
 
 
 @pytest.fixture

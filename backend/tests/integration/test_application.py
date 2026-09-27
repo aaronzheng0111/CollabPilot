@@ -13,5 +13,6 @@ async def test_mock_chat_persists_session(application) -> None:
         "user",
         "assistant",
         "user",
+        "tool",
         "assistant",
     ]

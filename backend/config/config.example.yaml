@@ -6,8 +6,8 @@ app:
   identity_path: docs/agent.md
 
 model:
-  default_provider: mock
-  default_model: collabpilot-mock
+  default_provider: deepseek
+  default_model: deepseek-chat
   temperature: 0.2
   timeout_seconds: 60
   max_retries: 2
@@ -44,9 +44,9 @@ providers:
     api_key_env: OLLAMA_API_KEY
 
 runtime:
-  max_model_calls: 4
-  max_tool_calls: 4
-  max_seconds: 90
+  max_model_calls: 12
+  max_tool_calls: 24
+  max_seconds: 180
   tool_timeout_seconds: 10
   max_tool_result_chars: 8000
 

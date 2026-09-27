@@ -4,7 +4,10 @@ import asyncio
 import json
 from collections.abc import Awaitable, Callable
 from time import monotonic
+from typing import Literal
 from uuid import UUID
+
+from pydantic import BaseModel
 
 from collabpilot.domain.errors import RuntimeBudgetExceeded, ToolPolicyError
 from collabpilot.domain.models import Message, ModelResponse
@@ -14,6 +17,21 @@ from collabpilot.settings import RuntimeConfig
 from collabpilot.tools.base import ToolContext
 from collabpilot.tools.policy import ToolPolicy
 from collabpilot.tools.registry import ToolRegistry
+
+
+RuntimeEventType = Literal["model.requested", "tool.started", "tool.completed"]
+
+
+class RuntimeEvent(BaseModel):
+    type: RuntimeEventType
+    session_id: UUID
+    turn_id: UUID
+    name: str
+    ok: bool | None = None
+    error_code: str | None = None
+
+
+EventHandler = Callable[[RuntimeEvent], Awaitable[None]]
 
 
 class AgentRuntime:
@@ -35,6 +53,7 @@ class AgentRuntime:
         session_id: UUID,
         turn_id: UUID,
         on_delta: Callable[[str], Awaitable[None]] | None = None,
+        on_event: EventHandler | None = None,
     ) -> tuple[ModelResponse, list[Message], int]:
         started = monotonic()
         model_calls = 0
@@ -42,6 +61,24 @@ class AgentRuntime:
         repeated_calls: dict[str, int] = {}
         generated: list[Message] = []
         logger = get_logger(session_id=str(session_id), turn_id=str(turn_id))
+
+        async def emit(
+            event_type: RuntimeEventType,
+            name: str,
+            ok: bool | None = None,
+            error_code: str | None = None,
+        ) -> None:
+            if on_event:
+                await on_event(
+                    RuntimeEvent(
+                        type=event_type,
+                        session_id=session_id,
+                        turn_id=turn_id,
+                        name=name,
+                        ok=ok,
+                        error_code=error_code,
+                    )
+                )
 
         while model_calls < self.budget.max_model_calls:
             if monotonic() - started > self.budget.max_seconds:
@@ -53,6 +90,7 @@ class AgentRuntime:
                 model=model,
                 model_call=model_calls,
             )
+            await emit("model.requested", model)
             response = await provider.complete(
                 messages,
                 model,
@@ -87,10 +125,14 @@ class AgentRuntime:
                     raise RuntimeBudgetExceeded(
                         f"Repeated identical tool call detected: {call.name}"
                     )
+                await emit("tool.started", call.name)
+                ok = False
+                error_code: str | None
                 tool = self.tools.get(call.name)
                 if tool is None:
+                    error_code = "unknown_tool"
                     result_text = json.dumps(
-                        {"ok": False, "error_code": "unknown_tool"},
+                        {"ok": False, "error_code": error_code},
                         ensure_ascii=False,
                     )
                 else:
@@ -108,6 +150,7 @@ class AgentRuntime:
                             ),
                             timeout=self.budget.tool_timeout_seconds,
                         )
+                        ok, error_code = result.ok, result.error_code
                         result_text = result.model_dump_json()
                         logger.info(
                             "tool.completed",
@@ -116,15 +159,18 @@ class AgentRuntime:
                             error_code=result.error_code,
                         )
                     except ToolPolicyError as exc:
+                        error_code = exc.code
                         result_text = json.dumps(
                             {"ok": False, "error_code": exc.code, "display": str(exc)},
                             ensure_ascii=False,
                         )
                     except TimeoutError:
+                        error_code = "tool_timeout"
                         result_text = json.dumps(
-                            {"ok": False, "error_code": "tool_timeout"},
+                            {"ok": False, "error_code": error_code},
                             ensure_ascii=False,
                         )
+                await emit("tool.completed", call.name, ok=ok, error_code=error_code)
                 result_text = result_text[: self.budget.max_tool_result_chars]
                 tool_message = Message(
                     role="tool",
@@ -133,6 +179,7 @@ class AgentRuntime:
                     tool_call_id=call.id,
                 )
                 messages.append(tool_message)
+                generated.append(tool_message)
                 tool_calls += 1
 
         raise RuntimeBudgetExceeded("Maximum model calls exceeded")

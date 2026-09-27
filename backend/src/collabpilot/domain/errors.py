@@ -6,6 +6,10 @@ class ConfigurationError(AgentError):
     code = "configuration_error"
 
 
+class MissingApiKeyError(ConfigurationError):
+    code = "missing_api_key"
+
+
 class ProviderError(AgentError):
     code = "provider_error"
 

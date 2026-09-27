@@ -1,0 +1,19 @@
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#cc785c"
+backgroundColor = "#faf9f5"
+secondaryBackgroundColor = "#f5f0e8"
+textColor = "#141413"
+borderColor = "#e6dfd8"
+font = 'Inter, "PingFang SC", "Noto Sans SC", -apple-system, "Segoe UI", sans-serif'
+headingFont = '"Tiempos Headline", "Cormorant Garamond", "Noto Serif SC", "Songti SC", serif'
+headingFontWeights = 400
+codeFont = '"JetBrains Mono", ui-monospace, monospace'
+baseFontSize = 14
+baseRadius = "8px"
