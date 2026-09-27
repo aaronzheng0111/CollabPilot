@@ -2,16 +2,18 @@
 
 全部用例通过才算本 Task `verified`。
 
+自动化：`cd backend && uv run pytest`（`tests/unit/test_audience.py`，默认 `-m 'not eval'`）；`cd frontend && uv run --project ../backend --extra ui --extra dev pytest tests`（`tests/test_pending_list.py`、`tests/test_evidence_panel.py`）。本 Task 无 DeepSeek eval。
+
 | # | 用例 | 结果 |
 |---|------|------|
-| 1 | 受众视图四项都是「未知」，不是 null、0、空数组或不限 | 未测 |
-| 2 | 自动 fit 被改成 pending 且 unknowns 含 audience | 未测 |
-| 3 | 未手动接受前不在 fit 名单 | 未测 |
-| 4 | MOCK 与 RULE 标记同时可见 | 未测 |
-| 5 | mock 数据上 020–023 都不在 fit_creators；被改判者带 rule_override | 未测 |
-| 6 | 依据面板受众四项显示「未知」与平台原文 | 未测 |
-| 7 | 主表该行为「待确认」并有「受众未知」胶囊 | 未测 |
-| 8 | 次级区「待确认」列表与 fit 名单分开，每行有原因 | 未测 |
+| 1 | 受众视图四项都是「未知」，不是 null、0、空数组或不限 | 自动通过：`test_audience_view_unknown_fields_are_the_string_unknown` |
+| 2 | 自动 fit 被改成 pending 且 unknowns 含 audience | 自动通过：`test_fit_with_unknown_audience_becomes_pending_with_override` |
+| 3 | 未手动接受前不在 fit 名单 | 自动通过：`test_020_to_023_are_not_in_fit_creators_and_overridden_are_pending`（仅 001 留在 `fit_creators`） |
+| 4 | MOCK 与 RULE 标记同时可见 | 自动通过：`test_audience_source_labels_are_mock_and_rule`；面板见 `test_evidence_panel_shows_reasons_posts_age_recency_unknowns_and_model` |
+| 5 | mock 数据上 020–023 都不在 fit_creators；被改判者带 rule_override | 自动通过：`test_020_to_023_are_not_in_fit_creators_and_overridden_are_pending` |
+| 6 | 依据面板受众四项显示「未知」与平台原文 | 自动通过：`test_evidence_panel_shows_reasons_posts_age_recency_unknowns_and_model`（选 020：年龄/性别/地区/兴趣「未知」、`平台未公开受众画像`、`[MOCK]`）；人工：待走查 |
+| 7 | 主表该行为「待确认」并有「受众未知」胶囊 | 自动通过：`test_main_table_audience_unknown_row_is_pending_with_badge`（`audience` 列为纯文本「受众未知」，dataframe 无法套胶囊）；人工：待走查 |
+| 8 | 次级区「待确认」列表与 fit 名单分开，每行有原因 | 自动通过：`test_pending_list_is_separate_and_states_reason`（`creator_020`「受众未知」、另有「相关内容只有 1 条」，主表前三行仍为「合适」）；人工：待走查 |
 
 ## 通过标准
 

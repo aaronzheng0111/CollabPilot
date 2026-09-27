@@ -1,6 +1,6 @@
 # Implement — 受众信息缺失
 
-状态：`not_started`
+状态：`in_progress`（自动化用例 1–8 已通过；本 Task 无 eval；等人工走查后改 `verified`）
 
 ## 约束
 
@@ -23,6 +23,15 @@
 ## 本 Task 补充约束
 
 不要根据昵称或语言推断受众。
+
+
+## 实现记录
+
+- `campaign/audience.py`：`audience_view` 在 `status=unknown` 时四项一律字符串「未知」（不是 null/0/空数组/不限），原文标 `[MOCK]`。`enforce_audience_unknown` 在模型给出 `fit` 时改 `pending`、`unknowns` 追加 `audience`、`rule_override=audience_unknown`、清 rank。`apply_audience_overrides` 在 T05/T06 校验之后、写入名单之前调用。`fit_creators` 只含仍为 `fit` 的人；`pending_creators` 与之分开，原因取 override 或「受众未知」/模型 reasons。源码不读 nickname/signature。
+- `evaluate_candidates` 在 topic 校验后套用覆盖。020–023 即使被模型标 fit 也不进 `fit_creators`，出现在 pending 且带 `rule_override`。手动标可接受留给 T09。
+- 前端：判断依据面板受众四格 + `audience.note` `[MOCK]`；主表 `audience` 列纯文本「受众未知」（dataframe 无法套胶囊，与 T05/T06 相同）；次级区 `pending_list.py`「待确认」列表与 fit 名单分开。
+
+允许清单之外改动的文件：`campaign/verdict.py`（`rule_override`）、`application.py`、`campaign/workbench.py`、`frontend/app.py`、`frontend/theme.py`、`frontend/tests/test_evidence_panel.py`（020–023 先写成 fit 再走覆盖）。
 
 
 ## 门禁
