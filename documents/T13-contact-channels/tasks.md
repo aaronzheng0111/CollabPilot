@@ -9,7 +9,7 @@
 - 描述：从 mock contact 列出渠道，unknown 与 consent 保持原值
 - 依赖：T09 verified
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：list_contacts 纯函数
 - Verify：用例 1、2、5
 
@@ -18,7 +18,7 @@
 - 描述：confirm_channel 需用户批准，且渠道必须在资料上
 - 依赖：T13-01
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：写 creator_channels，无发送调用；注册 decisions 分支；CHANNEL_LABELS 映射
 - Verify：用例 3、4、6
 
@@ -29,7 +29,7 @@
 - 描述：「沟通渠道」表，未知值显示「未知」，带 MOCK
 - 依赖：T13-01
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/channel_table.py`，fixture 做 AppTest
 - Verify：用例 7、9
 
@@ -38,9 +38,10 @@
 - 描述：确认渠道进入「待你决定」，批准后主表 channel 列；无发送类按钮
 - 依赖：T13-02、T13-F1
 - 可并行：否
-- 状态：`planned`
+- 状态：`done`
 - Implement：`components/pending_decisions.py` 注册文案
 - Verify：用例 8、10
+
 
 ## 门禁
 
