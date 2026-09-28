@@ -50,8 +50,10 @@ def test_layout_is_left_table_right_projects_history_input() -> None:
         isinstance(item.value, str) and item.value.startswith('<div class="cp-status')
         for item in at.markdown
     )
+    from collabpilot.campaign.workbench import CATALOG_PAGE_SIZE
+
     idle = left.dataframe[0].value
-    assert len(idle) == 12
+    assert len(idle) == CATALOG_PAGE_SIZE
     assert "示例达人" in "\n".join(item.value for item in at.caption)
 
 

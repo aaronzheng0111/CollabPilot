@@ -183,7 +183,7 @@ class SearchCreatorsTool(Tool):
                 "type": "array",
                 "items": {"type": "string"},
                 "minItems": 1,
-                "description": "关键词列表，例如 [\"翻译\", \"LinguaGo\"]。",
+                "description": "关键词列表，取用户要找的品类或产品，例如 [\"美妆\"]。",
             },
             "window_days": {
                 "type": "integer",

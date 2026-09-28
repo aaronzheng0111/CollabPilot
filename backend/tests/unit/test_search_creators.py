@@ -206,6 +206,13 @@ async def test_get_creator_single_platform_and_not_found(campaigns, parsed_sessi
     assert single.data["platforms"] == ["tiktok"]
     assert missing.ok is False and missing.error_code == "not_found"
 
+    by_name = await tool.execute({"name": "周可儿"}, parsed_session)
+    assert by_name.ok and by_name.data["creator_id"] == "creator_104"
+    assert by_name.data["display_name"] == "周可儿"
+
+    by_id_field = await tool.execute({"creator_id": "周可儿"}, parsed_session)
+    assert by_id_field.ok and by_id_field.data["creator_id"] == "creator_104"
+
 
 async def test_get_creator_is_truncated_to_limit_keeping_id(campaigns, parsed_session) -> None:
     tool = GetCreatorTool(campaigns, max_result_chars=2500)
@@ -245,3 +252,38 @@ async def test_mock_provider_turn_searches_and_fills_the_campaign(application) -
     payload = json.loads(tool_message.content)
     assert payload["ok"] and payload["data"]["meta"]["is_mock"] is True
     assert payload["data"]["meta"]["data_origin"] == "mock_seed"
+
+
+BEAUTY_CAMERA_IDS = {
+    "creator_101",
+    "creator_102",
+    "creator_103",
+    "creator_104",
+    "creator_105",
+    "creator_106",
+}
+
+
+def test_beauty_camera_keywords_return_six_with_mismatch_and_unknown_audience() -> None:
+    creators = mock_store.load()
+    generated = mock_store.generated_at().isoformat()
+    for keyword in ("美妆", "AI美颜相机"):
+        result = run_search(
+            creators,
+            platforms=["tiktok", "instagram"],
+            keywords=[keyword],
+            window_days=30,
+            min_followers=None,
+            limit=50,
+            generated_at=generated,
+        )
+        assert {item.creator_id for item in result.creators} == BEAUTY_CAMERA_IDS
+
+    mismatch = creators["creator_106"].tiktok
+    posts = " ".join(post["title"] for post in mismatch["recent_posts"])
+    assert mismatch["content_topics"] == ["AI测评", "效率工具", "编程助手"]
+    assert "AI美颜相机" in posts and "美妆" in posts
+    assert "不拍妆" in posts or "不搭" in posts
+    assert creators["creator_101"].tiktok["audience"]["status"] == "known"
+    assert creators["creator_104"].tiktok["audience"]["status"] == "unknown"
+    assert creators["creator_105"].tiktok["audience"]["status"] == "unknown"

@@ -2199,7 +2199,7 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_cooperation_active",
-          "evidence_text": "本月继续和Mock竞品翻译合作，这期讲它的会议字幕",
+          "evidence_text": "竞品翻译笔开箱：扫描翻译速度实测，本期不谈本品",
           "source_post_id": "tt_video_010_1",
           "confidence": 0.78,
           "data_origin": "mock_seed"
@@ -2269,7 +2269,7 @@
         "unique_id": "subtitle.cut",
         "nickname": "翻译剪辑君",
         "sec_uid": "MS4wLjABAAAA_mock_011",
-        "signature": "影视字幕 · 剪辑 · 娱乐",
+        "signature": "护肤 · 口红 · 妆教 · 测评化妆品",
         "follower_count": 34074,
         "following_count": 224,
         "heart_count": 1653389,
@@ -2277,26 +2277,28 @@
         "verified": false,
         "region": "CA",
         "bio_url": "mock://tiktok/subtitle.cut",
-        "category": "Business",
+        "category": "Beauty",
         "avatar_thumb": "mock://cdn/tiktok/avatar_011.jpg"
       },
       "content_topics": [
-        "影视字幕",
-        "剪辑",
-        "娱乐"
+        "护肤",
+        "口红",
+        "妆教",
+        "测评化妆品"
       ],
       "audience": {
         "status": "known",
-        "age_range": "20-30",
-        "gender": "female_55",
+        "age_range": "22-28",
+        "gender": "female_60",
         "regions": [
           "北美",
-          "欧洲"
+          "东南亚"
         ],
         "interests": [
-          "影视字幕",
-          "剪辑",
-          "娱乐"
+          "护肤",
+          "口红",
+          "妆教",
+          "测评化妆品"
         ],
         "note": null
       },
@@ -2317,15 +2319,17 @@
           "video_id": "tt_video_011_1",
           "share_url": "mock://tiktok/video/011_1",
           "create_time": 1790164800,
-          "title": "字幕剪辑｜《黑袍纠察队》名场面中英双字幕，这不是AI翻译工具测评",
+          "title": "春夏季日常妆教｜5分钟通勤妆完整步骤",
           "duration": 38,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_1.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#影视剪辑",
-            "#双语字幕"
+            "#妆教",
+            "#护肤",
+            "#口红",
+            "#护肤测评"
           ],
           "music_info": {
             "music_id": "music_011_1",
@@ -2344,15 +2348,17 @@
           "video_id": "tt_video_011_2",
           "share_url": "mock://tiktok/video/011_2",
           "create_time": 1789905600,
-          "title": "影视字幕组翻得太神了｜高能剪辑合集，不谈翻译App",
+          "title": "平价口红试色合集｜黄皮显白三支推荐",
           "duration": 74,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_2.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#影视剪辑",
-            "#双语字幕"
+            "#妆教",
+            "#护肤",
+            "#口红",
+            "#护肤测评"
           ],
           "music_info": {
             "music_id": "music_011_2",
@@ -2371,15 +2377,17 @@
           "video_id": "tt_video_011_3",
           "share_url": "mock://tiktok/video/011_3",
           "create_time": 1789560000,
-          "title": "美剧熟肉搬运：本周最火片段｜纯字幕剪辑教程",
+          "title": "护肤测评｜百元水乳够用吗？纯护肤分享",
           "duration": 66,
           "cover_urls": [
             "mock://cdn/tiktok/cover_011_3.jpg"
           ],
           "region": "US",
           "hashtag_names": [
-            "#影视剪辑",
-            "#双语字幕"
+            "#妆教",
+            "#护肤",
+            "#口红",
+            "#护肤测评"
           ],
           "music_info": {
             "music_id": "music_011_3",
@@ -2399,9 +2407,9 @@
         {
           "evidence_id": "ev_tt_011_1",
           "evidence_type": "organic_post",
-          "product_name": "LinguaGo AI 翻译",
+          "product_name": "Mock 平价口红",
           "product_relation": "category_mentions_only",
-          "evidence_text": "《黑袍纠察队》名场面中英双字幕｜高能剪辑",
+          "evidence_text": "春夏季日常妆教｜5分钟通勤妆完整步骤",
           "source_post_id": "tt_video_011_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2424,7 +2432,7 @@
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "reject",
-        "expected_reason": "昵称含翻译，内容为影视字幕剪辑"
+        "expected_reason": "昵称含翻译，内容为美妆护肤"
       },
       "raw_api_snapshot_ref": "search_tt_011",
       "data_origin": "mock_seed"
@@ -2440,63 +2448,64 @@
         "unique_id": "exam.english",
         "nickname": "英语考试通",
         "sec_uid": "MS4wLjABAAAA_mock_012",
-        "signature": "雅思 · 托福 · 考试英语",
-        "follower_count": 31880,
-        "following_count": 120,
-        "heart_count": 488003,
-        "video_count": 329,
+        "signature": "口红试色 · 底妆 · 彩妆好物",
+        "follower_count": 48040,
+        "following_count": 152,
+        "heart_count": 171107,
+        "video_count": 104,
         "verified": false,
-        "region": "US",
+        "region": "CA",
         "bio_url": "mock://tiktok/exam.english",
-        "category": "Lifestyle",
+        "category": "Beauty",
         "avatar_thumb": "mock://cdn/tiktok/avatar_012.jpg"
       },
       "content_topics": [
-        "雅思",
-        "托福",
-        "考试英语"
+        "口红试色",
+        "底妆",
+        "彩妆好物"
       ],
       "audience": {
         "status": "known",
-        "age_range": "25-34",
-        "gender": "female_55",
+        "age_range": "18-24",
+        "gender": "male_45",
         "regions": [
-          "北美",
-          "欧洲"
+          "东南亚",
+          "中国大陆"
         ],
         "interests": [
-          "雅思",
-          "托福",
-          "考试英语"
+          "口红试色",
+          "底妆",
+          "彩妆好物"
         ],
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 108448,
-        "engagement_rate_30d": 0.073,
-        "growth_rate_30d": 0.13,
-        "gmv_30d": 18708.2,
-        "impressions_30d": 665772,
+        "avg_play_count_30d": 112664,
+        "engagement_rate_30d": 0.088,
+        "growth_rate_30d": 0.3,
+        "gmv_30d": 22137.3,
+        "impressions_30d": 832229,
         "currency": "USD",
-        "units_sold_30d": 564,
-        "gmv_per_buyer": 33.2,
+        "units_sold_30d": 426,
+        "gmv_per_buyer": 52,
         "gpm_origin": "mock_seed",
-        "video_gpm": 28.1
+        "video_gpm": 26.6
       },
       "recent_posts": [
         {
           "video_id": "tt_video_012_1",
           "share_url": "mock://tiktok/video/012_1",
           "create_time": 1790337600,
-          "title": "四级翻译题高频句式30个，背完稳过｜应试技巧不是AI翻译工具",
-          "duration": 70,
+          "title": "黄皮口红试色｜豆沙色vs裸粉实测对比",
+          "duration": 39,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_1.jpg"
           ],
           "region": "JP",
           "hashtag_names": [
-            "#英语四级",
-            "#考研英语"
+            "#口红",
+            "#底妆",
+            "#彩妆好物"
           ],
           "music_info": {
             "music_id": "music_012_1",
@@ -2504,26 +2513,27 @@
             "author_name": "英语考试通"
           },
           "stats": {
-            "play_count": 51396,
-            "digg_count": 4078,
-            "comment_count": 297,
-            "share_count": 84,
-            "collect_count": 596
+            "play_count": 89913,
+            "digg_count": 2696,
+            "comment_count": 318,
+            "share_count": 194,
+            "collect_count": 382
           }
         },
         {
           "video_id": "tt_video_012_2",
           "share_url": "mock://tiktok/video/012_2",
           "create_time": 1790078400,
-          "title": "考研英语翻译大题万能模板，直接套用｜备考向",
-          "duration": 53,
+          "title": "底妆卡粉怎么办｜三步服帖技巧分享",
+          "duration": 28,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_2.jpg"
           ],
           "region": "SG",
           "hashtag_names": [
-            "#英语四级",
-            "#考研英语"
+            "#口红",
+            "#底妆",
+            "#彩妆好物"
           ],
           "music_info": {
             "music_id": "music_012_2",
@@ -2531,26 +2541,27 @@
             "author_name": "英语考试通"
           },
           "stats": {
-            "play_count": 149018,
-            "digg_count": 6277,
-            "comment_count": 265,
-            "share_count": 227,
-            "collect_count": 802
+            "play_count": 111121,
+            "digg_count": 7948,
+            "comment_count": 477,
+            "share_count": 173,
+            "collect_count": 1112
           }
         },
         {
           "video_id": "tt_video_012_3",
           "share_url": "mock://tiktok/video/012_3",
           "create_time": 1789732800,
-          "title": "雅思翻译练习：同义替换怎么找｜考试翻译≠产品使用",
-          "duration": 41,
+          "title": "彩妆好物开箱｜本月回购的平价彩妆",
+          "duration": 79,
           "cover_urls": [
             "mock://cdn/tiktok/cover_012_3.jpg"
           ],
-          "region": "SG",
+          "region": "US",
           "hashtag_names": [
-            "#英语四级",
-            "#考研英语"
+            "#口红",
+            "#底妆",
+            "#彩妆好物"
           ],
           "music_info": {
             "music_id": "music_012_3",
@@ -2558,11 +2569,11 @@
             "author_name": "英语考试通"
           },
           "stats": {
-            "play_count": 105085,
-            "digg_count": 1842,
-            "comment_count": 587,
-            "share_count": 201,
-            "collect_count": 1666
+            "play_count": 147054,
+            "digg_count": 5584,
+            "comment_count": 158,
+            "share_count": 391,
+            "collect_count": 981
           }
         }
       ],
@@ -2570,9 +2581,9 @@
         {
           "evidence_id": "ev_tt_012_1",
           "evidence_type": "organic_post",
-          "product_name": "LinguaGo AI 翻译",
+          "product_name": "Mock 口红试色盘",
           "product_relation": "category_mentions_only",
-          "evidence_text": "四级听力高频词30个，背完稳过",
+          "evidence_text": "黄皮口红试色｜豆沙色vs裸粉实测对比",
           "source_post_id": "tt_video_012_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2595,7 +2606,7 @@
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "reject",
-        "expected_reason": "昵称含英语，内容为考试英语"
+        "expected_reason": "昵称含英语，内容为美妆口红"
       },
       "raw_api_snapshot_ref": "search_tt_012",
       "data_origin": "mock_seed"
@@ -2611,63 +2622,64 @@
         "unique_id": "ai.paint.mia",
         "nickname": "AI绘画Mia",
         "sec_uid": "MS4wLjABAAAA_mock_013",
-        "signature": "AI绘画 · Midjourney · 插画",
-        "follower_count": 161609,
-        "following_count": 307,
-        "heart_count": 952677,
-        "video_count": 351,
+        "signature": "护肤routine · 防晒 · 化妆刷",
+        "follower_count": 77777,
+        "following_count": 875,
+        "heart_count": 1433611,
+        "video_count": 139,
         "verified": false,
-        "region": "JP",
+        "region": "SG",
         "bio_url": "mock://tiktok/ai.paint.mia",
-        "category": "Lifestyle",
+        "category": "Beauty",
         "avatar_thumb": "mock://cdn/tiktok/avatar_013.jpg"
       },
       "content_topics": [
-        "AI绘画",
-        "Midjourney",
-        "插画"
+        "护肤routine",
+        "防晒",
+        "化妆刷"
       ],
       "audience": {
         "status": "known",
-        "age_range": "20-30",
-        "gender": "female_55",
+        "age_range": "22-28",
+        "gender": "male_45",
         "regions": [
-          "北美",
-          "东南亚"
+          "东南亚",
+          "中国大陆"
         ],
         "interests": [
-          "AI绘画",
-          "Midjourney",
-          "插画"
+          "护肤routine",
+          "防晒",
+          "化妆刷"
         ],
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 41414,
-        "engagement_rate_30d": 0.05,
-        "growth_rate_30d": 0.42,
-        "gmv_30d": 20009.8,
-        "impressions_30d": 866223,
+        "avg_play_count_30d": 114934,
+        "engagement_rate_30d": 0.079,
+        "growth_rate_30d": 0.17,
+        "gmv_30d": 18101.5,
+        "impressions_30d": 641898,
         "currency": "USD",
-        "units_sold_30d": 461,
-        "gmv_per_buyer": 43.4,
+        "units_sold_30d": 420,
+        "gmv_per_buyer": 43.1,
         "gpm_origin": "mock_seed",
-        "video_gpm": 23.1
+        "video_gpm": 28.2
       },
       "recent_posts": [
         {
           "video_id": "tt_video_013_1",
           "share_url": "mock://tiktok/video/013_1",
           "create_time": 1790251200,
-          "title": "Midjourney画赛博朋克｜提示词不用翻译工具也能出图",
-          "duration": 58,
+          "title": "晚间护肤routine｜敏感肌也能用的水乳顺序",
+          "duration": 49,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_1.jpg"
           ],
-          "region": "SG",
+          "region": "JP",
           "hashtag_names": [
-            "#AI绘画",
-            "#midjourney"
+            "#护肤",
+            "#防晒",
+            "#化妆刷"
           ],
           "music_info": {
             "music_id": "music_013_1",
@@ -2675,26 +2687,27 @@
             "author_name": "AI绘画Mia"
           },
           "stats": {
-            "play_count": 59076,
-            "digg_count": 1270,
-            "comment_count": 223,
-            "share_count": 388,
-            "collect_count": 1732
+            "play_count": 52799,
+            "digg_count": 669,
+            "comment_count": 249,
+            "share_count": 72,
+            "collect_count": 689
           }
         },
         {
           "video_id": "tt_video_013_2",
           "share_url": "mock://tiktok/video/013_2",
           "create_time": 1789992000,
-          "title": "AI绘画上色教程：从线稿到成图只要5分钟｜不谈翻译产品",
-          "duration": 70,
+          "title": "夏日防晒怎么选｜清爽不搓泥实测",
+          "duration": 81,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_2.jpg"
           ],
-          "region": "US",
+          "region": "GB",
           "hashtag_names": [
-            "#AI绘画",
-            "#midjourney"
+            "#护肤",
+            "#防晒",
+            "#化妆刷"
           ],
           "music_info": {
             "music_id": "music_013_2",
@@ -2702,26 +2715,27 @@
             "author_name": "AI绘画Mia"
           },
           "stats": {
-            "play_count": 31906,
-            "digg_count": 6619,
-            "comment_count": 479,
-            "share_count": 241,
-            "collect_count": 869
+            "play_count": 23898,
+            "digg_count": 5275,
+            "comment_count": 144,
+            "share_count": 333,
+            "collect_count": 1579
           }
         },
         {
           "video_id": "tt_video_013_3",
           "share_url": "mock://tiktok/video/013_3",
           "create_time": 1789646400,
-          "title": "Stable Diffusion人像LoRA推荐｜开箱素材包不是翻译App",
-          "duration": 58,
+          "title": "化妆刷清洁保养｜一周一次就够了",
+          "duration": 52,
           "cover_urls": [
             "mock://cdn/tiktok/cover_013_3.jpg"
           ],
-          "region": "JP",
+          "region": "GB",
           "hashtag_names": [
-            "#AI绘画",
-            "#midjourney"
+            "#护肤",
+            "#防晒",
+            "#化妆刷"
           ],
           "music_info": {
             "music_id": "music_013_3",
@@ -2729,11 +2743,11 @@
             "author_name": "AI绘画Mia"
           },
           "stats": {
-            "play_count": 99203,
-            "digg_count": 3594,
-            "comment_count": 524,
-            "share_count": 366,
-            "collect_count": 1281
+            "play_count": 85637,
+            "digg_count": 955,
+            "comment_count": 404,
+            "share_count": 185,
+            "collect_count": 1735
           }
         }
       ],
@@ -2741,9 +2755,9 @@
         {
           "evidence_id": "ev_tt_013_1",
           "evidence_type": "organic_post",
-          "product_name": "LinguaGo AI 翻译",
+          "product_name": "Mock 防晒霜",
           "product_relation": "category_mentions_only",
-          "evidence_text": "Midjourney画赛博朋克城市，提示词全公开",
+          "evidence_text": "晚间护肤routine｜敏感肌也能用的水乳顺序",
           "source_post_id": "tt_video_013_1",
           "confidence": 0.35,
           "data_origin": "mock_seed"
@@ -2766,7 +2780,7 @@
       ],
       "expected_ai_signals": {
         "expected_decision_hint": "reject",
-        "expected_reason": "昵称含AI，内容为AI绘画"
+        "expected_reason": "昵称含AI，内容为护肤防晒"
       },
       "raw_api_snapshot_ref": "search_tt_013",
       "data_origin": "mock_seed"
@@ -2783,14 +2797,14 @@
         "nickname": "Paula译日常",
         "sec_uid": "MS4wLjABAAAA_mock_016",
         "signature": "AI翻译 · 效率工具",
-        "follower_count": 167418,
-        "following_count": 803,
-        "heart_count": 1378657,
-        "video_count": 359,
+        "follower_count": 117825,
+        "following_count": 758,
+        "heart_count": 1214805,
+        "video_count": 251,
         "verified": false,
-        "region": "US",
+        "region": "CA",
         "bio_url": "mock://tiktok/paula.daily",
-        "category": "Education",
+        "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_016.jpg"
       },
       "content_topics": [
@@ -2800,7 +2814,7 @@
       "audience": {
         "status": "known",
         "age_range": "22-28",
-        "gender": "mixed_50",
+        "gender": "female_55",
         "regions": [
           "北美",
           "东南亚"
@@ -2812,16 +2826,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 57396,
-        "engagement_rate_30d": 0.085,
+        "avg_play_count_30d": 111140,
+        "engagement_rate_30d": 0.05,
         "growth_rate_30d": 0.25,
-        "gmv_30d": 10521.7,
-        "impressions_30d": 371792,
+        "gmv_30d": 6784.2,
+        "impressions_30d": 228425,
         "currency": "USD",
-        "units_sold_30d": 335,
-        "gmv_per_buyer": 31.4,
+        "units_sold_30d": 298,
+        "gmv_per_buyer": 22.8,
         "gpm_origin": "mock_seed",
-        "video_gpm": 28.3
+        "video_gpm": 29.7
       },
       "recent_posts": [
         {
@@ -2829,7 +2843,7 @@
           "share_url": "mock://tiktok/video/016_1",
           "create_time": 1790251200,
           "title": "LinguaGo合作视频已发布，感谢品牌寄样",
-          "duration": 35,
+          "duration": 30,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_1.jpg"
           ],
@@ -2845,11 +2859,11 @@
             "author_name": "Paula译日常"
           },
           "stats": {
-            "play_count": 36192,
-            "digg_count": 241,
-            "comment_count": 342,
-            "share_count": 228,
-            "collect_count": 1876
+            "play_count": 131398,
+            "digg_count": 1426,
+            "comment_count": 117,
+            "share_count": 101,
+            "collect_count": 60
           }
         },
         {
@@ -2857,11 +2871,11 @@
           "share_url": "mock://tiktok/video/016_2",
           "create_time": 1789992000,
           "title": "上次合作后继续用LinguaGo做视频字幕翻译",
-          "duration": 45,
+          "duration": 61,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_2.jpg"
           ],
-          "region": "JP",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -2873,11 +2887,11 @@
             "author_name": "Paula译日常"
           },
           "stats": {
-            "play_count": 65979,
-            "digg_count": 568,
-            "comment_count": 160,
-            "share_count": 376,
-            "collect_count": 634
+            "play_count": 18161,
+            "digg_count": 2674,
+            "comment_count": 394,
+            "share_count": 180,
+            "collect_count": 142
           }
         },
         {
@@ -2885,11 +2899,11 @@
           "share_url": "mock://tiktok/video/016_3",
           "create_time": 1789646400,
           "title": "粉丝问我LinguaGo好不好用，统一回复在这",
-          "duration": 85,
+          "duration": 86,
           "cover_urls": [
             "mock://cdn/tiktok/cover_016_3.jpg"
           ],
-          "region": "JP",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -2901,11 +2915,11 @@
             "author_name": "Paula译日常"
           },
           "stats": {
-            "play_count": 31357,
-            "digg_count": 7228,
-            "comment_count": 592,
-            "share_count": 35,
-            "collect_count": 868
+            "play_count": 107025,
+            "digg_count": 7346,
+            "comment_count": 395,
+            "share_count": 89,
+            "collect_count": 1807
           }
         }
       ],
@@ -2939,11 +2953,11 @@
           "revision_count": 1,
           "communication_score": 4.6,
           "performance": {
-            "play_count": 75400,
-            "engagement_rate": 0.063,
-            "gmv": 5539,
-            "impressions": 394605,
-            "video_gpm": 14
+            "play_count": 95219,
+            "engagement_rate": 0.056,
+            "gmv": 11257,
+            "impressions": 278288,
+            "video_gpm": 40.5
           },
           "notes": "已与本品牌完成合作，再次触达应排除",
           "data_origin": "mock_seed"
@@ -2983,14 +2997,14 @@
         "nickname": "Quinn效率",
         "sec_uid": "MS4wLjABAAAA_mock_017",
         "signature": "跨境 · 翻译工具",
-        "follower_count": 98696,
-        "following_count": 116,
-        "heart_count": 1821413,
-        "video_count": 277,
+        "follower_count": 112198,
+        "following_count": 274,
+        "heart_count": 1308019,
+        "video_count": 160,
         "verified": false,
-        "region": "CA",
+        "region": "US",
         "bio_url": "mock://tiktok/quinn.works",
-        "category": "Tech",
+        "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_017.jpg"
       },
       "content_topics": [
@@ -3000,10 +3014,10 @@
       "audience": {
         "status": "known",
         "age_range": "25-34",
-        "gender": "female_55",
+        "gender": "mixed_50",
         "regions": [
           "北美",
-          "东南亚"
+          "欧洲"
         ],
         "interests": [
           "跨境",
@@ -3012,16 +3026,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 55223,
-        "engagement_rate_30d": 0.049,
-        "growth_rate_30d": 0.26,
-        "gmv_30d": 6540.2,
-        "impressions_30d": 288115,
+        "avg_play_count_30d": 81783,
+        "engagement_rate_30d": 0.043,
+        "growth_rate_30d": 0.39,
+        "gmv_30d": 11010.2,
+        "impressions_30d": 734014,
         "currency": "USD",
-        "units_sold_30d": 534,
-        "gmv_per_buyer": 12.2,
+        "units_sold_30d": 187,
+        "gmv_per_buyer": 58.9,
         "gpm_origin": "mock_seed",
-        "video_gpm": 22.7
+        "video_gpm": 15
       },
       "recent_posts": [
         {
@@ -3029,7 +3043,7 @@
           "share_url": "mock://tiktok/video/017_1",
           "create_time": 1790164800,
           "title": "和LinguaGo的合作款：职场翻译3个技巧",
-          "duration": 83,
+          "duration": 61,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_1.jpg"
           ],
@@ -3045,11 +3059,11 @@
             "author_name": "Quinn效率"
           },
           "stats": {
-            "play_count": 29944,
-            "digg_count": 4528,
-            "comment_count": 175,
-            "share_count": 358,
-            "collect_count": 155
+            "play_count": 80509,
+            "digg_count": 7065,
+            "comment_count": 458,
+            "share_count": 85,
+            "collect_count": 1132
           }
         },
         {
@@ -3057,11 +3071,11 @@
           "share_url": "mock://tiktok/video/017_2",
           "create_time": 1789905600,
           "title": "LinguaGo文档翻译日常使用记录",
-          "duration": 64,
+          "duration": 83,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_2.jpg"
           ],
-          "region": "SG",
+          "region": "US",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3073,11 +3087,11 @@
             "author_name": "Quinn效率"
           },
           "stats": {
-            "play_count": 49394,
-            "digg_count": 1810,
-            "comment_count": 294,
-            "share_count": 137,
-            "collect_count": 1577
+            "play_count": 48229,
+            "digg_count": 4852,
+            "comment_count": 289,
+            "share_count": 136,
+            "collect_count": 452
           }
         },
         {
@@ -3085,11 +3099,11 @@
           "share_url": "mock://tiktok/video/017_3",
           "create_time": 1789560000,
           "title": "效率工具桌面整理，翻译用LinguaGo",
-          "duration": 74,
+          "duration": 45,
           "cover_urls": [
             "mock://cdn/tiktok/cover_017_3.jpg"
           ],
-          "region": "JP",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3101,11 +3115,11 @@
             "author_name": "Quinn效率"
           },
           "stats": {
-            "play_count": 69636,
-            "digg_count": 3292,
-            "comment_count": 181,
-            "share_count": 310,
-            "collect_count": 452
+            "play_count": 96533,
+            "digg_count": 6078,
+            "comment_count": 421,
+            "share_count": 189,
+            "collect_count": 823
           }
         }
       ],
@@ -3117,7 +3131,7 @@
           "product_relation": "own_brand_cooperation",
           "evidence_text": "和LinguaGo的合作款：职场翻译3个技巧",
           "source_post_id": "tt_video_017_1",
-          "confidence": 0.77,
+          "confidence": 0.75,
           "data_origin": "mock_seed"
         }
       ],
@@ -3139,11 +3153,11 @@
           "revision_count": 1,
           "communication_score": 4.6,
           "performance": {
-            "play_count": 21680,
-            "engagement_rate": 0.078,
-            "gmv": 13198,
-            "impressions": 684434,
-            "video_gpm": 19.3
+            "play_count": 46738,
+            "engagement_rate": 0.079,
+            "gmv": 14067,
+            "impressions": 308095,
+            "video_gpm": 45.7
           },
           "notes": "已与本品牌完成合作，再次触达应排除",
           "data_origin": "mock_seed"
@@ -3183,14 +3197,14 @@
         "nickname": "Tina工具箱",
         "sec_uid": "MS4wLjABAAAA_mock_020",
         "signature": "AI工具 · 翻译",
-        "follower_count": 201254,
-        "following_count": 323,
-        "heart_count": 2117385,
-        "video_count": 142,
+        "follower_count": 171005,
+        "following_count": 342,
+        "heart_count": 1776348,
+        "video_count": 296,
         "verified": false,
         "region": "SG",
         "bio_url": "mock://tiktok/tina.toolbox",
-        "category": "Lifestyle",
+        "category": "Business",
         "avatar_thumb": "mock://cdn/tiktok/avatar_020.jpg"
       },
       "content_topics": [
@@ -3206,9 +3220,9 @@
         "note": "平台未公开受众画像，数据缺失"
       },
       "metrics": {
-        "avg_play_count_30d": 30174,
-        "engagement_rate_30d": 0.036,
-        "growth_rate_30d": 0.19,
+        "avg_play_count_30d": 8447,
+        "engagement_rate_30d": 0.038,
+        "growth_rate_30d": 0.15,
         "gmv_30d": null,
         "impressions_30d": null,
         "currency": "unknown",
@@ -3223,11 +3237,11 @@
           "share_url": "mock://tiktok/video/020_1",
           "create_time": 1790164800,
           "title": "试了一款AI翻译App，拍照翻译很快",
-          "duration": 55,
+          "duration": 26,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_1.jpg"
           ],
-          "region": "JP",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3239,11 +3253,11 @@
             "author_name": "Tina工具箱"
           },
           "stats": {
-            "play_count": 106427,
-            "digg_count": 4281,
-            "comment_count": 103,
-            "share_count": 393,
-            "collect_count": 1697
+            "play_count": 55310,
+            "digg_count": 3817,
+            "comment_count": 358,
+            "share_count": 286,
+            "collect_count": 1070
           }
         },
         {
@@ -3251,7 +3265,7 @@
           "share_url": "mock://tiktok/video/020_2",
           "create_time": 1789905600,
           "title": "工具箱更新：本周收藏的3个翻译工具",
-          "duration": 37,
+          "duration": 89,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_2.jpg"
           ],
@@ -3267,11 +3281,11 @@
             "author_name": "Tina工具箱"
           },
           "stats": {
-            "play_count": 82499,
-            "digg_count": 291,
-            "comment_count": 225,
-            "share_count": 344,
-            "collect_count": 578
+            "play_count": 33724,
+            "digg_count": 1680,
+            "comment_count": 589,
+            "share_count": 223,
+            "collect_count": 72
           }
         },
         {
@@ -3279,11 +3293,11 @@
           "share_url": "mock://tiktok/video/020_3",
           "create_time": 1789560000,
           "title": "用AI翻译做旅行攻略，外文景点介绍秒懂",
-          "duration": 51,
+          "duration": 81,
           "cover_urls": [
             "mock://cdn/tiktok/cover_020_3.jpg"
           ],
-          "region": "GB",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3295,11 +3309,11 @@
             "author_name": "Tina工具箱"
           },
           "stats": {
-            "play_count": 33788,
-            "digg_count": 4994,
-            "comment_count": 46,
-            "share_count": 156,
-            "collect_count": 1011
+            "play_count": 142656,
+            "digg_count": 3298,
+            "comment_count": 569,
+            "share_count": 95,
+            "collect_count": 1249
           }
         }
       ],
@@ -3311,7 +3325,7 @@
           "product_relation": "similar_product_user",
           "evidence_text": "试了一款AI翻译App，拍照翻译很快",
           "source_post_id": "tt_video_020_1",
-          "confidence": 0.87,
+          "confidence": 0.8,
           "data_origin": "mock_seed"
         }
       ],
@@ -3351,14 +3365,14 @@
         "nickname": "Uma译记",
         "sec_uid": "MS4wLjABAAAA_mock_021",
         "signature": "跨境 · 效率",
-        "follower_count": 41501,
-        "following_count": 886,
-        "heart_count": 1985674,
-        "video_count": 177,
+        "follower_count": 130245,
+        "following_count": 712,
+        "heart_count": 1187909,
+        "video_count": 84,
         "verified": false,
-        "region": "JP",
+        "region": "CA",
         "bio_url": "mock://tiktok/uma.notes",
-        "category": "Lifestyle",
+        "category": "Business",
         "avatar_thumb": "mock://cdn/tiktok/avatar_021.jpg"
       },
       "content_topics": [
@@ -3374,9 +3388,9 @@
         "note": "平台未公开受众画像，数据缺失"
       },
       "metrics": {
-        "avg_play_count_30d": 24629,
-        "engagement_rate_30d": 0.059,
-        "growth_rate_30d": 0.14,
+        "avg_play_count_30d": 13960,
+        "engagement_rate_30d": 0.06,
+        "growth_rate_30d": 0.06,
         "gmv_30d": null,
         "impressions_30d": null,
         "currency": "unknown",
@@ -3391,11 +3405,11 @@
           "share_url": "mock://tiktok/video/021_1",
           "create_time": 1790337600,
           "title": "LinguaGo翻译跨境邮件，语气比之前自然",
-          "duration": 41,
+          "duration": 83,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_1.jpg"
           ],
-          "region": "GB",
+          "region": "JP",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3407,11 +3421,11 @@
             "author_name": "Uma译记"
           },
           "stats": {
-            "play_count": 34328,
-            "digg_count": 2292,
-            "comment_count": 447,
-            "share_count": 388,
-            "collect_count": 995
+            "play_count": 13839,
+            "digg_count": 2170,
+            "comment_count": 566,
+            "share_count": 97,
+            "collect_count": 573
           }
         },
         {
@@ -3419,11 +3433,11 @@
           "share_url": "mock://tiktok/video/021_2",
           "create_time": 1790078400,
           "title": "用LinguaGo写英文产品说明书初稿",
-          "duration": 47,
+          "duration": 88,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_2.jpg"
           ],
-          "region": "GB",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3435,11 +3449,11 @@
             "author_name": "Uma译记"
           },
           "stats": {
-            "play_count": 20928,
-            "digg_count": 5220,
-            "comment_count": 311,
-            "share_count": 327,
-            "collect_count": 1140
+            "play_count": 56579,
+            "digg_count": 2892,
+            "comment_count": 527,
+            "share_count": 61,
+            "collect_count": 1305
           }
         },
         {
@@ -3447,11 +3461,11 @@
           "share_url": "mock://tiktok/video/021_3",
           "create_time": 1789732800,
           "title": "我的翻译记录本：LinguaGo常用短语收藏",
-          "duration": 70,
+          "duration": 78,
           "cover_urls": [
             "mock://cdn/tiktok/cover_021_3.jpg"
           ],
-          "region": "SG",
+          "region": "JP",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3463,11 +3477,11 @@
             "author_name": "Uma译记"
           },
           "stats": {
-            "play_count": 6427,
-            "digg_count": 4485,
-            "comment_count": 130,
-            "share_count": 326,
-            "collect_count": 189
+            "play_count": 104582,
+            "digg_count": 5564,
+            "comment_count": 183,
+            "share_count": 23,
+            "collect_count": 1121
           }
         }
       ],
@@ -3479,7 +3493,7 @@
           "product_relation": "own_brand_user",
           "evidence_text": "LinguaGo翻译跨境邮件，语气比之前自然",
           "source_post_id": "tt_video_021_1",
-          "confidence": 0.77,
+          "confidence": 0.82,
           "data_origin": "mock_seed"
         }
       ],
@@ -3519,14 +3533,14 @@
         "nickname": "Xander译",
         "sec_uid": "MS4wLjABAAAA_mock_024",
         "signature": "AI翻译 · 实时对话",
-        "follower_count": 221445,
-        "following_count": 178,
-        "heart_count": 1556923,
+        "follower_count": 76622,
+        "following_count": 792,
+        "heart_count": 1925718,
         "video_count": 12,
         "verified": false,
-        "region": "JP",
+        "region": "US",
         "bio_url": "mock://tiktok/xander.yi",
-        "category": "Education",
+        "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_024.jpg"
       },
       "content_topics": [
@@ -3535,11 +3549,11 @@
       ],
       "audience": {
         "status": "known",
-        "age_range": "18-24",
-        "gender": "male_45",
+        "age_range": "20-30",
+        "gender": "female_60",
         "regions": [
-          "东南亚",
-          "中国大陆"
+          "北美",
+          "东南亚"
         ],
         "interests": [
           "AI翻译",
@@ -3548,16 +3562,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 41490,
-        "engagement_rate_30d": 0.087,
-        "growth_rate_30d": 0.35,
-        "gmv_30d": 2629,
-        "impressions_30d": 252786,
+        "avg_play_count_30d": 16862,
+        "engagement_rate_30d": 0.04,
+        "growth_rate_30d": 0.17,
+        "gmv_30d": 11558.3,
+        "impressions_30d": 545201,
         "currency": "USD",
-        "units_sold_30d": 220,
-        "gmv_per_buyer": 12,
+        "units_sold_30d": 516,
+        "gmv_per_buyer": 22.4,
         "gpm_origin": "mock_seed",
-        "video_gpm": 10.4
+        "video_gpm": 21.2
       },
       "recent_posts": [
         {
@@ -3569,7 +3583,7 @@
           "cover_urls": [
             "mock://cdn/tiktok/cover_024_1.jpg"
           ],
-          "region": "GB",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3581,11 +3595,11 @@
             "author_name": "Xander译"
           },
           "stats": {
-            "play_count": 47853,
-            "digg_count": 6222,
-            "comment_count": 322,
-            "share_count": 23,
-            "collect_count": 1758
+            "play_count": 86877,
+            "digg_count": 3166,
+            "comment_count": 473,
+            "share_count": 132,
+            "collect_count": 1556
           }
         },
         {
@@ -3593,11 +3607,11 @@
           "share_url": "mock://tiktok/video/024_2",
           "create_time": 1789646400,
           "title": "周末探店：城南新开的咖啡馆",
-          "duration": 62,
+          "duration": 25,
           "cover_urls": [
             "mock://cdn/tiktok/cover_024_2.jpg"
           ],
-          "region": "US",
+          "region": "GB",
           "hashtag_names": [
             "#日常"
           ],
@@ -3607,11 +3621,11 @@
             "author_name": "Xander译"
           },
           "stats": {
-            "play_count": 45494,
-            "digg_count": 5491,
-            "comment_count": 424,
-            "share_count": 305,
-            "collect_count": 1924
+            "play_count": 36826,
+            "digg_count": 4635,
+            "comment_count": 109,
+            "share_count": 126,
+            "collect_count": 1373
           }
         },
         {
@@ -3619,11 +3633,11 @@
           "share_url": "mock://tiktok/video/024_3",
           "create_time": 1789214400,
           "title": "开箱新入的机械键盘",
-          "duration": 63,
+          "duration": 74,
           "cover_urls": [
             "mock://cdn/tiktok/cover_024_3.jpg"
           ],
-          "region": "JP",
+          "region": "GB",
           "hashtag_names": [
             "#日常"
           ],
@@ -3633,11 +3647,11 @@
             "author_name": "Xander译"
           },
           "stats": {
-            "play_count": 67023,
-            "digg_count": 7854,
-            "comment_count": 355,
-            "share_count": 207,
-            "collect_count": 1683
+            "play_count": 14736,
+            "digg_count": 4702,
+            "comment_count": 343,
+            "share_count": 182,
+            "collect_count": 1964
           }
         }
       ],
@@ -3649,7 +3663,7 @@
           "product_relation": "own_brand_user",
           "evidence_text": "第一次测评LinguaGo实时对话翻译",
           "source_post_id": "tt_video_024_1",
-          "confidence": 0.71,
+          "confidence": 0.88,
           "data_origin": "mock_seed"
         }
       ],
@@ -3690,14 +3704,14 @@
         "nickname": "Yuna工具",
         "sec_uid": "MS4wLjABAAAA_mock_025",
         "signature": "效率工具 · 文档翻译",
-        "follower_count": 236043,
-        "following_count": 819,
-        "heart_count": 1857687,
+        "follower_count": 175372,
+        "following_count": 210,
+        "heart_count": 1949309,
         "video_count": 13,
         "verified": false,
-        "region": "JP",
+        "region": "CA",
         "bio_url": "mock://tiktok/yuna.tools",
-        "category": "Business",
+        "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_025.jpg"
       },
       "content_topics": [
@@ -3707,7 +3721,7 @@
       "audience": {
         "status": "known",
         "age_range": "22-28",
-        "gender": "female_60",
+        "gender": "male_45",
         "regions": [
           "北美",
           "澳洲"
@@ -3719,16 +3733,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 79611,
-        "engagement_rate_30d": 0.045,
-        "growth_rate_30d": 0.35,
-        "gmv_30d": 5857.9,
-        "impressions_30d": 216160,
+        "avg_play_count_30d": 104713,
+        "engagement_rate_30d": 0.036,
+        "growth_rate_30d": 0.25,
+        "gmv_30d": 3828.7,
+        "impressions_30d": 290052,
         "currency": "USD",
-        "units_sold_30d": 329,
-        "gmv_per_buyer": 17.8,
+        "units_sold_30d": 477,
+        "gmv_per_buyer": 8,
         "gpm_origin": "mock_seed",
-        "video_gpm": 27.1
+        "video_gpm": 13.2
       },
       "recent_posts": [
         {
@@ -3736,11 +3750,11 @@
           "share_url": "mock://tiktok/video/025_1",
           "create_time": 1789992000,
           "title": "第一次用LinguaGo翻译英文说明书，比预想好用",
-          "duration": 72,
+          "duration": 39,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_1.jpg"
           ],
-          "region": "JP",
+          "region": "US",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3752,11 +3766,11 @@
             "author_name": "Yuna工具"
           },
           "stats": {
-            "play_count": 140130,
-            "digg_count": 575,
-            "comment_count": 218,
-            "share_count": 272,
-            "collect_count": 600
+            "play_count": 61921,
+            "digg_count": 5755,
+            "comment_count": 411,
+            "share_count": 375,
+            "collect_count": 143
           }
         },
         {
@@ -3764,11 +3778,11 @@
           "share_url": "mock://tiktok/video/025_2",
           "create_time": 1789646400,
           "title": "我的桌面好物分享",
-          "duration": 80,
+          "duration": 68,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_2.jpg"
           ],
-          "region": "GB",
+          "region": "SG",
           "hashtag_names": [
             "#日常"
           ],
@@ -3778,11 +3792,11 @@
             "author_name": "Yuna工具"
           },
           "stats": {
-            "play_count": 11733,
-            "digg_count": 6159,
-            "comment_count": 121,
-            "share_count": 279,
-            "collect_count": 843
+            "play_count": 132360,
+            "digg_count": 6790,
+            "comment_count": 557,
+            "share_count": 37,
+            "collect_count": 1540
           }
         },
         {
@@ -3790,7 +3804,7 @@
           "share_url": "mock://tiktok/video/025_3",
           "create_time": 1789214400,
           "title": "健身第30天打卡",
-          "duration": 31,
+          "duration": 69,
           "cover_urls": [
             "mock://cdn/tiktok/cover_025_3.jpg"
           ],
@@ -3804,11 +3818,11 @@
             "author_name": "Yuna工具"
           },
           "stats": {
-            "play_count": 88820,
-            "digg_count": 6936,
-            "comment_count": 129,
-            "share_count": 69,
-            "collect_count": 1539
+            "play_count": 61381,
+            "digg_count": 976,
+            "comment_count": 291,
+            "share_count": 240,
+            "collect_count": 1734
           }
         }
       ],
@@ -3820,7 +3834,7 @@
           "product_relation": "similar_product_user",
           "evidence_text": "第一次用LinguaGo翻译英文说明书，比预想好用",
           "source_post_id": "tt_video_025_1",
-          "confidence": 0.88,
+          "confidence": 0.82,
           "data_origin": "mock_seed"
         }
       ],
@@ -3861,12 +3875,12 @@
         "nickname": "Blair译评",
         "sec_uid": "MS4wLjABAAAA_mock_028",
         "signature": "翻译App · 竞品评测",
-        "follower_count": 122732,
-        "following_count": 729,
-        "heart_count": 1227951,
-        "video_count": 216,
+        "follower_count": 253627,
+        "following_count": 885,
+        "heart_count": 95511,
+        "video_count": 192,
         "verified": false,
-        "region": "CA",
+        "region": "GB",
         "bio_url": "mock://tiktok/blair.reviews",
         "category": "Tech",
         "avatar_thumb": "mock://cdn/tiktok/avatar_028.jpg"
@@ -3877,7 +3891,7 @@
       ],
       "audience": {
         "status": "known",
-        "age_range": "22-28",
+        "age_range": "20-30",
         "gender": "mixed_50",
         "regions": [
           "北美",
@@ -3890,16 +3904,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 109819,
-        "engagement_rate_30d": 0.094,
-        "growth_rate_30d": 0.09,
-        "gmv_30d": 6034.3,
-        "impressions_30d": 553603,
+        "avg_play_count_30d": 19738,
+        "engagement_rate_30d": 0.065,
+        "growth_rate_30d": 0.21,
+        "gmv_30d": 7720.2,
+        "impressions_30d": 278706,
         "currency": "USD",
-        "units_sold_30d": 271,
-        "gmv_per_buyer": 22.3,
+        "units_sold_30d": 264,
+        "gmv_per_buyer": 29.2,
         "gpm_origin": "mock_seed",
-        "video_gpm": 10.9
+        "video_gpm": 27.7
       },
       "recent_posts": [
         {
@@ -3907,11 +3921,11 @@
           "share_url": "mock://tiktok/video/028_1",
           "create_time": 1790251200,
           "title": "本月继续和Mock竞品翻译合作：同传功能深度测评",
-          "duration": 30,
+          "duration": 80,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_1.jpg"
           ],
-          "region": "US",
+          "region": "JP",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3923,11 +3937,11 @@
             "author_name": "Blair译评"
           },
           "stats": {
-            "play_count": 80117,
-            "digg_count": 2229,
-            "comment_count": 167,
-            "share_count": 131,
-            "collect_count": 1820
+            "play_count": 56850,
+            "digg_count": 804,
+            "comment_count": 41,
+            "share_count": 217,
+            "collect_count": 557
           }
         },
         {
@@ -3935,11 +3949,11 @@
           "share_url": "mock://tiktok/video/028_2",
           "create_time": 1789992000,
           "title": "Mock竞品翻译会员值不值？合作期真实体验",
-          "duration": 67,
+          "duration": 44,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_2.jpg"
           ],
-          "region": "SG",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3951,11 +3965,11 @@
             "author_name": "Blair译评"
           },
           "stats": {
-            "play_count": 140387,
-            "digg_count": 3150,
-            "comment_count": 596,
-            "share_count": 260,
-            "collect_count": 208
+            "play_count": 13197,
+            "digg_count": 5236,
+            "comment_count": 203,
+            "share_count": 375,
+            "collect_count": 787
           }
         },
         {
@@ -3963,11 +3977,11 @@
           "share_url": "mock://tiktok/video/028_3",
           "create_time": 1789646400,
           "title": "翻译App深度对比（本期由Mock竞品翻译赞助）",
-          "duration": 52,
+          "duration": 66,
           "cover_urls": [
             "mock://cdn/tiktok/cover_028_3.jpg"
           ],
-          "region": "SG",
+          "region": "US",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -3979,11 +3993,11 @@
             "author_name": "Blair译评"
           },
           "stats": {
-            "play_count": 31577,
-            "digg_count": 5579,
-            "comment_count": 537,
-            "share_count": 62,
-            "collect_count": 741
+            "play_count": 108881,
+            "digg_count": 3435,
+            "comment_count": 306,
+            "share_count": 89,
+            "collect_count": 1395
           }
         }
       ],
@@ -3995,7 +4009,7 @@
           "product_relation": "competitor_cooperation_active",
           "evidence_text": "本月继续和Mock竞品翻译合作：同传功能深度测评",
           "source_post_id": "tt_video_028_1",
-          "confidence": 0.93,
+          "confidence": 0.9,
           "data_origin": "mock_seed"
         }
       ],
@@ -4017,11 +4031,11 @@
           "revision_count": 0,
           "communication_score": 4.2,
           "performance": {
-            "play_count": 22812,
-            "engagement_rate": 0.056,
-            "gmv": 10989,
-            "impressions": 391759,
-            "video_gpm": 28.1
+            "play_count": 113386,
+            "engagement_rate": 0.055,
+            "gmv": 8260,
+            "impressions": 349749,
+            "video_gpm": 23.6
           },
           "notes": "竞品合作中，排他条款未知",
           "data_origin": "mock_seed"
@@ -4062,14 +4076,14 @@
         "nickname": "Dana吐槽工具",
         "sec_uid": "MS4wLjABAAAA_mock_030",
         "signature": "翻译工具吐槽 · AI效率",
-        "follower_count": 251369,
-        "following_count": 381,
-        "heart_count": 1573711,
-        "video_count": 400,
+        "follower_count": 95924,
+        "following_count": 885,
+        "heart_count": 1130386,
+        "video_count": 363,
         "verified": false,
         "region": "SG",
         "bio_url": "mock://tiktok/dana.rants",
-        "category": "Education",
+        "category": "Lifestyle",
         "avatar_thumb": "mock://cdn/tiktok/avatar_030.jpg"
       },
       "content_topics": [
@@ -4079,10 +4093,10 @@
       "audience": {
         "status": "known",
         "age_range": "22-28",
-        "gender": "female_60",
+        "gender": "female_55",
         "regions": [
           "北美",
-          "欧洲"
+          "东南亚"
         ],
         "interests": [
           "翻译工具吐槽",
@@ -4091,16 +4105,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 48941,
-        "engagement_rate_30d": 0.094,
-        "growth_rate_30d": 0.23,
-        "gmv_30d": 11910.5,
-        "impressions_30d": 548870,
+        "avg_play_count_30d": 76398,
+        "engagement_rate_30d": 0.065,
+        "growth_rate_30d": 0.42,
+        "gmv_30d": 3873.4,
+        "impressions_30d": 246712,
         "currency": "USD",
-        "units_sold_30d": 593,
-        "gmv_per_buyer": 20.1,
+        "units_sold_30d": 491,
+        "gmv_per_buyer": 7.9,
         "gpm_origin": "mock_seed",
-        "video_gpm": 21.7
+        "video_gpm": 15.7
       },
       "recent_posts": [
         {
@@ -4108,11 +4122,11 @@
           "share_url": "mock://tiktok/video/030_1",
           "create_time": 1790337600,
           "title": "竞品翻译吐槽：合同术语错得离谱，别再被坑",
-          "duration": 34,
+          "duration": 26,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_1.jpg"
           ],
-          "region": "GB",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -4124,11 +4138,11 @@
             "author_name": "Dana吐槽工具"
           },
           "stats": {
-            "play_count": 108041,
-            "digg_count": 7945,
-            "comment_count": 355,
-            "share_count": 22,
-            "collect_count": 800
+            "play_count": 109233,
+            "digg_count": 1357,
+            "comment_count": 550,
+            "share_count": 290,
+            "collect_count": 1987
           }
         },
         {
@@ -4136,11 +4150,11 @@
           "share_url": "mock://tiktok/video/030_2",
           "create_time": 1790078400,
           "title": "翻译App开箱翻车：会员自动续费的坑，大家注意",
-          "duration": 77,
+          "duration": 25,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_2.jpg"
           ],
-          "region": "US",
+          "region": "SG",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -4152,11 +4166,11 @@
             "author_name": "Dana吐槽工具"
           },
           "stats": {
-            "play_count": 27966,
-            "digg_count": 6192,
-            "comment_count": 342,
-            "share_count": 53,
-            "collect_count": 624
+            "play_count": 25030,
+            "digg_count": 6358,
+            "comment_count": 105,
+            "share_count": 80,
+            "collect_count": 1548
           }
         },
         {
@@ -4164,7 +4178,7 @@
           "share_url": "mock://tiktok/video/030_3",
           "create_time": 1789732800,
           "title": "为什么我不再相信某竞品AI翻译的专业版｜吐槽向",
-          "duration": 61,
+          "duration": 30,
           "cover_urls": [
             "mock://cdn/tiktok/cover_030_3.jpg"
           ],
@@ -4180,11 +4194,11 @@
             "author_name": "Dana吐槽工具"
           },
           "stats": {
-            "play_count": 135967,
-            "digg_count": 445,
-            "comment_count": 200,
-            "share_count": 45,
-            "collect_count": 1592
+            "play_count": 100221,
+            "digg_count": 4569,
+            "comment_count": 261,
+            "share_count": 364,
+            "collect_count": 111
           }
         }
       ],
@@ -4194,9 +4208,9 @@
           "evidence_type": "organic_post",
           "product_name": "Mock竞品翻译",
           "product_relation": "competitor_user",
-          "evidence_text": "某竞品翻译翻车了，合同术语错得离谱",
+          "evidence_text": "竞品翻译吐槽：合同术语错得离谱，别再被坑",
           "source_post_id": "tt_video_030_1",
-          "confidence": 0.86,
+          "confidence": 0.77,
           "data_origin": "mock_seed"
         }
       ],
@@ -4237,12 +4251,12 @@
         "nickname": "Faye横评",
         "sec_uid": "MS4wLjABAAAA_mock_032",
         "signature": "多产品对比 · 翻译工具 · 效率",
-        "follower_count": 189159,
-        "following_count": 306,
-        "heart_count": 104303,
-        "video_count": 51,
+        "follower_count": 208694,
+        "following_count": 329,
+        "heart_count": 1796105,
+        "video_count": 280,
         "verified": false,
-        "region": "CA",
+        "region": "SG",
         "bio_url": "mock://tiktok/faye.bench",
         "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_032.jpg"
@@ -4254,11 +4268,11 @@
       ],
       "audience": {
         "status": "known",
-        "age_range": "25-34",
+        "age_range": "18-24",
         "gender": "mixed_50",
         "regions": [
-          "东南亚",
-          "中国大陆"
+          "北美",
+          "东南亚"
         ],
         "interests": [
           "多产品对比",
@@ -4268,16 +4282,16 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 92474,
-        "engagement_rate_30d": 0.053,
-        "growth_rate_30d": 0.33,
-        "gmv_30d": 16535.4,
-        "impressions_30d": 810559,
+        "avg_play_count_30d": 69432,
+        "engagement_rate_30d": 0.087,
+        "growth_rate_30d": 0.3,
+        "gmv_30d": 7776.7,
+        "impressions_30d": 769967,
         "currency": "USD",
-        "units_sold_30d": 405,
-        "gmv_per_buyer": 40.8,
+        "units_sold_30d": 214,
+        "gmv_per_buyer": 36.3,
         "gpm_origin": "mock_seed",
-        "video_gpm": 20.4
+        "video_gpm": 10.1
       },
       "recent_posts": [
         {
@@ -4285,11 +4299,11 @@
           "share_url": "mock://tiktok/video/032_1",
           "create_time": 1790164800,
           "title": "五款翻译工具横评：LinguaGo、DeepL、有道对比",
-          "duration": 87,
+          "duration": 83,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_1.jpg"
           ],
-          "region": "SG",
+          "region": "JP",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -4301,11 +4315,11 @@
             "author_name": "Faye横评"
           },
           "stats": {
-            "play_count": 76264,
-            "digg_count": 2737,
-            "comment_count": 546,
-            "share_count": 87,
-            "collect_count": 1141
+            "play_count": 65094,
+            "digg_count": 7568,
+            "comment_count": 289,
+            "share_count": 207,
+            "collect_count": 684
           }
         },
         {
@@ -4313,7 +4327,7 @@
           "share_url": "mock://tiktok/video/032_2",
           "create_time": 1789905600,
           "title": "翻译工具横评第二期：长文档格式保留",
-          "duration": 82,
+          "duration": 36,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_2.jpg"
           ],
@@ -4329,11 +4343,11 @@
             "author_name": "Faye横评"
           },
           "stats": {
-            "play_count": 55339,
-            "digg_count": 806,
-            "comment_count": 192,
-            "share_count": 276,
-            "collect_count": 1718
+            "play_count": 49695,
+            "digg_count": 6940,
+            "comment_count": 376,
+            "share_count": 152,
+            "collect_count": 201
           }
         },
         {
@@ -4341,11 +4355,11 @@
           "share_url": "mock://tiktok/video/032_3",
           "create_time": 1789560000,
           "title": "本期由Mock竞品翻译合作支持：同传功能测评",
-          "duration": 62,
+          "duration": 69,
           "cover_urls": [
             "mock://cdn/tiktok/cover_032_3.jpg"
           ],
-          "region": "SG",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -4357,11 +4371,11 @@
             "author_name": "Faye横评"
           },
           "stats": {
-            "play_count": 65296,
-            "digg_count": 4559,
-            "comment_count": 42,
-            "share_count": 330,
-            "collect_count": 554
+            "play_count": 18643,
+            "digg_count": 4623,
+            "comment_count": 236,
+            "share_count": 178,
+            "collect_count": 1140
           }
         }
       ],
@@ -4373,7 +4387,7 @@
           "product_relation": "similar_product_user",
           "evidence_text": "五款翻译工具横评：LinguaGo、DeepL、有道对比",
           "source_post_id": "tt_video_032_1",
-          "confidence": 0.91,
+          "confidence": 0.93,
           "data_origin": "mock_seed"
         }
       ],
@@ -4395,11 +4409,11 @@
           "revision_count": 0,
           "communication_score": 4.2,
           "performance": {
-            "play_count": 22812,
-            "engagement_rate": 0.056,
-            "gmv": 10989,
-            "impressions": 391759,
-            "video_gpm": 28.1
+            "play_count": 113386,
+            "engagement_rate": 0.055,
+            "gmv": 8260,
+            "impressions": 349749,
+            "video_gpm": 23.6
           },
           "notes": "竞品合作中，排他条款未知",
           "data_origin": "mock_seed"
@@ -4442,14 +4456,14 @@
         "nickname": "Holly译站",
         "sec_uid": "MS4wLjABAAAA_mock_034",
         "signature": "AI翻译 · 职场",
-        "follower_count": 148459,
-        "following_count": 889,
-        "heart_count": 208331,
+        "follower_count": 67561,
+        "following_count": 319,
+        "heart_count": 1940371,
         "video_count": 15,
         "verified": false,
-        "region": "US",
+        "region": "CA",
         "bio_url": "mock://tiktok/holly.station",
-        "category": "Business",
+        "category": "Education",
         "avatar_thumb": "mock://cdn/tiktok/avatar_034.jpg"
       },
       "content_topics": [
@@ -4458,7 +4472,7 @@
       ],
       "audience": {
         "status": "known",
-        "age_range": "20-30",
+        "age_range": "22-28",
         "gender": "female_55",
         "regions": [
           "北美",
@@ -4471,9 +4485,9 @@
         "note": null
       },
       "metrics": {
-        "avg_play_count_30d": 16102,
-        "engagement_rate_30d": 0.035,
-        "growth_rate_30d": 0.2,
+        "avg_play_count_30d": 12625,
+        "engagement_rate_30d": 0.031,
+        "growth_rate_30d": 0.1,
         "gmv_30d": null,
         "impressions_30d": null,
         "currency": "unknown",
@@ -4488,11 +4502,11 @@
           "share_url": "mock://tiktok/video/034_1",
           "create_time": 1789992000,
           "title": "LinguaGo文档翻译适合职场人",
-          "duration": 35,
+          "duration": 84,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_1.jpg"
           ],
-          "region": "SG",
+          "region": "GB",
           "hashtag_names": [
             "#aitranslation",
             "#翻译工具",
@@ -4504,11 +4518,11 @@
             "author_name": "Holly译站"
           },
           "stats": {
-            "play_count": 91028,
-            "digg_count": 688,
-            "comment_count": 314,
-            "share_count": 172,
-            "collect_count": 620
+            "play_count": 84171,
+            "digg_count": 1414,
+            "comment_count": 276,
+            "share_count": 246,
+            "collect_count": 172
           }
         },
         {
@@ -4516,7 +4530,7 @@
           "share_url": "mock://tiktok/video/034_2",
           "create_time": 1789646400,
           "title": "五一去大理的旅行vlog",
-          "duration": 74,
+          "duration": 51,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_2.jpg"
           ],
@@ -4530,10 +4544,10 @@
             "author_name": "Holly译站"
           },
           "stats": {
-            "play_count": 132074,
-            "digg_count": 517,
-            "comment_count": 292,
-            "share_count": 64,
+            "play_count": 12440,
+            "digg_count": 6087,
+            "comment_count": 241,
+            "share_count": 353,
             "collect_count": 129
           }
         },
@@ -4542,11 +4556,11 @@
           "share_url": "mock://tiktok/video/034_3",
           "create_time": 1789214400,
           "title": "我的读书笔记：本月看完的4本书",
-          "duration": 86,
+          "duration": 32,
           "cover_urls": [
             "mock://cdn/tiktok/cover_034_3.jpg"
           ],
-          "region": "GB",
+          "region": "US",
           "hashtag_names": [
             "#日常"
           ],
@@ -4556,11 +4570,11 @@
             "author_name": "Holly译站"
           },
           "stats": {
-            "play_count": 62542,
-            "digg_count": 1861,
-            "comment_count": 110,
-            "share_count": 105,
-            "collect_count": 537
+            "play_count": 52378,
+            "digg_count": 7496,
+            "comment_count": 579,
+            "share_count": 171,
+            "collect_count": 465
           }
         }
       ],
@@ -4598,6 +4612,1028 @@
         "expected_reason": "只有 1 条本品相关内容，持续性不足；GPM 未知"
       },
       "raw_api_snapshot_ref": "search_tt_034",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_101",
+      "display_name": "林晚妆",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@lin.wanzhuang",
+      "profile": {
+        "uid": "tt_uid_101",
+        "unique_id": "lin.wanzhuang",
+        "nickname": "林晚妆",
+        "sec_uid": "MS4wLjABAAAA_mock_101",
+        "signature": "美妆妆教 · 日常用 AI美颜相机 出片",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/lin.wanzhuang",
+        "category": "Beauty",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_101.jpg"
+      },
+      "content_topics": [
+        "美妆",
+        "妆教",
+        "AI美颜相机"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_60",
+        "regions": [
+          "中国大陆"
+        ],
+        "interests": [
+          "美妆",
+          "妆教",
+          "AI美颜相机"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 3399.7,
+        "impressions_30d": 288108,
+        "currency": "USD",
+        "units_sold_30d": 598,
+        "gmv_per_buyer": 5.7,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_101_1",
+          "share_url": "mock://tiktok/video/101_1",
+          "create_time": 1790164800,
+          "title": "通勤妆实测｜AI美颜相机原相机对比，皮肤光泽很自然",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#美妆",
+            "#妆教",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_101_1",
+            "music_name": "Original Sound",
+            "author_name": "林晚妆"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_101_2",
+          "share_url": "mock://tiktok/video/101_2",
+          "create_time": 1789732800,
+          "title": "美妆博主的拍照流程：先上妆，再用AI美颜相机出片",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#美妆",
+            "#妆教",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_101_2",
+            "music_name": "Original Sound",
+            "author_name": "林晚妆"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_101_3",
+          "share_url": "mock://tiktok/video/101_3",
+          "create_time": 1789214400,
+          "title": "黄皮妆教｜AI美颜相机把法令纹磨淡了，眉毛还在",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#美妆",
+            "#妆教",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_101_3",
+            "music_name": "Original Sound",
+            "author_name": "林晚妆"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_101_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI美颜相机",
+          "product_relation": "own_brand_user",
+          "evidence_text": "通勤妆实测｜AI美颜相机原相机对比，皮肤光泽很自然",
+          "source_post_id": "tt_video_101_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_lin_wanzhuang@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "beauty_camera_fit"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "持续发布美妆内容并实际使用 AI美颜相机"
+      },
+      "raw_api_snapshot_ref": "search_tt_101",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_102",
+      "display_name": "苏小柔",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@su.xiaorou",
+      "profile": {
+        "uid": "tt_uid_102",
+        "unique_id": "su.xiaorou",
+        "nickname": "苏小柔",
+        "sec_uid": "MS4wLjABAAAA_mock_102",
+        "signature": "美妆自拍 · AI美颜相机夜景人像",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/su.xiaorou",
+        "category": "Beauty",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_102.jpg"
+      },
+      "content_topics": [
+        "美妆",
+        "自拍",
+        "AI美颜相机"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_60",
+        "regions": [
+          "中国大陆"
+        ],
+        "interests": [
+          "美妆",
+          "自拍",
+          "AI美颜相机"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 3399.7,
+        "impressions_30d": 288108,
+        "currency": "USD",
+        "units_sold_30d": 598,
+        "gmv_per_buyer": 5.7,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_102_1",
+          "share_url": "mock://tiktok/video/102_1",
+          "create_time": 1790164800,
+          "title": "自拍党一周｜AI美颜相机夜景人像不假白",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#美妆",
+            "#自拍",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_102_1",
+            "music_name": "Original Sound",
+            "author_name": "苏小柔"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_102_2",
+          "share_url": "mock://tiktok/video/102_2",
+          "create_time": 1789732800,
+          "title": "美妆分享：底妆没拍好，我用AI美颜相机补了高光",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#美妆",
+            "#自拍",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_102_2",
+            "music_name": "Original Sound",
+            "author_name": "苏小柔"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_102_3",
+          "share_url": "mock://tiktok/video/102_3",
+          "create_time": 1789214400,
+          "title": "素颜到上妆全程记录，最后一张是AI美颜相机直出",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#美妆",
+            "#自拍",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_102_3",
+            "music_name": "Original Sound",
+            "author_name": "苏小柔"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_102_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI美颜相机",
+          "product_relation": "own_brand_user",
+          "evidence_text": "自拍党一周｜AI美颜相机夜景人像不假白",
+          "source_post_id": "tt_video_102_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_su_xiaorou@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "beauty_camera_fit"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "持续发布美妆内容并实际使用 AI美颜相机"
+      },
+      "raw_api_snapshot_ref": "search_tt_102",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_103",
+      "display_name": "何清清",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@he.qingqing",
+      "profile": {
+        "uid": "tt_uid_103",
+        "unique_id": "he.qingqing",
+        "nickname": "何清清",
+        "sec_uid": "MS4wLjABAAAA_mock_103",
+        "signature": "美妆护肤 · 视频都用 AI美颜相机",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/he.qingqing",
+        "category": "Beauty",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_103.jpg"
+      },
+      "content_topics": [
+        "美妆",
+        "护肤",
+        "AI美颜相机"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_60",
+        "regions": [
+          "中国大陆"
+        ],
+        "interests": [
+          "美妆",
+          "护肤",
+          "AI美颜相机"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 3399.7,
+        "impressions_30d": 288108,
+        "currency": "USD",
+        "units_sold_30d": 598,
+        "gmv_per_buyer": 5.7,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_103_1",
+          "share_url": "mock://tiktok/video/103_1",
+          "create_time": 1790164800,
+          "title": "护肤后立刻拍｜AI美颜相机保留了毛孔，没有塑料脸",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#美妆",
+            "#护肤",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_103_1",
+            "music_name": "Original Sound",
+            "author_name": "何清清"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_103_2",
+          "share_url": "mock://tiktok/video/103_2",
+          "create_time": 1789732800,
+          "title": "美妆教程第12期：眼妆特写用AI美颜相机对焦很稳",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#美妆",
+            "#护肤",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_103_2",
+            "music_name": "Original Sound",
+            "author_name": "何清清"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_103_3",
+          "share_url": "mock://tiktok/video/103_3",
+          "create_time": 1789214400,
+          "title": "粉丝问相机｜我日常妆容视频都用AI美颜相机拍的",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#美妆",
+            "#护肤",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_103_3",
+            "music_name": "Original Sound",
+            "author_name": "何清清"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_103_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI美颜相机",
+          "product_relation": "own_brand_user",
+          "evidence_text": "护肤后立刻拍｜AI美颜相机保留了毛孔，没有塑料脸",
+          "source_post_id": "tt_video_103_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_he_qingqing@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "beauty_camera_fit"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "recommend",
+        "expected_reason": "持续发布美妆内容并实际使用 AI美颜相机"
+      },
+      "raw_api_snapshot_ref": "search_tt_103",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_104",
+      "display_name": "周可儿",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@zhou.keer",
+      "profile": {
+        "uid": "tt_uid_104",
+        "unique_id": "zhou.keer",
+        "nickname": "周可儿",
+        "sec_uid": "MS4wLjABAAAA_mock_104",
+        "signature": "美妆开箱 · AI美颜相机",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/zhou.keer",
+        "category": "Beauty",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_104.jpg"
+      },
+      "content_topics": [
+        "美妆",
+        "AI美颜相机"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "video_gpm": null
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_104_1",
+          "share_url": "mock://tiktok/video/104_1",
+          "create_time": 1790164800,
+          "title": "今日妆容｜AI美颜相机拍的口红试色",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#美妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_104_1",
+            "music_name": "Original Sound",
+            "author_name": "周可儿"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_104_2",
+          "share_url": "mock://tiktok/video/104_2",
+          "create_time": 1789732800,
+          "title": "美妆vlog：出门前用AI美颜相机检查脸部高光",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#美妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_104_2",
+            "music_name": "Original Sound",
+            "author_name": "周可儿"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_104_3",
+          "share_url": "mock://tiktok/video/104_3",
+          "create_time": 1789214400,
+          "title": "新买的AI美颜相机，拿来拍美妆开箱",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#美妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_104_3",
+            "music_name": "Original Sound",
+            "author_name": "周可儿"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_104_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI美颜相机",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "今日妆容｜AI美颜相机拍的口红试色",
+          "source_post_id": "tt_video_104_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_zhou_keer@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "内容相关，但平台未公开受众画像"
+      },
+      "raw_api_snapshot_ref": "search_tt_104",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_105",
+      "display_name": "马晓宁",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@ma.xiaoning",
+      "profile": {
+        "uid": "tt_uid_105",
+        "unique_id": "ma.xiaoning",
+        "nickname": "马晓宁",
+        "sec_uid": "MS4wLjABAAAA_mock_105",
+        "signature": "美妆小白 · AI美颜相机前置",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/ma.xiaoning",
+        "category": "Beauty",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_105.jpg"
+      },
+      "content_topics": [
+        "美妆",
+        "底妆",
+        "AI美颜相机"
+      ],
+      "audience": {
+        "status": "unknown",
+        "age_range": null,
+        "gender": null,
+        "regions": null,
+        "interests": null,
+        "note": "平台未公开受众画像，数据缺失"
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": null,
+        "impressions_30d": null,
+        "currency": "unknown",
+        "units_sold_30d": null,
+        "gmv_per_buyer": null,
+        "gpm_origin": "unknown",
+        "video_gpm": null
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_105_1",
+          "share_url": "mock://tiktok/video/105_1",
+          "create_time": 1790164800,
+          "title": "底妆测评｜AI美颜相机把粉感拍得很清楚",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#美妆",
+            "#底妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_105_1",
+            "music_name": "Original Sound",
+            "author_name": "马晓宁"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_105_2",
+          "share_url": "mock://tiktok/video/105_2",
+          "create_time": 1789732800,
+          "title": "美妆小白跟练：AI美颜相机前置镜头教程",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#美妆",
+            "#底妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_105_2",
+            "music_name": "Original Sound",
+            "author_name": "马晓宁"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_105_3",
+          "share_url": "mock://tiktok/video/105_3",
+          "create_time": 1789214400,
+          "title": "这支粉底在AI美颜相机里会不会假白",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#美妆",
+            "#底妆",
+            "#AI美颜相机"
+          ],
+          "music_info": {
+            "music_id": "music_105_3",
+            "music_name": "Original Sound",
+            "author_name": "马晓宁"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_105_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI美颜相机",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "底妆测评｜AI美颜相机把粉感拍得很清楚",
+          "source_post_id": "tt_video_105_1",
+          "confidence": 0.9,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_ma_xiaoning@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "unknown",
+        "metrics": "partial",
+        "gpm": "unknown"
+      },
+      "scenario_tags": [
+        "audience_unknown"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "review",
+        "expected_reason": "内容相关，但平台未公开受众画像"
+      },
+      "raw_api_snapshot_ref": "search_tt_105",
+      "data_origin": "mock_seed"
+    },
+    {
+      "creator_id": "creator_106",
+      "display_name": "韩测测",
+      "is_new_creator": false,
+      "platform": "tiktok",
+      "handle": "@han.review",
+      "profile": {
+        "uid": "tt_uid_106",
+        "unique_id": "han.review",
+        "nickname": "韩测测",
+        "sec_uid": "MS4wLjABAAAA_mock_106",
+        "signature": "AI工具测评 · 效率 · 编程，不拍妆",
+        "follower_count": 34074,
+        "following_count": 224,
+        "heart_count": 1653389,
+        "video_count": 108,
+        "verified": false,
+        "region": "CA",
+        "bio_url": "mock://tiktok/han.review",
+        "category": "Tech",
+        "avatar_thumb": "mock://cdn/tiktok/avatar_106.jpg"
+      },
+      "content_topics": [
+        "AI测评",
+        "效率工具",
+        "编程助手"
+      ],
+      "audience": {
+        "status": "known",
+        "age_range": "18-24",
+        "gender": "female_60",
+        "regions": [
+          "中国大陆"
+        ],
+        "interests": [
+          "AI测评",
+          "效率工具",
+          "编程助手"
+        ],
+        "note": null
+      },
+      "metrics": {
+        "avg_play_count_30d": 69630,
+        "engagement_rate_30d": 0.048,
+        "growth_rate_30d": 0.41,
+        "gmv_30d": 3399.7,
+        "impressions_30d": 288108,
+        "currency": "USD",
+        "units_sold_30d": 598,
+        "gmv_per_buyer": 5.7,
+        "gpm_origin": "mock_seed",
+        "video_gpm": 11.8
+      },
+      "recent_posts": [
+        {
+          "video_id": "tt_video_106_1",
+          "share_url": "mock://tiktok/video/106_1",
+          "create_time": 1790164800,
+          "title": "AI测评周报｜代码助手和文档模型。顺手提一句AI美颜相机：这是美妆道具，完全不是我这种工具频道的风格",
+          "duration": 38,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_1.jpg"
+          ],
+          "region": "JP",
+          "hashtag_names": [
+            "#AI测评",
+            "#效率工具",
+            "#编程助手"
+          ],
+          "music_info": {
+            "music_id": "music_106_1",
+            "music_name": "Original Sound",
+            "author_name": "韩测测"
+          },
+          "stats": {
+            "play_count": 120233,
+            "digg_count": 831,
+            "comment_count": 107,
+            "share_count": 64,
+            "collect_count": 1118
+          }
+        },
+        {
+          "video_id": "tt_video_106_2",
+          "share_url": "mock://tiktok/video/106_2",
+          "create_time": 1789732800,
+          "title": "效率博主不拍妆｜有人让我评AI美颜相机，我和美妆内容不搭，这条只记录为什么拒掉",
+          "duration": 74,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_2.jpg"
+          ],
+          "region": "SG",
+          "hashtag_names": [
+            "#AI测评",
+            "#效率工具",
+            "#编程助手"
+          ],
+          "music_info": {
+            "music_id": "music_106_2",
+            "music_name": "Original Sound",
+            "author_name": "韩测测"
+          },
+          "stats": {
+            "play_count": 107303,
+            "digg_count": 647,
+            "comment_count": 46,
+            "share_count": 249,
+            "collect_count": 1158
+          }
+        },
+        {
+          "video_id": "tt_video_106_3",
+          "share_url": "mock://tiktok/video/106_3",
+          "create_time": 1789214400,
+          "title": "编程向AI测评：终端和IDE插件。美颜相机、美妆滤镜不在我的测评清单里",
+          "duration": 66,
+          "cover_urls": [
+            "mock://cdn/tiktok/cover_011_3.jpg"
+          ],
+          "region": "US",
+          "hashtag_names": [
+            "#AI测评",
+            "#效率工具",
+            "#编程助手"
+          ],
+          "music_info": {
+            "music_id": "music_106_3",
+            "music_name": "Original Sound",
+            "author_name": "韩测测"
+          },
+          "stats": {
+            "play_count": 10714,
+            "digg_count": 3140,
+            "comment_count": 437,
+            "share_count": 287,
+            "collect_count": 1656
+          }
+        }
+      ],
+      "product_usage_evidence": [
+        {
+          "evidence_id": "ev_tt_106_1",
+          "evidence_type": "organic_post",
+          "product_name": "AI效率工具",
+          "product_relation": "category_mentions_only",
+          "evidence_text": "AI测评周报｜代码助手和文档模型。顺手提一句AI美颜相机：这是美妆道具，完全不是我这种工具频道的风格",
+          "source_post_id": "tt_video_106_1",
+          "confidence": 0.2,
+          "data_origin": "mock_seed"
+        }
+      ],
+      "cooperation_history": [],
+      "contact": {
+        "preferred_channel": "tiktok_dm",
+        "dm_available": true,
+        "email": "mock_han_review@example.com",
+        "consent_status": "unknown"
+      },
+      "data_quality": {
+        "audience": "known",
+        "metrics": "known",
+        "gpm": "known"
+      },
+      "scenario_tags": [
+        "keyword_mismatch"
+      ],
+      "expected_ai_signals": {
+        "expected_decision_hint": "reject",
+        "expected_reason": "关键词命中 AI美颜相机，内容是 AI 工具测评，美妆道具不符合频道风格"
+      },
+      "raw_api_snapshot_ref": "search_tt_106",
       "data_origin": "mock_seed"
     }
   ]

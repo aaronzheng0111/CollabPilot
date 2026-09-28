@@ -78,7 +78,9 @@ def test_approved_confirm_assumptions_fills_fallbacks_and_parses() -> None:
     assert (goal.target_count, goal.outreach_count, goal.needs_user_approval) == (10, 3, True)
     assert any("合作" in item for item in goal.exclusion_criteria)
     assumed = goal.assumed_fields()
-    assert {"target_count", EXCLUDE_COOPERATED, "brand"} <= assumed
+    assert {"target_count", EXCLUDE_COOPERATED} <= assumed
+    assert "brand" not in assumed
+    assert goal.brand is None
     assert "needs_user_approval" not in assumed
     # clarifying_campaign already had outreach_count=3; confirm must not invent one.
     assert "outreach_count" not in assumed
@@ -130,5 +132,5 @@ def test_confirm_without_any_parsed_goal_builds_one_from_defaults() -> None:
 
     assert result.campaign.goal_status == "PARSED"
     assert result.campaign.parsed_goal is not None
-    assert result.campaign.parsed_goal.brand == "LinguaGo AI 翻译"
+    assert result.campaign.parsed_goal.brand is None
     assert result.campaign.goal_origin is None

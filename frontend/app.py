@@ -213,51 +213,37 @@ with st.sidebar:
         rename_error=st.session_state.rename_error,
     )
 
-left, right = st.columns([3, 2])
+# Table | chat: real 3:2 side-by-side columns (no overlap). Chat uses its own
+# viewport height; secondary panels sit in a second 3:2 row under the table.
+# gap=8 keeps a few pixels between table and chat — not a wide gutter.
+left, right = st.columns([3, 2], gap=8, vertical_alignment="top")
 
 with left:
-    with st.container(key="cp-main-table"):
-        table_slot = st.empty()
+    # Keyed host must stay in the DOM (CSS targets .st-key-cp-main-table).
+    # empty() alone can omit the key class; bind empty to the host generator.
+    table_host = st.container(key="cp-main-table")
+    table_slot = table_host.empty()
 
-        def draw_table() -> None:
-            """Rows come from the campaign loaded at the top of this run, so a
-            running tool overlays the previous result until the rerun."""
-            selected = render_main_table(
-                rows=st.session_state.table_rows,
-                goal_status=state.goal_status,
-                caption=state.search_caption,
-                skip_caption=state.skip_caption,
-                tool_status=st.session_state.tool_status,
-                on_save=queue_save if session_id is not None else None,
-                on_generate=(
-                    queue_generate
-                    if session_id is not None and state.drafts_ready
-                    else None
-                ),
-                target=table_slot.container(),
-            )
-            st.session_state.selected_creator_ids = selected
-
-        draw_table()
-    with st.container(key="cp-secondary"):
-        render_goal_card(campaign)
-        render_progress_panel(state.progress)
-        if state.verdicts:
-            judged = [
-                (row["creator_id"], f'{row["creator_id"]} · {row["display_name"]} · {row["decision"]}')
-                for row in main_table_rows(campaign)
-                if row.get("decision") not in (None, "—")
-            ]
-            render_evidence_panel(judged, lambda cid: evidence_view(campaign, cid))
-        render_pending_list(state.pending_rows)
-        render_excluded_table(state.excluded_rows)
-        render_follow_up_table(
-            state.follow_up_rows,
-            model_name=(
-                state.follow_up_rows[0].get("model_name") if state.follow_up_rows else None
+    def draw_table() -> None:
+        """Rows come from the campaign loaded at the top of this run, so a
+        running tool overlays the previous result until the rerun."""
+        selected = render_main_table(
+            rows=st.session_state.table_rows,
+            goal_status=state.goal_status,
+            caption=state.search_caption,
+            skip_caption=state.skip_caption,
+            tool_status=st.session_state.tool_status,
+            on_save=queue_save if session_id is not None else None,
+            on_generate=(
+                queue_generate
+                if session_id is not None and state.drafts_ready
+                else None
             ),
-            follow_error=state.follow_error,
+            target=table_slot.container(),
         )
+        st.session_state.selected_creator_ids = selected
+
+    draw_table()
 
 CHAT_SEND = "发送"
 CHAT_PLACEHOLDER = "描述你的合作目标"
@@ -265,6 +251,8 @@ CHAT_PLACEHOLDER = "描述你的合作目标"
 with right:
     with st.container(key="cp-chat-frame", border=True):
         with st.container(key="cp-chat-thread"):
+            # Fixed height (not stretch/% of table): keeps a usable side panel
+            # when the left column is only the table + pager.
             history = st.container(
                 height=640, border=False, key="cp-chat-history"
             )
@@ -317,6 +305,28 @@ with right:
                             key="cp-chat-send",
                             type="primary",
                         )
+
+sec_left, _sec_right = st.columns([3, 2], gap=8)
+with sec_left:
+    with st.container(key="cp-secondary"):
+        render_goal_card(campaign)
+        render_progress_panel(state.progress)
+        if state.verdicts:
+            judged = [
+                (row["creator_id"], f'{row["creator_id"]} · {row["display_name"]} · {row["decision"]}')
+                for row in main_table_rows(campaign)
+                if row.get("decision") not in (None, "—")
+            ]
+            render_evidence_panel(judged, lambda cid: evidence_view(campaign, cid))
+        render_pending_list(state.pending_rows)
+        render_excluded_table(state.excluded_rows)
+        render_follow_up_table(
+            state.follow_up_rows,
+            model_name=(
+                state.follow_up_rows[0].get("model_name") if state.follow_up_rows else None
+            ),
+            follow_error=state.follow_error,
+        )
 
 if send_clicked and prompt and prompt.strip():
     message = prompt.strip()

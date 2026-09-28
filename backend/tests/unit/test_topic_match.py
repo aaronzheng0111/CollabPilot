@@ -35,7 +35,7 @@ MODEL = "deepseek-chat"
 WINDOW = 30
 PROMPT_PATH = PROJECT_ROOT / "config" / "prompts" / "campaign.md"
 SRC = PROJECT_ROOT / "src"
-QUOTE_011 = "这不是AI翻译工具测评"
+QUOTE_011 = "5分钟通勤妆完整步骤"
 
 
 def creators() -> dict[str, mock_store.MergedCreator]:
@@ -59,7 +59,7 @@ def raw_mismatch(creator_id: str = "creator_011", **overrides):
         "evidence_ids": [post],
         "related_post_ids": [],
         "topic_match": "mismatch",
-        "mismatch_topic": "影视字幕剪辑",
+        "mismatch_topic": "美妆",
         "quote": QUOTE_011,
         "unknowns": [],
         "rank": None,
@@ -136,7 +136,7 @@ def test_mismatch_missing_topic_evidence_or_quote_is_quote_not_found() -> None:
         raw_mismatch(mismatch_topic=""),
         raw_mismatch(mismatch_topic=None),
         raw_mismatch(quote="这段话完全不是帖子原文"),
-        raw_mismatch(quote="高" * 81, mismatch_topic="影视字幕剪辑"),
+        raw_mismatch(quote="高" * 81, mismatch_topic="美妆"),
         raw_mismatch(evidence_ids=["ev_tt_011_1"], quote=QUOTE_011),
         raw_mismatch(quote=""),
     ]
@@ -203,7 +203,7 @@ def test_high_gpm_mismatch_stays_out_of_fit() -> None:
     creator = creators()["creator_012"]
     gpm = mock_store.gpm(creator.tiktok or creator.instagram)
     brand = mock_store.load_brand()
-    assert gpm == 28.1 and brand.target_gpm == 20 and gpm > brand.target_gpm
+    assert gpm is not None and brand.target_gpm == 20 and gpm > brand.target_gpm
 
     quote = mock_store.post_text(creator.posts()[0])[:20]
     accepted, pool = as_verdicts(
@@ -211,7 +211,7 @@ def test_high_gpm_mismatch_stays_out_of_fit() -> None:
             raw_fit("creator_001"),
             raw_mismatch(
                 "creator_012",
-                mismatch_topic="考试英语",
+                mismatch_topic="美妆",
                 quote=quote,
                 evidence_ids=[creator.posts()[0]["post_id"]],
             ),
@@ -261,9 +261,9 @@ def test_mismatch_judgment_is_llm_lock_is_rule() -> None:
     assert view["quote"] == QUOTE_011
     assert view["can_restore"] is False
     assert rows[0]["decision"] == "不合适"
-    assert rows[0]["topic"] == "主题不符：影视字幕剪辑"
+    assert rows[0]["topic"] == "主题不符：美妆"
     assert "[LLM]" in rows[0]["source"] and RULE_LABEL in rows[0]["source"]
-    assert topic_badge(topic.accepted[0]) == "主题不符：影视字幕剪辑"
+    assert topic_badge(topic.accepted[0]) == "主题不符：美妆"
 
 
 async def test_evaluate_skips_locked_and_does_not_rejudge(application, monkeypatch) -> None:

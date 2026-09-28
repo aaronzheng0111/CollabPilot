@@ -266,14 +266,32 @@ def rendered_prompt() -> str:
     return render_campaign_prompt(
         PROMPT_PATH.read_text(encoding="utf-8"),
         brand=mock_store.load_brand(),
-        goal_brand=None,
-        goal_product=None,
+        goal_brand=mock_store.load_brand().name,
+        goal_product=mock_store.load_brand().product,
         target_audience=["中文用户"],
         inclusion_criteria=["最近持续发布相关内容"],
         exclusion_criteria=["已经合作过的账号"],
         target_count=10,
         window_days=WINDOW,
     )
+
+
+def test_prompt_does_not_substitute_a_catalog_brand() -> None:
+    prompt = render_campaign_prompt(
+        PROMPT_PATH.read_text(encoding="utf-8"),
+        brand=mock_store.load_brand(),
+        goal_brand=None,
+        goal_product="美妆",
+        target_audience=[],
+        inclusion_criteria=[],
+        exclusion_criteria=[],
+        target_count=10,
+        window_days=WINDOW,
+    )
+    catalog = mock_store.load_brand()
+    assert catalog.name not in prompt
+    assert "美妆" in prompt
+    assert "未指定" in prompt
 
 
 def test_prompt_and_candidates_have_no_oracle_fields() -> None:

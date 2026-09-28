@@ -39,17 +39,31 @@ def open_session(session_id: UUID) -> AppTest:
 
 
 def test_main_table_rows_equal_kept_with_filter_column() -> None:
+    from collabpilot.campaign.workbench import CATALOG_PAGE_SIZE
+
     session_id = filtered_session()
     campaign = create_application().campaign(session_id)
+    kept = list(campaign.last_filter.kept_ids)
 
     at = open_session(session_id)
 
     left, _right = main_layout_columns(at)
     frame = left.dataframe[0].value
-    assert list(frame["creator_id"]) == campaign.last_filter.kept_ids
+    assert list(frame["creator_id"]) == kept[:CATALOG_PAGE_SIZE]
     assert (frame["filter"] == "kept").all()
     assert (frame["source"] == "[MOCK] [RULE]").all()
-    assert not set(frame["creator_id"]) & {"creator_016", "creator_017", "creator_018", "creator_019"}
+    # Paginate through every kept id — none dropped, exclusions stay out.
+    seen: set[str] = set(frame["creator_id"].astype(str))
+    while True:
+        nxt = [b for b in at.button if b.label == "下一页" and not b.disabled]
+        if not nxt:
+            break
+        nxt[0].click().run()
+        assert not at.exception
+        left, _ = main_layout_columns(at)
+        seen.update(left.dataframe[0].value["creator_id"].astype(str))
+    assert seen == set(kept)
+    assert not seen & {"creator_016", "creator_017", "creator_018", "creator_019"}
 
 
 def test_excluded_table_is_collapsed_with_reason_brand_date_and_rule() -> None:

@@ -245,16 +245,16 @@ const CREATOR_DEFS: CreatorDef[] = [
     product_relation: "competitor_cooperation_active",
     gpm_pair: { tt: 11.0, ig: 35.0 }, // large GPM diff
   },
-  // —— Keyword mismatch (5) ——
+  // —— Keyword mismatch (5): nickname may hit 翻译/AI/留学, content is 美妆 ——
   {
     id: 11,
     display_name: "翻译剪辑君",
     handle_base: "subtitle.cut",
     platforms: ["tiktok"],
     role: "keyword_mismatch",
-    topics: ["影视字幕", "剪辑", "娱乐"],
+    topics: ["护肤", "口红", "妆教", "测评化妆品"],
     product_relation: "category_mentions_only",
-    mismatch_note: "昵称含翻译，内容为影视字幕剪辑",
+    mismatch_note: "昵称含翻译，内容为美妆护肤",
   },
   {
     id: 12,
@@ -262,9 +262,9 @@ const CREATOR_DEFS: CreatorDef[] = [
     handle_base: "exam.english",
     platforms: ["tiktok"],
     role: "keyword_mismatch",
-    topics: ["雅思", "托福", "考试英语"],
+    topics: ["口红试色", "底妆", "美妆好物"],
     product_relation: "category_mentions_only",
-    mismatch_note: "昵称含英语，内容为考试英语",
+    mismatch_note: "昵称含英语，内容为美妆口红",
   },
   {
     id: 13,
@@ -272,9 +272,9 @@ const CREATOR_DEFS: CreatorDef[] = [
     handle_base: "ai.paint.mia",
     platforms: ["tiktok"],
     role: "keyword_mismatch",
-    topics: ["AI绘画", "Midjourney", "插画"],
+    topics: ["护肤routine", "防晒", "化妆刷"],
     product_relation: "category_mentions_only",
-    mismatch_note: "昵称含AI，内容为AI绘画",
+    mismatch_note: "昵称含AI，内容为护肤防晒",
   },
   {
     id: 14,
@@ -282,9 +282,9 @@ const CREATOR_DEFS: CreatorDef[] = [
     handle_base: "apply.nina",
     platforms: ["instagram"],
     role: "keyword_mismatch",
-    topics: ["留学申请", "文书", "选校"],
+    topics: ["彩妆教程", "眼影盘", "美甲"],
     product_relation: "category_mentions_only",
-    mismatch_note: "昵称含留学，内容为留学申请",
+    mismatch_note: "昵称含留学，内容为彩妆美甲",
   },
   {
     id: 15,
@@ -292,9 +292,9 @@ const CREATOR_DEFS: CreatorDef[] = [
     handle_base: "lang.exam.owen",
     platforms: ["instagram"],
     role: "keyword_mismatch",
-    topics: ["日语N1", "韩语TOPIK", "语言考试"],
+    topics: ["化妆品测评", "精华液", "卸妆"],
     product_relation: "category_mentions_only",
-    mismatch_note: "昵称含小语种，内容为语言考试",
+    mismatch_note: "昵称含小语种，内容为化妆品测评",
   },
   // —— Own brand cooperated (4) ——
   {
@@ -751,8 +751,8 @@ function evidenceText(def: CreatorDef, platform: Platform): string {
     ],
     keyword_mismatch: [
       def.mismatch_note ?? "内容与翻译工具无关",
-      "本期字幕剪辑花絮",
-      "雅思阅读技巧分享",
+      "今日口红试色分享",
+      "护肤 routine 打卡",
     ],
     own_brand_coop: ["LinguaGo 合作视频已发布，感谢品牌寄样"],
     audience_unknown: ["分享了一款AI翻译工具的使用体验"],
@@ -784,9 +784,9 @@ function buildTikTokPosts(def: CreatorDef, count: number) {
       hashtag_names:
         def.role === "keyword_mismatch"
           ? pick([
-              ["#字幕剪辑", "#影视"],
-              ["#雅思", "#托福"],
-              ["#AI绘画", "#AIart"],
+              ["#妆教", "#护肤"],
+              ["#口红", "#美妆"],
+              ["#防晒", "#化妆品测评"],
             ])
           : ["#aitranslation", "#翻译工具", "#跨境"],
       music_info: {
@@ -950,7 +950,7 @@ function productEvidence(def: CreatorDef, platform: Platform, postId: string) {
       {
         evidence_id: `ev_${platform === "tiktok" ? "tt" : "ig"}_${padId(def.id)}_1`,
         evidence_type: "organic_post",
-        product_name: "LinguaGo AI 翻译",
+        product_name: "Mock 平价口红",
         product_relation: "category_mentions_only",
         evidence_text: def.mismatch_note ?? "关键词命中但主题不匹配",
         source_post_id: postId,
@@ -1012,7 +1012,10 @@ function buildTikTokCreator(def: CreatorDef) {
       verified: def.role === "strong_r1" && def.id <= 3,
       region: pick(["US", "SG", "JP", "GB", "CA"]),
       bio_url: `mock://tiktok/${def.handle_base}`,
-      category: pick(["Education", "Tech", "Lifestyle", "Business"]),
+      category:
+        def.role === "keyword_mismatch"
+          ? "Beauty"
+          : pick(["Education", "Tech", "Lifestyle", "Business"]),
       avatar_thumb: `mock://cdn/tiktok/avatar_${n}.jpg`,
     },
     content_topics: def.topics,
@@ -1055,6 +1058,7 @@ function buildIgCreator(def: CreatorDef) {
       media_count: randInt(50, 500),
       website: `mock://instagram/${def.handle_base}`,
       profile_picture_url: `mock://cdn/instagram/avatar_${n}.jpg`,
+      ...(def.role === "keyword_mismatch" ? { category: "Beauty" } : {}),
     },
     content_topics: def.topics,
     audience: audienceFor(def),

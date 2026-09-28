@@ -50,7 +50,7 @@ def test_get_workbench_state_returns_all_fields_and_does_not_write(application) 
     assert after == before
 
     empty = application.get_workbench_state(None)
-    assert len(empty.main_rows) == 12
+    assert len(empty.main_rows) == 40
     assert empty.search_caption == "示例达人"
     assert empty.campaign is None
     assert {"display_name", "platforms", "followers"} <= set(empty.main_rows[0])
@@ -61,5 +61,5 @@ def test_get_workbench_state_returns_all_fields_and_does_not_write(application) 
     # unused uuid still does not create a row beyond ensure
     ghost = application.get_workbench_state(uuid4())
     assert ghost.goal_status == "CREATED"
-    assert len(ghost.main_rows) == 12
+    assert len(ghost.main_rows) == 40
     assert ghost.search_caption == "示例达人"

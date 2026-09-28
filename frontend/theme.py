@@ -97,34 +97,174 @@ h2, h3 { font-size: 22px; }
   border-left-color: #c64545;
 }
 
-/* Left main table + right chat share the same top edge in the 3:2 row. */
+/* Left main table + right chat share the same top edge in the 3:2 row.
+   min-width:0 lets the flex column shrink so a wide glide canvas cannot
+   push past the column and paint over the chat.
+   gap:8px matches st.columns(..., gap=8) — a few pixels, not a gutter.
+   :has(.st-key-cp-chat-frame) covers the case where st.empty() omits the
+   table key class from the DOM. */
+div[data-testid="stHorizontalBlock"]:has(.st-key-cp-main-table),
+div[data-testid="stHorizontalBlock"]:has(.st-key-cp-chat-frame) {
+  gap: 8px;
+}
+div[data-testid="stHorizontalBlock"]:has(.st-key-cp-main-table) > div[data-testid="stColumn"],
+div[data-testid="stHorizontalBlock"]:has(.st-key-cp-chat-frame) > div[data-testid="stColumn"] {
+  min-width: 0;
+  overflow-x: clip;
+}
 .st-key-cp-main-table,
 .st-key-cp-chat-frame {
   margin-top: 0;
 }
+/* Host clips X so nothing paints over chat. Real H-scroll lives on
+   .st-key-cp-table-scroll (idle catalog + search results). */
 .st-key-cp-main-table {
   padding-top: 0;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: clip;
+  overflow-y: hidden;
 }
-/* Glide canvas ignores CSS font-size; scale the grid so cell/header text
-   (~13px default) reads closer to chat bubble body (~14–15px). */
-.st-key-cp-main-table [data-testid="stDataFrame"],
-.st-key-cp-main-table [data-testid="stDataEditor"] {
-  zoom: 1.15;
-  --gdg-base-font-style: 400 15px;
-  --gdg-header-font-style: 600 15px;
-  --gdg-editor-font-size: 15px;
-  --gdg-cell-horizontal-padding: 10px;
-  --gdg-cell-vertical-padding: 6px;
+div[data-testid="stHorizontalBlock"]:has(.st-key-cp-chat-frame) > div[data-testid="stColumn"]:first-child {
+  overflow-y: hidden;
+}
+/* One H-scroll bar on this container. Inner HTML table has fixed min-width
+   (≥1600px / column sum) so scrollWidth > clientWidth; Glide is not used
+   for the creator grid (it shrink-to-fits and never engages overflow-x). */
+.st-key-cp-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.cp-table-scroll-inline {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.st-key-cp-table-scroll .cp-table-inner,
+.cp-table-scroll-inline .cp-table-inner {
+  display: block;
+  max-width: none;
+  box-sizing: content-box;
+  min-width: 1600px;
+}
+.st-key-cp-table-scroll .cp-creator-table,
+.cp-table-scroll-inline .cp-creator-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #252523;
+  max-width: none;
+  min-width: 1600px;
+}
+.st-key-cp-table-scroll .cp-creator-table th,
+.st-key-cp-table-scroll .cp-creator-table td,
+.cp-table-scroll-inline .cp-creator-table th,
+.cp-table-scroll-inline .cp-creator-table td {
+  box-sizing: border-box;
+  padding: 8px;
+  border-bottom: 1px solid #ebe6df;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  /* Opaque so neighbor overflow cannot show through. */
+  background: #faf9f5;
+}
+.st-key-cp-table-scroll .cp-creator-table th,
+.cp-table-scroll-inline .cp-creator-table th {
+  font-weight: 600;
+  color: #3d3d3a;
+  background: #f5f0e8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* Pinned identity columns: opaque so scrolled cells do not show through. */
+.st-key-cp-table-scroll .cp-creator-table .cp-sticky-edge,
+.cp-table-scroll-inline .cp-creator-table .cp-sticky-edge {
+  box-shadow: 8px 0 10px -8px rgba(20, 20, 19, 0.45);
+}
+.st-key-cp-table-scroll .cp-creator-table tr.cp-row-selected td,
+.cp-table-scroll-inline .cp-creator-table tr.cp-row-selected td {
+  background: #e8a55a;
+  color: #141413;
+}
+.st-key-cp-table-scroll .cp-creator-table tr.cp-row-selected td.cp-sticky-lead,
+.cp-table-scroll-inline .cp-creator-table tr.cp-row-selected td.cp-sticky-lead {
+  box-shadow: inset 5px 0 0 #141413;
+  font-weight: 700;
+}
+.st-key-cp-table-scroll .cp-creator-table tr.cp-row-selected td.cp-sticky-edge.cp-sticky-lead,
+.cp-table-scroll-inline .cp-creator-table tr.cp-row-selected td.cp-sticky-edge.cp-sticky-lead {
+  box-shadow: inset 5px 0 0 #141413, 8px 0 10px -8px rgba(20, 20, 19, 0.45);
+}
+.st-key-cp-table-scroll .cp-creator-table .cp-td-contact,
+.st-key-cp-table-scroll .cp-creator-table .cp-td-topics,
+.st-key-cp-table-scroll .cp-creator-table .cp-td-audience_summary,
+.st-key-cp-table-scroll .cp-creator-table .cp-td-region,
+.cp-table-scroll-inline .cp-creator-table .cp-td-contact,
+.cp-table-scroll-inline .cp-creator-table .cp-td-topics,
+.cp-table-scroll-inline .cp-creator-table .cp-td-audience_summary,
+.cp-table-scroll-inline .cp-creator-table .cp-td-region {
+  white-space: nowrap;
+}
+/* Checkbox picker sits below the HTML table, never stacked on top of it. */
+.st-key-cp-selection-picker {
+  margin-top: 8px;
+  max-width: 280px;
+  position: relative;
+  z-index: 0;
+}
+/* AppTest mirror dataframe: keep in DOM, hide from layout. */
+.st-key-cp-table-mirror {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+/* Compact pager: caption left, prev/next as small side-by-side buttons. */
+.st-key-cp-table-pager {
+  margin: 6px 0 2px;
+  align-items: center;
+}
+.st-key-cp-table-pager [data-testid="stCaptionContainer"] {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.st-key-cp-table-pager [data-testid="stButton"] {
+  width: auto;
+  flex: 0 0 auto;
+}
+.st-key-cp-table-pager [data-testid="stButton"] button {
+  min-height: 2rem;
+  padding: 0.2rem 0.7rem;
+  white-space: nowrap;
 }
 .st-key-cp-main-table .cp-table-empty,
 .st-key-cp-main-table .cp-table-loading {
   font-size: 15px;
 }
+/* Side panel: viewport height (not % of short table column). */
 .st-key-cp-chat-frame {
   position: sticky;
   top: 0.75rem;
   height: calc(100vh - 4.5rem);
   max-height: calc(100vh - 4.5rem);
+  min-width: 0;
   background: #efe9de;
   border-radius: 12px;
   overflow: hidden;

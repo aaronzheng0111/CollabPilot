@@ -19,6 +19,7 @@ from collabpilot.campaign.goal import (
     apply_user_cooperated_preference,
     build_grill,
     extract_json_block,
+    ground_goal_in_user_text,
     parse_grill_reply,
     pending_assumptions,
     render_clarifying_reply,
@@ -137,27 +138,75 @@ def test_sample_payload_parses_counts_approval_and_exclusion() -> None:
         True,
     )
     assert "已经合作过的账号" in goal.exclusion_criteria
-    assert goal.platforms == ["tiktok", "instagram"]
-    assert "platforms" in goal.assumed_fields()
+    assert goal.brand is None
+    assert goal.platforms == []
+    assert "platforms" not in goal.assumed_fields()
+    assert "brand" not in goal.assumed_fields()
     assert goal.missing_critical == []
 
 
-def test_missing_brand_becomes_linguago_assumption() -> None:
+def test_missing_brand_stays_empty() -> None:
     goal = validate_parsed_goal(payload(brand=None))
 
     assert isinstance(goal, ParsedGoal)
-    assert goal.brand == "LinguaGo AI 翻译"
-    brand = next(item for item in goal.assumptions if item.field == "brand")
-    assert brand.value == "LinguaGo AI 翻译" and brand.reason
+    assert goal.brand is None
+    assert "brand" not in goal.assumed_fields()
 
 
-def test_missing_platforms_is_assumed_not_asked() -> None:
+def test_beauty_request_keeps_the_stated_category_and_drops_invented_brand() -> None:
+    goal = validate_parsed_goal(
+        payload(
+            brand="LinguaGo AI 翻译",
+            product="AI 翻译工具",
+            target_audience=["中文用户"],
+            platforms=["tiktok", "instagram"],
+            target_count=None,
+            assumptions=[
+                {
+                    "field": "brand",
+                    "value": "LinguaGo AI 翻译",
+                    "reason": "用户未提供品牌，使用默认值",
+                },
+                {
+                    "field": "product",
+                    "value": "AI 翻译工具",
+                    "reason": "用户未提供产品，使用默认值",
+                },
+                {
+                    "field": "target_audience",
+                    "value": ["中文用户"],
+                    "reason": "用户未提供受众，使用默认值",
+                },
+                {
+                    "field": "platforms",
+                    "value": ["tiktok", "instagram"],
+                    "reason": "用户未指定平台，使用默认值",
+                },
+            ],
+        )
+    )
+    assert isinstance(goal, ParsedGoal)
+
+    grounded = ground_goal_in_user_text(goal, "寻找美妆up")
+    text = render_clarifying_reply("", grounded, build_grill(grounded))
+
+    assert grounded.brand is None
+    assert grounded.product == "美妆"
+    assert grounded.target_audience == []
+    assert grounded.platforms == []
+    assert [item.field for item in grounded.assumptions] == ["product"]
+    assert "美妆" in text
+    assert "LinguaGo" not in text
+    assert "AI 翻译工具" not in text
+
+
+def test_missing_platforms_is_not_asked_or_filled() -> None:
     goal = validate_parsed_goal(payload(platforms=[]))
 
     assert isinstance(goal, ParsedGoal)
     assert "platforms" not in goal.missing_critical
-    assert goal.platforms == ["tiktok", "instagram"]
-    assert "platforms" in goal.assumed_fields()
+    assert goal.platforms == []
+    assert "platforms" not in goal.assumed_fields()
 
 
 def test_model_missing_critical_is_recomputed_not_trusted() -> None:
@@ -253,6 +302,12 @@ def test_template_grill_names_every_missing_field_without_rephrase_block() -> No
     assert "勾选创作者后生成邀请草稿" not in text
     parsed = parse_grill_reply(text)
     assert parsed is not None and parsed.filter_suggestion is not None
+    assert parsed.filter_suggestion.field == "follower_count"
+    assert parsed.filter_suggestion.operator == ">="
+    assert parsed.filter_suggestion.example == "10000"
+    assert "建议先限定粉丝数：不少于 1 万" in text
+    assert "比较方式" not in text
+    assert "示例值" not in text
     assert parsed.rephrase is None
 
 
@@ -308,9 +363,9 @@ def test_single_missing_field_second_question_confirms_an_assumption() -> None:
 
     grill = build_grill(goal)
 
-    assert len(grill.questions) == 2
+    assert len(grill.questions) == 1
     assert "target_count" in grill.questions[0]
-    assert "brand" in grill.questions[1]
+    assert "LinguaGo" not in grill.questions[0]
     assert all(
         "outreach_count" not in q
         and "邀请草稿" not in q
@@ -376,8 +431,9 @@ async def test_sample_text_turn_reaches_parsed_and_records_model(
     assert campaign.goal_model_name == "deepseek-chat"
     assert campaign.parsed_goal is not None
     assert campaign.parsed_goal.target_count == 10
-    assert campaign.parsed_goal.brand == "LinguaGo AI 翻译"
-    assert "LinguaGo AI 翻译" in result.content and "[LLM] deepseek-chat" in result.content
+    assert campaign.parsed_goal.brand is None
+    assert campaign.parsed_goal.product == "AI 翻译工具"
+    assert "LinguaGo" not in result.content and "[LLM] deepseek-chat" in result.content
     assert "```" not in result.content
     assert REPHRASE_HEADING not in result.content
     assert search_tool.calls == 0
@@ -499,7 +555,7 @@ async def test_third_round_lists_assumptions_and_sets_pending_decision(
     assert third.pending_decision == CONFIRM_ASSUMPTIONS
     assert campaign.goal_status == "CLARIFYING"
     assert "待你确认的假设" in third.content
-    assert "目标人数" in third.content and "LinguaGo AI 翻译" in third.content
+    assert "目标人数" in third.content and "LinguaGo" not in third.content
     assert "为其中多少位准备邀请草稿" not in third.content
     assert "触达人数" not in third.content
     assert "草稿发送前是否需要你审核" not in third.content

@@ -54,7 +54,7 @@ from collabpilot.campaign.verdict import (
 
 MOCK_LABEL = "[MOCK]"
 CATALOG_CAPTION = "示例达人"
-CATALOG_LIMIT = 12
+CATALOG_PAGE_SIZE = 12
 DASH = "—"
 
 # Browse / catalog columns shared by idle list and real search rows.
@@ -154,10 +154,10 @@ def creator_table_fields(
     }
 
 
-def catalog_browse_rows(limit: int = CATALOG_LIMIT) -> list[dict[str, Any]]:
+def catalog_browse_rows() -> list[dict[str, Any]]:
     """Idle browse list from read-only mock creators — no fit/rank/decision."""
     rows: list[dict[str, Any]] = []
-    for creator in list(mock_store.load().values())[:limit]:
+    for creator in mock_store.load().values():
         rows.append(
             {
                 "display_name": creator.display_name,

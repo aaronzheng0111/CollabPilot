@@ -6,9 +6,10 @@ from collections.abc import Awaitable, Callable
 from datetime import datetime
 from typing import Any
 
-from collabpilot.campaign.verdict import CANDIDATES_HEADING
 from collabpilot.campaign.drafts import DRAFTS_HEADING
 from collabpilot.campaign.follow_up import FOLLOW_UP_HEADING
+from collabpilot.campaign.goal import stated_creator_niche
+from collabpilot.campaign.verdict import CANDIDATES_HEADING
 from collabpilot.domain.models import Message, ModelResponse, ToolCall
 from collabpilot.providers.base import Provider
 
@@ -83,7 +84,11 @@ def mock_parse_goal(text: str) -> dict[str, Any]:
     )
     return {
         "brand": None,
-        "product": "AI 翻译工具" if "翻译" in text else None,
+        "product": (
+            "AI 翻译工具"
+            if "翻译工具" in text or ("翻译" in text and "AI" in text)
+            else ("翻译" if "翻译" in text else stated_creator_niche(text))
+        ),
         "target_audience": ["中文用户"] if "中文" in text else [],
         "platforms": platforms,
         "target_count": target,
@@ -152,7 +157,7 @@ def mock_drafts_reply(prompt: str) -> str:
         label = item.get("channel_label") or "TikTok 私信"
         name = item.get("display_name") or item.get("creator_id")
         body = (
-            f"你好{name}，我读到你写的「{snippet}」，想请你试用 LinguaGo。"
+            f"你好{name}，我读到你写的「{snippet}」，想邀请你合作。"
             f"这封草稿专门写给你（第{index + 1}位），稍后通过{label}发你。不会群发模板。"
         )
         drafts.append(

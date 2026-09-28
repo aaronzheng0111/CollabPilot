@@ -66,12 +66,12 @@ def fixture_verdicts(kept_ids: list[str]) -> list[Verdict]:
         {
             "creator_id": "creator_011",
             "decision": "unfit",
-            "reasons": ["帖子主题是影视字幕剪辑"],
+            "reasons": ["帖子主题是美妆内容，与 AI 翻译工具无关"],
             "evidence_ids": posts["creator_011"][:1],
             "related_post_ids": [],
             "topic_match": "mismatch",
-            "mismatch_topic": "影视字幕剪辑",
-            "quote": "高能剪辑",
+            "mismatch_topic": "美妆",
+            "quote": "5分钟通勤妆完整步骤",
             "unknowns": [],
             "rank": None,
         }
@@ -195,14 +195,14 @@ def test_mismatch_row_and_panel_show_quote_lock_and_no_restore() -> None:
     frame = table_frame(session_id)
     mismatch = frame[frame["creator_id"] == "creator_011"].iloc[0]
     assert mismatch["decision"] == "不合适"
-    assert mismatch["topic"] == "主题不符：影视字幕剪辑"
+    assert mismatch["topic"] == "主题不符：美妆"
 
     select = next(item for item in at.selectbox if item.label == SELECT_LABEL)
     select.select("creator_011").run()
     assert not at.exception
     html = markup(at)
-    assert "主题不符：影视字幕剪辑" in html
-    assert "高能剪辑" in html
+    assert "主题不符：美妆" in html
+    assert "5分钟通勤妆完整步骤" in html
     assert "tt_video_011_1" in html
     assert "[LLM]" in html
     assert "已锁定，不再推荐" in html and "[RULE]" in html

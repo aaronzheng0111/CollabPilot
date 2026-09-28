@@ -34,6 +34,54 @@ COOPERATION_NOISE = ("performance", "notes", "sample_sent_at", "sample_received_
 ACCOUNT_NOISE = ("raw_api_snapshot_ref", "data_quality", "is_new_creator")
 
 
+def _handles(creator: MergedCreator) -> list[str]:
+    handles: list[str] = []
+    for account in (creator.tiktok, creator.instagram):
+        if not account:
+            continue
+        profile = account.get("profile") or {}
+        for key in ("unique_id", "username"):
+            if profile.get(key):
+                handles.append(str(profile[key]))
+        if account.get("handle"):
+            handles.append(str(account["handle"]))
+    return handles
+
+
+def _norm(value: str) -> str:
+    return value.strip().lstrip("@").lower()
+
+
+def resolve_creator(query: str) -> MergedCreator | list[MergedCreator] | None:
+    """Match an id, display name, or handle. A name is not guessed into an id."""
+    needle = _norm(query)
+    if not needle:
+        return None
+    pool = mock_store.load()
+    if query.strip() in pool:
+        return pool[query.strip()]
+    exact = [
+        creator
+        for creator in pool.values()
+        if _norm(creator.display_name) == needle
+        or any(_norm(handle) == needle for handle in _handles(creator))
+    ]
+    if len(exact) == 1:
+        return exact[0]
+    if len(exact) > 1:
+        return exact
+    partial = [
+        creator
+        for creator in pool.values()
+        if needle in _norm(creator.display_name)
+    ]
+    if len(partial) == 1:
+        return partial[0]
+    if len(partial) > 1:
+        return partial
+    return None
+
+
 def creator_payload(creator: MergedCreator) -> dict[str, Any]:
     return {
         "creator_id": creator.creator_id,
@@ -104,14 +152,21 @@ class GetCreatorTool(Tool):
         "读取一位创作者在 TikTok 与 Instagram 的完整模拟资料（[MOCK]，只读）："
         "账号、recent_posts（每条带 age_days）、cooperation_history、audience、metrics、"
         "contact、product_usage_evidence。缺失字段保持原值，不补造。"
+        "用户用昵称提问时传 name（如「周可儿」），不要猜测 creator_id。"
     )
     risk_level = "read"
     input_schema = {
         "type": "object",
         "properties": {
-            "creator_id": {"type": "string", "description": "例如 creator_001"},
+            "creator_id": {
+                "type": "string",
+                "description": "已知 id 时使用，例如 creator_104。不知道 id 时不要猜。",
+            },
+            "name": {
+                "type": "string",
+                "description": "展示名或 handle，例如 周可儿、zhou.keer。",
+            },
         },
-        "required": ["creator_id"],
         "additionalProperties": False,
     }
 
@@ -127,11 +182,24 @@ class GetCreatorTool(Tool):
             return ToolResult(
                 ok=False, error_code="goal_not_ready", display="合作目标尚未解析完成。"
             )
-        creator_id = str(arguments.get("creator_id") or "")
-        creator = mock_store.load().get(creator_id)
+        query = str(arguments.get("name") or arguments.get("creator_id") or "").strip()
+        if not query:
+            return ToolResult(ok=False, error_code="creator_id_required", display="缺少创作者 id 或昵称")
+        found = resolve_creator(query)
+        if found is None and arguments.get("creator_id") and arguments.get("name"):
+            found = resolve_creator(str(arguments["creator_id"]))
+        if isinstance(found, list):
+            names = "、".join(f"{item.creator_id} {item.display_name}" for item in found)
+            return ToolResult(
+                ok=False,
+                error_code="ambiguous_name",
+                display=f"「{query}」对应多位创作者：{names}",
+                data={"matches": [{"creator_id": item.creator_id, "display_name": item.display_name} for item in found]},
+            )
+        creator = found
         if creator is None:
             return ToolResult(
-                ok=False, error_code="not_found", display=f"未找到创作者 {creator_id}"
+                ok=False, error_code="not_found", display=f"未找到创作者 {query}"
             )
         result = ToolResult(
             ok=True,

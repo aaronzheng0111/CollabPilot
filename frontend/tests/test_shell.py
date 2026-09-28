@@ -34,9 +34,11 @@ def test_layout_is_three_to_two_with_projects_history_input() -> None:
     left, right = main_layout_columns(at)
     assert (left.proto.weight, right.proto.weight) == pytest.approx((0.6, 0.4))
     left_children = list(left.children.values())
-    assert [child.type for child in left_children] == ["flex_container", "flex_container"]
+    assert [child.type for child in left_children] == ["flex_container"]
+    from collabpilot.campaign.workbench import CATALOG_PAGE_SIZE
+
     idle = left_children[0].dataframe[0].value
-    assert len(idle) == 12
+    assert len(idle) == CATALOG_PAGE_SIZE
     assert {"display_name", "platforms", "followers"} <= set(idle.columns)
     assert {"category", "topics", "audience_summary", "region", "engagement", "contact", "last_post"} <= set(
         idle.columns
@@ -61,6 +63,10 @@ def test_layout_is_three_to_two_with_projects_history_input() -> None:
         isinstance(item.value, str) and item.value.startswith('<div class="cp-status')
         for item in at.markdown
     )
+    prev = next(b for b in at.button if b.label == "上一页")
+    nxt = next(b for b in at.button if b.label == "下一页")
+    assert prev.disabled and not nxt.disabled
+    assert any("第 1–12 / 共 40 位" in c.value for c in at.caption)
 
 
 def _send_chat(at: AppTest, text: str) -> AppTest:

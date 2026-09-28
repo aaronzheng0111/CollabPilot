@@ -333,12 +333,23 @@ def render_campaign_prompt(
     window_days: int,
     base_date: str | None = None,
 ) -> str:
-    exclusion_rules = list(dict.fromkeys([*exclusion_criteria, *brand.exclusion_rules]))
-    audience = list(dict.fromkeys([*target_audience, *brand.target_audience]))
+    named_brand = (goal_brand or "").strip()
+    use_catalog = bool(named_brand) and named_brand == brand.name
+    exclusion_rules = list(
+        dict.fromkeys([*exclusion_criteria, *(brand.exclusion_rules if use_catalog else [])])
+    )
+    audience = list(
+        dict.fromkeys([*target_audience, *(brand.target_audience if use_catalog else [])])
+    )
+    features = brand.key_features if use_catalog else []
+    display_brand = named_brand or "未指定"
+    display_product = (goal_product or "").strip() or (
+        brand.product if use_catalog else "未指定"
+    )
     return (
-        template.replace("{brand}", goal_brand or brand.name)
-        .replace("{product}", goal_product or brand.product)
-        .replace("{key_features}", "、".join(brand.key_features) or "—")
+        template.replace("{brand}", display_brand)
+        .replace("{product}", display_product)
+        .replace("{key_features}", "、".join(features) or "—")
         .replace("{exclusion_rules}", "；".join(exclusion_rules) or "—")
         .replace("{target_audience}", "、".join(audience) or "—")
         .replace("{inclusion_criteria}", "；".join(inclusion_criteria) or "—")

@@ -11,7 +11,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel
 
-from collabpilot.campaign.mock_store import MergedCreator, Platform
+from collabpilot.campaign.mock_store import PLATFORMS, MergedCreator, Platform
 
 
 RULE_ORIGIN = "rule"
@@ -69,6 +69,7 @@ def hard_filter(
     Only the first matching reason is recorded per creator."""
     kept: list[KeptCreator] = []
     removed: list[RemovedCreator] = []
+    active_platforms = list(platforms) if platforms else list(PLATFORMS)
     for creator in merged:
         if exclude_own_brand:
             hit = own_brand_cooperation(creator)
@@ -91,7 +92,7 @@ def hard_filter(
         matching = [
             (platform, account)
             for platform, account in creator.accounts()
-            if platform in platforms
+            if platform in active_platforms
         ]
         if not matching:
             removed.append(

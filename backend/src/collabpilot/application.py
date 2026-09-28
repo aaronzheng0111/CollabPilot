@@ -20,6 +20,7 @@ from collabpilot.campaign.goal import (
     apply_user_cooperated_preference,
     build_grill,
     extract_json_block,
+    ground_goal_in_user_text,
     render_clarifying_reply,
     render_invalid_reply,
     render_parsed_reply,
@@ -714,12 +715,11 @@ class ApplicationService:
         return self.retry_prompt_path.read_text(encoding="utf-8")
 
     def drafts_prompt(self, campaign: Campaign) -> str:
-        brand = mock_store.load_brand()
         goal = campaign.parsed_goal
         return render_drafts_prompt(
             self.drafts_prompt_path.read_text(encoding="utf-8"),
-            brand=(goal.brand if goal and goal.brand else brand.name),
-            product=(goal.product if goal and goal.product else brand.product),
+            brand=(goal.brand if goal and goal.brand else "未指定品牌"),
+            product=(goal.product if goal and goal.product else "未指定产品"),
         )
 
     async def generate_drafts(
@@ -844,11 +844,10 @@ class ApplicationService:
         return queued, batch
 
     def follow_up_prompt(self, campaign: Campaign) -> str:
-        brand = mock_store.load_brand()
         goal = campaign.parsed_goal
         return render_follow_up_prompt(
             self.follow_up_prompt_path.read_text(encoding="utf-8"),
-            brand=(goal.brand if goal and goal.brand else brand.name),
+            brand=(goal.brand if goal and goal.brand else "未指定品牌"),
         )
 
     async def generate_follow_up(
@@ -1119,11 +1118,10 @@ class ApplicationService:
                 return updated, reply, retry_generated, retry_calls
 
         goal: ParsedGoal = outcome
-        user_text = next(
-            (message.content for message in reversed(messages) if message.role == "user"),
-            "",
-        )
+        user_turns = [message.content for message in messages if message.role == "user"]
+        user_text = user_turns[-1] if user_turns else ""
         goal = apply_user_cooperated_preference(goal, user_text or "")
+        goal = ground_goal_in_user_text(goal, "\n".join(user_turns))
         prose = strip_json_blocks(text)
         base = {
             "parsed_goal": goal,

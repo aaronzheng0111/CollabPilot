@@ -76,7 +76,14 @@ def markup(at: AppTest) -> str:
 
 
 def test_goal_card_lists_fields_with_assumption_pills_and_llm_tag() -> None:
-    goal = fixture_goal()
+    goal = fixture_goal(
+        brand="某品牌",
+        platforms=["tiktok"],
+        assumptions=[
+            {"field": "brand", "value": "某品牌", "reason": "用户点名了品牌"},
+            {"field": "platforms", "value": ["tiktok"], "reason": "用户指定了平台"},
+        ],
+    )
     at = AppTest.from_function(
         goal_card_script, kwargs={"goal_json": goal.model_dump_json(), "model_name": "deepseek-chat"}
     ).run()
@@ -86,7 +93,7 @@ def test_goal_card_lists_fields_with_assumption_pills_and_llm_tag() -> None:
     assert "合作目标" in html
     for label in ["品牌", "受众", "平台", "人数", "触达人数", "筛选标准", "排除条件"]:
         assert label in html
-    assert "LinguaGo AI 翻译" in html and "tiktok、instagram" in html
+    assert "某品牌" in html and "tiktok" in html
     assert html.count("cp-pill-assumed") == 2  # brand + platforms
     brand = next(item for item in goal.assumptions if item.field == "brand")
     assert brand.reason in html
@@ -124,9 +131,13 @@ def test_parsed_session_shows_goal_card_and_table() -> None:
     at = open_session(result.session_id)
 
     left, _right = main_layout_columns(at)
-    assert len(left.dataframe[0].value) == 12
+    from collabpilot.campaign.workbench import CATALOG_PAGE_SIZE
+
+    assert len(left.dataframe[0].value) == CATALOG_PAGE_SIZE
     html = markup(at)
-    assert "合作目标" in html and "collabpilot-mock" in html and "假设" in html
+    assert "合作目标" in html and "collabpilot-mock" in html
+    assert "AI 翻译工具" in html
+    assert "LinguaGo" not in html
     assert "示例达人" in "\n".join(item.value for item in at.caption)
 
 

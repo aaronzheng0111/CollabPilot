@@ -55,7 +55,7 @@ class FilterSuggestion(BaseModel):
 
 
 class Grill(BaseModel):
-    questions: list[str] = Field(min_length=2)
+    questions: list[str] = Field(min_length=1)
     filter_suggestion: FilterSuggestion | None = None
     rephrase: str | None = None
 
@@ -218,14 +218,6 @@ FIELD_LABELS: dict[str, str] = {
     **CRITICAL_FIELDS,
 }
 
-# Non-critical fields: missing means "assume", never "ask".
-DEFAULT_ASSUMPTIONS: dict[str, tuple[Any, str]] = {
-    "brand": ("LinguaGo AI 翻译", "原文未提及品牌，按演示默认品牌处理"),
-    "product": ("AI 翻译工具", "原文未点名产品，按默认产品处理"),
-    "target_audience": (["中文用户"], "原文未描述受众，按默认受众处理"),
-    "platforms": (["tiktok", "instagram"], "原文未指定平台，默认两个平台都搜"),
-}
-
 # Filled when null without recording an assumption or asking the user.
 SILENT_DEFAULTS: dict[str, Any] = {
     "needs_user_approval": True,
@@ -265,6 +257,26 @@ REQUIRED_KEYS: frozenset[str] = frozenset(
 DEFAULT_FILTER = FilterSuggestion(
     field="follower_count", operator=">=", example="10000"
 )
+
+# Shown in chat. Raw field names stay in parentheses so the block still
+# carries field, operator, and example for parsing.
+FILTER_FIELD_LABELS: dict[str, str] = {
+    "follower_count": "粉丝数",
+    "followers": "粉丝数",
+    "followers_count": "粉丝数",
+    "min_followers": "粉丝数",
+}
+
+OPERATOR_WORDS: dict[str, str] = {
+    ">=": "不少于",
+    "≥": "不少于",
+    ">": "多于",
+    "<=": "不超过",
+    "≤": "不超过",
+    "<": "少于",
+    "=": "等于",
+    "==": "等于",
+}
 
 CLARIFYING_TABLE_TEXT = "需求未完成，表格暂无筛选结果"
 
@@ -333,31 +345,113 @@ def compute_missing_critical(goal: ParsedGoal) -> list[str]:
     return missing
 
 
-def _is_blank(value: Any) -> bool:
-    return value is None or value == [] or value == ""
-
-
 def apply_default_assumptions(goal: ParsedGoal) -> ParsedGoal:
-    """Fill non-critical blanks with defaults and record them as assumptions.
+    """Fill silent blanks only.
 
     ``needs_user_approval`` is filled silently (never asked, never listed under
-    待你确认的假设): the product never sends outreach.
+    待你确认的假设): the product never sends outreach. Brand, product, audience,
+    and platforms stay empty until the user's own words supply them.
     """
     updates: dict[str, Any] = {}
-    assumptions = list(goal.assumptions)
-    assumed = goal.assumed_fields()
     for field, value in SILENT_DEFAULTS.items():
         if getattr(goal, field) is None:
             updates[field] = value
-    for field, (value, reason) in DEFAULT_ASSUMPTIONS.items():
-        if not _is_blank(getattr(goal, field)):
-            continue
-        updates[field] = value
-        if field not in assumed:
-            assumptions.append(Assumption(field=field, value=value, reason=reason))
-    updates["assumptions"] = assumptions
-    filled = goal.model_copy(update=updates)
+    filled = goal.model_copy(update=updates) if updates else goal
     return filled.model_copy(update={"missing_critical": compute_missing_critical(filled)})
+
+
+_TOKEN = re.compile(r"[A-Za-z][A-Za-z0-9]{2,}|[\u4e00-\u9fff]{2,}")
+_NICHE = re.compile(
+    r"(?:寻找|找)(?P<niche>[\u4e00-\u9fff]{2,8})(?:up|UP|达人|博主|创作者)"
+)
+_PLATFORM_WORDS: dict[str, tuple[str, ...]] = {
+    "tiktok": ("tiktok", "抖音"),
+    "instagram": ("instagram", "ins"),
+}
+
+
+def _tokens(value: str) -> list[str]:
+    return [token.lower() for token in _TOKEN.findall(value)]
+
+
+def _mentioned(value: str, user_text: str) -> bool:
+    text = user_text.lower()
+    tokens = _tokens(value)
+    if not tokens:
+        return value.lower() in text
+    return any(token in text for token in tokens)
+
+
+def stated_creator_niche(user_text: str) -> str | None:
+    """Short category in phrases like 「寻找美妆up」. Not a headcount sentence."""
+    compact = re.sub(r"\s+", "", user_text or "")
+    match = _NICHE.search(compact)
+    if match is None:
+        return None
+    niche = match.group("niche").strip("的一款想要")
+    if not niche or any(char.isdigit() for char in niche) or "位" in niche:
+        return None
+    return niche
+
+
+def _platform_mentioned(platform: str, user_text: str) -> bool:
+    text = user_text.lower()
+    return any(word.lower() in text for word in _PLATFORM_WORDS.get(platform, (platform,)))
+
+
+def _value_mentioned(value: Any, user_text: str) -> bool:
+    if isinstance(value, list):
+        return bool(value) and all(
+            _platform_mentioned(str(item), user_text)
+            if str(item) in _PLATFORM_WORDS
+            else _mentioned(str(item), user_text)
+            for item in value
+        )
+    if value is None:
+        return False
+    return _mentioned(str(value), user_text)
+
+
+def ground_goal_in_user_text(goal: ParsedGoal, user_text: str) -> ParsedGoal:
+    """Drop brand, product, audience, and platforms the user never said.
+
+    A category such as 「美妆」 in 「寻找美妆up」 is the product to search for.
+    Nothing is filled from a demo catalog.
+    """
+    text = user_text or ""
+    brand = goal.brand if goal.brand and _mentioned(goal.brand, text) else None
+    product = goal.product if goal.product and _mentioned(goal.product, text) else None
+    niche = stated_creator_niche(text)
+    audience = [item for item in goal.target_audience if _mentioned(item, text)]
+    platforms = [item for item in goal.platforms if _platform_mentioned(item, text)]
+    assumptions = [
+        item
+        for item in goal.assumptions
+        if item.field not in {"brand", "product", "target_audience", "platforms"}
+        or _value_mentioned(item.value, text)
+    ]
+    if "linguago" not in text.lower():
+        assumptions = [
+            item
+            for item in assumptions
+            if "linguago" not in item.reason.lower()
+            and "linguago" not in json.dumps(item.value, ensure_ascii=False).lower()
+        ]
+    if niche and not product:
+        product = niche
+        assumptions.append(
+            Assumption(field="product", value=niche, reason="从你的原话提取的创作者品类")
+        )
+    updated = goal.model_copy(
+        update={
+            "brand": brand,
+            "product": product,
+            "target_audience": audience,
+            "platforms": platforms,
+            "assumptions": assumptions,
+        }
+    )
+    return updated.model_copy(update={"missing_critical": compute_missing_critical(updated)})
 
 
 def validate_parsed_goal(obj: Any) -> ParsedGoal | list[str]:
@@ -483,9 +577,14 @@ def validate_grill(obj: Any, goal: ParsedGoal) -> Grill | None:
     allowed = set(goal.missing_critical)
     if len(goal.missing_critical) == 1:
         allowed |= goal.assumed_fields()
-    if all(_names_field(question, allowed) for question in grill.questions):
-        return grill
-    return None
+    if not all(_names_field(question, allowed) for question in grill.questions):
+        return None
+    if not all(
+        any(_names_field(question, {field}) for question in grill.questions)
+        for field in goal.missing_critical
+    ):
+        return None
+    return grill
 
 
 def _format_value(value: Any) -> str:
@@ -506,15 +605,12 @@ def build_grill(goal: ParsedGoal, model_grill: Grill | None = None) -> Grill:
             }
         )
     questions = [QUESTION_TEMPLATES[field] for field in goal.missing_critical]
-    if len(questions) == 1:
-        first = goal.assumptions[0] if goal.assumptions else None
-        if first is not None:
-            label = FIELD_LABELS.get(first.field, first.field)
-            questions.append(
-                f"{label}按假设为「{_format_value(first.value)}」，是否正确？（{first.field}）"
-            )
-        else:
-            questions.append("品牌按假设为「LinguaGo AI 翻译」，是否正确？（brand）")
+    if len(questions) == 1 and goal.assumptions:
+        first = goal.assumptions[0]
+        label = FIELD_LABELS.get(first.field, first.field)
+        questions.append(
+            f"{label}按假设为「{_format_value(first.value)}」，是否正确？（{first.field}）"
+        )
     return Grill(
         questions=questions,
         filter_suggestion=DEFAULT_FILTER,
@@ -528,6 +624,31 @@ def build_grill(goal: ParsedGoal, model_grill: Grill | None = None) -> Grill:
 
 FILTER_HEADING = "推荐过滤"
 REPHRASE_HEADING = "换一种说法"  # legacy; must never appear in rendered chat replies
+
+
+def _pretty_amount(example: str) -> str:
+    raw = example.strip().replace(",", "").replace(" ", "").replace("_", "")
+    if not raw.isdigit():
+        return example.strip()
+    number = int(raw)
+    if number >= 10_000 and number % 10_000 == 0:
+        return f"{number // 10_000} 万"
+    if number >= 1_000:
+        return f"{number:,}"
+    return str(number)
+
+
+def render_filter_line(suggestion: FilterSuggestion) -> str:
+    """One sentence a user can act on, with the raw condition in parentheses."""
+    label = FILTER_FIELD_LABELS.get(suggestion.field, suggestion.field)
+    phrase = OPERATOR_WORDS.get(suggestion.operator.strip(), suggestion.operator.strip())
+    pretty = _pretty_amount(suggestion.example)
+    detail = f"`{suggestion.field}` `{suggestion.operator}` `{suggestion.example}`"
+    if suggestion.field in FILTER_FIELD_LABELS and suggestion.operator.strip() in OPERATOR_WORDS:
+        return f"建议先限定{label}：{phrase} {pretty}（{detail}）。"
+    return f"可以先加上这条筛选：{label} {phrase} {pretty}（{detail}）。"
+
+
 ASSUMPTIONS_HEADING = "当前假设"
 CONFIRM_HEADING = "待你确认的假设"
 QUESTIONS_LEAD = "关键信息还不完整，补齐以下字段后才会开始搜索："
@@ -576,7 +697,7 @@ def render_clarifying_reply(
         lines += [
             "",
             f"### {FILTER_HEADING}",
-            f"- 字段 `{suggestion.field}` · 比较方式 `{suggestion.operator}` · 示例值 `{suggestion.example}`",
+            f"- {render_filter_line(suggestion)}",
         ]
     # Deliberately omit 「换一种说法」: never put a rephrase heading or block in chat.
     if ask_confirmation:
@@ -614,7 +735,8 @@ def goal_summary(goal: ParsedGoal, model_name: str) -> str:
     )
     return (
         f"合作目标已解析 [LLM] {model_name}："
-        f"品牌 {cell('brand', goal.brand)} · 受众 {cell('target_audience', goal.target_audience)} · "
+        f"品牌 {cell('brand', goal.brand)} · 产品 {cell('product', goal.product)} · "
+        f"受众 {cell('target_audience', goal.target_audience)} · "
         f"平台 {cell('platforms', goal.platforms)} · 人数 {goal.target_count} · "
         f"{outreach}发送前审核 {_format_value(goal.needs_user_approval)} · "
         f"排除 {_format_value(goal.exclusion_criteria)}"

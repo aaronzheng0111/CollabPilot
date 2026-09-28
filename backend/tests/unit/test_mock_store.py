@@ -38,7 +38,7 @@ def test_merges_both_files_by_creator_id() -> None:
     tiktok, instagram = set(raw_ids("tiktok")), set(raw_ids("instagram"))
 
     assert set(creators) == tiktok | instagram
-    assert len(creators) == 34
+    assert len(creators) == 40
     cross = [item for item in creators.values() if len(item.platforms) == 2]
     assert len(cross) == len(tiktok & instagram) == 10
     amy = creators["creator_001"]

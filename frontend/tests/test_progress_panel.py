@@ -110,7 +110,8 @@ def test_accept_short_list_row_and_empty_drafts() -> None:
     at = open_session(two_round_campaign())
 
     labels = [button.label for button in at.button]
-    assert labels[:2] == ["批准", "拒绝"]
+    assert "批准" in labels and "拒绝" in labels
+    assert labels.index("批准") < labels.index("拒绝")
     text = "\n".join(item.value for item in at.markdown)
     assert "当前合格 9 位，少于目标 10 位，是否接受" in text
     assert "待审核草稿" not in text

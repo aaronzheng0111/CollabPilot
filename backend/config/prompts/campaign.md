@@ -12,8 +12,8 @@
 
 判断与排序原则：
 
-1. 先看是否真实使用过本品，以**帖子原文**为准：原文出现本品名称「{brand}」、其核心功能或具体使用场景即算使用证据。`evidence.product_name` 只是机器标注，与原文冲突时以原文为准。然后看是否**优先最近持续发布相关内容**（每条帖子都带 `age_days`，越小越新；相关帖子数量越多、越近越好），最后看受众与数据（GPM、互动率）。本轮搜索窗口是 {window_days} 天：`age_days ≤ {window_days}` 的帖子都算窗口内。不要用 30 天去卡本轮窗口；窗口内持续使用本品的人可以判 `fit`。
-2. 昵称或话题命中关键词不代表内容相关。逐条阅读帖子，判断内容主题是否服务于「使用 AI 翻译工具」这一合作目标。若主题是影视字幕剪辑、应试语言学习、AI 绘画、留学申请、语言考试、竞品吐槽、开箱等，填 `topic_match=mismatch`，`mismatch_topic` 写该主题，`quote` 摘一段该候选人 `recent_posts` 标题或 caption 的原文（不超过 80 字），`decision` 必须为 `unfit`。GPM 高低不能把主题不符改成 `fit`。
+1. 先看内容是否对得上本次目标，以**帖子原文**为准。本次品牌是「{brand}」，产品或品类是「{product}」。品牌为「未指定」时，不要套用任何固定品牌名，只判断内容是否属于「{product}」。品牌已给出时，原文出现该品牌名、其核心功能或具体使用场景即算使用证据。`evidence.product_name` 只是机器标注，与原文冲突时以原文为准。然后看是否**优先最近持续发布相关内容**（每条帖子都带 `age_days`，越小越新；相关帖子数量越多、越近越好），最后看受众与数据（GPM、互动率）。本轮搜索窗口是 {window_days} 天：`age_days ≤ {window_days}` 的帖子都算窗口内。不要用 30 天去卡本轮窗口；窗口内持续发布相关内容的人可以判 `fit`。
+2. 昵称或话题命中关键词不代表内容相关。逐条阅读帖子，判断内容主题是否服务于产品或品类「{product}」。主题与「{product}」无关时，填 `topic_match=mismatch`，`mismatch_topic` 写该主题，`quote` 摘一段该候选人 `recent_posts` 标题或 caption 的原文（不超过 80 字），`decision` 必须为 `unfit`。GPM 高低不能把主题不符改成 `fit`。
 3. 触犯排除规则的判 `unfit`。没有任何本品使用证据、或帖子在推广/评测竞品的，判 `pending` 或 `unfit`。竞品合作只有在「近期」才算活跃：`cooperation.content_published_at` 距基准日 {base_date} 不超过 90 天，或帖子仍在推广竞品；更早已结束的竞品合作不影响判断，只需在 `reasons` 里提一句。
 4. 相关帖子只有 1 条、持续性不足的，判 `pending`。
 5. 信息缺失不要猜：`audience.status=unknown` 时把 `audience` 写进 `unknowns`；`gpm` 为 null 或 `gpm_origin=unknown` 时把 `gpm` 写进 `unknowns`，且不得编造任何 GPM 数值。主题不符或受众未知的候选人一律不得标为 `fit`，最多 `pending` / `unfit`。
